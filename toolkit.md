@@ -16,16 +16,16 @@ xmlns="http://www.w3.org/TR/REC-html40">
   <o:Author>Arnoud de Boer</o:Author>
   <o:Template>Normal</o:Template>
   <o:LastAuthor>Arnoud de Boer</o:LastAuthor>
-  <o:Revision>3</o:Revision>
+  <o:Revision>4</o:Revision>
   <o:TotalTime>20</o:TotalTime>
   <o:Created>2024-02-29T09:47:00Z</o:Created>
-  <o:LastSaved>2024-02-29T10:22:00Z</o:LastSaved>
+  <o:LastSaved>2024-02-29T10:33:00Z</o:LastSaved>
   <o:Pages>2</o:Pages>
   <o:Words>129</o:Words>
-  <o:Characters>713</o:Characters>
+  <o:Characters>714</o:Characters>
   <o:Lines>5</o:Lines>
   <o:Paragraphs>1</o:Paragraphs>
-  <o:CharactersWithSpaces>841</o:CharactersWithSpaces>
+  <o:CharactersWithSpaces>842</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -710,8 +710,7 @@ h1
 	mso-font-kerning:0pt;
 	font-weight:normal;}
 h2
-	{mso-style-noshow:yes;
-	mso-style-priority:9;
+	{mso-style-priority:9;
 	mso-style-qformat:yes;
 	mso-style-link:"Kop 2 Char";
 	mso-style-next:Standaard;
@@ -764,7 +763,8 @@ h3
 	mso-themeshade:127;
 	font-weight:normal;}
 a:link, span.MsoHyperlink
-	{mso-style-priority:99;
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
 	color:#467886;
 	mso-themecolor:hyperlink;
 	text-decoration:underline;
@@ -803,7 +803,6 @@ span.Kop1Char
 	mso-themeshade:191;}
 span.Kop2Char
 	{mso-style-name:"Kop 2 Char";
-	mso-style-noshow:yes;
 	mso-style-priority:9;
 	mso-style-unhide:no;
 	mso-style-locked:yes;
@@ -918,7 +917,7 @@ word-wrap:break-word'>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>Handleidingen</p>
+<h2>Handleidingen</h2>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -973,7 +972,7 @@ href="https://github.com/pka/awesome-3d-tiles?tab=readme-ov-file">https://github
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal><span style='font-family:"Segoe UI",sans-serif;color:black;
-background:white'>pg2b3dm</span><o:p></o:p></span></p>
+background:white'>pg2b3dm</span></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
