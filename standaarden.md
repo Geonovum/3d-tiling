@@ -16,10 +16,10 @@ xmlns="http://www.w3.org/TR/REC-html40">
   <o:Author>Arnoud de Boer</o:Author>
   <o:Template>Normal</o:Template>
   <o:LastAuthor>Arnoud de Boer</o:LastAuthor>
-  <o:Revision>4</o:Revision>
+  <o:Revision>6</o:Revision>
   <o:TotalTime>40</o:TotalTime>
   <o:Created>2024-02-29T08:28:00Z</o:Created>
-  <o:LastSaved>2024-02-29T10:01:00Z</o:LastSaved>
+  <o:LastSaved>2024-02-29T10:32:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
   <o:Words>343</o:Words>
   <o:Characters>1887</o:Characters>
@@ -38,6 +38,7 @@ xmlns="http://www.w3.org/TR/REC-html40">
  <w:WordDocument>
   <w:View>Print</w:View>
   <w:Zoom>140</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:HyphenationZone>21</w:HyphenationZone>
@@ -702,8 +703,7 @@ h1
 	mso-font-kerning:0pt;
 	font-weight:normal;}
 h2
-	{mso-style-noshow:yes;
-	mso-style-priority:9;
+	{mso-style-priority:9;
 	mso-style-qformat:yes;
 	mso-style-link:"Kop 2 Char";
 	mso-style-next:Standaard;
@@ -796,7 +796,6 @@ span.Kop1Char
 	mso-themeshade:191;}
 span.Kop2Char
 	{mso-style-name:"Kop 2 Char";
-	mso-style-noshow:yes;
 	mso-style-priority:9;
 	mso-style-unhide:no;
 	mso-style-locked:yes;
@@ -847,6 +846,9 @@ p.msonormal0, li.msonormal0, div.msonormal0
 	font-size:10.0pt;
 	font-family:"Times New Roman",serif;
 	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -905,55 +907,60 @@ word-wrap:break-word'>
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal>Dit hoofdstuk gaat in op enkele standaarden en techniek voor
-3D Tiling.</p>
+3D <span class=SpellE>Tiling</span>.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>Voor het serveren van 3D Tiles zijn er in het algemeen twee
-standaarden.</p>
+<p class=MsoNormal>Voor het serveren van 3D <span class=SpellE>Tiles</span>
+zijn er in het algemeen twee standaarden.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<h3>OGC 3D Tiles specification</h3>
+<h2>OGC 3D <span class=SpellE>Tiles</span> <span class=SpellE>specification</span></h2>
 
 <p class=MsoNormal>https://docs.ogc.org/cs/22-025r4/22-025r4.html</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>3D Tiles is een standaard voor het effici&euml;nt streamen
-en renderen van grote driedimensionale georuimtelijke datasets, zoals
-fotogrammetrie, BIM/CAD-modellen en puntenwolken. Het definieert een
-gegevensstructuur en tegelformaten voor renderbare inhoud zonder strikte
+<p class=MsoNormal>3D <span class=SpellE>Tiles</span> is een standaard voor het
+effici&euml;nt streamen en renderen van grote driedimensionale <span
+class=SpellE>georuimtelijke</span> datasets, zoals fotogrammetrie,
+BIM/CAD-modellen en puntenwolken. Het definieert een gegevensstructuur en
+tegelformaten voor <span class=SpellE>renderbare</span> inhoud zonder strikte
 visualisatieregels. </p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>3D Tiles wordt beheerd door het Open Geospatial Consortium
-(OGC). De standaard komt </p>
+<p class=MsoNormal>3D <span class=SpellE>Tiles</span> wordt beheerd door het
+Open <span class=SpellE>Geospatial</span> Consortium (OGC). De standaard komt </p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>Een 3D Tiles-dataset (<i>tileset</i>) bevat diverse
-tegelformaten georganiseerd in een ruimtelijke structuur. Het is declaratief,
-uitbreidbaar en geschikt voor verschillende soorten 3D-gegevens. De
-tegelformaten omvatten batched 3D-modellen, ge&iuml;nstantieerde 3D-modellen,
+<p class=MsoNormal>Een 3D <span class=SpellE>Tiles</span>-dataset (<span
+class=SpellE><i>tileset</i></span>) bevat diverse tegelformaten georganiseerd
+in een ruimtelijke structuur. Het is declaratief, <span class=SpellE>uitbreidbaar</span>
+en geschikt voor verschillende soorten 3D-gegevens. De tegelformaten omvatten <span
+class=SpellE>batched</span> 3D-modellen, ge&iuml;nstantieerde 3D-modellen,
 puntenwolken en samengestelde tegels. </p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>De specificatie omvat ook 3D Tile Styles voor declaratieve
-styling van tegelsets. Het is een open formaat dat niet gebonden is aan
-specifieke leveranciers of technologie&euml;n.</p>
+<p class=MsoNormal>De specificatie omvat ook 3D <span class=SpellE>Tile</span> <span
+class=SpellE>Styles</span> voor declaratieve styling van tegelsets. Het is een
+open formaat dat niet gebonden is aan specifieke leveranciers of
+technologie&euml;n.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<h3>i3S</h3>
+<h2>i3S</h2>
 
-<p class=MsoNormal>I3S staat voor Indexed 3D Scene Layer en is een open
-standaard die is ontwikkeld door Esri voor het effici&euml;nt opslaan, delen en
-weergeven van grote en complexe driedimensionale georuimtelijke gegevens. Het
-is vergelijkbaar met 3D Tiles van het Open Geospatial Consortium (OGC) en wordt
-vaak gebruikt binnen de GIS-gemeenschap.</p>
+<p class=MsoNormal>I3S staat voor <span class=SpellE>Indexed</span> 3D Scene <span
+class=SpellE>Layer</span> en is een open standaard die is ontwikkeld door <span
+class=SpellE>Esri</span> voor het effici&euml;nt opslaan, delen en weergeven
+van grote en complexe driedimensionale <span class=SpellE>georuimtelijke</span>
+gegevens. Het is vergelijkbaar met 3D <span class=SpellE>Tiles</span> van het
+Open <span class=SpellE>Geospatial</span> Consortium (OGC) en wordt vaak
+gebruikt binnen de GIS-gemeenschap.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -961,18 +968,19 @@ vaak gebruikt binnen de GIS-gemeenschap.</p>
 context van web-gebaseerde toepassingen, waardoor het mogelijk is om grote
 3D-sc&egrave;nes in real-time te streamen en te visualiseren in webbrowsers of
 andere applicaties. Het maakt gebruik van een combinatie van ruimtelijke
-indexering, tiling en compressie om de prestaties te optimaliseren en de
-benodigde bandbreedte te minimaliseren bij het overbrengen van 3D-gegevens over
-het web.</p>
+indexering, <span class=SpellE>tiling</span> en compressie om de prestaties te
+optimaliseren en de benodigde bandbreedte te minimaliseren bij het overbrengen
+van 3D-gegevens over het web.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal>De I3S-specificatie omvat verschillende componenten, zoals
-de Scene Layer, de Scene Layer Package en de Scene Layer Service, die
-samenwerken om 3D-gegevens effici&euml;nt te organiseren en weer te geven. Het
-wordt vaak gebruikt in combinatie met Esri's ArcGIS-platform, maar is een open
-standaard die door andere softwareleveranciers kan worden ge&iuml;mplementeerd
-en gebruikt</p>
+de Scene <span class=SpellE>Layer</span>, de Scene <span class=SpellE>Layer</span>
+Package en de Scene <span class=SpellE>Layer</span> Service, die samenwerken om
+3D-gegevens effici&euml;nt te organiseren en weer te geven. Het wordt vaak
+gebruikt in combinatie met <span class=SpellE>Esri's</span> <span class=SpellE>ArcGIS</span>-platform,
+maar is een open standaard die door andere softwareleveranciers kan worden
+ge&iuml;mplementeerd en gebruikt</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
