@@ -16,10 +16,10 @@ xmlns="http://www.w3.org/TR/REC-html40">
   <o:Author>Arnoud de Boer</o:Author>
   <o:Template>Normal</o:Template>
   <o:LastAuthor>Arnoud de Boer</o:LastAuthor>
-  <o:Revision>5</o:Revision>
+  <o:Revision>6</o:Revision>
   <o:TotalTime>41</o:TotalTime>
   <o:Created>2024-02-29T08:28:00Z</o:Created>
-  <o:LastSaved>2024-02-29T10:06:00Z</o:LastSaved>
+  <o:LastSaved>2024-02-29T10:32:00Z</o:LastSaved>
   <o:Pages>2</o:Pages>
   <o:Words>420</o:Words>
   <o:Characters>2311</o:Characters>
@@ -903,24 +903,23 @@ techniek van OGC 3D <span class=SpellE>Tiles</span>.<o:p></o:p></span></p>
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
 mso-fareast-theme-font:major-fareast'><o:p>&nbsp;</o:p></span></p>
 
-<h2>Algemeen<o:p></o:p></h2>
+<h2>Algemeen</h2>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
 mso-fareast-theme-font:major-fareast'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
 mso-fareast-theme-font:major-fareast'>In 3D <span class=SpellE>Tiles</span>
-verwijst een <span class=SpellE>tegelset</span> naar een verzameling tegels
-georganiseerd binnen een ruimtelijke gegevensstructuur, vertegenwoordigd door
-een boom. Elke <span class=SpellE>tegelset</span> wordt beschreven door
-minstens &eacute;&eacute;n JSON-bestand met metadata en een hi&euml;rarchie van
-tegelobjecten, waarvan elke tegel <span class=SpellE>renderbare</span> inhoud
-kan bevatten.<o:p></o:p></span></p>
+verwijst een <span class=SpellE>tegelset</span> naar een verzameling tegels georganiseerd
+binnen een ruimtelijke gegevensstructuur, vertegenwoordigd door een boom. Elke <span
+class=SpellE>tegelset</span> wordt beschreven door minstens &eacute;&eacute;n
+JSON-bestand met metadata en een hi&euml;rarchie van tegelobjecten, waarvan
+elke tegel <span class=SpellE>renderbare</span> inhoud kan bevatten.<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
 mso-fareast-theme-font:major-fareast'><o:p>&nbsp;</o:p></span></p>
 
-<h2>Tegelformaten<o:p></o:p></h2>
+<h2>Tegelformaten</h2>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
 mso-fareast-theme-font:major-fareast'><o:p>&nbsp;</o:p></span></p>
@@ -978,7 +977,7 @@ class=SpellE>Tiles</span>-specificatie.<o:p></o:p></span></p>
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
 mso-fareast-theme-font:major-fareast'><o:p>&nbsp;</o:p></span></p>
 
-<h2>Mediatypes en <span class=SpellE>encoding</span><o:p></o:p></h2>
+<h2>Mediatypes en <span class=SpellE>encoding</span></h2>
 
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman";
 mso-fareast-theme-font:major-fareast'><o:p>&nbsp;</o:p></span></p>
