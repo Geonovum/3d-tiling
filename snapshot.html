@@ -3,19 +3,6 @@
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
 <meta name="generator" content="ReSpec 34.1.4">
 <style>
-.issue-label{text-transform:initial}
-.warning>p:first-child{margin-top:0}
-.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
-span.warning{padding:.1em .5em .15em}
-.issue.closed span.issue-number{text-decoration:line-through}
-.issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
-.warning{border-color:#f11;border-width:.2em;border-style:solid;background:#fbe9e9}
-.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
-li.task-list-item{list-style:none}
-input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
-.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
-</style>
-<style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
 .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
@@ -43,7 +30,7 @@ dfn{cursor:pointer}
   
   
 <script>document.title = respecConfig.title</script>
-<title>[TODO: Neem titel op in config.js]</title>
+<title>Handreiking 3D Tiling</title>
   
 <title>TODO: Vul hier de titel in</title>
   
@@ -126,21 +113,9 @@ ul.index code{color:inherit}
 #index-defined-here .print-only{display:initial}
 }
 </style>
-<meta name="description" content="TODO: vul in abstract.md een abstract in.">
-<style>
-.hljs{display:block;overflow-x:auto;padding:.5em;color:#383a42;background:#fafafa}
-.hljs-comment,.hljs-quote{color:#717277;font-style:italic}
-.hljs-doctag,.hljs-formula,.hljs-keyword{color:#a626a4}
-.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#ca4706;font-weight:700}
-.hljs-literal{color:#0b76c5}
-.hljs-addition,.hljs-attribute,.hljs-meta-string,.hljs-regexp,.hljs-string{color:#42803c}
-.hljs-built_in,.hljs-class .hljs-title{color:#9a6a01}
-.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#986801}
-.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#336ae3}
-.hljs-emphasis{font-style:italic}
-.hljs-strong{font-weight:700}
-.hljs-link{text-decoration:underline}
-</style>
+<meta name="description" content="Deze handreiking biedt een uitgebreide verkenning van 3D tiling, een techniek
+voor het efficiënt opslaan, serveren en visualiseren van driedimensionale
+gegevens.">
 <style>
 
   .sidelabel {
@@ -301,19 +276,18 @@ ul.index code{color:inherit}
       "authors": [
         "T. Preston-Werner"
       ],
-      "date": "June 2013",
-      "id": "semver"
+      "date": "June 2013"
     }
   },
-  "title": "[TODO: Neem titel op in config.js]",
+  "title": "Handreiking 3D Tiling",
   "specStatus": "wv",
   "specType": "HR",
-  "pubDomain": "TODO",
+  "pubDomain": "3d-tiling",
   "licence": "cc-by",
-  "shortName": "NL-ReSpec-GN-template",
+  "shortName": "3d-tiling",
   "editors": [
     {
-      "name": "voornaam achternaam",
+      "name": "Geonovum",
       "company": "Geonovum",
       "companyURL": "https://www.geonovum.nl"
     }
@@ -321,11 +295,26 @@ ul.index code{color:inherit}
   "authors": [
     {
       "name": "voornaam achternaam",
-      "company": "Geonovum",
+      "company": "organisatie",
+      "companyURL": "https://www.geonovum.nl"
+    },
+    {
+      "name": "voornaam achternaam",
+      "company": "organisatie",
+      "companyURL": "https://www.geonovum.nl"
+    },
+    {
+      "name": "voornaam achternaam",
+      "company": "organisatie",
+      "companyURL": "https://www.geonovum.nl"
+    },
+    {
+      "name": "voornaam achternaam",
+      "company": "organisatie",
       "companyURL": "https://www.geonovum.nl"
     }
   ],
-  "github": "https://github.com/Geonovum/NL-ReSpec-GN-template",
+  "github": "https://github.com/Geonovum/3d-tiling",
   "alternateFormats": [
     {
       "label": "pdf",
@@ -335,9 +324,9 @@ ul.index code{color:inherit}
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"></head>
 
-<body class="h-entry"><div class="head">
+<body class="h-entry toc-inline"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132">
-  </a> <h1 id="title" class="title">[TODO: Neem titel op in config.js]</h1>
+  </a> <h1 id="title" class="title">Handreiking 3D Tiling</h1>
     
     <h2>
       Geonovum Handreiking<br>
@@ -347,7 +336,7 @@ ul.index code{color:inherit}
     <dl>
       
       
-      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/NL-ReSpec-GN-template/">https://geonovum.github.io/NL-ReSpec-GN-template/</a></dd>
+      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/3d-tiling/">https://geonovum.github.io/3d-tiling/</a></dd>
       
       
       
@@ -355,20 +344,26 @@ ul.index code{color:inherit}
       
       <dt>Redacteur:</dt>
       <dd class="editor p-author h-card vcard">
-    <span class="p-name fn">voornaam achternaam</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+    <span class="p-name fn">Geonovum</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
   </dd>
       
-      <dt>Auteur:</dt><dd class="editor p-author h-card vcard">
-    <span class="p-name fn">voornaam achternaam</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+      <dt>Auteurs:</dt><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">voornaam achternaam</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">organisatie</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">voornaam achternaam</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">organisatie</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">voornaam achternaam</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">organisatie</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">voornaam achternaam</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">organisatie</a>)
   </dd>
       <dt>Doe mee:</dt><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/">GitHub Geonovum/NL-ReSpec-GN-template</a>
+    <a href="https://github.com/Geonovum/3d-tiling/">GitHub Geonovum/3d-tiling</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/issues/">Dien een melding in</a>
+    <a href="https://github.com/Geonovum/3d-tiling/issues/">Dien een melding in</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/commits/">Revisiehistorie</a>
+    <a href="https://github.com/Geonovum/3d-tiling/commits/">Revisiehistorie</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/pulls/">Pull requests</a>
+    <a href="https://github.com/Geonovum/3d-tiling/pulls/">Pull requests</a>
   </dd>
     </dl>
     
@@ -383,67 +378,1972 @@ ul.index code{color:inherit}
         </p>
     <hr title="Separator for header">
   </div>
-  <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>TODO: vul in abstract.md een abstract in.</p>
+  <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Deze handreiking biedt een uitgebreide verkenning van 3D tiling, een techniek
+voor het efficiënt opslaan, serveren en visualiseren van driedimensionale
+gegevens.</p>
+<p>De handreiking begint met een algemene introductie tot 3D tiling, waarbij de
+voordelen en toepassingsgebieden worden belicht. Praktijkvoorbeelden illustreren
+de veelzijdigheid van 3D tiling in diverse domeinen, van GIS tot digitale
+tweelingen.</p>
+<p>Vervolgens worden de belangrijkste standaarden voor 3D tiling behandeld. De
+techniek van 3D tiling wordt gedetailleerd beschreven, waaronder formaten zoals
+het 3D Tiles-schema en tegelformaten.</p>
+<p>Best practices worden gedeeld voor zowel klanten (consumers), data-aanbieders
+(providers) als ontwikkelaars (developers), met aandacht voor optimalisatie van
+prestaties en gebruiksgemak. Hierbij worden enkele aspecten voor het genereren,
+serveren en gebruiken van 3D tiles uitgelicht.</p>
+<p>Ten slotte bevat de handreiking een uitgebreide toolkit met referenties naar
+handleidingen, clients, servers en 3D Tile datasets, waardoor lezers worden
+voorzien van de nodige bronnen om aan de slag te gaan met 3D tiling in hun
+projecten.</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</a></li><li class="tocline"><a class="tocxref" href="#meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#definities"><bdi class="secno">2.1 </bdi>Definities</a></li><li class="tocline"><a class="tocxref" href="#afbeeldingen"><bdi class="secno">2.2 </bdi>Afbeeldingen</a></li><li class="tocline"><a class="tocxref" href="#referenties"><bdi class="secno">2.3 </bdi>Referenties</a></li><li class="tocline"><a class="tocxref" href="#optioneel"><bdi class="secno">2.4 </bdi>Optioneel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mermaid-diagram"><bdi class="secno">3. </bdi>Mermaid diagram</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">4. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">5. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-is-3d-tiling"><bdi class="secno">1.1 </bdi>Wat is 3D Tiling?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">2. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
 
   
-  <section class="informative" id="niet-normatieve-deel"><div class="header-wrapper"><h2 id="x1-niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</h2><a class="self-link" href="#niet-normatieve-deel" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
+  <section id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
+<section id="wat-is-3d-tiling"><div class="header-wrapper"><h3 id="x1-1-wat-is-3d-tiling"><bdi class="secno">1.1 </bdi>Wat is 3D Tiling?</h3><a class="self-link" href="#wat-is-3d-tiling" aria-label="Permalink for Section 1.1"></a></div>
+<p>Simpel gezegd: 3D Tiling is een techniek waarbij tegels met drie-dimensionale
+data worden geserveerd van een server naar een client.</p>
+<p>In computer graphics en 3D visualisatie is 3D Tiling een techniek die wordt
+gebruikt om grote volumes ruimtelijke data efficiënt aan te bieden via het web.
+Net als bij 2D Vector Tiles, waarbij een tweedimensionaal oppervlak wordt
+verdeeld in kleinere tegels voor eenvoudigere verwerking, breidt 3D Tiling dit
+concept uit naar drie dimensies, waardoor het streamen van complexe 3D-datasets
+mogelijk wordt.</p>
+<p><strong>Waar is 3D Tiling voor te gebruiken?</strong></p>
+<p>The applications of 3D tiling span numerous domains, including geospatial
+mapping, urban planning, architecture, gaming, virtual reality, and simulation.
+For instance, in geospatial mapping, 3D tiling enables the visualization of
+detailed terrain models, buildings, and infrastructure in real-time or
+near-real-time environments. In gaming and virtual reality, it facilitates the
+rendering of immersive 3D environments with high levels of detail and
+interactivity.</p>
+<p><strong>Wat zijn de voor en nadelen van 3D Tiling?</strong></p>
+<p>**Advantages and Disadvantages of 3D Tiling:**</p>
+<p>*Advantages:*</p>
+<p>1. **Scalability:** 3D tiling allows for the efficient streaming and
+rendering of large and complex datasets by breaking them down into smaller,
+manageable tiles.</p>
+<p>2. **Performance:** By organizing data into tiles, 3D tiling reduces
+computational overhead, leading to improved rendering performance and
+responsiveness.</p>
+<p>3. **Interoperability:** Standards like 3D Tiles and the OGC 3D Tiles API
+promote interoperability among different software platforms, facilitating
+seamless integration and exchange of 3D geospatial data.</p>
+<p>4. **Adaptability:** 3D tiling techniques can be customized to suit various
+applications and environments, offering flexibility to developers and users in
+managing and visualizing spatial data.</p>
+<p>*Disadvantages:*</p>
+<p>1. **Complexity:** Implementing 3D tiling solutions may require expertise in
+spatial data management, rendering algorithms, and optimization techniques,
+adding complexity to development efforts.</p>
+<p>2. **Storage Overhead:** Storing pre-tiled datasets may incur additional
+storage overhead compared to raw data formats, especially for datasets with
+varying levels of detail.</p>
+<p>3. **Processing Overhead:** While 3D tiling improves rendering performance,
+there may be overhead associated with the tiling process itself, particularly
+for dynamically changing or streaming datasets.</p>
+<p>4. **Standardization Challenges:** Ensuring compatibility and compliance
+with 3D tiling standards across different software platforms and ecosystems can
+pose challenges, particularly in rapidly evolving fields such as augmented
+reality and virtual reality.</p>
+<p>In summary, 3D tiling offers significant advantages in managing and visualizing
+large-scale 3D spatial data, but it also presents challenges in terms of
+complexity, storage, processing, and standardization. By addressing these
+factors and leveraging standardized specifications like 3D Tiles and the OGC 3D
+Tiles API, developers can harness the power of 3D tiling to enhance the
+efficiency and effectiveness of various applications and workflows.</p>
 <p>Bijvoorbeeld een introductie is niet normatief.</p>
-<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: index</span></div><p class="">
-Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config.js</code>.
-</p></div></section>
-  <section id="meer-inhoud"><div class="header-wrapper"><h2 id="x2-meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</h2><a class="self-link" href="#meer-inhoud" aria-label="Permalink for Section 2."></a></div>
-<section id="definities"><div class="header-wrapper"><h3 id="x2-1-definities"><bdi class="secno">2.1 </bdi>Definities</h3><a class="self-link" href="#definities" aria-label="Permalink for Section 2.1"></a></div>
-<p><dfn id="dfn-definitie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Definitie</dfn>: Een definitie is een beschrijving van een woord. Een ander woord voor <em>definitie</em> is betekenis of beschrijving.</p>
-</section><section id="afbeeldingen"><div class="header-wrapper"><h3 id="x2-2-afbeeldingen"><bdi class="secno">2.2 </bdi>Afbeeldingen</h3><a class="self-link" href="#afbeeldingen" aria-label="Permalink for Section 2.2"></a></div>
-<p>Afbeeldingen krijgen een nummer en vermelding in de figurenlijst <a href="#tof" data-matched-text="[[[#tof]]]" class="sec-ref"><bdi class="secno">5. </bdi>Lijst met figuren</a>.</p>
-<p>
-      </p><figure id="fig-onderschrift">
-        <img src="media/Bomos_levenscyclus.svg" alt="Tekstueel alternatief voor toegankelijkheid">
-        <figcaption><a class="self-link" href="#fig-onderschrift">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">Onderschrift</span></figcaption>
-      </figure>
-    <p></p>
-</section><section id="referenties"><div class="header-wrapper"><h3 id="x2-3-referenties"><bdi class="secno">2.3 </bdi>Referenties</h3><a class="self-link" href="#referenties" aria-label="Permalink for Section 2.3"></a></div>
-<p>Referentie uit locale lijst [<cite><a class="bibref" data-link-type="biblio" href="#bib-semver" title="Semantic Versioning 2.0.0">SemVer</a></cite>]. Lijst staat in <code>organisation-config.js</code>. Alleen referenties die in de tekst voorkomen worden getoond.</p>
-<p>We gebruiken een <a href="#dfn-definitie" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-definitie-1">definitie</a> om een woord te omschrijven.</p>
-</section><section id="optioneel"><div class="header-wrapper"><h3 id="x2-4-optioneel"><bdi class="secno">2.4 </bdi>Optioneel</h3><a class="self-link" href="#optioneel" aria-label="Permalink for Section 2.4"></a></div>
-<p>De onderstaande secties (<em>Conformiteit</em> e.d.) zijn optioneel, zie <code>index.html</code>:</p>
-<pre><code aria-busy="false" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"abstract"</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"abstract.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sotd"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span><span class="hljs-comment">&lt;!-- Wordt automatisch gevuld --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"informative"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"ch01.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"ch02.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-comment">&lt;!-- Hieronder optionele secties. Worden automatisch gevuld --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'conformance'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'tof'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"index"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-</code></pre>
 </section></section>
-  <section id="mermaid-diagram"><div class="header-wrapper"><h2 id="x3-mermaid-diagram"><bdi class="secno">3. </bdi>Mermaid diagram</h2><a class="self-link" href="#mermaid-diagram" aria-label="Permalink for Section 3."></a></div>
-<figure id="Mermaidvoorbeeld">
+  <section>
 
-<pre><svg id="diagram-1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 128.234375px;" viewBox="0 0 128.234375 248"><style>
-#diagram-1 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#diagram-1 .error-icon{fill:#552222;}#diagram-1 .error-text{fill:#552222;stroke:#552222;}#diagram-1 .edge-thickness-normal{stroke-width:2px;}#diagram-1 .edge-thickness-thick{stroke-width:3.5px;}#diagram-1 .edge-pattern-solid{stroke-dasharray:0;}#diagram-1 .edge-pattern-dashed{stroke-dasharray:3;}#diagram-1 .edge-pattern-dotted{stroke-dasharray:2;}#diagram-1 .marker{fill:#333333;stroke:#333333;}#diagram-1 .marker.cross{stroke:#333333;}#diagram-1 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#diagram-1 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#diagram-1 .cluster-label text{fill:#333;}#diagram-1 .cluster-label span{color:#333;}#diagram-1 .label text,#diagram-1 span{fill:#333;color:#333;}#diagram-1 .node rect,#diagram-1 .node circle,#diagram-1 .node ellipse,#diagram-1 .node polygon,#diagram-1 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#diagram-1 .node .label{text-align:center;}#diagram-1 .node.clickable{cursor:pointer;}#diagram-1 .arrowheadPath{fill:#333333;}#diagram-1 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#diagram-1 .flowchart-link{stroke:#333333;fill:none;}#diagram-1 .edgeLabel{background-color:#e8e8e8;text-align:center;}#diagram-1 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#diagram-1 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#diagram-1 .cluster text{fill:#333;}#diagram-1 .cluster span{color:#333;}#diagram-1 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#diagram-1 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}
-</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M48.55859375,47.77154964846383L44.354817708333336,52.64295804038653C40.151041666666664,57.514366432309224,31.743489583333332,67.25718321615462,27.539713541666668,76.29525827474397C23.3359375,85.33333333333333,23.3359375,93.66666666666667,23.3359375,97.83333333333333L23.3359375,102" marker-end="url(#arrowhead31)" style="fill:none"></path><defs><marker id="arrowhead31" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-C" id="L-A-C" style="opacity: 1;"><path class="path" d="M79.23046875,47.77154964846383L83.43424479166667,52.64295804038653C87.63802083333333,57.514366432309224,96.04557291666667,67.25718321615462,100.24934895833333,76.29525827474397C104.453125,85.33333333333333,104.453125,93.66666666666667,104.453125,97.83333333333333L104.453125,102" marker-end="url(#arrowhead32)" style="fill:none"></path><defs><marker id="arrowhead32" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" id="L-B-D" style="opacity: 1;"><path class="path" d="M23.3359375,146L23.3359375,150.16666666666666C23.3359375,154.33333333333334,23.3359375,162.66666666666666,27.465494791666668,171.6187357539568C31.595052083333332,180.57080484124694,39.854166666666664,190.14160968249382,43.983723958333336,194.92701210311728L48.11328125,199.71241452374073" marker-end="url(#arrowhead33)" style="fill:none"></path><defs><marker id="arrowhead33" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-D" id="L-C-D" style="opacity: 1;"><path class="path" d="M104.453125,146L104.453125,150.16666666666666C104.453125,154.33333333333334,104.453125,162.66666666666666,100.32356770833333,171.6187357539568C96.19401041666667,180.57080484124694,87.93489583333333,190.14160968249382,83.80533854166667,194.92701210311728L79.67578125,199.71241452374073" marker-end="url(#arrowhead34)" style="fill:none"></path><defs><marker id="arrowhead34" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-D" class="edgeLabel L-LS-C' L-LE-D"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-24" transform="translate(63.89453125,30)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">A</div></foreignObject></g></g></g><g class="node default" id="flowchart-B-25" transform="translate(23.3359375,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">B</div></foreignObject></g></g></g><g class="node default" id="flowchart-C-27" transform="translate(104.453125,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">C</div></foreignObject></g></g></g><g class="node default" id="flowchart-D-29" transform="translate(63.89453125,218)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">D</div></foreignObject></g></g></g></g></g></g></svg></pre>
-<figcaption><a class="self-link" href="#Mermaidvoorbeeld">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Mermaid voorbeeld</span></figcaption>
-</figure></section>
 
-  <section id="conformance"><div class="header-wrapper"><h2 id="x4-conformiteit"><bdi class="secno">4. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 4."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
-  <section id="tof"><div class="header-wrapper"><h2 id="x5-lijst-met-figuren"><bdi class="secno">5. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 5."></a></div><ul class="tof">
-        <li class="tofline">
-    <a class="tocxref" href="#fig-onderschrift"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Onderschrift</span></a>
-  </li><li class="tofline">
-    <a class="tocxref" href="#Mermaidvoorbeeld"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">Mermaid voorbeeld</span></a>
-  </li>
-      </ul></section>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 15">
+<meta name="Originator" content="Microsoft Word 15">
+<link rel="File-List" href="praktijkvoorbeelden_bestanden/filelist.xml">
+
+<link rel="themeData" href="praktijkvoorbeelden_bestanden/themedata.thmx">
+<link rel="colorSchemeMapping" href="praktijkvoorbeelden_bestanden/colorschememapping.xml">
+
+<style>
+
+<!--
+ /* Font Definitions */
+ @font-face
+    {font-family:"Cambria Math";
+    panose-1:2 4 5 3 5 4 6 3 2 4;
+    mso-font-charset:0;
+    mso-generic-font-family:roman;
+    mso-font-pitch:variable;
+    mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+    {font-family:Calibri;
+    panose-1:2 15 5 2 2 2 4 3 2 4;
+    mso-font-charset:0;
+    mso-generic-font-family:swiss;
+    mso-font-pitch:variable;
+    mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+    {font-family:"Aptos Display";
+    mso-font-charset:0;
+    mso-generic-font-family:swiss;
+    mso-font-pitch:variable;
+    mso-font-signature:536871559 3 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {mso-style-unhide:no;
+    mso-style-qformat:yes;
+    mso-style-parent:"";
+    margin:0cm;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:"Times New Roman",serif;
+    mso-fareast-font-family:"Times New Roman";}
+h1
+    {mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-qformat:yes;
+    mso-style-link:"Kop 1 Char";
+    mso-style-next:Standaard;
+    margin-top:12.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;
+    mso-outline-level:1;
+    font-size:16.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;
+    mso-font-kerning:0pt;
+    font-weight:normal;}
+h2
+    {mso-style-priority:9;
+    mso-style-qformat:yes;
+    mso-style-link:"Kop 2 Char";
+    mso-style-next:Standaard;
+    margin-top:2.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;
+    mso-outline-level:2;
+    font-size:13.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;
+    font-weight:normal;}
+h3
+    {mso-style-noshow:yes;
+    mso-style-priority:9;
+    mso-style-qformat:yes;
+    mso-style-link:"Kop 3 Char";
+    mso-style-next:Standaard;
+    margin-top:2.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;
+    mso-outline-level:3;
+    font-size:12.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0A2F40;
+    mso-themecolor:accent1;
+    mso-themeshade:127;
+    font-weight:normal;}
+span.MsoPlaceholderText
+    {mso-style-noshow:yes;
+    mso-style-priority:99;
+    mso-style-unhide:no;
+    color:#666666;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+    {mso-style-priority:34;
+    mso-style-unhide:no;
+    mso-style-qformat:yes;
+    margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:36.0pt;
+    mso-pagination:widow-orphan;
+    font-size:11.0pt;
+    font-family:"Calibri",sans-serif;
+    mso-fareast-font-family:Aptos;
+    mso-fareast-theme-font:minor-latin;
+    mso-fareast-language:EN-US;}
+span.Kop1Char
+    {mso-style-name:"Kop 1 Char";
+    mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-locked:yes;
+    mso-style-link:"Kop 1";
+    mso-ansi-font-size:16.0pt;
+    mso-bidi-font-size:16.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;}
+span.Kop2Char
+    {mso-style-name:"Kop 2 Char";
+    mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-locked:yes;
+    mso-style-link:"Kop 2";
+    mso-ansi-font-size:13.0pt;
+    mso-bidi-font-size:13.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;}
+span.Kop3Char
+    {mso-style-name:"Kop 3 Char";
+    mso-style-noshow:yes;
+    mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-locked:yes;
+    mso-style-link:"Kop 3";
+    mso-ansi-font-size:12.0pt;
+    mso-bidi-font-size:12.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0A2F40;
+    mso-themecolor:accent1;
+    mso-themeshade:127;}
+p.msonormal0, li.msonormal0, div.msonormal0
+    {mso-style-name:msonormal;
+    mso-style-unhide:no;
+    mso-margin-top-alt:auto;
+    margin-right:0cm;
+    mso-margin-bottom-alt:auto;
+    margin-left:0cm;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:"Times New Roman",serif;
+    mso-fareast-font-family:"Times New Roman";}
+.MsoChpDefault
+    {mso-style-type:export-only;
+    mso-default-props:yes;
+    font-size:10.0pt;
+    mso-ansi-font-size:10.0pt;
+    mso-bidi-font-size:10.0pt;
+    mso-font-kerning:0pt;
+    mso-ligatures:none;}
+@page WordSection1
+    {size:595.3pt 841.9pt;
+    margin:70.85pt 70.85pt 70.85pt 70.85pt;
+    mso-header-margin:35.4pt;
+    mso-footer-margin:35.4pt;
+    mso-paper-source:0;}
+div.WordSection1
+    {page:WordSection1;}
+-->
+
+</style>
+
+
+
+
+
+<div class="WordSection1">
+
+<div class="header-wrapper"><h2 id="praktijkvoorbeelden">Praktijkvoorbeelden</h2><a class="self-link" href="#praktijkvoorbeelden" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Dit hoofdstuk beschrijft een aantal praktijkvoorbeelden van
+de toepassing van 3D Tiles in verschillende projecten en use cases.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div class="header-wrapper"><h2 id="placeholder-project-1">Placeholder project 1</h2><a class="self-link" href="#placeholder-project-1" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Lorem ipsum dolor sit amet.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div class="header-wrapper"><h2 id="placeholder-project-2">Placeholder project 2</h2><a class="self-link" href="#placeholder-project-2" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Lorem ipsum dolor sit amet.<o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+</div>
+
+
+
+<p>```</p>
+</section>
+  <section>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 15">
+<meta name="Originator" content="Microsoft Word 15">
+<link rel="File-List" href="standaarden_bestanden/filelist.xml">
+
+<link rel="themeData" href="standaarden_bestanden/themedata.thmx">
+<link rel="colorSchemeMapping" href="standaarden_bestanden/colorschememapping.xml">
+
+<style>
+
+<!--
+ /* Font Definitions */
+ @font-face
+    {font-family:"Cambria Math";
+    panose-1:2 4 5 3 5 4 6 3 2 4;
+    mso-font-charset:0;
+    mso-generic-font-family:roman;
+    mso-font-pitch:variable;
+    mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+    {font-family:"Aptos Display";
+    mso-font-charset:0;
+    mso-generic-font-family:swiss;
+    mso-font-pitch:variable;
+    mso-font-signature:536871559 3 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {mso-style-unhide:no;
+    mso-style-qformat:yes;
+    mso-style-parent:"";
+    margin:0cm;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:"Times New Roman",serif;
+    mso-fareast-font-family:"Times New Roman";}
+h1
+    {mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-qformat:yes;
+    mso-style-link:"Kop 1 Char";
+    mso-style-next:Standaard;
+    margin-top:12.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;
+    mso-outline-level:1;
+    font-size:16.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;
+    mso-font-kerning:0pt;
+    font-weight:normal;}
+h2
+    {mso-style-noshow:yes;
+    mso-style-priority:9;
+    mso-style-qformat:yes;
+    mso-style-link:"Kop 2 Char";
+    mso-style-next:Standaard;
+    margin-top:2.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;
+    mso-outline-level:2;
+    font-size:13.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;
+    font-weight:normal;}
+h3
+    {mso-style-noshow:yes;
+    mso-style-priority:9;
+    mso-style-qformat:yes;
+    mso-style-link:"Kop 3 Char";
+    mso-style-next:Standaard;
+    margin-top:2.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;
+    mso-outline-level:3;
+    font-size:12.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0A2F40;
+    mso-themecolor:accent1;
+    mso-themeshade:127;
+    font-weight:normal;}
+a:link, span.MsoHyperlink
+    {mso-style-noshow:yes;
+    mso-style-priority:99;
+    color:#467886;
+    mso-themecolor:hyperlink;
+    text-decoration:underline;
+    text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+    {mso-style-noshow:yes;
+    mso-style-priority:99;
+    color:#96607D;
+    mso-themecolor:followedhyperlink;
+    text-decoration:underline;
+    text-underline:single;}
+span.MsoPlaceholderText
+    {mso-style-noshow:yes;
+    mso-style-priority:99;
+    mso-style-unhide:no;
+    color:#666666;}
+span.Kop1Char
+    {mso-style-name:"Kop 1 Char";
+    mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-locked:yes;
+    mso-style-link:"Kop 1";
+    mso-ansi-font-size:16.0pt;
+    mso-bidi-font-size:16.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;}
+span.Kop2Char
+    {mso-style-name:"Kop 2 Char";
+    mso-style-noshow:yes;
+    mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-locked:yes;
+    mso-style-link:"Kop 2";
+    mso-ansi-font-size:13.0pt;
+    mso-bidi-font-size:13.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;}
+span.Kop3Char
+    {mso-style-name:"Kop 3 Char";
+    mso-style-noshow:yes;
+    mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-locked:yes;
+    mso-style-link:"Kop 3";
+    mso-ansi-font-size:12.0pt;
+    mso-bidi-font-size:12.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0A2F40;
+    mso-themecolor:accent1;
+    mso-themeshade:127;}
+p.msonormal0, li.msonormal0, div.msonormal0
+    {mso-style-name:msonormal;
+    mso-style-unhide:no;
+    mso-margin-top-alt:auto;
+    margin-right:0cm;
+    mso-margin-bottom-alt:auto;
+    margin-left:0cm;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:"Times New Roman",serif;
+    mso-fareast-font-family:"Times New Roman";}
+.MsoChpDefault
+    {mso-style-type:export-only;
+    mso-default-props:yes;
+    font-size:10.0pt;
+    mso-ansi-font-size:10.0pt;
+    mso-bidi-font-size:10.0pt;
+    mso-font-kerning:0pt;
+    mso-ligatures:none;}
+ /* Page Definitions */
+ @page
+    {mso-footnote-separator:url("standaarden_bestanden/header.htm") fs;
+    mso-footnote-continuation-separator:url("standaarden_bestanden/header.htm") fcs;
+    mso-endnote-separator:url("standaarden_bestanden/header.htm") es;
+    mso-endnote-continuation-separator:url("standaarden_bestanden/header.htm") ecs;}
+@page WordSection1
+    {size:595.3pt 841.9pt;
+    margin:70.85pt 70.85pt 70.85pt 70.85pt;
+    mso-header-margin:35.4pt;
+    mso-footer-margin:35.4pt;
+    mso-paper-source:0;}
+div.WordSection1
+    {page:WordSection1;}
+-->
+
+</style>
+
+
+
+
+
+<div class="WordSection1">
+
+<div class="header-wrapper"><h2 id="standaarden">Standaarden</h2><a class="self-link" href="#standaarden" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Dit hoofdstuk gaat in op enkele standaarden en techniek voor
+3D Tiling.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Voor het serveren van 3D Tiles zijn er in het algemeen twee
+standaarden.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div class="header-wrapper"><h3 id="ogc-3d-tiles-specification">OGC 3D Tiles specification</h3><a class="self-link" href="#ogc-3d-tiles-specification" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal">https://docs.ogc.org/cs/22-025r4/22-025r4.html</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">3D Tiles is een standaard voor het efficiënt streamen
+en renderen van grote driedimensionale georuimtelijke datasets, zoals
+fotogrammetrie, BIM/CAD-modellen en puntenwolken. Het definieert een
+gegevensstructuur en tegelformaten voor renderbare inhoud zonder strikte
+visualisatieregels. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">3D Tiles wordt beheerd door het Open Geospatial Consortium
+(OGC). De standaard komt </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Een 3D Tiles-dataset (<i>tileset</i>) bevat diverse
+tegelformaten georganiseerd in een ruimtelijke structuur. Het is declaratief,
+uitbreidbaar en geschikt voor verschillende soorten 3D-gegevens. De
+tegelformaten omvatten batched 3D-modellen, geïnstantieerde 3D-modellen,
+puntenwolken en samengestelde tegels. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">De specificatie omvat ook 3D Tile Styles voor declaratieve
+styling van tegelsets. Het is een open formaat dat niet gebonden is aan
+specifieke leveranciers of technologieën.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div class="header-wrapper"><h3 id="i3s">i3S</h3><a class="self-link" href="#i3s" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal">I3S staat voor Indexed 3D Scene Layer en is een open
+standaard die is ontwikkeld door Esri voor het efficiënt opslaan, delen en
+weergeven van grote en complexe driedimensionale georuimtelijke gegevens. Het
+is vergelijkbaar met 3D Tiles van het Open Geospatial Consortium (OGC) en wordt
+vaak gebruikt binnen de GIS-gemeenschap.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">I3S is geoptimaliseerd voor het werken met gegevens in de
+context van web-gebaseerde toepassingen, waardoor het mogelijk is om grote
+3D-scènes in real-time te streamen en te visualiseren in webbrowsers of
+andere applicaties. Het maakt gebruik van een combinatie van ruimtelijke
+indexering, tiling en compressie om de prestaties te optimaliseren en de
+benodigde bandbreedte te minimaliseren bij het overbrengen van 3D-gegevens over
+het web.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">De I3S-specificatie omvat verschillende componenten, zoals
+de Scene Layer, de Scene Layer Package en de Scene Layer Service, die
+samenwerken om 3D-gegevens efficiënt te organiseren en weer te geven. Het
+wordt vaak gebruikt in combinatie met Esri's ArcGIS-platform, maar is een open
+standaard die door andere softwareleveranciers kan worden geïmplementeerd
+en gebruikt</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+</div>
+
+
+
+<p>```</p>
+</section>
+  <section>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 15">
+<meta name="Originator" content="Microsoft Word 15">
+<link rel="File-List" href="techniek_bestanden/filelist.xml">
+
+<link rel="themeData" href="techniek_bestanden/themedata.thmx">
+<link rel="colorSchemeMapping" href="techniek_bestanden/colorschememapping.xml">
+
+<style>
+
+<!--
+ /* Font Definitions */
+ @font-face
+    {font-family:"Cambria Math";
+    panose-1:2 4 5 3 5 4 6 3 2 4;
+    mso-font-charset:0;
+    mso-generic-font-family:roman;
+    mso-font-pitch:variable;
+    mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+    {font-family:"Aptos Display";
+    mso-font-charset:0;
+    mso-generic-font-family:swiss;
+    mso-font-pitch:variable;
+    mso-font-signature:536871559 3 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {mso-style-unhide:no;
+    mso-style-qformat:yes;
+    mso-style-parent:"";
+    margin:0cm;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:"Times New Roman",serif;
+    mso-fareast-font-family:"Times New Roman";}
+h1
+    {mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-qformat:yes;
+    mso-style-link:"Kop 1 Char";
+    mso-style-next:Standaard;
+    margin-top:12.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;
+    mso-outline-level:1;
+    font-size:16.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;
+    mso-font-kerning:0pt;
+    font-weight:normal;}
+h2
+    {mso-style-priority:9;
+    mso-style-qformat:yes;
+    mso-style-link:"Kop 2 Char";
+    mso-style-next:Standaard;
+    margin-top:2.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;
+    mso-outline-level:2;
+    font-size:13.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;
+    font-weight:normal;}
+h3
+    {mso-style-noshow:yes;
+    mso-style-priority:9;
+    mso-style-qformat:yes;
+    mso-style-link:"Kop 3 Char";
+    mso-style-next:Standaard;
+    margin-top:2.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;
+    mso-outline-level:3;
+    font-size:12.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0A2F40;
+    mso-themecolor:accent1;
+    mso-themeshade:127;
+    font-weight:normal;}
+a:link, span.MsoHyperlink
+    {mso-style-noshow:yes;
+    mso-style-priority:99;
+    color:#467886;
+    mso-themecolor:hyperlink;
+    text-decoration:underline;
+    text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+    {mso-style-noshow:yes;
+    mso-style-priority:99;
+    color:#96607D;
+    mso-themecolor:followedhyperlink;
+    text-decoration:underline;
+    text-underline:single;}
+span.Kop1Char
+    {mso-style-name:"Kop 1 Char";
+    mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-locked:yes;
+    mso-style-link:"Kop 1";
+    mso-ansi-font-size:16.0pt;
+    mso-bidi-font-size:16.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;}
+span.Kop2Char
+    {mso-style-name:"Kop 2 Char";
+    mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-locked:yes;
+    mso-style-link:"Kop 2";
+    mso-ansi-font-size:13.0pt;
+    mso-bidi-font-size:13.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;}
+span.Kop3Char
+    {mso-style-name:"Kop 3 Char";
+    mso-style-noshow:yes;
+    mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-locked:yes;
+    mso-style-link:"Kop 3";
+    mso-ansi-font-size:12.0pt;
+    mso-bidi-font-size:12.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0A2F40;
+    mso-themecolor:accent1;
+    mso-themeshade:127;}
+p.msonormal0, li.msonormal0, div.msonormal0
+    {mso-style-name:msonormal;
+    mso-style-unhide:no;
+    mso-margin-top-alt:auto;
+    margin-right:0cm;
+    mso-margin-bottom-alt:auto;
+    margin-left:0cm;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:"Times New Roman",serif;
+    mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+    {mso-style-name:"";
+    mso-spl-e:yes;}
+.MsoChpDefault
+    {mso-style-type:export-only;
+    mso-default-props:yes;
+    font-size:10.0pt;
+    mso-ansi-font-size:10.0pt;
+    mso-bidi-font-size:10.0pt;
+    mso-font-kerning:0pt;
+    mso-ligatures:none;}
+@page WordSection1
+    {size:595.3pt 841.9pt;
+    margin:70.85pt 70.85pt 70.85pt 70.85pt;
+    mso-header-margin:35.4pt;
+    mso-footer-margin:35.4pt;
+    mso-paper-source:0;}
+div.WordSection1
+    {page:WordSection1;}
+-->
+
+</style>
+
+
+
+
+
+<div class="WordSection1">
+
+<div class="header-wrapper"><h2 id="techniek">Techniek</h2><a class="self-link" href="#techniek" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">Dit hoofdstuk gaat dieper in op de
+techniek van OGC 3D <span class="SpellE">Tiles</span>.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<div class="header-wrapper"><h2 id="algemeen">Algemeen<o:p></o:p></h2><a class="self-link" href="#algemeen" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">In 3D <span class="SpellE">Tiles</span>
+verwijst een <span class="SpellE">tegelset</span> naar een verzameling tegels
+georganiseerd binnen een ruimtelijke gegevensstructuur, vertegenwoordigd door
+een boom. Elke <span class="SpellE">tegelset</span> wordt beschreven door
+minstens één JSON-bestand met metadata en een hiërarchie van
+tegelobjecten, waarvan elke tegel <span class="SpellE">renderbare</span> inhoud
+kan bevatten.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<div class="header-wrapper"><h2 id="tegelformaten">Tegelformaten<o:p></o:p></h2><a class="self-link" href="#tegelformaten" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">Het primaire tegelformaat voor 3D <span class="SpellE">Tiles</span> is <span class="SpellE">glTF</span> 2.0, een open
+specificatie ontworpen voor efficiënte transmissie en laden van 3D-inhoud.
+Dit formaat omvat geometrie, textuurinformatie en kan worden uitgebreid met
+metadata, model-<span class="SpellE">instanciëring</span> en compressie. Het
+ondersteunt verschillende soorten 3D-inhoud zoals 3D-modellen en puntenwolken.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">Voorbeeld GLTF<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">Naast <span class="SpellE">glTF</span>
+ondersteunt 3D <span class="SpellE">Tiles</span> ook de volgende tegelformaten:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">1. <span class="SpellE">Batched</span> 3D
+Model (b3dm): Dit formaat wordt gebruikt voor heterogene 3D-modellen.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">2. <span class="SpellE">Instanced</span> 3D
+Model (i3dm): Gebruikt voor het <span class="SpellE">instanceren</span> van
+3D-modellen, zoals bomen, windmolens, en bouten.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">3. Point Cloud (<span class="SpellE">pnts</span>):
+Voor het weergeven van grote aantallen punten in een puntenwolk.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">4. <span class="SpellE">Composite</span> (<span class="SpellE">cmpt</span>): Hiermee kunnen tegels van verschillende formaten
+worden samengevoegd tot één tegel.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">Deze formaten bieden flexibiliteit voor
+het opslaan en renderen van diverse soorten 3D-inhoud binnen de 3D <span class="SpellE">Tiles</span>-specificatie.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<div class="header-wrapper"><h2 id="mediatypes-en-encoding">Mediatypes en <span class="SpellE">encoding</span><o:p></o:p></h2><a class="self-link" href="#mediatypes-en-encoding" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">Het bestandsformaat voor 3D <span class="SpellE">Tiles</span> bestaat uit:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">- Voor <span class="SpellE">tegelsetbestanden</span>:
+.<span class="SpellE">json</span>-extensie met het Media Type "<span class="SpellE">application</span>/<span class="SpellE">json</span>".<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">Voorbeeld JSON<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">- Voor <span class="SpellE">tegelinhoudsbestanden</span>:
+de specifieke extensies en Media Type volgens de specificatie van het
+tegelformaat.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">Voorbeeld van een GLTF en B3DM?<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">- Voor metagegevensschema-bestanden: .<span class="SpellE">json</span>-extensie met het Media Type "<span class="SpellE">application</span>/<span class="SpellE">json</span>".<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">- Voor <span class="SpellE">tegelsetstijlbestanden</span>:
+.<span class="SpellE">json</span>-extensie met het Media Type "<span class="SpellE">application</span>/<span class="SpellE">json</span>".<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">- Voor JSON-<span class="SpellE">subtree</span>-bestanden:
+.<span class="SpellE">json</span>-extensie met het Media Type "<span class="SpellE">application</span>/<span class="SpellE">json</span>".<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">- Voor binaire <span class="SpellE">subtree</span>-bestanden:
+.<span class="SpellE">subtree</span>-extensie met het Media Type "<span class="SpellE">application</span>/octet-stream".<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">- Voor binaire bufferbestanden:
+.bin-extensie met het Media Type "<span class="SpellE">application</span>/octet-stream".<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">Wat betreft de <span class="SpellE">encoding</span>:<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">- JSON-bestanden gebruiken UTF-8-encoding
+zonder BOM.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">- Alle tekstuele strings in JSON
+gebruiken alleen het ASCII-tekenreeks-<span class="SpellE">charset</span>, zonder
+JSON-escapen.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">- Niet-ASCII-tekens die als
+eigenschapswaarden in JSON verschijnen, kunnen worden <span class="SpellE">geëscapet</span>.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">- Namen (sleutels) binnen JSON-objecten
+moeten uniek zijn, dus duplicaat-sleutels zijn niet toegestaan.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-fareast-theme-font:major-fareast">- Sommige eigenschappen zijn gedefinieerd
+als integers in het schema. Dergelijke waarden kunnen worden opgeslagen als
+decimalen met een nul fractiegedeelte of met exponentnotatie, zoals
+gedefinieerd in RFC 8259, Sectie 6.</span></p>
+
+</div>
+
+
+
+<p>```</p>
+</section>
+  <section>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 15">
+<meta name="Originator" content="Microsoft Word 15">
+<link rel="File-List" href="bestpractices_bestanden/filelist.xml">
+
+<link rel="themeData" href="bestpractices_bestanden/themedata.thmx">
+<link rel="colorSchemeMapping" href="bestpractices_bestanden/colorschememapping.xml">
+
+<style>
+
+<!--
+ /* Font Definitions */
+ @font-face
+    {font-family:Wingdings;
+    panose-1:5 0 0 0 0 0 0 0 0 0;
+    mso-font-charset:2;
+    mso-generic-font-family:auto;
+    mso-font-pitch:variable;
+    mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+    {font-family:"Cambria Math";
+    panose-1:2 4 5 3 5 4 6 3 2 4;
+    mso-font-charset:0;
+    mso-generic-font-family:roman;
+    mso-font-pitch:variable;
+    mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+    {font-family:Calibri;
+    panose-1:2 15 5 2 2 2 4 3 2 4;
+    mso-font-charset:0;
+    mso-generic-font-family:swiss;
+    mso-font-pitch:variable;
+    mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+    {font-family:"Aptos Display";
+    mso-font-charset:0;
+    mso-generic-font-family:swiss;
+    mso-font-pitch:variable;
+    mso-font-signature:536871559 3 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {mso-style-unhide:no;
+    mso-style-qformat:yes;
+    mso-style-parent:"";
+    margin:0cm;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:"Times New Roman",serif;
+    mso-fareast-font-family:"Times New Roman";}
+h1
+    {mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-qformat:yes;
+    mso-style-link:"Kop 1 Char";
+    mso-style-next:Standaard;
+    margin-top:12.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;
+    mso-outline-level:1;
+    font-size:16.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;
+    mso-font-kerning:0pt;
+    font-weight:normal;}
+h2
+    {mso-style-priority:9;
+    mso-style-qformat:yes;
+    mso-style-link:"Kop 2 Char";
+    mso-style-next:Standaard;
+    margin-top:2.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;
+    mso-outline-level:2;
+    font-size:13.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;
+    font-weight:normal;}
+h3
+    {mso-style-noshow:yes;
+    mso-style-priority:9;
+    mso-style-qformat:yes;
+    mso-style-link:"Kop 3 Char";
+    mso-style-next:Standaard;
+    margin-top:2.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;
+    mso-outline-level:3;
+    font-size:12.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0A2F40;
+    mso-themecolor:accent1;
+    mso-themeshade:127;
+    font-weight:normal;}
+span.MsoPlaceholderText
+    {mso-style-noshow:yes;
+    mso-style-priority:99;
+    mso-style-unhide:no;
+    color:#666666;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+    {mso-style-priority:34;
+    mso-style-unhide:no;
+    mso-style-qformat:yes;
+    margin-top:0cm;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:36.0pt;
+    mso-pagination:widow-orphan;
+    font-size:11.0pt;
+    font-family:"Calibri",sans-serif;
+    mso-fareast-font-family:Aptos;
+    mso-fareast-theme-font:minor-latin;
+    mso-fareast-language:EN-US;}
+span.Kop1Char
+    {mso-style-name:"Kop 1 Char";
+    mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-locked:yes;
+    mso-style-link:"Kop 1";
+    mso-ansi-font-size:16.0pt;
+    mso-bidi-font-size:16.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;}
+span.Kop2Char
+    {mso-style-name:"Kop 2 Char";
+    mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-locked:yes;
+    mso-style-link:"Kop 2";
+    mso-ansi-font-size:13.0pt;
+    mso-bidi-font-size:13.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;}
+span.Kop3Char
+    {mso-style-name:"Kop 3 Char";
+    mso-style-noshow:yes;
+    mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-locked:yes;
+    mso-style-link:"Kop 3";
+    mso-ansi-font-size:12.0pt;
+    mso-bidi-font-size:12.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0A2F40;
+    mso-themecolor:accent1;
+    mso-themeshade:127;}
+p.msonormal0, li.msonormal0, div.msonormal0
+    {mso-style-name:msonormal;
+    mso-style-unhide:no;
+    mso-margin-top-alt:auto;
+    margin-right:0cm;
+    mso-margin-bottom-alt:auto;
+    margin-left:0cm;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:"Times New Roman",serif;
+    mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+    {mso-style-name:"";
+    mso-spl-e:yes;}
+.MsoChpDefault
+    {mso-style-type:export-only;
+    mso-default-props:yes;
+    font-size:10.0pt;
+    mso-ansi-font-size:10.0pt;
+    mso-bidi-font-size:10.0pt;
+    mso-font-kerning:0pt;
+    mso-ligatures:none;}
+ /* Page Definitions */
+ @page
+    {mso-footnote-separator:url("bestpractices_bestanden/header.htm") fs;
+    mso-footnote-continuation-separator:url("bestpractices_bestanden/header.htm") fcs;
+    mso-endnote-separator:url("bestpractices_bestanden/header.htm") es;
+    mso-endnote-continuation-separator:url("bestpractices_bestanden/header.htm") ecs;}
+@page WordSection1
+    {size:595.3pt 841.9pt;
+    margin:70.85pt 70.85pt 70.85pt 70.85pt;
+    mso-header-margin:35.4pt;
+    mso-footer-margin:35.4pt;
+    mso-paper-source:0;}
+div.WordSection1
+    {page:WordSection1;}
+ /* List Definitions */
+ @list l0
+    {mso-list-id:1847163922;
+    mso-list-type:hybrid;
+    mso-list-template-ids:-522002550 -781792828 68354051 68354053 68354049 68354051 68354053 68354049 68354051 68354053;}
+@list l0:level1
+    {mso-level-start-at:0;
+    mso-level-number-format:bullet;
+    mso-level-text:-;
+    mso-level-tab-stop:none;
+    mso-level-number-position:left;
+    text-indent:-18.0pt;
+    font-family:"Calibri",sans-serif;
+    mso-fareast-font-family:Calibri;}
+@list l0:level2
+    {mso-level-number-format:bullet;
+    mso-level-text:o;
+    mso-level-tab-stop:none;
+    mso-level-number-position:left;
+    text-indent:-18.0pt;
+    font-family:"Courier New";}
+@list l0:level3
+    {mso-level-number-format:bullet;
+    mso-level-text:\F0A7;
+    mso-level-tab-stop:none;
+    mso-level-number-position:left;
+    text-indent:-18.0pt;
+    font-family:Wingdings;}
+@list l0:level4
+    {mso-level-number-format:bullet;
+    mso-level-text:\F0B7;
+    mso-level-tab-stop:none;
+    mso-level-number-position:left;
+    text-indent:-18.0pt;
+    font-family:Symbol;}
+@list l0:level5
+    {mso-level-number-format:bullet;
+    mso-level-text:o;
+    mso-level-tab-stop:none;
+    mso-level-number-position:left;
+    text-indent:-18.0pt;
+    font-family:"Courier New";}
+@list l0:level6
+    {mso-level-number-format:bullet;
+    mso-level-text:\F0A7;
+    mso-level-tab-stop:none;
+    mso-level-number-position:left;
+    text-indent:-18.0pt;
+    font-family:Wingdings;}
+@list l0:level7
+    {mso-level-number-format:bullet;
+    mso-level-text:\F0B7;
+    mso-level-tab-stop:none;
+    mso-level-number-position:left;
+    text-indent:-18.0pt;
+    font-family:Symbol;}
+@list l0:level8
+    {mso-level-number-format:bullet;
+    mso-level-text:o;
+    mso-level-tab-stop:none;
+    mso-level-number-position:left;
+    text-indent:-18.0pt;
+    font-family:"Courier New";}
+@list l0:level9
+    {mso-level-number-format:bullet;
+    mso-level-text:\F0A7;
+    mso-level-tab-stop:none;
+    mso-level-number-position:left;
+    text-indent:-18.0pt;
+    font-family:Wingdings;}
+ol
+    {margin-bottom:0cm;}
+ul
+    {margin-bottom:0cm;}
+-->
+
+</style>
+
+
+
+
+
+<div class="WordSection1">
+
+<div class="header-wrapper"><h2 id="best-practices">Best <span class="SpellE">practices</span></h2><a class="self-link" href="#best-practices" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Dit hoofdstuk beschrijft een aantal best <span class="SpellE">practices</span>
+voor het serveren en gebruiken van 3D <span class="SpellE">tiles</span>.</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div class="header-wrapper"><h2 id="implicit-versus-explicit-tiling"><span class="SpellE">Implicit</span> versus explicit <span class="SpellE">tiling</span></h2><a class="self-link" href="#implicit-versus-explicit-tiling" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><b>Wat is <span class="SpellE">implicit</span> en explicit <span class="SpellE">tiling</span>?<o:p></o:p></b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><b>Hoe hier mee om te gaan bij het genereren/serveren van 3D
+<span class="SpellE">Tiles</span>?<o:p></o:p></b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><b>Hoe hier mee om te gaan bij het gebruiken van 3D <span class="SpellE">Tiles</span>?<o:p></o:p></b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div class="header-wrapper"><h2 id="performance">Performance<o:p></o:p></h2><a class="self-link" href="#performance" aria-label="Permalink for this Section"></a></div>
+
+<div class="header-wrapper"><h2 id="generatedID"><o:p>&nbsp;</o:p></h2><a class="self-link" href="#generatedID" aria-label="Permalink for this Section"></a></div>
+
+<div class="header-wrapper"><h2 id="coordinaat-referentie-systeem-crs"><span class="SpellE">Coordinaat</span> Referentie Systeem (CRS)</h2><a class="self-link" href="#coordinaat-referentie-systeem-crs" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><b>Wat is een CRS?<o:p></o:p></b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div class="header-wrapper"><h2 id="geometric-error"><span class="SpellE">Geometric</span> error<o:p></o:p></h2><a class="self-link" href="#geometric-error" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><b>Wat is <span class="SpellE">geometric</span> error?<o:p></o:p></b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">De ‘<span class="SpellE">geometric</span> error’ (geometrische
+fout) van een tegel vertelt ons hoe goed de tegel de vorm van het originele
+object weergeeft. Het is een nummer dat aangeeft hoeveel de vereenvoudigde
+versie van de tegel afwijkt van de echte vorm, gemeten in meters. <o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Voor 3D <span class="SpellE">Tiles</span> wordt de
+geometrische fout van een tegel gebruikt om te bepalen hoe gedetailleerd die
+tegel moet worden weergegeven. Dit wordt gedaan door de tegels te organiseren
+in een hiërarchische boomstructuur, waarbij elk niveau van de boom een
+verschillend niveau van detail vertegenwoordigt.<o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Wanneer een gebruiker bijvoorbeeld een 3D scène
+bekijkt op een computer of mobiel apparaat, zal de client-implementatie de
+geometrische fout van elke tegel evalueren. Als de geometrische fout van een
+tegel binnen een aanvaardbaar bereik valt, wordt die tegel getoond aan de
+gebruiker. Als de fout te groot is, wat betekent dat de tegel niet
+gedetailleerd genoeg is, zal de client-implementatie ervoor kiezen om die tegel
+te verfijnen door kindertegels van hogere resolutie te laden en te tonen.<o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">De grootte van deze fout hangt af van hoe belangrijk het is
+om de details van het object nauwkeurig weer te geven. Een hogere fout betekent
+dat het programma eerder beslist om de tegel te verfijnen en de details weer te
+geven.<o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><b>Hoe hier mee om te gaan bij het genereren/serveren van 3D
+<span class="SpellE">Tiles</span>?<o:p></o:p></b></p>
+
+<p class="MsoNormal"><b><o:p>&nbsp;</o:p></b></p>
+
+<p class="MsoNormal"><b><o:p>&nbsp;</o:p></b></p>
+
+<p class="MsoNormal"><b>Hoe hier mee om te gaan bij het gebruiken van 3D <span class="SpellE">Tiles</span>?<o:p></o:p></b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div class="header-wrapper"><h2 id="ontbrekende-specificaties-voor-tijdseries">Ontbrekende specificaties voor tijdseries</h2><a class="self-link" href="#ontbrekende-specificaties-voor-tijdseries" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="margin-left:18.0pt"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<div class="header-wrapper"><h2 id="ondergrondinformatie-in-clients"><span class="SpellE"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Ondergrondinformatie</span></span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> in clients<o:p></o:p></span></h2><a class="self-link" href="#ondergrondinformatie-in-clients" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal" style="margin-left:18.0pt"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:18.0pt"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+</div>
+
+
+
+<p>```</p>
+</section>
+  <section>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 15">
+<meta name="Originator" content="Microsoft Word 15">
+<link rel="File-List" href="toolkit_bestanden/filelist.xml">
+
+<link rel="themeData" href="toolkit_bestanden/themedata.thmx">
+<link rel="colorSchemeMapping" href="toolkit_bestanden/colorschememapping.xml">
+
+<style>
+
+<!--
+ /* Font Definitions */
+ @font-face
+    {font-family:"Cambria Math";
+    panose-1:2 4 5 3 5 4 6 3 2 4;
+    mso-font-charset:0;
+    mso-generic-font-family:roman;
+    mso-font-pitch:variable;
+    mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+    {font-family:"Aptos Display";
+    mso-font-charset:0;
+    mso-generic-font-family:swiss;
+    mso-font-pitch:variable;
+    mso-font-signature:536871559 3 0 0 415 0;}
+@font-face
+    {font-family:"Segoe UI";
+    panose-1:2 11 5 2 4 2 4 2 2 3;
+    mso-font-charset:0;
+    mso-generic-font-family:swiss;
+    mso-font-pitch:variable;
+    mso-font-signature:-469750017 -1073683329 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {mso-style-unhide:no;
+    mso-style-qformat:yes;
+    mso-style-parent:"";
+    margin:0cm;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:"Times New Roman",serif;
+    mso-fareast-font-family:"Times New Roman";}
+h1
+    {mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-qformat:yes;
+    mso-style-link:"Kop 1 Char";
+    mso-style-next:Standaard;
+    margin-top:12.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;
+    mso-outline-level:1;
+    font-size:16.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;
+    mso-font-kerning:0pt;
+    font-weight:normal;}
+h2
+    {mso-style-noshow:yes;
+    mso-style-priority:9;
+    mso-style-qformat:yes;
+    mso-style-link:"Kop 2 Char";
+    mso-style-next:Standaard;
+    margin-top:2.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;
+    mso-outline-level:2;
+    font-size:13.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;
+    font-weight:normal;}
+h3
+    {mso-style-noshow:yes;
+    mso-style-priority:9;
+    mso-style-qformat:yes;
+    mso-style-link:"Kop 3 Char";
+    mso-style-next:Standaard;
+    margin-top:2.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    mso-pagination:widow-orphan lines-together;
+    page-break-after:avoid;
+    mso-outline-level:3;
+    font-size:12.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0A2F40;
+    mso-themecolor:accent1;
+    mso-themeshade:127;
+    font-weight:normal;}
+a:link, span.MsoHyperlink
+    {mso-style-priority:99;
+    color:#467886;
+    mso-themecolor:hyperlink;
+    text-decoration:underline;
+    text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+    {mso-style-noshow:yes;
+    mso-style-priority:99;
+    color:#96607D;
+    mso-themecolor:followedhyperlink;
+    text-decoration:underline;
+    text-underline:single;}
+span.MsoPlaceholderText
+    {mso-style-noshow:yes;
+    mso-style-priority:99;
+    mso-style-unhide:no;
+    color:#666666;}
+span.Kop1Char
+    {mso-style-name:"Kop 1 Char";
+    mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-locked:yes;
+    mso-style-link:"Kop 1";
+    mso-ansi-font-size:16.0pt;
+    mso-bidi-font-size:16.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;}
+span.Kop2Char
+    {mso-style-name:"Kop 2 Char";
+    mso-style-noshow:yes;
+    mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-locked:yes;
+    mso-style-link:"Kop 2";
+    mso-ansi-font-size:13.0pt;
+    mso-bidi-font-size:13.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0F4761;
+    mso-themecolor:accent1;
+    mso-themeshade:191;}
+span.Kop3Char
+    {mso-style-name:"Kop 3 Char";
+    mso-style-noshow:yes;
+    mso-style-priority:9;
+    mso-style-unhide:no;
+    mso-style-locked:yes;
+    mso-style-link:"Kop 3";
+    mso-ansi-font-size:12.0pt;
+    mso-bidi-font-size:12.0pt;
+    font-family:"Aptos Display",sans-serif;
+    mso-ascii-font-family:"Aptos Display";
+    mso-ascii-theme-font:major-latin;
+    mso-fareast-font-family:"Times New Roman";
+    mso-fareast-theme-font:major-fareast;
+    mso-hansi-font-family:"Aptos Display";
+    mso-hansi-theme-font:major-latin;
+    mso-bidi-font-family:"Times New Roman";
+    mso-bidi-theme-font:major-bidi;
+    color:#0A2F40;
+    mso-themecolor:accent1;
+    mso-themeshade:127;}
+p.msonormal0, li.msonormal0, div.msonormal0
+    {mso-style-name:msonormal;
+    mso-style-unhide:no;
+    mso-margin-top-alt:auto;
+    margin-right:0cm;
+    mso-margin-bottom-alt:auto;
+    margin-left:0cm;
+    mso-pagination:widow-orphan;
+    font-size:10.0pt;
+    font-family:"Times New Roman",serif;
+    mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+    {mso-style-name:"";
+    mso-spl-e:yes;}
+.MsoChpDefault
+    {mso-style-type:export-only;
+    mso-default-props:yes;
+    font-size:10.0pt;
+    mso-ansi-font-size:10.0pt;
+    mso-bidi-font-size:10.0pt;
+    mso-font-kerning:0pt;
+    mso-ligatures:none;}
+ /* Page Definitions */
+ @page
+    {mso-footnote-separator:url("toolkit_bestanden/header.htm") fs;
+    mso-footnote-continuation-separator:url("toolkit_bestanden/header.htm") fcs;
+    mso-endnote-separator:url("toolkit_bestanden/header.htm") es;
+    mso-endnote-continuation-separator:url("toolkit_bestanden/header.htm") ecs;}
+@page WordSection1
+    {size:595.3pt 841.9pt;
+    margin:70.85pt 70.85pt 70.85pt 70.85pt;
+    mso-header-margin:35.4pt;
+    mso-footer-margin:35.4pt;
+    mso-paper-source:0;}
+div.WordSection1
+    {page:WordSection1;}
+-->
+
+</style>
+
+
+
+
+
+<div class="WordSection1">
+
+<div class="header-wrapper"><h2 id="toolkit">Toolkit</h2><a class="self-link" href="#toolkit" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Handleidingen</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><a href="https://3dtilesnederland.nl/quick-start-guide/">https://3dtilesnederland.nl/quick-start-guide/</a></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><a href="https://github.com/Geodan/mapbox-3dtiles?tab=readme-ov-file">https://github.com/Geodan/mapbox-3dtiles?tab=readme-ov-file</a></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div class="header-wrapper"><h2 id="clients-en-servers">Clients en servers</h2><a class="self-link" href="#clients-en-servers" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><a href="https://github.com/pka/awesome-3d-tiles?tab=readme-ov-file">https://github.com/pka/awesome-3d-tiles?tab=readme-ov-file</a></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div class="header-wrapper"><h3 id="clients">Clients</h3><a class="self-link" href="#clients" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Cesium</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE">MapboxGL</span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE">Unity</span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span class="SpellE">Unreal</span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div class="header-wrapper"><h3 id="generators-en-servers">Generators en servers</h3><a class="self-link" href="#generators-en-servers" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Segoe UI&quot;,sans-serif;color:black;
+background:white">pg2b3dm</span><o:p></o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div class="header-wrapper"><h2 id="x3d-tile-datasets">3D <span class="SpellE">Tile</span> Datasets</h2><a class="self-link" href="#x3d-tile-datasets" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Beheerde datasets:</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div class="header-wrapper"><h3 id="x3d-basisvoorziening">3D basisvoorziening</h3><a class="self-link" href="#x3d-basisvoorziening" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><a href="https://api.pdok.nl/kadaster/3d-basisvoorziening/ogc/v1_0">https://api.pdok.nl/kadaster/3d-basisvoorziening/ogc/v1_0</a></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Project-datasets</p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<div class="header-wrapper"><h2 id="x3d-tiles-nederland">3D <span class="SpellE">Tiles</span> Nederland</h2><a class="self-link" href="#x3d-tiles-nederland" aria-label="Permalink for this Section"></a></div>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><a href="https://3dtilesnederland.nl/3d-tilesets/">https://3dtilesnederland.nl/3d-tilesets/</a></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+</div>
+
+
+
+<p>```</p>
+</section>
+  <section id="conformance"><div class="header-wrapper"><h2 id="x2-conformiteit"><bdi class="secno">2. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 2."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
+  <section id="tof"></section>
   <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
     <div class="header-wrapper"><h3 id="a-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix A.1"></a></div>
     <ul class="index">
-    <li>
-      <a class="index-term" href="#dfn-definitie">Definitie</a> 
-    <span class="print-only">§2.1</span></li>
+    
   </ul>
   </section><section id="index-defined-elsewhere">
     <div class="header-wrapper"><h3 id="a-2-begrippen-gedefinieerd-door-verwijzing"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix A.2"></a></div>
@@ -454,26 +2354,9 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
 
 
 
-<section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normatieve-referenties">
-    <div class="header-wrapper"><h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
-    <dl class="bibliography"><dt id="bib-semver">[SemVer]</dt><dd>
-      <a href="https://semver.org"><cite>Semantic Versioning 2.0.0</cite></a>. T. Preston-Werner. June 2013. URL: <a href="https://semver.org">https://semver.org</a>
-    </dd></dl>
-  </section></section><p role="navigation" id="back-to-top">
+<p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-  </p><div class="mermaidTooltip" style="opacity: 0;"></div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-definitie" aria-label="Links in this document to definition: Definitie">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="#dfn-definitie" aria-label="Permalink for definition: Definitie. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-    <a href="#ref-for-dfn-definitie-1" title="§ 2.3 Referenties">§ 2.3 Referenties</a> 
-  </li>
-  </ul>
-    </div><script id="respec-dfn-panel">(() => {
+  </p><script id="respec-dfn-panel">(() => {
 // @ts-check
 if (document.respec) {
   document.respec.ready.then(setupPanel);
