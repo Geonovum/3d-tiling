@@ -377,7 +377,7 @@ handleidingen, clients, servers en 3D Tile datasets, waardoor lezers worden
 voorzien van de nodige bronnen om aan de slag te gaan met 3D tiling in hun
 projecten.</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-is-3d-tiling"><bdi class="secno">1.1 </bdi>Wat is 3D Tiling?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#praktijkvoorbeelden"><bdi class="secno">2. </bdi>Praktijkvoorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#placeholder-project-1"><bdi class="secno">2.1 </bdi>Placeholder project 1</a></li><li class="tocline"><a class="tocxref" href="#placeholder-project-2"><bdi class="secno">2.2 </bdi>Placeholder project 2</a></li></ol></li><li class="tocline"><a class="tocxref" href="#standaarden"><bdi class="secno">3. </bdi>Standaarden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles-specification"><bdi class="secno">3.1 </bdi>OGC 3D Tiles specification</a></li><li class="tocline"><a class="tocxref" href="#i3s"><bdi class="secno">3.2 </bdi>i3S</a></li></ol></li><li class="tocline"><a class="tocxref" href="#best-practices"><bdi class="secno">4. </bdi>Best practices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#implicit-versus-explicit-tiling"><bdi class="secno">4.1 </bdi>Implicit versus explicit tiling</a></li><li class="tocline"><a class="tocxref" href="#performance"><bdi class="secno">4.2 </bdi>Performance</a></li><li class="tocline"><a class="tocxref" href="#coordinaat-referentie-systeem-crs"><bdi class="secno">4.3 </bdi>Coordinaat Referentie Systeem (CRS)</a></li><li class="tocline"><a class="tocxref" href="#geometric-error"><bdi class="secno">4.4 </bdi>Geometric error</a></li><li class="tocline"><a class="tocxref" href="#ontbrekende-specificaties-voor-tijdseries"><bdi class="secno">4.5 </bdi>Ontbrekende specificaties voor tijdseries</a></li><li class="tocline"><a class="tocxref" href="#ondergrondinformatie-in-clients"><bdi class="secno">4.6 </bdi>Ondergrondinformatie in clients</a></li></ol></li><li class="tocline"><a class="tocxref" href="#toolkit"><bdi class="secno">5. </bdi>Toolkit</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#handleidingen"><bdi class="secno">5.1 </bdi>Handleidingen</a></li><li class="tocline"><a class="tocxref" href="#clients-en-servers"><bdi class="secno">5.2 </bdi>Clients en servers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#clients"><bdi class="secno">5.2.1 </bdi>Clients</a></li><li class="tocline"><a class="tocxref" href="#generators-en-servers"><bdi class="secno">5.2.2 </bdi>Generators en servers</a></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-tile-datasets"><bdi class="secno">5.3 </bdi>3D Tile Datasets</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#x3d-basisvoorziening"><bdi class="secno">5.3.1 </bdi>3D basisvoorziening</a></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-tiles-nederland"><bdi class="secno">5.4 </bdi>3D Tiles Nederland</a></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-is-3d-tiling"><bdi class="secno">1.1 </bdi>Wat is 3D Tiling?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#praktijkvoorbeelden"><bdi class="secno">2. </bdi>Praktijkvoorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#placeholder-project-1"><bdi class="secno">2.1 </bdi>Placeholder project 1</a></li><li class="tocline"><a class="tocxref" href="#placeholder-project-2"><bdi class="secno">2.2 </bdi>Placeholder project 2</a></li></ol></li><li class="tocline"><a class="tocxref" href="#standaarden"><bdi class="secno">3. </bdi>Standaarden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles-specification"><bdi class="secno">3.1 </bdi>OGC 3D Tiles specification</a></li><li class="tocline"><a class="tocxref" href="#i3s"><bdi class="secno">3.2 </bdi>i3S</a></li></ol></li><li class="tocline"><a class="tocxref" href="#techniek"><bdi class="secno">4. </bdi>Techniek</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#algemeen"><bdi class="secno">4.1 </bdi>Algemeen</a></li><li class="tocline"><a class="tocxref" href="#tegelformaten"><bdi class="secno">4.2 </bdi>Tegelformaten</a></li><li class="tocline"><a class="tocxref" href="#mediatypes-en-encoding"><bdi class="secno">4.3 </bdi>Mediatypes en encoding</a></li><li class="tocline"><a class="tocxref" href="#requests"><bdi class="secno">4.4 </bdi>Requests</a></li></ol></li><li class="tocline"><a class="tocxref" href="#best-practices"><bdi class="secno">5. </bdi>Best practices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#implicit-versus-explicit-tiling"><bdi class="secno">5.1 </bdi>Implicit versus explicit tiling</a></li><li class="tocline"><a class="tocxref" href="#performance"><bdi class="secno">5.2 </bdi>Performance</a></li><li class="tocline"><a class="tocxref" href="#coordinaat-referentie-systeem-crs"><bdi class="secno">5.3 </bdi>Coordinaat Referentie Systeem (CRS)</a></li><li class="tocline"><a class="tocxref" href="#geometric-error"><bdi class="secno">5.4 </bdi>Geometric error</a></li><li class="tocline"><a class="tocxref" href="#ontbrekende-specificaties-voor-tijdseries"><bdi class="secno">5.5 </bdi>Ontbrekende specificaties voor tijdseries</a></li><li class="tocline"><a class="tocxref" href="#ondergrondinformatie-in-clients"><bdi class="secno">5.6 </bdi>Ondergrondinformatie in clients</a></li></ol></li><li class="tocline"><a class="tocxref" href="#toolkit"><bdi class="secno">6. </bdi>Toolkit</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#handleidingen"><bdi class="secno">6.1 </bdi>Handleidingen</a></li><li class="tocline"><a class="tocxref" href="#clients-en-servers"><bdi class="secno">6.2 </bdi>Clients en servers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#clients"><bdi class="secno">6.2.1 </bdi>Clients</a></li><li class="tocline"><a class="tocxref" href="#generators-en-servers"><bdi class="secno">6.2.2 </bdi>Generators en servers</a></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-tile-datasets"><bdi class="secno">6.3 </bdi>3D Tile Datasets</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#x3d-basisvoorziening"><bdi class="secno">6.3.1 </bdi>3D basisvoorziening</a></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-tiles-nederland"><bdi class="secno">6.4 </bdi>3D Tiles Nederland</a></li></ol></li></ol></nav>
 
   
   <section id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
@@ -436,450 +436,72 @@ efficiënt te organiseren en weer te geven. Het wordt vaak gebruikt in combinati
 met Esri's ArcGIS-platform, maar is een open standaard die door andere
 softwareleveranciers kan worden geïmplementeerd en gebruikt</p>
 </section></section>
-  <section>
-
-
-<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-<meta name="ProgId" content="Word.Document">
-<meta name="Generator" content="Microsoft Word 15">
-<meta name="Originator" content="Microsoft Word 15">
-<link rel="File-List" href="techniek_bestanden/filelist.xml">
-
-<link rel="themeData" href="techniek_bestanden/themedata.thmx">
-<link rel="colorSchemeMapping" href="techniek_bestanden/colorschememapping.xml">
-
-<style>
-
-<!--
- /* Font Definitions */
- @font-face
-    {font-family:"Cambria Math";
-    panose-1:2 4 5 3 5 4 6 3 2 4;
-    mso-font-charset:0;
-    mso-generic-font-family:roman;
-    mso-font-pitch:variable;
-    mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
-@font-face
-    {font-family:"Aptos Display";
-    mso-font-charset:0;
-    mso-generic-font-family:swiss;
-    mso-font-pitch:variable;
-    mso-font-signature:536871559 3 0 0 415 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-    {mso-style-unhide:no;
-    mso-style-qformat:yes;
-    mso-style-parent:"";
-    margin:0cm;
-    mso-pagination:widow-orphan;
-    font-size:10.0pt;
-    font-family:"Times New Roman",serif;
-    mso-fareast-font-family:"Times New Roman";}
-h1
-    {mso-style-priority:9;
-    mso-style-unhide:no;
-    mso-style-qformat:yes;
-    mso-style-link:"Kop 1 Char";
-    mso-style-next:Standaard;
-    margin-top:12.0pt;
-    margin-right:0cm;
-    margin-bottom:0cm;
-    margin-left:0cm;
-    mso-pagination:widow-orphan lines-together;
-    page-break-after:avoid;
-    mso-outline-level:1;
-    font-size:16.0pt;
-    font-family:"Aptos Display",sans-serif;
-    mso-ascii-font-family:"Aptos Display";
-    mso-ascii-theme-font:major-latin;
-    mso-fareast-font-family:"Times New Roman";
-    mso-fareast-theme-font:major-fareast;
-    mso-hansi-font-family:"Aptos Display";
-    mso-hansi-theme-font:major-latin;
-    mso-bidi-font-family:"Times New Roman";
-    mso-bidi-theme-font:major-bidi;
-    color:#0F4761;
-    mso-themecolor:accent1;
-    mso-themeshade:191;
-    mso-font-kerning:0pt;
-    font-weight:normal;}
-h2
-    {mso-style-priority:9;
-    mso-style-qformat:yes;
-    mso-style-link:"Kop 2 Char";
-    mso-style-next:Standaard;
-    margin-top:2.0pt;
-    margin-right:0cm;
-    margin-bottom:0cm;
-    margin-left:0cm;
-    mso-pagination:widow-orphan lines-together;
-    page-break-after:avoid;
-    mso-outline-level:2;
-    font-size:13.0pt;
-    font-family:"Aptos Display",sans-serif;
-    mso-ascii-font-family:"Aptos Display";
-    mso-ascii-theme-font:major-latin;
-    mso-fareast-font-family:"Times New Roman";
-    mso-fareast-theme-font:major-fareast;
-    mso-hansi-font-family:"Aptos Display";
-    mso-hansi-theme-font:major-latin;
-    mso-bidi-font-family:"Times New Roman";
-    mso-bidi-theme-font:major-bidi;
-    color:#0F4761;
-    mso-themecolor:accent1;
-    mso-themeshade:191;
-    font-weight:normal;}
-h3
-    {mso-style-noshow:yes;
-    mso-style-priority:9;
-    mso-style-qformat:yes;
-    mso-style-link:"Kop 3 Char";
-    mso-style-next:Standaard;
-    margin-top:2.0pt;
-    margin-right:0cm;
-    margin-bottom:0cm;
-    margin-left:0cm;
-    mso-pagination:widow-orphan lines-together;
-    page-break-after:avoid;
-    mso-outline-level:3;
-    font-size:12.0pt;
-    font-family:"Aptos Display",sans-serif;
-    mso-ascii-font-family:"Aptos Display";
-    mso-ascii-theme-font:major-latin;
-    mso-fareast-font-family:"Times New Roman";
-    mso-fareast-theme-font:major-fareast;
-    mso-hansi-font-family:"Aptos Display";
-    mso-hansi-theme-font:major-latin;
-    mso-bidi-font-family:"Times New Roman";
-    mso-bidi-theme-font:major-bidi;
-    color:#0A2F40;
-    mso-themecolor:accent1;
-    mso-themeshade:127;
-    font-weight:normal;}
-a:link, span.MsoHyperlink
-    {mso-style-noshow:yes;
-    mso-style-priority:99;
-    color:#467886;
-    mso-themecolor:hyperlink;
-    text-decoration:underline;
-    text-underline:single;}
-a:visited, span.MsoHyperlinkFollowed
-    {mso-style-noshow:yes;
-    mso-style-priority:99;
-    color:#96607D;
-    mso-themecolor:followedhyperlink;
-    text-decoration:underline;
-    text-underline:single;}
-span.Kop1Char
-    {mso-style-name:"Kop 1 Char";
-    mso-style-priority:9;
-    mso-style-unhide:no;
-    mso-style-locked:yes;
-    mso-style-link:"Kop 1";
-    mso-ansi-font-size:16.0pt;
-    mso-bidi-font-size:16.0pt;
-    font-family:"Aptos Display",sans-serif;
-    mso-ascii-font-family:"Aptos Display";
-    mso-ascii-theme-font:major-latin;
-    mso-fareast-font-family:"Times New Roman";
-    mso-fareast-theme-font:major-fareast;
-    mso-hansi-font-family:"Aptos Display";
-    mso-hansi-theme-font:major-latin;
-    mso-bidi-font-family:"Times New Roman";
-    mso-bidi-theme-font:major-bidi;
-    color:#0F4761;
-    mso-themecolor:accent1;
-    mso-themeshade:191;}
-span.Kop2Char
-    {mso-style-name:"Kop 2 Char";
-    mso-style-priority:9;
-    mso-style-unhide:no;
-    mso-style-locked:yes;
-    mso-style-link:"Kop 2";
-    mso-ansi-font-size:13.0pt;
-    mso-bidi-font-size:13.0pt;
-    font-family:"Aptos Display",sans-serif;
-    mso-ascii-font-family:"Aptos Display";
-    mso-ascii-theme-font:major-latin;
-    mso-fareast-font-family:"Times New Roman";
-    mso-fareast-theme-font:major-fareast;
-    mso-hansi-font-family:"Aptos Display";
-    mso-hansi-theme-font:major-latin;
-    mso-bidi-font-family:"Times New Roman";
-    mso-bidi-theme-font:major-bidi;
-    color:#0F4761;
-    mso-themecolor:accent1;
-    mso-themeshade:191;}
-span.Kop3Char
-    {mso-style-name:"Kop 3 Char";
-    mso-style-noshow:yes;
-    mso-style-priority:9;
-    mso-style-unhide:no;
-    mso-style-locked:yes;
-    mso-style-link:"Kop 3";
-    mso-ansi-font-size:12.0pt;
-    mso-bidi-font-size:12.0pt;
-    font-family:"Aptos Display",sans-serif;
-    mso-ascii-font-family:"Aptos Display";
-    mso-ascii-theme-font:major-latin;
-    mso-fareast-font-family:"Times New Roman";
-    mso-fareast-theme-font:major-fareast;
-    mso-hansi-font-family:"Aptos Display";
-    mso-hansi-theme-font:major-latin;
-    mso-bidi-font-family:"Times New Roman";
-    mso-bidi-theme-font:major-bidi;
-    color:#0A2F40;
-    mso-themecolor:accent1;
-    mso-themeshade:127;}
-p.msonormal0, li.msonormal0, div.msonormal0
-    {mso-style-name:msonormal;
-    mso-style-unhide:no;
-    mso-margin-top-alt:auto;
-    margin-right:0cm;
-    mso-margin-bottom-alt:auto;
-    margin-left:0cm;
-    mso-pagination:widow-orphan;
-    font-size:10.0pt;
-    font-family:"Times New Roman",serif;
-    mso-fareast-font-family:"Times New Roman";}
-span.SpellE
-    {mso-style-name:"";
-    mso-spl-e:yes;}
-.MsoChpDefault
-    {mso-style-type:export-only;
-    mso-default-props:yes;
-    font-size:10.0pt;
-    mso-ansi-font-size:10.0pt;
-    mso-bidi-font-size:10.0pt;
-    mso-font-kerning:0pt;
-    mso-ligatures:none;}
-@page WordSection1
-    {size:595.3pt 841.9pt;
-    margin:70.85pt 70.85pt 70.85pt 70.85pt;
-    mso-header-margin:35.4pt;
-    mso-footer-margin:35.4pt;
-    mso-paper-source:0;}
-div.WordSection1
-    {page:WordSection1;}
--->
-
-</style>
-
-
-
-
-
-<div class="WordSection1">
-
-<div class="header-wrapper"><h2 id="techniek">Techniek</h2><a class="self-link" href="#techniek" aria-label="Permalink for this Section"></a></div>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">Dit hoofdstuk gaat dieper in op de
-techniek van OGC 3D <span class="SpellE">Tiles</span>.<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<div class="header-wrapper"><h2 id="algemeen">Algemeen</h2><a class="self-link" href="#algemeen" aria-label="Permalink for this Section"></a></div>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">In 3D <span class="SpellE">Tiles</span>
-verwijst een <span class="SpellE">tegelset</span> naar een verzameling tegels georganiseerd
-binnen een ruimtelijke gegevensstructuur, vertegenwoordigd door een boom. Elke <span class="SpellE">tegelset</span> wordt beschreven door minstens één
-JSON-bestand met metadata en een hiërarchie van tegelobjecten, waarvan
-elke tegel <span class="SpellE">renderbare</span> inhoud kan bevatten.<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<div class="header-wrapper"><h2 id="tegelformaten">Tegelformaten</h2><a class="self-link" href="#tegelformaten" aria-label="Permalink for this Section"></a></div>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">Het primaire tegelformaat voor 3D <span class="SpellE">Tiles</span> is <span class="SpellE">glTF</span> 2.0, een open
-specificatie ontworpen voor efficiënte transmissie en laden van 3D-inhoud.
-Dit formaat omvat geometrie, textuurinformatie en kan worden uitgebreid met
-metadata, model-<span class="SpellE">instanciëring</span> en compressie. Het
-ondersteunt verschillende soorten 3D-inhoud zoals 3D-modellen en puntenwolken.<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">Voorbeeld GLTF<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">Naast <span class="SpellE">glTF</span>
-ondersteunt 3D <span class="SpellE">Tiles</span> ook de volgende tegelformaten:<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">1. <span class="SpellE">Batched</span> 3D
-Model (b3dm): Dit formaat wordt gebruikt voor heterogene 3D-modellen.<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">2. <span class="SpellE">Instanced</span> 3D
-Model (i3dm): Gebruikt voor het <span class="SpellE">instanceren</span> van
-3D-modellen, zoals bomen, windmolens, en bouten.<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">3. Point Cloud (<span class="SpellE">pnts</span>):
-Voor het weergeven van grote aantallen punten in een puntenwolk.<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">4. <span class="SpellE">Composite</span> (<span class="SpellE">cmpt</span>): Hiermee kunnen tegels van verschillende formaten
-worden samengevoegd tot één tegel.<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">Deze formaten bieden flexibiliteit voor
-het opslaan en renderen van diverse soorten 3D-inhoud binnen de 3D <span class="SpellE">Tiles</span>-specificatie.<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<div class="header-wrapper"><h2 id="mediatypes-en-encoding">Mediatypes en <span class="SpellE">encoding</span></h2><a class="self-link" href="#mediatypes-en-encoding" aria-label="Permalink for this Section"></a></div>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">Het bestandsformaat voor 3D <span class="SpellE">Tiles</span> bestaat uit:<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">- Voor <span class="SpellE">tegelsetbestanden</span>:
-.<span class="SpellE">json</span>-extensie met het Media Type "<span class="SpellE">application</span>/<span class="SpellE">json</span>".<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">Voorbeeld JSON<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">- Voor <span class="SpellE">tegelinhoudsbestanden</span>:
-de specifieke extensies en Media Type volgens de specificatie van het
-tegelformaat.<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">Voorbeeld van een GLTF en B3DM?<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">- Voor metagegevensschema-bestanden: .<span class="SpellE">json</span>-extensie met het Media Type "<span class="SpellE">application</span>/<span class="SpellE">json</span>".<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">- Voor <span class="SpellE">tegelsetstijlbestanden</span>:
-.<span class="SpellE">json</span>-extensie met het Media Type "<span class="SpellE">application</span>/<span class="SpellE">json</span>".<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">- Voor JSON-<span class="SpellE">subtree</span>-bestanden:
-.<span class="SpellE">json</span>-extensie met het Media Type "<span class="SpellE">application</span>/<span class="SpellE">json</span>".<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">- Voor binaire <span class="SpellE">subtree</span>-bestanden:
-.<span class="SpellE">subtree</span>-extensie met het Media Type "<span class="SpellE">application</span>/octet-stream".<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">- Voor binaire bufferbestanden:
-.bin-extensie met het Media Type "<span class="SpellE">application</span>/octet-stream".<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast"><o:p>&nbsp;</o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">Wat betreft de <span class="SpellE">encoding</span>:<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">- JSON-bestanden gebruiken UTF-8-encoding
-zonder BOM.<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">- Alle tekstuele strings in JSON
-gebruiken alleen het ASCII-tekenreeks-<span class="SpellE">charset</span>, zonder
-JSON-escapen.<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">- Niet-ASCII-tekens die als
-eigenschapswaarden in JSON verschijnen, kunnen worden <span class="SpellE">geëscapet</span>.<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">- Namen (sleutels) binnen JSON-objecten
-moeten uniek zijn, dus duplicaat-sleutels zijn niet toegestaan.<o:p></o:p></span></p>
-
-<p class="MsoNormal"><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;
-mso-fareast-theme-font:major-fareast">- Sommige eigenschappen zijn gedefinieerd
-als integers in het schema. Dergelijke waarden kunnen worden opgeslagen als
-decimalen met een nul fractiegedeelte of met exponentnotatie, zoals
-gedefinieerd in RFC 8259, Sectie 6.</span></p>
-
-</div>
-
-
-
-<p>```</p>
-</section>
-  <section id="best-practices"><div class="header-wrapper"><h2 id="x4-best-practices"><bdi class="secno">4. </bdi>Best practices</h2><a class="self-link" href="#best-practices" aria-label="Permalink for Section 4."></a></div>
+  <section id="techniek"><div class="header-wrapper"><h2 id="x4-techniek"><bdi class="secno">4. </bdi>Techniek</h2><a class="self-link" href="#techniek" aria-label="Permalink for Section 4."></a></div>
+<p>Dit hoofdstuk gaat dieper in op de techniek van OGC 3D Tiles.</p>
+<section id="algemeen"><div class="header-wrapper"><h3 id="x4-1-algemeen"><bdi class="secno">4.1 </bdi>Algemeen</h3><a class="self-link" href="#algemeen" aria-label="Permalink for Section 4.1"></a></div>
+<p>In 3D Tiles verwijst een tegelset naar een verzameling tegels georganiseerd
+binnen een ruimtelijke gegevensstructuur, vertegenwoordigd door een boom. Elke
+tegelset wordt beschreven door minstens één JSON-bestand met metadata en een
+hiërarchie van tegelobjecten, waarvan elke tegel renderbare inhoud kan bevatten.</p>
+</section><section id="tegelformaten"><div class="header-wrapper"><h3 id="x4-2-tegelformaten"><bdi class="secno">4.2 </bdi>Tegelformaten</h3><a class="self-link" href="#tegelformaten" aria-label="Permalink for Section 4.2"></a></div>
+<p>Het primaire tegelformaat voor 3D Tiles is glTF 2.0, een open specificatie
+ontworpen voor efficiënte transmissie en laden van 3D-inhoud. Dit formaat omvat
+geometrie, textuurinformatie en kan worden uitgebreid met metadata,
+model-instanciëring en compressie. Het ondersteunt verschillende soorten
+3D-inhoud zoals 3D-modellen en puntenwolken.</p>
+<p>Voorbeeld GLTF</p>
+<p>Naast glTF ondersteunt 3D Tiles ook de volgende tegelformaten:</p>
+<p>1. Batched 3D Model (b3dm): Dit formaat wordt gebruikt voor heterogene
+3D-modellen.</p>
+<p>2. Instanced 3D Model (i3dm): Gebruikt voor het instanceren van 3D-modellen,
+zoals bomen, windmolens, en bouten.</p>
+<p>3. Point Cloud (pnts): Voor het weergeven van grote aantallen punten in een
+puntenwolk.</p>
+<p>4. Composite (cmpt): Hiermee kunnen tegels van verschillende formaten worden
+samengevoegd tot één tegel.</p>
+<p>Deze formaten bieden flexibiliteit voor het opslaan en renderen van diverse
+soorten 3D-inhoud binnen de 3D Tiles-specificatie.</p>
+</section><section id="mediatypes-en-encoding"><div class="header-wrapper"><h3 id="x4-3-mediatypes-en-encoding"><bdi class="secno">4.3 </bdi>Mediatypes en encoding</h3><a class="self-link" href="#mediatypes-en-encoding" aria-label="Permalink for Section 4.3"></a></div>
+<p>Het bestandsformaat voor 3D Tiles bestaat uit:</p>
+<p>- Voor tegelsetbestanden: .json-extensie met het Media Type "application/json".</p>
+<p>Voorbeeld JSON</p>
+<p>- Voor tegelinhoudsbestanden: de specifieke extensies en Media Type volgens de
+specificatie van het tegelformaat.</p>
+<p>Voorbeeld van een GLTF en B3DM?</p>
+<p>- Voor metagegevensschema-bestanden: .json-extensie met het Media Type
+"application/json".</p>
+<p>- Voor tegelsetstijlbestanden: .json-extensie met het Media Type
+"application/json".</p>
+<p>- Voor JSON-subtree-bestanden: .json-extensie met het Media Type
+"application/json".</p>
+<p>- Voor binaire subtree-bestanden: .subtree-extensie met het Media Type
+"application/octet-stream".</p>
+<p>- Voor binaire bufferbestanden: .bin-extensie met het Media Type
+"application/octet-stream".</p>
+<p>Wat betreft de encoding:</p>
+<p>- JSON-bestanden gebruiken UTF-8-encoding zonder BOM.</p>
+<p>- Alle tekstuele strings in JSON gebruiken alleen het ASCII-tekenreeks-charset,
+zonder JSON-escapen.</p>
+<p>- Niet-ASCII-tekens die als eigenschapswaarden in JSON verschijnen, kunnen
+worden geëscapet.</p>
+<p>- Namen (sleutels) binnen JSON-objecten moeten uniek zijn, dus
+duplicaat-sleutels zijn niet toegestaan.</p>
+<p>- Sommige eigenschappen zijn gedefinieerd als integers in het schema. Dergelijke
+waarden kunnen worden opgeslagen als decimalen met een nul fractiegedeelte of
+met exponentnotatie, zoals gedefinieerd in RFC 8259, Sectie 6.</p>
+</section><section id="requests"><div class="header-wrapper"><h3 id="x4-4-requests"><bdi class="secno">4.4 </bdi>Requests</h3><a class="self-link" href="#requests" aria-label="Permalink for Section 4.4"></a></div>
+</section></section>
+  <section id="best-practices"><div class="header-wrapper"><h2 id="x5-best-practices"><bdi class="secno">5. </bdi>Best practices</h2><a class="self-link" href="#best-practices" aria-label="Permalink for Section 5."></a></div>
 <p>Dit hoofdstuk beschrijft een aantal best practices voor het serveren en
 gebruiken van 3D tiles.</p>
-<section id="implicit-versus-explicit-tiling"><div class="header-wrapper"><h3 id="x4-1-implicit-versus-explicit-tiling"><bdi class="secno">4.1 </bdi>Implicit versus explicit tiling</h3><a class="self-link" href="#implicit-versus-explicit-tiling" aria-label="Permalink for Section 4.1"></a></div>
+<section id="implicit-versus-explicit-tiling"><div class="header-wrapper"><h3 id="x5-1-implicit-versus-explicit-tiling"><bdi class="secno">5.1 </bdi>Implicit versus explicit tiling</h3><a class="self-link" href="#implicit-versus-explicit-tiling" aria-label="Permalink for Section 5.1"></a></div>
 <p><em>Wat is implicit en explicit tiling?</em></p>
 <p><em>Hoe hier mee om te gaan bij het genereren/serveren van 3D Tiles?</em></p>
 <p><em>Hoe hier mee om te gaan bij het gebruiken van 3D Tiles?</em></p>
-</section><section id="performance"><div class="header-wrapper"><h3 id="x4-2-performance"><bdi class="secno">4.2 </bdi>Performance</h3><a class="self-link" href="#performance" aria-label="Permalink for Section 4.2"></a></div>
-</section><section id="coordinaat-referentie-systeem-crs"><div class="header-wrapper"><h3 id="x4-3-coordinaat-referentie-systeem-crs"><bdi class="secno">4.3 </bdi>Coordinaat Referentie Systeem (CRS)</h3><a class="self-link" href="#coordinaat-referentie-systeem-crs" aria-label="Permalink for Section 4.3"></a></div>
+</section><section id="performance"><div class="header-wrapper"><h3 id="x5-2-performance"><bdi class="secno">5.2 </bdi>Performance</h3><a class="self-link" href="#performance" aria-label="Permalink for Section 5.2"></a></div>
+</section><section id="coordinaat-referentie-systeem-crs"><div class="header-wrapper"><h3 id="x5-3-coordinaat-referentie-systeem-crs"><bdi class="secno">5.3 </bdi>Coordinaat Referentie Systeem (CRS)</h3><a class="self-link" href="#coordinaat-referentie-systeem-crs" aria-label="Permalink for Section 5.3"></a></div>
 <p><em>Wat is een CRS?</em></p>
-</section><section id="geometric-error"><div class="header-wrapper"><h3 id="x4-4-geometric-error"><bdi class="secno">4.4 </bdi>Geometric error</h3><a class="self-link" href="#geometric-error" aria-label="Permalink for Section 4.4"></a></div>
+</section><section id="geometric-error"><div class="header-wrapper"><h3 id="x5-4-geometric-error"><bdi class="secno">5.4 </bdi>Geometric error</h3><a class="self-link" href="#geometric-error" aria-label="Permalink for Section 5.4"></a></div>
 <p><em>Wat is geometric error?</em></p>
 <p>De ‘geometric error’ (geometrische fout) van een tegel vertelt ons hoe goed de
 tegel de vorm van het originele object weergeeft. Het is een nummer dat aangeeft
@@ -901,28 +523,28 @@ het object nauwkeurig weer te geven. Een hogere fout betekent dat het programma
 eerder beslist om de tegel te verfijnen en de details weer te geven.</p>
 <p><em>Hoe hier mee om te gaan bij het genereren/serveren van 3D Tiles?</em></p>
 <p><em>Hoe hier mee om te gaan bij het gebruiken van 3D Tiles?</em></p>
-</section><section id="ontbrekende-specificaties-voor-tijdseries"><div class="header-wrapper"><h3 id="x4-5-ontbrekende-specificaties-voor-tijdseries"><bdi class="secno">4.5 </bdi>Ontbrekende specificaties voor tijdseries</h3><a class="self-link" href="#ontbrekende-specificaties-voor-tijdseries" aria-label="Permalink for Section 4.5"></a></div>
-</section><section id="ondergrondinformatie-in-clients"><div class="header-wrapper"><h3 id="x4-6-ondergrondinformatie-in-clients"><bdi class="secno">4.6 </bdi>Ondergrondinformatie in clients</h3><a class="self-link" href="#ondergrondinformatie-in-clients" aria-label="Permalink for Section 4.6"></a></div>
+</section><section id="ontbrekende-specificaties-voor-tijdseries"><div class="header-wrapper"><h3 id="x5-5-ontbrekende-specificaties-voor-tijdseries"><bdi class="secno">5.5 </bdi>Ontbrekende specificaties voor tijdseries</h3><a class="self-link" href="#ontbrekende-specificaties-voor-tijdseries" aria-label="Permalink for Section 5.5"></a></div>
+</section><section id="ondergrondinformatie-in-clients"><div class="header-wrapper"><h3 id="x5-6-ondergrondinformatie-in-clients"><bdi class="secno">5.6 </bdi>Ondergrondinformatie in clients</h3><a class="self-link" href="#ondergrondinformatie-in-clients" aria-label="Permalink for Section 5.6"></a></div>
 </section></section>
-  <section id="toolkit"><div class="header-wrapper"><h2 id="x5-toolkit"><bdi class="secno">5. </bdi>Toolkit</h2><a class="self-link" href="#toolkit" aria-label="Permalink for Section 5."></a></div>
-<section id="handleidingen"><div class="header-wrapper"><h3 id="x5-1-handleidingen"><bdi class="secno">5.1 </bdi>Handleidingen</h3><a class="self-link" href="#handleidingen" aria-label="Permalink for Section 5.1"></a></div>
+  <section id="toolkit"><div class="header-wrapper"><h2 id="x6-toolkit"><bdi class="secno">6. </bdi>Toolkit</h2><a class="self-link" href="#toolkit" aria-label="Permalink for Section 6."></a></div>
+<section id="handleidingen"><div class="header-wrapper"><h3 id="x6-1-handleidingen"><bdi class="secno">6.1 </bdi>Handleidingen</h3><a class="self-link" href="#handleidingen" aria-label="Permalink for Section 6.1"></a></div>
 <p><a href="https://3dtilesnederland.nl/quick-start-guide/">https://3dtilesnederland.nl/quick-start-guide/</a></p>
 <p><a href="https://github.com/Geodan/mapbox-3dtiles?tab=readme-ov-file">https://github.com/Geodan/mapbox-3dtiles?tab=readme-ov-file</a></p>
-</section><section id="clients-en-servers"><div class="header-wrapper"><h3 id="x5-2-clients-en-servers"><bdi class="secno">5.2 </bdi>Clients en servers</h3><a class="self-link" href="#clients-en-servers" aria-label="Permalink for Section 5.2"></a></div>
+</section><section id="clients-en-servers"><div class="header-wrapper"><h3 id="x6-2-clients-en-servers"><bdi class="secno">6.2 </bdi>Clients en servers</h3><a class="self-link" href="#clients-en-servers" aria-label="Permalink for Section 6.2"></a></div>
 <p><a href="https://github.com/pka/awesome-3d-tiles?tab=readme-ov-file">https://github.com/pka/awesome-3d-tiles?tab=readme-ov-file</a></p>
-<section id="clients"><div class="header-wrapper"><h4 id="x5-2-1-clients"><bdi class="secno">5.2.1 </bdi>Clients</h4><a class="self-link" href="#clients" aria-label="Permalink for Section 5.2.1"></a></div>
+<section id="clients"><div class="header-wrapper"><h4 id="x6-2-1-clients"><bdi class="secno">6.2.1 </bdi>Clients</h4><a class="self-link" href="#clients" aria-label="Permalink for Section 6.2.1"></a></div>
 <p>Cesium</p>
 <p>MapboxGL</p>
 <p>Unity</p>
 <p>Unreal</p>
-</section><section id="generators-en-servers"><div class="header-wrapper"><h4 id="x5-2-2-generators-en-servers"><bdi class="secno">5.2.2 </bdi>Generators en servers</h4><a class="self-link" href="#generators-en-servers" aria-label="Permalink for Section 5.2.2"></a></div>
+</section><section id="generators-en-servers"><div class="header-wrapper"><h4 id="x6-2-2-generators-en-servers"><bdi class="secno">6.2.2 </bdi>Generators en servers</h4><a class="self-link" href="#generators-en-servers" aria-label="Permalink for Section 6.2.2"></a></div>
 <p>pg2b3dm</p>
-</section></section><section id="x3d-tile-datasets"><div class="header-wrapper"><h3 id="x5-3-3d-tile-datasets"><bdi class="secno">5.3 </bdi>3D Tile Datasets</h3><a class="self-link" href="#x3d-tile-datasets" aria-label="Permalink for Section 5.3"></a></div>
+</section></section><section id="x3d-tile-datasets"><div class="header-wrapper"><h3 id="x6-3-3d-tile-datasets"><bdi class="secno">6.3 </bdi>3D Tile Datasets</h3><a class="self-link" href="#x3d-tile-datasets" aria-label="Permalink for Section 6.3"></a></div>
 <p>Beheerde datasets:</p>
-<section id="x3d-basisvoorziening"><div class="header-wrapper"><h4 id="x5-3-1-3d-basisvoorziening"><bdi class="secno">5.3.1 </bdi>3D basisvoorziening</h4><a class="self-link" href="#x3d-basisvoorziening" aria-label="Permalink for Section 5.3.1"></a></div>
+<section id="x3d-basisvoorziening"><div class="header-wrapper"><h4 id="x6-3-1-3d-basisvoorziening"><bdi class="secno">6.3.1 </bdi>3D basisvoorziening</h4><a class="self-link" href="#x3d-basisvoorziening" aria-label="Permalink for Section 6.3.1"></a></div>
 <p><a href="https://api.pdok.nl/kadaster/3d-basisvoorziening/ogc/v1_0">https://api.pdok.nl/kadaster/3d-basisvoorziening/ogc/v1_0</a></p>
 <p>Project-datasets</p>
-</section></section><section id="x3d-tiles-nederland"><div class="header-wrapper"><h3 id="x5-4-3d-tiles-nederland"><bdi class="secno">5.4 </bdi>3D Tiles Nederland</h3><a class="self-link" href="#x3d-tiles-nederland" aria-label="Permalink for Section 5.4"></a></div>
+</section></section><section id="x3d-tiles-nederland"><div class="header-wrapper"><h3 id="x6-4-3d-tiles-nederland"><bdi class="secno">6.4 </bdi>3D Tiles Nederland</h3><a class="self-link" href="#x3d-tiles-nederland" aria-label="Permalink for Section 6.4"></a></div>
 <p><a href="https://3dtilesnederland.nl/3d-tilesets/">https://3dtilesnederland.nl/3d-tilesets/</a></p>
 </section></section>
   
