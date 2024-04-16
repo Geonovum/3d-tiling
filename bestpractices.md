@@ -3,50 +3,315 @@
 Dit hoofdstuk beschrijft een aantal best practices voor het serveren en
 gebruiken van 3D tiles.
 
-## Implicit versus explicit tiling
+## Serveren van 3D Tiles
 
-*Wat is implicit en explicit tiling?*
+### Explicit en implicit tiling
 
-*Hoe hier mee om te gaan bij het genereren/serveren van 3D Tiles?*
+>   Pas explicit tiling toe voor terreinen en implicit tiling voor gebouwen.
 
-*Hoe hier mee om te gaan bij het gebruiken van 3D Tiles?*
+Voor terreinen, zoals landschappen en terreinmodellen, is explicit tiling vaak
+geschikt omdat ze vaak grote, uitgestrekte gebieden beslaan met een relatief
+uniforme geometrie. Hierdoor kunnen terreinen efficiënt worden opgedeeld in
+regelmatige tegels, waardoor snelle toegang en weergave op verschillende
+detailniveaus mogelijk is. Deze regelmatige structuur maakt het ook
+gemakkelijker om te navigeren en details te renderen op basis van de afstand tot
+de kijker.
 
-## Performance
+Aan de andere kant zijn gebouwen vaak complexe structuren met verschillende
+vormen, maten en details. Voor gebouwen kan implicit tiling gunstig zijn omdat
+het meer flexibiliteit biedt in het opdelen van de gegevens op basis van de
+geometrische complexiteit. Dit maakt het mogelijk om gebouwen op te delen in
+tegels die zich aanpassen aan de vorm van het gebouw en de detailniveaus, wat
+efficiënter kan zijn voor de opslag en rendering van complexe(re) gebouwen.
 
-## Coordinaat Referentie Systeem (CRS)
+Let op: standaard 1.0 ondersteunt geen implicit tiling, vanaf 1.1 wel. Veel
+clients zitten nog op 1.0, dus implicit tiling is niet in elke client
+beschikbaar.
 
-*Wat is een CRS?*
+### Geometric error
 
-## Geometric error
+>   Kies een drempelwaarde voor geometric error op basis van het gewenste zoom-
+>   en detailniveau.
 
-*Wat is geometric error?*
+De geometrische fout (*geometric error*) van een tegel wordt gebruikt in 3D
+Tiles om te bepalen hoe gedetailleerd een tegel moet worden weergegeven. De
+grootte van de fout hangt af van hoe belangrijk het is om de details van het
+object nauwkeurig weer te geven, waarbij een hogere fout betekent dat het
+programma eerder beslist om de tegel te verfijnen en de details weer te geven.
 
-De ‘geometric error’ (geometrische fout) van een tegel vertelt ons hoe goed de
-tegel de vorm van het originele object weergeeft. Het is een nummer dat aangeeft
-hoeveel de vereenvoudigde versie van de tegel afwijkt van de echte vorm, gemeten
-in meters.
+Voor verschillende toepassingen zijn verschillende drempelwaarden voor de
+geometric error van LOD-modellen van belang. Voor gebouwen op LOD2 zou een
+drempelwaarde tussen 1 en 10 meter geschikt zijn. Bij terreinmodellen op LOD1,
+bekeken op een schaal van 1:10.000, zou een drempelwaarde tussen 10 en 50 meter
+passend zijn. Voor een schaal van 1:50.000 zou een waarde tussen 50 en 100 meter
+geschikt zijn. Deze drempelwaarden zijn afhankelijk van verschillende factoren
+zoals het beoogde gebruiksscenario, beschikbare rekenkracht en gewenste visuele
+kwaliteit. Zo biedt een lagere geometric error meer detail, maar vereist het
+meer rekenkracht. Het is cruciaal om de optimale drempelwaarde te bepalen op
+basis van specifieke tests en evaluaties, rekening houdend met de vereisten van
+het project en de doelsystemen.
 
-Voor 3D Tiles wordt de geometrische fout van een tegel gebruikt om te bepalen
-hoe gedetailleerd die tegel moet worden weergegeven. Dit wordt gedaan door de
-tegels te organiseren in een hiërarchische boomstructuur, waarbij elk niveau van
-de boom een verschillend niveau van detail vertegenwoordigt.
+### Offset Z-coördinaat
 
-Wanneer een gebruiker bijvoorbeeld een 3D scène bekijkt op een computer of
-mobiel apparaat, zal de client-implementatie de geometrische fout van elke tegel
-evalueren. Als de geometrische fout van een tegel binnen een aanvaardbaar bereik
-valt, wordt die tegel getoond aan de gebruiker. Als de fout te groot is, wat
-betekent dat de tegel niet gedetailleerd genoeg is, zal de client-implementatie
-ervoor kiezen om die tegel te verfijnen door kindertegels van hogere resolutie
-te laden en te tonen.
+>   Stem de offset van de Z-coördinaat van 3D Tiles af op het specifieke
+>   coördinatensysteem of op die van andere 3D Tiles datasets.
 
-De grootte van deze fout hangt af van hoe belangrijk het is om de details van
-het object nauwkeurig weer te geven. Een hogere fout betekent dat het programma
-eerder beslist om de tegel te verfijnen en de details weer te geven.
+**Kunnen we met elkaar een meer specifieke best practice maken, waarin we een
+waarde voor de offset opnemen?**
 
-*Hoe hier mee om te gaan bij het genereren/serveren van 3D Tiles?*
+Het is belangrijk om ervoor te zorgen dat de offset van de Z-coördinaat correct
+wordt toegepast om eventuele verticale verschuivingen tussen het
+coördinatensysteem van het model en het gewenste referentiesysteem te
+corrigeren. Dit kan bijvoorbeeld nodig zijn om het model op de juiste hoogte
+boven het maaiveldoppervlak te plaatsen of om ervoor te zorgen dat het model
+correct uitgelijnd is met andere lagen, zoals .
 
-*Hoe hier mee om te gaan bij het gebruiken van 3D Tiles?*
+Het bepalen van de juiste offsetwaarde vereist meestal enige kennis van het
+coördinatensysteem van het model en het gewenste referentiesysteem, evenals
+eventuele verschillen in hoogteniveaus tussen die systemen. Het is aan te raden
+om de offset zorgvuldig te kalibreren en te testen om ervoor te zorgen dat het
+model nauwkeurig wordt gepositioneerd in de gewenste context.
 
-## Ontbrekende specificaties voor tijdseries
+### Parameters voor LODs, zoomlevels, generalisatie
 
-## Ondergrondinformatie in clients
+>   Experimenteer met de optimale parameters voor LODs, zoomlevels en
+>   generalisatie voor 3D Tiles generatie.
+
+Om efficiënte en visueel aantrekkelijke 3D Tiles te genereren voor
+stadsmodellen, wordt aanbevolen om de volgende parameters in te stellen voor
+verschillende zoomniveaus (zoomlevels) en LODs (Levels of Detail):
+
+-   *Zoomniveau 16:* Genereer tiles voor gebouwen op LOD2 zonder objectsize
+    filter (generalisatie van 0 meter). Dit betekent dat alle details behouden
+    blijven zonder generalisatie.
+
+-   *Zoomniveau 15:* Genereer tiles voor gebouwen op LOD2 met een objectsize
+    filter (generalisatie van 2 meter). Hierdoor worden kleinere objecten, zoals
+    schuurtjes en terrasoverkappingen, uitgesloten van de lagere zoomniveaus,
+    waar minder detail nodig is.
+
+-   *Zoomniveau 14:* Genereer tiles voor gebouwen op LOD2 met een objectsize
+    filter (generalisatie van 5 meter). Op dit zoomniveau is een grotere
+    generalisatie passend, waardoor nog kleinere objecten worden uitgefilterd.
+
+Het objectsize filter wordt toegepast op basis van de diagonaal van de bounding
+box van een object, en vertices worden binnen deze afstand samengevoegd
+(snapping). Hierdoor kunnen kleine objecten worden geëlimineerd zonder het
+visuele detail te verliezen.
+
+Het is ook raadzaam om een fallback LOD in te stellen, zoals LOD1, voor het
+geval er geen LOD2 beschikbaar is in de brondataset. In formaten zoals CityGML
+of CityJSON kunnen meerdere LODs voor een object worden opgenomen. Als het
+voorkeurs LOD niet beschikbaar is, zal het systeem automatisch teruggrijpen naar
+het fallback LOD om het object op te nemen in de 3D Tile.
+
+Het optimaliseren van deze instellingen zorgt voor een gebalanceerde weergave
+van stadsmodellen op verschillende zoomniveaus, waarbij de prestaties worden
+geoptimaliseerd zonder concessies te doen aan de visuele kwaliteit.
+
+### Shader
+
+>   Kies voor Physically Based Rendering (PBR) als shader voor 3D Tiles.
+
+Het gebruik van PBR-shaders voor 3D Tiles biedt een toekomstbestendige oplossing
+voor het creëren van hoogwaardige en realistische 3D-modellen. PBR-shaders zijn
+gebaseerd op fysische principes van lichtinteractie, wat resulteert in visueel
+consistente weergaven van materialen onder verschillende
+belichtingsomstandigheden. Deze benadering zorgt ervoor dat je 3D-modellen er
+realistisch uitzien in zowel huidige als toekomstige renderomgevingen en
+softwareplatforms.
+
+Niet alle shaders zijn echter even toekomstbestendig. Traditionele shaders die
+gebaseerd zijn op ad-hoc benaderingen van materiaalweergave kunnen snel
+verouderd raken en moeilijk te onderhouden zijn naarmate nieuwe
+renderingtechnologieën evolueren. Het kiezen van PBR als shader voor 3D Tiles
+garandeert niet alleen een hoog niveau van visuele kwaliteit, maar biedt ook een
+flexibele basis voor aanpassingen en updates in de toekomst.
+
+### Attribuutgegevens
+
+>   Neem alleen de attributen op die nodig zijn voor visualisatie of voor het
+>   opvragen van extra informatie via een andere server.
+
+Het zorgvuldig kiezen van welke attributen worden opgenomen in 3D Tiles-datasets
+is van cruciaal belang voor efficiënt gegevensbeheer. Door enkel de essentiële
+attributen toe te voegen, wordt onnodige gegevensuitwisseling voorkomen, wat de
+prestaties verbetert en de netwerkbelasting vermindert. Daarnaast kan het
+selectief opnemen van attributen waarop veelvuldig gefilterd wordt helpen bij
+het optimaliseren van de dataset voor specifieke gebruiksscenario's.
+
+Het opvragen van extra informatie via een andere server op basis van een unieke
+identificatie biedt real-time toegang tot actuele gegevens. Dit is vooral
+gunstig bij dynamische datasets, waarbij voorkomen wordt dat 3D Tiles
+herhaaldelijk gegenereerd moeten worden, of in situaties waar een hoge mate van
+actualiteit vereist is, zoals bij bepaalde publieke taken, zoals het verstrekken
+van toeslagen of vergunningen.
+
+Bovendien maakt deze aanpak gecontroleerde toegang mogelijk op basis van
+autorisatie, waardoor bijvoorbeeld de privacy en beveiliging van
+persoonsgegevens worden gewaarborgd.
+
+### Formaat
+
+>   Kies GLB als het juiste formaat voor 3D-tiles
+
+GLB, wat staat voor GL Transmission Format Binary, is de gecomprimeerde variant
+van GLTF (GL Transmission Format). glTF 2.0 is het primaire tegelformaat voor 3D
+Tiles
+
+In vergelijking met B3DM heeft GLB verschillende voordelen. Ten eerste wordt
+B3DM uitgefaseerd, wat betekent dat het mogelijk niet langer wordt ondersteund
+in toekomstige software-updates en ontwikkelingen. Dit kan leiden tot
+compatibiliteitsproblemen en beperkte interoperabiliteit met nieuwe platforms en
+tools. Dit maakt GLB een toekomstbestendige keuze.
+
+Daarnaast is GLB over het algemeen compacter en efficiënter gecomprimeerd dan
+B3DM, wat resulteert in kleinere bestandsgroottes en snellere overdrachtstijden.
+Dit maakt het bijzonder geschikt voor webgebaseerde toepassingen en mobiele
+platforms waar bandbreedte en laadtijden van cruciaal belang zijn.
+
+Door te kiezen voor GLB vermijdt men potentiële complicaties en
+compatibiliteitsproblemen die kunnen ontstaan bij het gebruik van verouderde
+formaten zoals 3BM. Dit maakt GLB een verstandige keuze voor het
+toekomstbestendig opslaan en uitwisselen van 3D-gegevens.
+
+## Gebruiken van 3D Tiles
+
+### Minimal zoom
+
+>   Stel een minimale zoom in op de client-side voor het laden van 3D
+>   Tiles-gegevens.
+
+Het instellen van een minimale zoom op de client-side bij het laden van 3D
+Tiles-gegevens is essentieel om de prestaties te optimaliseren en onnodige
+belasting van het systeem te voorkomen. Door een minimale zoom in te stellen,
+bijvoorbeeld vanaf zoomniveau 14 of hoger, kan worden voorkomen dat er onnodig
+veel tegels worden opgehaald en geladen vanaf lagere zoomniveaus zoals 10 of 12.
+
+Dit biedt verschillende voordelen. Ten eerste verkort het de algehele laadtijd
+en verbetert het de efficiëntie van de gegevensweergave door alleen tegels vanaf
+het gespecificeerde zoomniveau te laden. Vooral bij grote kaart bounding boxes
+kan het laden van tegels vanaf lagere zoomniveaus aanzienlijk meer gegevens
+vereisen dan nodig is, wat de prestaties nadelig kan beïnvloeden.
+
+Bovendien zijn veel 3D Tiles-sets geoptimaliseerd om vanaf een bepaald
+zoomniveau in te laden, zoals bijvoorbeeld geschikt voor zoomniveaus 14, 15 en
+16\. Door een minimale zoom in te stellen die overeenkomt met het optimale
+zoomniveau van de gegevensset, kan worden gegarandeerd dat alleen de meest
+geschikte en gedetailleerde tegels worden geladen voor een optimale
+gebruikerservaring.
+
+Kortom, het instellen van een minimale zoom op de client-side is een effectieve
+manier om onnodige belasting van het systeem te verminderen, de laadtijd te
+verkorten en de efficiëntie van de gegevensweergave te verbeteren, vooral bij
+het werken met grote (landsdekkende) en gedetailleerde 3D Tiles-gegevenssets.
+
+### Replace vs. Add
+
+>   Gebruik van Replace bij het Werken met 3D Tiles
+
+Het gebruik van de “Replace" methode bij het werken met 3D Tiles in een
+clientviewer biedt verschillende voordelen en optimaliseert de weergave van
+gegevens op verschillende zoomniveaus. Een aanbevolen werkwijze is om "Replace"
+te gebruiken voor specifieke zoomniveaus, zoals bijvoorbeeld zoomniveaus 14, 15
+en 16. Op deze manier kan er een geleidelijke overgang van detailniveaus worden
+gecreëerd naarmate de gebruiker inzoomt op de scene.
+
+Door "Replace" te gebruiken in plaats van "Add" bij het laden van gegevens,
+wordt niet-redundante tiling en rendering voorkomen. Bij het gebruik van "Add"
+worden namelijk meerdere sets van gegevens 'over elkaar heen' geladen, wat kan
+leiden tot inefficiënte gegevensweergave en prestatieverlies. Het toepassen van
+"Replace" zorgt voor een efficiëntere weergave van gegevens en minimaliseert de
+belasting van het systeem.
+
+Een voorbeeld van het gebruik van "Replace" op verschillende zoomniveaus kan
+worden geïllustreerd door te kijken naar het laden van gebouwen. Op zoomniveau
+14 kunnen bijvoorbeeld de 50.000 grootste gebouwen worden geladen en
+weergegeven. Op zoomniveau 15 kunnen deze gebouwen worden vervangen door een
+nieuwe set van bijvoorbeeld de 50.000 grotere gebouwen die zich binnen de
+weergegeven kaart-boundingbox bevinden. Tenslotte, op zoomniveau 16 kunnen de
+gebouwen worden vervangen door de meest gedetailleerde set van gebouwen die
+beschikbaar zijn.
+
+Door deze aanpak te volgen, wordt een soepele overgang tussen verschillende
+detailniveaus mogelijk gemaakt, terwijl tegelijkertijd de efficiëntie van de
+gegevensweergave wordt behouden. Hierdoor kan de 3D Tiles-clientviewer een
+optimale gebruikerservaring bieden, zelfs bij complexe en gedetailleerde
+3D-gegevenssets.
+
+### Kleur en belichting
+
+>   Neem een lamp achter de viewer op voor voldoende contrast.
+
+Het opnemen van een lamp achter de kijker in een 3D-scene kan aanzienlijk
+bijdragen aan het creëren van voldoende contrast en visuele helderheid. Dit is
+met name belangrijk in scenario's waarbij de gebruiker interactie heeft met
+driedimensionale gegevens, zoals kaarten of modellen. Door een lamp achter de
+kijker te plaatsen, wordt de scène gelijkmatig verlicht, waardoor details
+duidelijker zichtbaar worden en de visuele ervaring wordt verbeterd.
+
+Voor veel use cases is tijdafhankelijke belichting niet noodzakelijk is. In veel
+gevallen gaat het om het presenteren van statische informatie, zoals
+kaartbeelden, die consistent moeten blijven, ongeacht het tijdstip van de dag.
+Het toevoegen van dynamische verlichtingseffecten, zoals zonlicht dat op
+verschillende tijdstippen van de dag verandert, kan overbodig zijn en de
+visualisatie voor een toepassing nadelig beïnvloeden.
+
+Daarom is het vaak voldoende om een statische lichtbron achter de kijker op te
+nemen, die zorgt voor een gelijkmatige verlichting van de scène zonder rekening
+te houden met het tijdstip van de dag. Dit zorgt voor consistente kleuren en
+contrasten, wat essentieel is voor een duidelijke en nauwkeurige visualisatie
+van de gegevens.
+
+Door te kiezen voor een eenvoudige, statische belichtingsopstelling kunnen
+ontwikkelaars de prestaties van hun applicaties verbeteren en tegelijkertijd een
+consistente visuele ervaring bieden aan gebruikers, ongeacht het moment waarop
+ze de gegevens bekijken.
+
+### WCAG
+
+>   Minimaliseer visuele barrières in 3D Tile visualisaties door zo dicht
+>   mogelijk bij de Web Content Accessibility Guidelines (WCAG) te blijven.
+
+Hoewel de visualisatie van 3D Tiles zelf (waarschijnlijk) niet volledig aan de
+WCAG-richtlijnen hoeft te voldoen, is het toch aan te raden om zo dicht mogelijk
+bij deze richtlijnen te blijven. WCAG staat voor de "Web Content Accessibility
+Guidelines" en is een reeks richtlijnen voor het verbeteren van de
+toegankelijkheid van webinhoud voor mensen met verschillende handicaps,
+inclusief visuele, auditieve, motorische, spraak- en cognitieve beperkingen.
+
+Hoewel de visualisatie van 3D Tiles zelf niet altijd gemakkelijk toegankelijk is
+voor alle gebruikers, is het van cruciaal belang dat de interactieve elementen
+in de browser, zoals knoppen en eventuele testen in pop-ups, voldoen aan de
+WCAG-richtlijnen. Deze richtlijnen helpen ervoor te zorgen dat webinhoud voor
+iedereen begrijpelijk en bruikbaar is, ongeacht eventuele beperkingen. Het
+naleven van deze richtlijnen verbetert niet alleen de gebruikerservaring voor
+mensen met handicaps, maar kan ook bijdragen aan een bredere acceptatie en
+bruikbaarheid van de applicatie.
+
+### Coördinaten van scherm/terrein en camera/doelobject
+
+>   Houd rekening met coördinaten van scherm/terrein en camera/doelobject
+
+Bij het ontwikkelen van een clienttoepassing met 3D Tiles moet de ontwikkelaar
+rekening houden met het verschil tussen schermcoördinaten en terreincoördinaten
+bij kaartinteracties zoals klikken op objecten, evenals met de viewpoints
+(camerapositie) en focuspoints (doelobject) bij het wisselen tussen 2D en 3D.
+
+Het is essentieel om het verschil tussen schermcoördinaten (x, y) en
+terreincoördinaten (geografische coördinaten) te begrijpen bij het implementeren
+van klikfunctionaliteit in een kaartvenster met 3D Tiles. Doordat de
+schermcoördinaten moeten worden vertaald naar terreincoördinaten, kan het
+voorkomen dat een gebruiker op een locatie klikt die overeenkomt met een ander
+object dan verwacht, wat tot verwarring kan leiden. Daarom is het nodig om
+zorgvuldig om te gaan met de coördinatentransformaties om ervoor te zorgen dat
+de juiste objecten worden geselecteerd of aangeklikt.
+
+Bovendien vereist het wisselen tussen 2D- en 3D-weergaven in een
+clienttoepassing extra aandacht. Bijvoorbeeld, in een platform zoals Cesium
+wordt de 2D-weergave opgebouwd op basis van de camerapositie, niet op basis van
+de positie van het object waar naar gekeken werd in de 3D-scene. Dit kan leiden
+tot verwarring bij gebruikers, omdat de weergave kan veranderen wanneer er wordt
+geschakeld tussen 2D en 3D. Het implementeren van intelligentie en logica om
+naadloze overgangen mogelijk te maken tussen 2D- en 3D-weergaven is dus
+noodzakelijk om de gebruikerservaring te verbeteren en verwarring te voorkomen.
