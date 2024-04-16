@@ -48,14 +48,36 @@ softwareleveranciers kan worden geïmplementeerd en gebruikt
 
 ## OGC 3D Tiles
 
-## Techniek
+Deze paragraaf geeft een beschrijving van de belangrijkste onderdelen van de OGC
+3D Tiles standaard.
 
-Deze paragraaf gaat dieper in op de techniek van OGC 3D Tiles.
+### Introductie
 
-In 3D Tiles verwijst een tegelset naar een verzameling tegels georganiseerd
-binnen een ruimtelijke gegevensstructuur, vertegenwoordigd door een boom. Elke
-tegelset wordt beschreven door minstens één JSON-bestand met metadata en een
-hiërarchie van tegelobjecten, waarvan elke tegel renderbare inhoud kan bevatten.
+De OGC 3D Tiles-standaard is een set regels voor het organiseren en visualiseren
+van 3D-gegevens. Het vertelt ons hoe tegelsets, die informatie over de locatie,
+details en uiterlijk van de gegevens bevatten, moeten worden opgebouwd. Deze
+tegelsets zijn gestapeld op elkaar en worden slim gebruikt om gegevens op
+verschillende gedetailleerde niveaus weer te geven. Bovendien definieert de
+standaard de ondersteuning voor verschillende gegevenstypen, waaronder
+geometrie, texturen en metadata, en biedt het richtlijnen voor mediatypes en
+encoding.
+
+Naast het tegelsetformaat omvat de standaard specificaties voor het beheren van
+ruimtelijke queries, zoals het bepalen van de zichtbaarheid van tegels op basis
+van hun geometrische fout en het dynamisch laden van tegels op basis van de
+kijkafstand van de gebruiker. Ook biedt het richtlijnen voor
+implementatiedetails, zoals het gebruik van UTF-8-encoding voor JSON-bestanden
+en unieke sleutels voor eigenschappen binnen JSON-objecten.
+
+### Tegelset
+
+In 3D Tiles verwijst een tegelset (tileset) naar een verzameling tegels
+georganiseerd binnen een ruimtelijke gegevensstructuur, vertegenwoordigd door
+een boom. Elke tegelset wordt beschreven door minstens één JSON-bestand met
+metadata en een hiërarchie van tegelobjecten, waarvan elke tegel renderbare
+inhoud kan bevatten.
+
+*Voorbeeld*
 
 ### Tegelformaten
 
@@ -65,7 +87,7 @@ geometrie, textuurinformatie en kan worden uitgebreid met metadata,
 model-instanciëring en compressie. Het ondersteunt verschillende soorten
 3D-inhoud zoals 3D-modellen en puntenwolken.
 
-Voorbeeld GLTF
+*Voorbeeld GLTF*
 
 Naast glTF ondersteunt 3D Tiles ook de volgende tegelformaten:
 
@@ -81,56 +103,71 @@ puntenwolk.
 4\. Composite (cmpt): Hiermee kunnen tegels van verschillende formaten worden
 samengevoegd tot één tegel.
 
-Deze formaten bieden flexibiliteit voor het opslaan en renderen van diverse
-soorten 3D-inhoud binnen de 3D Tiles-specificatie.
-
 ### Mediatypes en encoding
 
-Het bestandsformaat voor 3D Tiles bestaat uit:
+### Het 3D Tiles-bestandsformaat gebruikt verschillende mediatypes en encoding:
 
-\- Voor tegelsetbestanden: .json-extensie met het Media Type "application/json".
+### - .json voor tegelset-, metagegevensschema-, tegelsetstijl- en JSON-subtree-bestanden met het Media Type "application/json".
 
-Voorbeeld JSON
+### - .subtree voor binaire subtree-bestanden met het Media Type "application/octet-stream".
 
-\- Voor tegelinhoudsbestanden: de specifieke extensies en Media Type volgens de
-specificatie van het tegelformaat.
+### - .bin voor binaire bufferbestanden met het Media Type "application/octet-stream".
 
-Voorbeeld van een GLTF en B3DM?
+### JSON-bestanden gebruiken UTF-8-encoding zonder BOM, met ASCII-tekenreeks-charset en unieke sleutels; niet-ASCII-tekens worden geëscapet volgens RFC 8259, Sectie 6.
 
-\- Voor metagegevensschema-bestanden: .json-extensie met het Media Type
-"application/json".
+### Geometric error
 
-\- Voor tegelsetstijlbestanden: .json-extensie met het Media Type
-"application/json".
+Tegels in een 3D-omgeving worden georganiseerd in een boomstructuur, waarbij
+elke tegel verschillende niveaus van detail vertegenwoordigt. Deze niveaus van
+detail helpen bij het bepalen hoe gedetailleerd een tegel moet worden
+weergegeven. De geometrische fout van een tegel vertelt ons hoe nauwkeurig de
+vorm van die tegel overeenkomt met het originele object, gemeten in meters.
 
-\- Voor JSON-subtree-bestanden: .json-extensie met het Media Type
-"application/json".
+Bij het bekijken van een 3D-scène op een apparaat, wordt de geometrische fout
+van elke tegel geëvalueerd. Als de fout binnen een aanvaardbaar bereik ligt,
+wordt de tegel getoond. Als de fout te groot is, wat betekent dat de tegel niet
+gedetailleerd genoeg is, wordt de tegel verfijnd door gedetailleerdere
+kindertegels te laden en te tonen.
 
-\- Voor binaire subtree-bestanden: .subtree-extensie met het Media Type
-"application/octet-stream".
+De grootte van de fout hangt af van hoe belangrijk het is om de details van het
+object nauwkeurig weer te geven. Een hogere fout betekent dat het programma
+eerder beslist om de tegel te verfijnen en de details weer te geven.
 
-\- Voor binaire bufferbestanden: .bin-extensie met het Media Type
-"application/octet-stream".
+*Voorbeeld geometric error*
 
-Wat betreft de encoding:
+### Implicit tiling
 
-\- JSON-bestanden gebruiken UTF-8-encoding zonder BOM.
+Implicit tiling in 3D Tiles is een methode om 3D-gegevens op een gestructureerde
+en efficiënte manier te organiseren. Het verdeelt de gegevens in een regelmatig
+patroon van tegels, vergelijkbaar met hoe een mozaïek is opgebouwd. Hierdoor
+kunnen gebruikers snel en eenvoudig specifieke tegels identificeren en
+benaderen, wat vooral handig is bij het werken met grote 3D-omgevingen.
 
-\- Alle tekstuele strings in JSON gebruiken alleen het ASCII-tekenreeks-charset,
-zonder JSON-escapen.
+Implicit tiling vereenvoudigt quadtrees en octrees in 3D Tiles, waardoor snelle
+toegang mogelijk is via tegelcoördinaten. Dit verbetert ruimtelijke queries,
+doorloopalgoritmen en updates van tegels.
 
-\- Niet-ASCII-tekens die als eigenschapswaarden in JSON verschijnen, kunnen
-worden geëscapet.
+Bovendien maakt implicit tiling betere interoperabiliteit mogelijk met bestaande
+GIS-gegevensformaten met impliciet gedefinieerde tegelindelingen, zoals TMS,
+WMTS, S2 en CDB.
 
-\- Namen (sleutels) binnen JSON-objecten moeten uniek zijn, dus
-duplicaat-sleutels zijn niet toegestaan.
+Om grote hoeveelheden gegevens efficiënt te beheren, worden tegels gecreëerd en
+georganiseerd op basis van bijbehorende metadata. Bij zeer omvangrijke datasets
+wordt deze metadata opgedeeld en verdeeld in subtrees met een vast formaat. Deze
+subtrees bevatten informatie over welke tegels aanwezig zijn en welke inhoud ze
+bevatten, waardoor het beheer van de dataset geoptimaliseerd wordt.
 
-\- Sommige eigenschappen zijn gedefinieerd als integers in het schema. Dergelijke
-waarden kunnen worden opgeslagen als decimalen met een nul fractiegedeelte of
-met exponentnotatie, zoals gedefinieerd in RFC 8259, Sectie 6.
+Een implicitTiling-object kan worden toegevoegd aan tegels in het JSON-bestand
+van de tegelset. Hiermee wordt bepaald hoe de tegel wordt verdeeld en waar
+inhoud is opgeslagen. Het kan aan meerdere tegels worden toegevoegd voor
+complexere indelingen. De implementatie van deze tegels omvat details zoals
+verschillende verdeelschema's, strategieën voor verfijning en toegang tot
+inhoud.
 
-### Requests
+### Metadata
+
+…
 
 ## i3DS
 
-…
+placeholder
