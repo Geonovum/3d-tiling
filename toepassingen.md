@@ -3,10 +3,12 @@
 Dit hoofdstuk beschrijft een aantal praktijkvoorbeelden van de toepassing van 3D
 Tiles in verschillende projecten en use cases.
 
-## Placeholder project 1
+## 3D Rotterdam
 
 Lorem ipsum dolor sit amet.
 
-## Placeholder project 2
+[www.3drotterdam.nl](http://www.3drotterdam.nl)
+
+## Watermanagement
 
 Lorem ipsum dolor sit amet.
