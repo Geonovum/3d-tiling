@@ -1,4 +1,4 @@
-# Praktijkvoorbeelden
+# Toepassingen
 
 Dit hoofdstuk beschrijft een aantal praktijkvoorbeelden van de toepassing van 3D
 Tiles in verschillende projecten en use cases.
