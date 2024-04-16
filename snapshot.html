@@ -34,6 +34,8 @@ dfn{cursor:pointer}
   
 <title>TODO: Vul hier de titel in</title>
   
+<link rel="stylesheet" href="media/Geonovumstyle.css">
+  
 <link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico">
   
   
@@ -377,7 +379,7 @@ handleidingen, clients, servers en 3D Tile datasets, waardoor lezers worden
 voorzien van de nodige bronnen om aan de slag te gaan met 3D tiling in hun
 projecten.</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-is-3d-tiling"><bdi class="secno">1.1 </bdi>Wat is 3D Tiling?</a></li><li class="tocline"><a class="tocxref" href="#waar-is-3d-tiling-voor-te-gebruiken"><bdi class="secno">1.2 </bdi>Waar is 3D Tiling voor te gebruiken?</a></li><li class="tocline"><a class="tocxref" href="#wat-zijn-de-voor-en-nadelen-van-3d-tiling"><bdi class="secno">1.3 </bdi>Wat zijn de voor- en nadelen van 3D Tiling?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#standaarden"><bdi class="secno">2. </bdi>Standaarden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles-specification"><bdi class="secno">2.1 </bdi>OGC 3D Tiles specification</a></li><li class="tocline"><a class="tocxref" href="#i3s"><bdi class="secno">2.2 </bdi>i3S</a></li><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles"><bdi class="secno">2.3 </bdi>OGC 3D Tiles</a></li><li class="tocline"><a class="tocxref" href="#techniek"><bdi class="secno">2.4 </bdi>Techniek</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#tegelformaten"><bdi class="secno">2.4.1 </bdi>Tegelformaten</a></li><li class="tocline"><a class="tocxref" href="#mediatypes-en-encoding"><bdi class="secno">2.4.2 </bdi>Mediatypes en encoding</a></li><li class="tocline"><a class="tocxref" href="#requests"><bdi class="secno">2.4.3 </bdi>Requests</a></li></ol></li><li class="tocline"><a class="tocxref" href="#i3ds"><bdi class="secno">2.5 </bdi>i3DS</a></li></ol></li><li class="tocline"><a class="tocxref" href="#praktijkvoorbeelden"><bdi class="secno">3. </bdi>Praktijkvoorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#placeholder-project-1"><bdi class="secno">3.1 </bdi>Placeholder project 1</a></li><li class="tocline"><a class="tocxref" href="#placeholder-project-2"><bdi class="secno">3.2 </bdi>Placeholder project 2</a></li></ol></li><li class="tocline"><a class="tocxref" href="#best-practices"><bdi class="secno">4. </bdi>Best practices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#serveren-van-3d-tiles"><bdi class="secno">4.1 </bdi>Serveren van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#explicit-en-implicit-tiling"><bdi class="secno">4.1.1 </bdi>Explicit en implicit tiling</a></li><li class="tocline"><a class="tocxref" href="#geometric-error"><bdi class="secno">4.1.2 </bdi>Geometric error</a></li><li class="tocline"><a class="tocxref" href="#offset-z-coordinaat"><bdi class="secno">4.1.3 </bdi>Offset Z-coördinaat</a></li><li class="tocline"><a class="tocxref" href="#parameters-voor-lods-zoomlevels-generalisatie"><bdi class="secno">4.1.4 </bdi>Parameters voor LODs, zoomlevels, generalisatie</a></li><li class="tocline"><a class="tocxref" href="#shader"><bdi class="secno">4.1.5 </bdi>Shader</a></li><li class="tocline"><a class="tocxref" href="#attribuutgegevens"><bdi class="secno">4.1.6 </bdi>Attribuutgegevens</a></li><li class="tocline"><a class="tocxref" href="#formaat"><bdi class="secno">4.1.7 </bdi>Formaat</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gebruiken-van-3d-tiles"><bdi class="secno">4.2 </bdi>Gebruiken van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#minimal-zoom"><bdi class="secno">4.2.1 </bdi>Minimal zoom</a></li><li class="tocline"><a class="tocxref" href="#replace-vs-add"><bdi class="secno">4.2.2 </bdi>Replace vs. Add</a></li><li class="tocline"><a class="tocxref" href="#kleur-en-belichting"><bdi class="secno">4.2.3 </bdi>Kleur en belichting</a></li><li class="tocline"><a class="tocxref" href="#wcag"><bdi class="secno">4.2.4 </bdi>WCAG</a></li><li class="tocline"><a class="tocxref" href="#coordinaten-van-scherm-terrein-en-camera-doelobject"><bdi class="secno">4.2.5 </bdi>Coördinaten van scherm/terrein en camera/doelobject</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#techniek-0"><bdi class="secno">5. </bdi>Techniek</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#algemeen"><bdi class="secno">5.1 </bdi>Algemeen</a></li><li class="tocline"><a class="tocxref" href="#tegelformaten-0"><bdi class="secno">5.2 </bdi>Tegelformaten</a></li><li class="tocline"><a class="tocxref" href="#mediatypes-en-encoding-0"><bdi class="secno">5.3 </bdi>Mediatypes en encoding</a></li><li class="tocline"><a class="tocxref" href="#requests-0"><bdi class="secno">5.4 </bdi>Requests</a></li></ol></li><li class="tocline"><a class="tocxref" href="#toolkit"><bdi class="secno">6. </bdi>Toolkit</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#handleidingen"><bdi class="secno">6.1 </bdi>Handleidingen</a></li><li class="tocline"><a class="tocxref" href="#clients-en-servers"><bdi class="secno">6.2 </bdi>Clients en servers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#clients"><bdi class="secno">6.2.1 </bdi>Clients</a></li><li class="tocline"><a class="tocxref" href="#generators-en-servers"><bdi class="secno">6.2.2 </bdi>Generators en servers</a></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-tile-datasets"><bdi class="secno">6.3 </bdi>3D Tile Datasets</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#x3d-basisvoorziening"><bdi class="secno">6.3.1 </bdi>3D basisvoorziening</a></li><li class="tocline"><a class="tocxref" href="#x3d-tiles-nederland"><bdi class="secno">6.3.2 </bdi>3D Tiles Nederland</a></li></ol></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-is-3d-tiling"><bdi class="secno">1.1 </bdi>Wat is 3D Tiling?</a></li><li class="tocline"><a class="tocxref" href="#waar-is-3d-tiling-voor-te-gebruiken"><bdi class="secno">1.2 </bdi>Waar is 3D Tiling voor te gebruiken?</a></li><li class="tocline"><a class="tocxref" href="#wat-zijn-de-voor-en-nadelen-van-3d-tiling"><bdi class="secno">1.3 </bdi>Wat zijn de voor- en nadelen van 3D Tiling?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#standaarden"><bdi class="secno">2. </bdi>Standaarden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles-specification"><bdi class="secno">2.1 </bdi>OGC 3D Tiles specification</a></li><li class="tocline"><a class="tocxref" href="#i3s"><bdi class="secno">2.2 </bdi>i3S</a></li><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles"><bdi class="secno">2.3 </bdi>OGC 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">2.3.1 </bdi>Introductie</a></li><li class="tocline"><a class="tocxref" href="#tegelset"><bdi class="secno">2.3.2 </bdi>Tegelset</a></li><li class="tocline"><a class="tocxref" href="#tegelformaten"><bdi class="secno">2.3.3 </bdi>Tegelformaten</a></li><li class="tocline"><a class="tocxref" href="#mediatypes-en-encoding"><bdi class="secno">2.3.4 </bdi>Mediatypes en encoding</a></li><li class="tocline"><a class="tocxref" href="#het-3d-tiles-bestandsformaat-gebruikt-verschillende-mediatypes-en-encoding"><bdi class="secno">2.3.5 </bdi>Het 3D Tiles-bestandsformaat gebruikt verschillende mediatypes en encoding:</a></li><li class="tocline"><a class="tocxref" href="#json-voor-tegelset-metagegevensschema-tegelsetstijl-en-json-subtree-bestanden-met-het-media-type-application-json"><bdi class="secno">2.3.6 </bdi>- .json voor tegelset-, metagegevensschema-, tegelsetstijl- en JSON-subtree-bestanden met het Media Type "application/json".</a></li><li class="tocline"><a class="tocxref" href="#subtree-voor-binaire-subtree-bestanden-met-het-media-type-application-octet-stream"><bdi class="secno">2.3.7 </bdi>- .subtree voor binaire subtree-bestanden met het Media Type "application/octet-stream".</a></li><li class="tocline"><a class="tocxref" href="#bin-voor-binaire-bufferbestanden-met-het-media-type-application-octet-stream"><bdi class="secno">2.3.8 </bdi>- .bin voor binaire bufferbestanden met het Media Type "application/octet-stream".</a></li><li class="tocline"><a class="tocxref" href="#json-bestanden-gebruiken-utf-8-encoding-zonder-bom-met-ascii-tekenreeks-charset-en-unieke-sleutels-niet-ascii-tekens-worden-geescapet-volgens-rfc-8259-sectie-6"><bdi class="secno">2.3.9 </bdi>JSON-bestanden gebruiken UTF-8-encoding zonder BOM, met ASCII-tekenreeks-charset en unieke sleutels; niet-ASCII-tekens worden geëscapet volgens RFC 8259, Sectie 6.</a></li><li class="tocline"><a class="tocxref" href="#geometric-error"><bdi class="secno">2.3.10 </bdi>Geometric error</a></li><li class="tocline"><a class="tocxref" href="#implicit-tiling"><bdi class="secno">2.3.11 </bdi>Implicit tiling</a></li><li class="tocline"><a class="tocxref" href="#metadata"><bdi class="secno">2.3.12 </bdi>Metadata</a></li></ol></li><li class="tocline"><a class="tocxref" href="#i3ds"><bdi class="secno">2.4 </bdi>i3DS</a></li></ol></li><li class="tocline"><a class="tocxref" href="#praktijkvoorbeelden"><bdi class="secno">3. </bdi>Praktijkvoorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#x3d-rotterdam"><bdi class="secno">3.1 </bdi>3D Rotterdam</a></li><li class="tocline"><a class="tocxref" href="#watermanagement"><bdi class="secno">3.2 </bdi>Watermanagement</a></li></ol></li><li class="tocline"><a class="tocxref" href="#best-practices"><bdi class="secno">4. </bdi>Best practices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#serveren-van-3d-tiles"><bdi class="secno">4.1 </bdi>Serveren van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#explicit-en-implicit-tiling"><bdi class="secno">4.1.1 </bdi>Explicit en implicit tiling</a></li><li class="tocline"><a class="tocxref" href="#geometric-error-0"><bdi class="secno">4.1.2 </bdi>Geometric error</a></li><li class="tocline"><a class="tocxref" href="#offset-z-coordinaat"><bdi class="secno">4.1.3 </bdi>Offset Z-coördinaat</a></li><li class="tocline"><a class="tocxref" href="#parameters-voor-lods-zoomlevels-generalisatie"><bdi class="secno">4.1.4 </bdi>Parameters voor LODs, zoomlevels, generalisatie</a></li><li class="tocline"><a class="tocxref" href="#shader"><bdi class="secno">4.1.5 </bdi>Shader</a></li><li class="tocline"><a class="tocxref" href="#attribuutgegevens"><bdi class="secno">4.1.6 </bdi>Attribuutgegevens</a></li><li class="tocline"><a class="tocxref" href="#formaat"><bdi class="secno">4.1.7 </bdi>Formaat</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gebruiken-van-3d-tiles"><bdi class="secno">4.2 </bdi>Gebruiken van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#minimal-zoom"><bdi class="secno">4.2.1 </bdi>Minimal zoom</a></li><li class="tocline"><a class="tocxref" href="#replace-vs-add"><bdi class="secno">4.2.2 </bdi>Replace vs. Add</a></li><li class="tocline"><a class="tocxref" href="#kleur-en-belichting"><bdi class="secno">4.2.3 </bdi>Kleur en belichting</a></li><li class="tocline"><a class="tocxref" href="#wcag"><bdi class="secno">4.2.4 </bdi>WCAG</a></li><li class="tocline"><a class="tocxref" href="#coordinaten-van-scherm-terrein-en-camera-doelobject"><bdi class="secno">4.2.5 </bdi>Coördinaten van scherm/terrein en camera/doelobject</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#techniek"><bdi class="secno">5. </bdi>Techniek</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#algemeen"><bdi class="secno">5.1 </bdi>Algemeen</a></li><li class="tocline"><a class="tocxref" href="#tegelformaten-0"><bdi class="secno">5.2 </bdi>Tegelformaten</a></li><li class="tocline"><a class="tocxref" href="#mediatypes-en-encoding-0"><bdi class="secno">5.3 </bdi>Mediatypes en encoding</a></li><li class="tocline"><a class="tocxref" href="#requests"><bdi class="secno">5.4 </bdi>Requests</a></li></ol></li><li class="tocline"><a class="tocxref" href="#toolkit"><bdi class="secno">6. </bdi>Toolkit</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#handleidingen"><bdi class="secno">6.1 </bdi>Handleidingen</a></li><li class="tocline"><a class="tocxref" href="#clients-en-servers"><bdi class="secno">6.2 </bdi>Clients en servers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#clients"><bdi class="secno">6.2.1 </bdi>Clients</a></li><li class="tocline"><a class="tocxref" href="#generators-en-servers"><bdi class="secno">6.2.2 </bdi>Generators en servers</a></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-tile-datasets"><bdi class="secno">6.3 </bdi>3D Tile Datasets</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#x3d-basisvoorziening"><bdi class="secno">6.3.1 </bdi>3D basisvoorziening</a></li><li class="tocline"><a class="tocxref" href="#x3d-tiles-nederland"><bdi class="secno">6.3.2 </bdi>3D Tiles Nederland</a></li></ol></li></ol></li></ol></nav>
   
   <section id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
 <section id="wat-is-3d-tiling"><div class="header-wrapper"><h3 id="x1-1-wat-is-3d-tiling"><bdi class="secno">1.1 </bdi>Wat is 3D Tiling?</h3><a class="self-link" href="#wat-is-3d-tiling" aria-label="Permalink for Section 1.1"></a></div>
@@ -467,19 +469,37 @@ efficiënt te organiseren en weer te geven. Het wordt vaak gebruikt in combinati
 met Esri's ArcGIS-platform, maar is een open standaard die door andere
 softwareleveranciers kan worden geïmplementeerd en gebruikt</p>
 </section><section id="ogc-3d-tiles"><div class="header-wrapper"><h3 id="x2-3-ogc-3d-tiles"><bdi class="secno">2.3 </bdi>OGC 3D Tiles</h3><a class="self-link" href="#ogc-3d-tiles" aria-label="Permalink for Section 2.3"></a></div>
-</section><section id="techniek"><div class="header-wrapper"><h3 id="x2-4-techniek"><bdi class="secno">2.4 </bdi>Techniek</h3><a class="self-link" href="#techniek" aria-label="Permalink for Section 2.4"></a></div>
-<p>Deze paragraaf gaat dieper in op de techniek van OGC 3D Tiles.</p>
-<p>In 3D Tiles verwijst een tegelset naar een verzameling tegels georganiseerd
-binnen een ruimtelijke gegevensstructuur, vertegenwoordigd door een boom. Elke
-tegelset wordt beschreven door minstens één JSON-bestand met metadata en een
-hiërarchie van tegelobjecten, waarvan elke tegel renderbare inhoud kan bevatten.</p>
-<section id="tegelformaten"><div class="header-wrapper"><h4 id="x2-4-1-tegelformaten"><bdi class="secno">2.4.1 </bdi>Tegelformaten</h4><a class="self-link" href="#tegelformaten" aria-label="Permalink for Section 2.4.1"></a></div>
+<p>Deze paragraaf geeft een beschrijving van de belangrijkste onderdelen van de OGC
+3D Tiles standaard.</p>
+<section id="introductie"><div class="header-wrapper"><h4 id="x2-3-1-introductie"><bdi class="secno">2.3.1 </bdi>Introductie</h4><a class="self-link" href="#introductie" aria-label="Permalink for Section 2.3.1"></a></div>
+<p>De OGC 3D Tiles-standaard is een set regels voor het organiseren en visualiseren
+van 3D-gegevens. Het vertelt ons hoe tegelsets, die informatie over de locatie,
+details en uiterlijk van de gegevens bevatten, moeten worden opgebouwd. Deze
+tegelsets zijn gestapeld op elkaar en worden slim gebruikt om gegevens op
+verschillende gedetailleerde niveaus weer te geven. Bovendien definieert de
+standaard de ondersteuning voor verschillende gegevenstypen, waaronder
+geometrie, texturen en metadata, en biedt het richtlijnen voor mediatypes en
+encoding.</p>
+<p>Naast het tegelsetformaat omvat de standaard specificaties voor het beheren van
+ruimtelijke queries, zoals het bepalen van de zichtbaarheid van tegels op basis
+van hun geometrische fout en het dynamisch laden van tegels op basis van de
+kijkafstand van de gebruiker. Ook biedt het richtlijnen voor
+implementatiedetails, zoals het gebruik van UTF-8-encoding voor JSON-bestanden
+en unieke sleutels voor eigenschappen binnen JSON-objecten.</p>
+</section><section id="tegelset"><div class="header-wrapper"><h4 id="x2-3-2-tegelset"><bdi class="secno">2.3.2 </bdi>Tegelset</h4><a class="self-link" href="#tegelset" aria-label="Permalink for Section 2.3.2"></a></div>
+<p>In 3D Tiles verwijst een tegelset (tileset) naar een verzameling tegels
+georganiseerd binnen een ruimtelijke gegevensstructuur, vertegenwoordigd door
+een boom. Elke tegelset wordt beschreven door minstens één JSON-bestand met
+metadata en een hiërarchie van tegelobjecten, waarvan elke tegel renderbare
+inhoud kan bevatten.</p>
+<p><em>Voorbeeld</em></p>
+</section><section id="tegelformaten"><div class="header-wrapper"><h4 id="x2-3-3-tegelformaten"><bdi class="secno">2.3.3 </bdi>Tegelformaten</h4><a class="self-link" href="#tegelformaten" aria-label="Permalink for Section 2.3.3"></a></div>
 <p>Het primaire tegelformaat voor 3D Tiles is glTF 2.0, een open specificatie
 ontworpen voor efficiënte transmissie en laden van 3D-inhoud. Dit formaat omvat
 geometrie, textuurinformatie en kan worden uitgebreid met metadata,
 model-instanciëring en compressie. Het ondersteunt verschillende soorten
 3D-inhoud zoals 3D-modellen en puntenwolken.</p>
-<p>Voorbeeld GLTF</p>
+<p><em>Voorbeeld GLTF</em></p>
 <p>Naast glTF ondersteunt 3D Tiles ook de volgende tegelformaten:</p>
 <p>1. Batched 3D Model (b3dm): Dit formaat wordt gebruikt voor heterogene
 3D-modellen.</p>
@@ -489,46 +509,62 @@ zoals bomen, windmolens, en bouten.</p>
 puntenwolk.</p>
 <p>4. Composite (cmpt): Hiermee kunnen tegels van verschillende formaten worden
 samengevoegd tot één tegel.</p>
-<p>Deze formaten bieden flexibiliteit voor het opslaan en renderen van diverse
-soorten 3D-inhoud binnen de 3D Tiles-specificatie.</p>
-</section><section id="mediatypes-en-encoding"><div class="header-wrapper"><h4 id="x2-4-2-mediatypes-en-encoding"><bdi class="secno">2.4.2 </bdi>Mediatypes en encoding</h4><a class="self-link" href="#mediatypes-en-encoding" aria-label="Permalink for Section 2.4.2"></a></div>
-<p>Het bestandsformaat voor 3D Tiles bestaat uit:</p>
-<p>- Voor tegelsetbestanden: .json-extensie met het Media Type "application/json".</p>
-<p>Voorbeeld JSON</p>
-<p>- Voor tegelinhoudsbestanden: de specifieke extensies en Media Type volgens de
-specificatie van het tegelformaat.</p>
-<p>Voorbeeld van een GLTF en B3DM?</p>
-<p>- Voor metagegevensschema-bestanden: .json-extensie met het Media Type
-"application/json".</p>
-<p>- Voor tegelsetstijlbestanden: .json-extensie met het Media Type
-"application/json".</p>
-<p>- Voor JSON-subtree-bestanden: .json-extensie met het Media Type
-"application/json".</p>
-<p>- Voor binaire subtree-bestanden: .subtree-extensie met het Media Type
-"application/octet-stream".</p>
-<p>- Voor binaire bufferbestanden: .bin-extensie met het Media Type
-"application/octet-stream".</p>
-<p>Wat betreft de encoding:</p>
-<p>- JSON-bestanden gebruiken UTF-8-encoding zonder BOM.</p>
-<p>- Alle tekstuele strings in JSON gebruiken alleen het ASCII-tekenreeks-charset,
-zonder JSON-escapen.</p>
-<p>- Niet-ASCII-tekens die als eigenschapswaarden in JSON verschijnen, kunnen
-worden geëscapet.</p>
-<p>- Namen (sleutels) binnen JSON-objecten moeten uniek zijn, dus
-duplicaat-sleutels zijn niet toegestaan.</p>
-<p>- Sommige eigenschappen zijn gedefinieerd als integers in het schema. Dergelijke
-waarden kunnen worden opgeslagen als decimalen met een nul fractiegedeelte of
-met exponentnotatie, zoals gedefinieerd in RFC 8259, Sectie 6.</p>
-</section><section id="requests"><div class="header-wrapper"><h4 id="x2-4-3-requests"><bdi class="secno">2.4.3 </bdi>Requests</h4><a class="self-link" href="#requests" aria-label="Permalink for Section 2.4.3"></a></div>
-</section></section><section id="i3ds"><div class="header-wrapper"><h3 id="x2-5-i3ds"><bdi class="secno">2.5 </bdi>i3DS</h3><a class="self-link" href="#i3ds" aria-label="Permalink for Section 2.5"></a></div>
+</section><section id="mediatypes-en-encoding"><div class="header-wrapper"><h4 id="x2-3-4-mediatypes-en-encoding"><bdi class="secno">2.3.4 </bdi>Mediatypes en encoding</h4><a class="self-link" href="#mediatypes-en-encoding" aria-label="Permalink for Section 2.3.4"></a></div>
+</section><section id="het-3d-tiles-bestandsformaat-gebruikt-verschillende-mediatypes-en-encoding"><div class="header-wrapper"><h4 id="x2-3-5-het-3d-tiles-bestandsformaat-gebruikt-verschillende-mediatypes-en-encoding"><bdi class="secno">2.3.5 </bdi>Het 3D Tiles-bestandsformaat gebruikt verschillende mediatypes en encoding:</h4><a class="self-link" href="#het-3d-tiles-bestandsformaat-gebruikt-verschillende-mediatypes-en-encoding" aria-label="Permalink for Section 2.3.5"></a></div>
+</section><section id="json-voor-tegelset-metagegevensschema-tegelsetstijl-en-json-subtree-bestanden-met-het-media-type-application-json"><div class="header-wrapper"><h4 id="x2-3-6-json-voor-tegelset-metagegevensschema-tegelsetstijl-en-json-subtree-bestanden-met-het-media-type-application-json"><bdi class="secno">2.3.6 </bdi>- .json voor tegelset-, metagegevensschema-, tegelsetstijl- en JSON-subtree-bestanden met het Media Type "application/json".</h4><a class="self-link" href="#json-voor-tegelset-metagegevensschema-tegelsetstijl-en-json-subtree-bestanden-met-het-media-type-application-json" aria-label="Permalink for Section 2.3.6"></a></div>
+</section><section id="subtree-voor-binaire-subtree-bestanden-met-het-media-type-application-octet-stream"><div class="header-wrapper"><h4 id="x2-3-7-subtree-voor-binaire-subtree-bestanden-met-het-media-type-application-octet-stream"><bdi class="secno">2.3.7 </bdi>- .subtree voor binaire subtree-bestanden met het Media Type "application/octet-stream".</h4><a class="self-link" href="#subtree-voor-binaire-subtree-bestanden-met-het-media-type-application-octet-stream" aria-label="Permalink for Section 2.3.7"></a></div>
+</section><section id="bin-voor-binaire-bufferbestanden-met-het-media-type-application-octet-stream"><div class="header-wrapper"><h4 id="x2-3-8-bin-voor-binaire-bufferbestanden-met-het-media-type-application-octet-stream"><bdi class="secno">2.3.8 </bdi>- .bin voor binaire bufferbestanden met het Media Type "application/octet-stream".</h4><a class="self-link" href="#bin-voor-binaire-bufferbestanden-met-het-media-type-application-octet-stream" aria-label="Permalink for Section 2.3.8"></a></div>
+</section><section id="json-bestanden-gebruiken-utf-8-encoding-zonder-bom-met-ascii-tekenreeks-charset-en-unieke-sleutels-niet-ascii-tekens-worden-geescapet-volgens-rfc-8259-sectie-6"><div class="header-wrapper"><h4 id="x2-3-9-json-bestanden-gebruiken-utf-8-encoding-zonder-bom-met-ascii-tekenreeks-charset-en-unieke-sleutels-niet-ascii-tekens-worden-geescapet-volgens-rfc-8259-sectie-6"><bdi class="secno">2.3.9 </bdi>JSON-bestanden gebruiken UTF-8-encoding zonder BOM, met ASCII-tekenreeks-charset en unieke sleutels; niet-ASCII-tekens worden geëscapet volgens RFC 8259, Sectie 6.</h4><a class="self-link" href="#json-bestanden-gebruiken-utf-8-encoding-zonder-bom-met-ascii-tekenreeks-charset-en-unieke-sleutels-niet-ascii-tekens-worden-geescapet-volgens-rfc-8259-sectie-6" aria-label="Permalink for Section 2.3.9"></a></div>
+</section><section id="geometric-error"><div class="header-wrapper"><h4 id="x2-3-10-geometric-error"><bdi class="secno">2.3.10 </bdi>Geometric error</h4><a class="self-link" href="#geometric-error" aria-label="Permalink for Section 2.3.10"></a></div>
+<p>Tegels in een 3D-omgeving worden georganiseerd in een boomstructuur, waarbij
+elke tegel verschillende niveaus van detail vertegenwoordigt. Deze niveaus van
+detail helpen bij het bepalen hoe gedetailleerd een tegel moet worden
+weergegeven. De geometrische fout van een tegel vertelt ons hoe nauwkeurig de
+vorm van die tegel overeenkomt met het originele object, gemeten in meters.</p>
+<p>Bij het bekijken van een 3D-scène op een apparaat, wordt de geometrische fout
+van elke tegel geëvalueerd. Als de fout binnen een aanvaardbaar bereik ligt,
+wordt de tegel getoond. Als de fout te groot is, wat betekent dat de tegel niet
+gedetailleerd genoeg is, wordt de tegel verfijnd door gedetailleerdere
+kindertegels te laden en te tonen.</p>
+<p>De grootte van de fout hangt af van hoe belangrijk het is om de details van het
+object nauwkeurig weer te geven. Een hogere fout betekent dat het programma
+eerder beslist om de tegel te verfijnen en de details weer te geven.</p>
+<p><em>Voorbeeld geometric error</em></p>
+</section><section id="implicit-tiling"><div class="header-wrapper"><h4 id="x2-3-11-implicit-tiling"><bdi class="secno">2.3.11 </bdi>Implicit tiling</h4><a class="self-link" href="#implicit-tiling" aria-label="Permalink for Section 2.3.11"></a></div>
+<p>Implicit tiling in 3D Tiles is een methode om 3D-gegevens op een gestructureerde
+en efficiënte manier te organiseren. Het verdeelt de gegevens in een regelmatig
+patroon van tegels, vergelijkbaar met hoe een mozaïek is opgebouwd. Hierdoor
+kunnen gebruikers snel en eenvoudig specifieke tegels identificeren en
+benaderen, wat vooral handig is bij het werken met grote 3D-omgevingen.</p>
+<p>Implicit tiling vereenvoudigt quadtrees en octrees in 3D Tiles, waardoor snelle
+toegang mogelijk is via tegelcoördinaten. Dit verbetert ruimtelijke queries,
+doorloopalgoritmen en updates van tegels.</p>
+<p>Bovendien maakt implicit tiling betere interoperabiliteit mogelijk met bestaande
+GIS-gegevensformaten met impliciet gedefinieerde tegelindelingen, zoals TMS,
+WMTS, S2 en CDB.</p>
+<p>Om grote hoeveelheden gegevens efficiënt te beheren, worden tegels gecreëerd en
+georganiseerd op basis van bijbehorende metadata. Bij zeer omvangrijke datasets
+wordt deze metadata opgedeeld en verdeeld in subtrees met een vast formaat. Deze
+subtrees bevatten informatie over welke tegels aanwezig zijn en welke inhoud ze
+bevatten, waardoor het beheer van de dataset geoptimaliseerd wordt.</p>
+<p>Een implicitTiling-object kan worden toegevoegd aan tegels in het JSON-bestand
+van de tegelset. Hiermee wordt bepaald hoe de tegel wordt verdeeld en waar
+inhoud is opgeslagen. Het kan aan meerdere tegels worden toegevoegd voor
+complexere indelingen. De implementatie van deze tegels omvat details zoals
+verschillende verdeelschema's, strategieën voor verfijning en toegang tot
+inhoud.</p>
+</section><section id="metadata"><div class="header-wrapper"><h4 id="x2-3-12-metadata"><bdi class="secno">2.3.12 </bdi>Metadata</h4><a class="self-link" href="#metadata" aria-label="Permalink for Section 2.3.12"></a></div>
 <p>…</p>
+</section></section><section id="i3ds"><div class="header-wrapper"><h3 id="x2-4-i3ds"><bdi class="secno">2.4 </bdi>i3DS</h3><a class="self-link" href="#i3ds" aria-label="Permalink for Section 2.4"></a></div>
+<p>placeholder</p>
 </section></section>
   <section id="praktijkvoorbeelden"><div class="header-wrapper"><h2 id="x3-praktijkvoorbeelden"><bdi class="secno">3. </bdi>Praktijkvoorbeelden</h2><a class="self-link" href="#praktijkvoorbeelden" aria-label="Permalink for Section 3."></a></div>
 <p>Dit hoofdstuk beschrijft een aantal praktijkvoorbeelden van de toepassing van 3D
 Tiles in verschillende projecten en use cases.</p>
-<section id="placeholder-project-1"><div class="header-wrapper"><h3 id="x3-1-placeholder-project-1"><bdi class="secno">3.1 </bdi>Placeholder project 1</h3><a class="self-link" href="#placeholder-project-1" aria-label="Permalink for Section 3.1"></a></div>
+<section id="x3d-rotterdam"><div class="header-wrapper"><h3 id="x3-1-3d-rotterdam"><bdi class="secno">3.1 </bdi>3D Rotterdam</h3><a class="self-link" href="#x3d-rotterdam" aria-label="Permalink for Section 3.1"></a></div>
 <p>Lorem ipsum dolor sit amet.</p>
-</section><section id="placeholder-project-2"><div class="header-wrapper"><h3 id="x3-2-placeholder-project-2"><bdi class="secno">3.2 </bdi>Placeholder project 2</h3><a class="self-link" href="#placeholder-project-2" aria-label="Permalink for Section 3.2"></a></div>
+<p><a href="http://www.3drotterdam.nl">www.3drotterdam.nl</a></p>
+</section><section id="watermanagement"><div class="header-wrapper"><h3 id="x3-2-watermanagement"><bdi class="secno">3.2 </bdi>Watermanagement</h3><a class="self-link" href="#watermanagement" aria-label="Permalink for Section 3.2"></a></div>
 <p>Lorem ipsum dolor sit amet.</p>
 </section></section>  
   <section id="best-practices"><div class="header-wrapper"><h2 id="x4-best-practices"><bdi class="secno">4. </bdi>Best practices</h2><a class="self-link" href="#best-practices" aria-label="Permalink for Section 4."></a></div>
@@ -555,7 +591,7 @@ efficiënter kan zijn voor de opslag en rendering van complexe(re) gebouwen.</p>
 <p>Let op: standaard 1.0 ondersteunt geen implicit tiling, vanaf 1.1 wel. Veel
 clients zitten nog op 1.0, dus implicit tiling is niet in elke client
 beschikbaar.</p>
-</section><section id="geometric-error"><div class="header-wrapper"><h4 id="x4-1-2-geometric-error"><bdi class="secno">4.1.2 </bdi>Geometric error</h4><a class="self-link" href="#geometric-error" aria-label="Permalink for Section 4.1.2"></a></div>
+</section><section id="geometric-error-0"><div class="header-wrapper"><h4 id="x4-1-2-geometric-error"><bdi class="secno">4.1.2 </bdi>Geometric error</h4><a class="self-link" href="#geometric-error-0" aria-label="Permalink for Section 4.1.2"></a></div>
 <blockquote>
 <p>  Kies een drempelwaarde voor geometric error op basis van het gewenste zoom-
   en detailniveau.</p>
@@ -810,7 +846,7 @@ geschakeld tussen 2D en 3D. Het implementeren van intelligentie en logica om
 naadloze overgangen mogelijk te maken tussen 2D- en 3D-weergaven is dus
 noodzakelijk om de gebruikerservaring te verbeteren en verwarring te voorkomen.</p>
 </section></section></section>
-  <section id="techniek-0"><div class="header-wrapper"><h2 id="x5-techniek"><bdi class="secno">5. </bdi>Techniek</h2><a class="self-link" href="#techniek-0" aria-label="Permalink for Section 5."></a></div>
+  <section id="techniek"><div class="header-wrapper"><h2 id="x5-techniek"><bdi class="secno">5. </bdi>Techniek</h2><a class="self-link" href="#techniek" aria-label="Permalink for Section 5."></a></div>
 <p>Dit hoofdstuk gaat dieper in op de techniek van OGC 3D Tiles.</p>
 <section id="algemeen"><div class="header-wrapper"><h3 id="x5-1-algemeen"><bdi class="secno">5.1 </bdi>Algemeen</h3><a class="self-link" href="#algemeen" aria-label="Permalink for Section 5.1"></a></div>
 <p>In 3D Tiles verwijst een tegelset naar een verzameling tegels georganiseerd
@@ -863,7 +899,7 @@ duplicaat-sleutels zijn niet toegestaan.</p>
 <p>- Sommige eigenschappen zijn gedefinieerd als integers in het schema. Dergelijke
 waarden kunnen worden opgeslagen als decimalen met een nul fractiegedeelte of
 met exponentnotatie, zoals gedefinieerd in RFC 8259, Sectie 6.</p>
-</section><section id="requests-0"><div class="header-wrapper"><h3 id="x5-4-requests"><bdi class="secno">5.4 </bdi>Requests</h3><a class="self-link" href="#requests-0" aria-label="Permalink for Section 5.4"></a></div>
+</section><section id="requests"><div class="header-wrapper"><h3 id="x5-4-requests"><bdi class="secno">5.4 </bdi>Requests</h3><a class="self-link" href="#requests" aria-label="Permalink for Section 5.4"></a></div>
 </section></section>  
   <section id="toolkit"><div class="header-wrapper"><h2 id="x6-toolkit"><bdi class="secno">6. </bdi>Toolkit</h2><a class="self-link" href="#toolkit" aria-label="Permalink for Section 6."></a></div>
 <section id="handleidingen"><div class="header-wrapper"><h3 id="x6-1-handleidingen"><bdi class="secno">6.1 </bdi>Handleidingen</h3><a class="self-link" href="#handleidingen" aria-label="Permalink for Section 6.1"></a></div>
