@@ -314,7 +314,7 @@ gegevens.">
     <h2>
       Geonovum Handreiking<br>
       Werkversie
-      <time class="dt-published" datetime="2024-04-12">12 april 2024</time>
+      <time class="dt-published" datetime="2024-04-16">16 april 2024</time>
     </h2>
     <dl>
       
@@ -377,7 +377,7 @@ handleidingen, clients, servers en 3D Tile datasets, waardoor lezers worden
 voorzien van de nodige bronnen om aan de slag te gaan met 3D tiling in hun
 projecten.</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-is-3d-tiling"><bdi class="secno">1.1 </bdi>Wat is 3D Tiling?</a></li><li class="tocline"><a class="tocxref" href="#waar-is-3d-tiling-voor-te-gebruiken"><bdi class="secno">1.2 </bdi>Waar is 3D Tiling voor te gebruiken?</a></li><li class="tocline"><a class="tocxref" href="#wat-zijn-de-voor-en-nadelen-van-3d-tiling"><bdi class="secno">1.3 </bdi>Wat zijn de voor- en nadelen van 3D Tiling?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#standaarden"><bdi class="secno">2. </bdi>Standaarden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles-specification"><bdi class="secno">2.1 </bdi>OGC 3D Tiles specification</a></li><li class="tocline"><a class="tocxref" href="#i3s"><bdi class="secno">2.2 </bdi>i3S</a></li><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles"><bdi class="secno">2.3 </bdi>OGC 3D Tiles</a></li><li class="tocline"><a class="tocxref" href="#techniek"><bdi class="secno">2.4 </bdi>Techniek</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#tegelformaten"><bdi class="secno">2.4.1 </bdi>Tegelformaten</a></li><li class="tocline"><a class="tocxref" href="#mediatypes-en-encoding"><bdi class="secno">2.4.2 </bdi>Mediatypes en encoding</a></li><li class="tocline"><a class="tocxref" href="#requests"><bdi class="secno">2.4.3 </bdi>Requests</a></li></ol></li><li class="tocline"><a class="tocxref" href="#i3ds"><bdi class="secno">2.5 </bdi>i3DS</a></li></ol></li><li class="tocline"><a class="tocxref" href="#praktijkvoorbeelden"><bdi class="secno">3. </bdi>Praktijkvoorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#placeholder-project-1"><bdi class="secno">3.1 </bdi>Placeholder project 1</a></li><li class="tocline"><a class="tocxref" href="#placeholder-project-2"><bdi class="secno">3.2 </bdi>Placeholder project 2</a></li></ol></li><li class="tocline"><a class="tocxref" href="#best-practices"><bdi class="secno">4. </bdi>Best practices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#implicit-versus-explicit-tiling"><bdi class="secno">4.1 </bdi>Implicit versus explicit tiling</a></li><li class="tocline"><a class="tocxref" href="#performance"><bdi class="secno">4.2 </bdi>Performance</a></li><li class="tocline"><a class="tocxref" href="#coordinaat-referentie-systeem-crs"><bdi class="secno">4.3 </bdi>Coordinaat Referentie Systeem (CRS)</a></li><li class="tocline"><a class="tocxref" href="#geometric-error"><bdi class="secno">4.4 </bdi>Geometric error</a></li><li class="tocline"><a class="tocxref" href="#ontbrekende-specificaties-voor-tijdseries"><bdi class="secno">4.5 </bdi>Ontbrekende specificaties voor tijdseries</a></li><li class="tocline"><a class="tocxref" href="#ondergrondinformatie-in-clients"><bdi class="secno">4.6 </bdi>Ondergrondinformatie in clients</a></li></ol></li><li class="tocline"><a class="tocxref" href="#techniek-0"><bdi class="secno">5. </bdi>Techniek</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#algemeen"><bdi class="secno">5.1 </bdi>Algemeen</a></li><li class="tocline"><a class="tocxref" href="#tegelformaten-0"><bdi class="secno">5.2 </bdi>Tegelformaten</a></li><li class="tocline"><a class="tocxref" href="#mediatypes-en-encoding-0"><bdi class="secno">5.3 </bdi>Mediatypes en encoding</a></li><li class="tocline"><a class="tocxref" href="#requests-0"><bdi class="secno">5.4 </bdi>Requests</a></li></ol></li><li class="tocline"><a class="tocxref" href="#toolkit"><bdi class="secno">6. </bdi>Toolkit</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#handleidingen"><bdi class="secno">6.1 </bdi>Handleidingen</a></li><li class="tocline"><a class="tocxref" href="#clients-en-servers"><bdi class="secno">6.2 </bdi>Clients en servers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#clients"><bdi class="secno">6.2.1 </bdi>Clients</a></li><li class="tocline"><a class="tocxref" href="#generators-en-servers"><bdi class="secno">6.2.2 </bdi>Generators en servers</a></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-tile-datasets"><bdi class="secno">6.3 </bdi>3D Tile Datasets</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#x3d-basisvoorziening"><bdi class="secno">6.3.1 </bdi>3D basisvoorziening</a></li><li class="tocline"><a class="tocxref" href="#x3d-tiles-nederland"><bdi class="secno">6.3.2 </bdi>3D Tiles Nederland</a></li></ol></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wat-is-3d-tiling"><bdi class="secno">1.1 </bdi>Wat is 3D Tiling?</a></li><li class="tocline"><a class="tocxref" href="#waar-is-3d-tiling-voor-te-gebruiken"><bdi class="secno">1.2 </bdi>Waar is 3D Tiling voor te gebruiken?</a></li><li class="tocline"><a class="tocxref" href="#wat-zijn-de-voor-en-nadelen-van-3d-tiling"><bdi class="secno">1.3 </bdi>Wat zijn de voor- en nadelen van 3D Tiling?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#standaarden"><bdi class="secno">2. </bdi>Standaarden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles-specification"><bdi class="secno">2.1 </bdi>OGC 3D Tiles specification</a></li><li class="tocline"><a class="tocxref" href="#i3s"><bdi class="secno">2.2 </bdi>i3S</a></li><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles"><bdi class="secno">2.3 </bdi>OGC 3D Tiles</a></li><li class="tocline"><a class="tocxref" href="#techniek"><bdi class="secno">2.4 </bdi>Techniek</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#tegelformaten"><bdi class="secno">2.4.1 </bdi>Tegelformaten</a></li><li class="tocline"><a class="tocxref" href="#mediatypes-en-encoding"><bdi class="secno">2.4.2 </bdi>Mediatypes en encoding</a></li><li class="tocline"><a class="tocxref" href="#requests"><bdi class="secno">2.4.3 </bdi>Requests</a></li></ol></li><li class="tocline"><a class="tocxref" href="#i3ds"><bdi class="secno">2.5 </bdi>i3DS</a></li></ol></li><li class="tocline"><a class="tocxref" href="#praktijkvoorbeelden"><bdi class="secno">3. </bdi>Praktijkvoorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#placeholder-project-1"><bdi class="secno">3.1 </bdi>Placeholder project 1</a></li><li class="tocline"><a class="tocxref" href="#placeholder-project-2"><bdi class="secno">3.2 </bdi>Placeholder project 2</a></li></ol></li><li class="tocline"><a class="tocxref" href="#best-practices"><bdi class="secno">4. </bdi>Best practices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#serveren-van-3d-tiles"><bdi class="secno">4.1 </bdi>Serveren van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#explicit-en-implicit-tiling"><bdi class="secno">4.1.1 </bdi>Explicit en implicit tiling</a></li><li class="tocline"><a class="tocxref" href="#geometric-error"><bdi class="secno">4.1.2 </bdi>Geometric error</a></li><li class="tocline"><a class="tocxref" href="#offset-z-coordinaat"><bdi class="secno">4.1.3 </bdi>Offset Z-coördinaat</a></li><li class="tocline"><a class="tocxref" href="#parameters-voor-lods-zoomlevels-generalisatie"><bdi class="secno">4.1.4 </bdi>Parameters voor LODs, zoomlevels, generalisatie</a></li><li class="tocline"><a class="tocxref" href="#shader"><bdi class="secno">4.1.5 </bdi>Shader</a></li><li class="tocline"><a class="tocxref" href="#attribuutgegevens"><bdi class="secno">4.1.6 </bdi>Attribuutgegevens</a></li><li class="tocline"><a class="tocxref" href="#formaat"><bdi class="secno">4.1.7 </bdi>Formaat</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gebruiken-van-3d-tiles"><bdi class="secno">4.2 </bdi>Gebruiken van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#minimal-zoom"><bdi class="secno">4.2.1 </bdi>Minimal zoom</a></li><li class="tocline"><a class="tocxref" href="#replace-vs-add"><bdi class="secno">4.2.2 </bdi>Replace vs. Add</a></li><li class="tocline"><a class="tocxref" href="#kleur-en-belichting"><bdi class="secno">4.2.3 </bdi>Kleur en belichting</a></li><li class="tocline"><a class="tocxref" href="#wcag"><bdi class="secno">4.2.4 </bdi>WCAG</a></li><li class="tocline"><a class="tocxref" href="#coordinaten-van-scherm-terrein-en-camera-doelobject"><bdi class="secno">4.2.5 </bdi>Coördinaten van scherm/terrein en camera/doelobject</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#techniek-0"><bdi class="secno">5. </bdi>Techniek</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#algemeen"><bdi class="secno">5.1 </bdi>Algemeen</a></li><li class="tocline"><a class="tocxref" href="#tegelformaten-0"><bdi class="secno">5.2 </bdi>Tegelformaten</a></li><li class="tocline"><a class="tocxref" href="#mediatypes-en-encoding-0"><bdi class="secno">5.3 </bdi>Mediatypes en encoding</a></li><li class="tocline"><a class="tocxref" href="#requests-0"><bdi class="secno">5.4 </bdi>Requests</a></li></ol></li><li class="tocline"><a class="tocxref" href="#toolkit"><bdi class="secno">6. </bdi>Toolkit</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#handleidingen"><bdi class="secno">6.1 </bdi>Handleidingen</a></li><li class="tocline"><a class="tocxref" href="#clients-en-servers"><bdi class="secno">6.2 </bdi>Clients en servers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#clients"><bdi class="secno">6.2.1 </bdi>Clients</a></li><li class="tocline"><a class="tocxref" href="#generators-en-servers"><bdi class="secno">6.2.2 </bdi>Generators en servers</a></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-tile-datasets"><bdi class="secno">6.3 </bdi>3D Tile Datasets</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#x3d-basisvoorziening"><bdi class="secno">6.3.1 </bdi>3D basisvoorziening</a></li><li class="tocline"><a class="tocxref" href="#x3d-tiles-nederland"><bdi class="secno">6.3.2 </bdi>3D Tiles Nederland</a></li></ol></li></ol></li></ol></nav>
   
   <section id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
 <section id="wat-is-3d-tiling"><div class="header-wrapper"><h3 id="x1-1-wat-is-3d-tiling"><bdi class="secno">1.1 </bdi>Wat is 3D Tiling?</h3><a class="self-link" href="#wat-is-3d-tiling" aria-label="Permalink for Section 1.1"></a></div>
@@ -534,38 +534,282 @@ Tiles in verschillende projecten en use cases.</p>
   <section id="best-practices"><div class="header-wrapper"><h2 id="x4-best-practices"><bdi class="secno">4. </bdi>Best practices</h2><a class="self-link" href="#best-practices" aria-label="Permalink for Section 4."></a></div>
 <p>Dit hoofdstuk beschrijft een aantal best practices voor het serveren en
 gebruiken van 3D tiles.</p>
-<section id="implicit-versus-explicit-tiling"><div class="header-wrapper"><h3 id="x4-1-implicit-versus-explicit-tiling"><bdi class="secno">4.1 </bdi>Implicit versus explicit tiling</h3><a class="self-link" href="#implicit-versus-explicit-tiling" aria-label="Permalink for Section 4.1"></a></div>
-<p><em>Wat is implicit en explicit tiling?</em></p>
-<p><em>Hoe hier mee om te gaan bij het genereren/serveren van 3D Tiles?</em></p>
-<p><em>Hoe hier mee om te gaan bij het gebruiken van 3D Tiles?</em></p>
-</section><section id="performance"><div class="header-wrapper"><h3 id="x4-2-performance"><bdi class="secno">4.2 </bdi>Performance</h3><a class="self-link" href="#performance" aria-label="Permalink for Section 4.2"></a></div>
-</section><section id="coordinaat-referentie-systeem-crs"><div class="header-wrapper"><h3 id="x4-3-coordinaat-referentie-systeem-crs"><bdi class="secno">4.3 </bdi>Coordinaat Referentie Systeem (CRS)</h3><a class="self-link" href="#coordinaat-referentie-systeem-crs" aria-label="Permalink for Section 4.3"></a></div>
-<p><em>Wat is een CRS?</em></p>
-</section><section id="geometric-error"><div class="header-wrapper"><h3 id="x4-4-geometric-error"><bdi class="secno">4.4 </bdi>Geometric error</h3><a class="self-link" href="#geometric-error" aria-label="Permalink for Section 4.4"></a></div>
-<p><em>Wat is geometric error?</em></p>
-<p>De ‘geometric error’ (geometrische fout) van een tegel vertelt ons hoe goed de
-tegel de vorm van het originele object weergeeft. Het is een nummer dat aangeeft
-hoeveel de vereenvoudigde versie van de tegel afwijkt van de echte vorm, gemeten
-in meters.</p>
-<p>Voor 3D Tiles wordt de geometrische fout van een tegel gebruikt om te bepalen
-hoe gedetailleerd die tegel moet worden weergegeven. Dit wordt gedaan door de
-tegels te organiseren in een hiërarchische boomstructuur, waarbij elk niveau van
-de boom een verschillend niveau van detail vertegenwoordigt.</p>
-<p>Wanneer een gebruiker bijvoorbeeld een 3D scène bekijkt op een computer of
-mobiel apparaat, zal de client-implementatie de geometrische fout van elke tegel
-evalueren. Als de geometrische fout van een tegel binnen een aanvaardbaar bereik
-valt, wordt die tegel getoond aan de gebruiker. Als de fout te groot is, wat
-betekent dat de tegel niet gedetailleerd genoeg is, zal de client-implementatie
-ervoor kiezen om die tegel te verfijnen door kindertegels van hogere resolutie
-te laden en te tonen.</p>
-<p>De grootte van deze fout hangt af van hoe belangrijk het is om de details van
-het object nauwkeurig weer te geven. Een hogere fout betekent dat het programma
-eerder beslist om de tegel te verfijnen en de details weer te geven.</p>
-<p><em>Hoe hier mee om te gaan bij het genereren/serveren van 3D Tiles?</em></p>
-<p><em>Hoe hier mee om te gaan bij het gebruiken van 3D Tiles?</em></p>
-</section><section id="ontbrekende-specificaties-voor-tijdseries"><div class="header-wrapper"><h3 id="x4-5-ontbrekende-specificaties-voor-tijdseries"><bdi class="secno">4.5 </bdi>Ontbrekende specificaties voor tijdseries</h3><a class="self-link" href="#ontbrekende-specificaties-voor-tijdseries" aria-label="Permalink for Section 4.5"></a></div>
-</section><section id="ondergrondinformatie-in-clients"><div class="header-wrapper"><h3 id="x4-6-ondergrondinformatie-in-clients"><bdi class="secno">4.6 </bdi>Ondergrondinformatie in clients</h3><a class="self-link" href="#ondergrondinformatie-in-clients" aria-label="Permalink for Section 4.6"></a></div>
-</section></section>
+<section id="serveren-van-3d-tiles"><div class="header-wrapper"><h3 id="x4-1-serveren-van-3d-tiles"><bdi class="secno">4.1 </bdi>Serveren van 3D Tiles</h3><a class="self-link" href="#serveren-van-3d-tiles" aria-label="Permalink for Section 4.1"></a></div>
+<section id="explicit-en-implicit-tiling"><div class="header-wrapper"><h4 id="x4-1-1-explicit-en-implicit-tiling"><bdi class="secno">4.1.1 </bdi>Explicit en implicit tiling</h4><a class="self-link" href="#explicit-en-implicit-tiling" aria-label="Permalink for Section 4.1.1"></a></div>
+<blockquote>
+<p>  Pas explicit tiling toe voor terreinen en implicit tiling voor gebouwen.</p>
+</blockquote>
+<p>Voor terreinen, zoals landschappen en terreinmodellen, is explicit tiling vaak
+geschikt omdat ze vaak grote, uitgestrekte gebieden beslaan met een relatief
+uniforme geometrie. Hierdoor kunnen terreinen efficiënt worden opgedeeld in
+regelmatige tegels, waardoor snelle toegang en weergave op verschillende
+detailniveaus mogelijk is. Deze regelmatige structuur maakt het ook
+gemakkelijker om te navigeren en details te renderen op basis van de afstand tot
+de kijker.</p>
+<p>Aan de andere kant zijn gebouwen vaak complexe structuren met verschillende
+vormen, maten en details. Voor gebouwen kan implicit tiling gunstig zijn omdat
+het meer flexibiliteit biedt in het opdelen van de gegevens op basis van de
+geometrische complexiteit. Dit maakt het mogelijk om gebouwen op te delen in
+tegels die zich aanpassen aan de vorm van het gebouw en de detailniveaus, wat
+efficiënter kan zijn voor de opslag en rendering van complexe(re) gebouwen.</p>
+<p>Let op: standaard 1.0 ondersteunt geen implicit tiling, vanaf 1.1 wel. Veel
+clients zitten nog op 1.0, dus implicit tiling is niet in elke client
+beschikbaar.</p>
+</section><section id="geometric-error"><div class="header-wrapper"><h4 id="x4-1-2-geometric-error"><bdi class="secno">4.1.2 </bdi>Geometric error</h4><a class="self-link" href="#geometric-error" aria-label="Permalink for Section 4.1.2"></a></div>
+<blockquote>
+<p>  Kies een drempelwaarde voor geometric error op basis van het gewenste zoom-
+  en detailniveau.</p>
+</blockquote>
+<p>De geometrische fout (<em>geometric error</em>) van een tegel wordt gebruikt in 3D
+Tiles om te bepalen hoe gedetailleerd een tegel moet worden weergegeven. De
+grootte van de fout hangt af van hoe belangrijk het is om de details van het
+object nauwkeurig weer te geven, waarbij een hogere fout betekent dat het
+programma eerder beslist om de tegel te verfijnen en de details weer te geven.</p>
+<p>Voor verschillende toepassingen zijn verschillende drempelwaarden voor de
+geometric error van LOD-modellen van belang. Voor gebouwen op LOD2 zou een
+drempelwaarde tussen 1 en 10 meter geschikt zijn. Bij terreinmodellen op LOD1,
+bekeken op een schaal van 1:10.000, zou een drempelwaarde tussen 10 en 50 meter
+passend zijn. Voor een schaal van 1:50.000 zou een waarde tussen 50 en 100 meter
+geschikt zijn. Deze drempelwaarden zijn afhankelijk van verschillende factoren
+zoals het beoogde gebruiksscenario, beschikbare rekenkracht en gewenste visuele
+kwaliteit. Zo biedt een lagere geometric error meer detail, maar vereist het
+meer rekenkracht. Het is cruciaal om de optimale drempelwaarde te bepalen op
+basis van specifieke tests en evaluaties, rekening houdend met de vereisten van
+het project en de doelsystemen.</p>
+</section><section id="offset-z-coordinaat"><div class="header-wrapper"><h4 id="x4-1-3-offset-z-coordinaat"><bdi class="secno">4.1.3 </bdi>Offset Z-coördinaat</h4><a class="self-link" href="#offset-z-coordinaat" aria-label="Permalink for Section 4.1.3"></a></div>
+<blockquote>
+<p>  Stem de offset van de Z-coördinaat van 3D Tiles af op het specifieke
+  coördinatensysteem of op die van andere 3D Tiles datasets.</p>
+</blockquote>
+<p><strong>Kunnen we met elkaar een meer specifieke best practice maken, waarin we een
+waarde voor de offset opnemen?</strong></p>
+<p>Het is belangrijk om ervoor te zorgen dat de offset van de Z-coördinaat correct
+wordt toegepast om eventuele verticale verschuivingen tussen het
+coördinatensysteem van het model en het gewenste referentiesysteem te
+corrigeren. Dit kan bijvoorbeeld nodig zijn om het model op de juiste hoogte
+boven het maaiveldoppervlak te plaatsen of om ervoor te zorgen dat het model
+correct uitgelijnd is met andere lagen, zoals .</p>
+<p>Het bepalen van de juiste offsetwaarde vereist meestal enige kennis van het
+coördinatensysteem van het model en het gewenste referentiesysteem, evenals
+eventuele verschillen in hoogteniveaus tussen die systemen. Het is aan te raden
+om de offset zorgvuldig te kalibreren en te testen om ervoor te zorgen dat het
+model nauwkeurig wordt gepositioneerd in de gewenste context.</p>
+</section><section id="parameters-voor-lods-zoomlevels-generalisatie"><div class="header-wrapper"><h4 id="x4-1-4-parameters-voor-lods-zoomlevels-generalisatie"><bdi class="secno">4.1.4 </bdi>Parameters voor LODs, zoomlevels, generalisatie</h4><a class="self-link" href="#parameters-voor-lods-zoomlevels-generalisatie" aria-label="Permalink for Section 4.1.4"></a></div>
+<blockquote>
+<p>  Experimenteer met de optimale parameters voor LODs, zoomlevels en
+  generalisatie voor 3D Tiles generatie.</p>
+</blockquote>
+<p>Om efficiënte en visueel aantrekkelijke 3D Tiles te genereren voor
+stadsmodellen, wordt aanbevolen om de volgende parameters in te stellen voor
+verschillende zoomniveaus (zoomlevels) en LODs (Levels of Detail):</p>
+<ul>
+<li><p><em>Zoomniveau 16:</em> Genereer tiles voor gebouwen op LOD2 zonder objectsize
+filter (generalisatie van 0 meter). Dit betekent dat alle details behouden
+blijven zonder generalisatie.</p>
+</li>
+<li><p><em>Zoomniveau 15:</em> Genereer tiles voor gebouwen op LOD2 met een objectsize
+filter (generalisatie van 2 meter). Hierdoor worden kleinere objecten, zoals
+schuurtjes en terrasoverkappingen, uitgesloten van de lagere zoomniveaus,
+waar minder detail nodig is.</p>
+</li>
+<li><p><em>Zoomniveau 14:</em> Genereer tiles voor gebouwen op LOD2 met een objectsize
+filter (generalisatie van 5 meter). Op dit zoomniveau is een grotere
+generalisatie passend, waardoor nog kleinere objecten worden uitgefilterd.</p>
+</li>
+</ul>
+<p>Het objectsize filter wordt toegepast op basis van de diagonaal van de bounding
+box van een object, en vertices worden binnen deze afstand samengevoegd
+(snapping). Hierdoor kunnen kleine objecten worden geëlimineerd zonder het
+visuele detail te verliezen.</p>
+<p>Het is ook raadzaam om een fallback LOD in te stellen, zoals LOD1, voor het
+geval er geen LOD2 beschikbaar is in de brondataset. In formaten zoals CityGML
+of CityJSON kunnen meerdere LODs voor een object worden opgenomen. Als het
+voorkeurs LOD niet beschikbaar is, zal het systeem automatisch teruggrijpen naar
+het fallback LOD om het object op te nemen in de 3D Tile.</p>
+<p>Het optimaliseren van deze instellingen zorgt voor een gebalanceerde weergave
+van stadsmodellen op verschillende zoomniveaus, waarbij de prestaties worden
+geoptimaliseerd zonder concessies te doen aan de visuele kwaliteit.</p>
+</section><section id="shader"><div class="header-wrapper"><h4 id="x4-1-5-shader"><bdi class="secno">4.1.5 </bdi>Shader</h4><a class="self-link" href="#shader" aria-label="Permalink for Section 4.1.5"></a></div>
+<blockquote>
+<p>  Kies voor Physically Based Rendering (PBR) als shader voor 3D Tiles.</p>
+</blockquote>
+<p>Het gebruik van PBR-shaders voor 3D Tiles biedt een toekomstbestendige oplossing
+voor het creëren van hoogwaardige en realistische 3D-modellen. PBR-shaders zijn
+gebaseerd op fysische principes van lichtinteractie, wat resulteert in visueel
+consistente weergaven van materialen onder verschillende
+belichtingsomstandigheden. Deze benadering zorgt ervoor dat je 3D-modellen er
+realistisch uitzien in zowel huidige als toekomstige renderomgevingen en
+softwareplatforms.</p>
+<p>Niet alle shaders zijn echter even toekomstbestendig. Traditionele shaders die
+gebaseerd zijn op ad-hoc benaderingen van materiaalweergave kunnen snel
+verouderd raken en moeilijk te onderhouden zijn naarmate nieuwe
+renderingtechnologieën evolueren. Het kiezen van PBR als shader voor 3D Tiles
+garandeert niet alleen een hoog niveau van visuele kwaliteit, maar biedt ook een
+flexibele basis voor aanpassingen en updates in de toekomst.</p>
+</section><section id="attribuutgegevens"><div class="header-wrapper"><h4 id="x4-1-6-attribuutgegevens"><bdi class="secno">4.1.6 </bdi>Attribuutgegevens</h4><a class="self-link" href="#attribuutgegevens" aria-label="Permalink for Section 4.1.6"></a></div>
+<blockquote>
+<p>  Neem alleen de attributen op die nodig zijn voor visualisatie of voor het
+  opvragen van extra informatie via een andere server.</p>
+</blockquote>
+<p>Het zorgvuldig kiezen van welke attributen worden opgenomen in 3D Tiles-datasets
+is van cruciaal belang voor efficiënt gegevensbeheer. Door enkel de essentiële
+attributen toe te voegen, wordt onnodige gegevensuitwisseling voorkomen, wat de
+prestaties verbetert en de netwerkbelasting vermindert. Daarnaast kan het
+selectief opnemen van attributen waarop veelvuldig gefilterd wordt helpen bij
+het optimaliseren van de dataset voor specifieke gebruiksscenario's.</p>
+<p>Het opvragen van extra informatie via een andere server op basis van een unieke
+identificatie biedt real-time toegang tot actuele gegevens. Dit is vooral
+gunstig bij dynamische datasets, waarbij voorkomen wordt dat 3D Tiles
+herhaaldelijk gegenereerd moeten worden, of in situaties waar een hoge mate van
+actualiteit vereist is, zoals bij bepaalde publieke taken, zoals het verstrekken
+van toeslagen of vergunningen.</p>
+<p>Bovendien maakt deze aanpak gecontroleerde toegang mogelijk op basis van
+autorisatie, waardoor bijvoorbeeld de privacy en beveiliging van
+persoonsgegevens worden gewaarborgd.</p>
+</section><section id="formaat"><div class="header-wrapper"><h4 id="x4-1-7-formaat"><bdi class="secno">4.1.7 </bdi>Formaat</h4><a class="self-link" href="#formaat" aria-label="Permalink for Section 4.1.7"></a></div>
+<blockquote>
+<p>  Kies GLB als het juiste formaat voor 3D-tiles</p>
+</blockquote>
+<p>GLB, wat staat voor GL Transmission Format Binary, is de gecomprimeerde variant
+van GLTF (GL Transmission Format). glTF 2.0 is het primaire tegelformaat voor 3D
+Tiles</p>
+<p>In vergelijking met B3DM heeft GLB verschillende voordelen. Ten eerste wordt
+B3DM uitgefaseerd, wat betekent dat het mogelijk niet langer wordt ondersteund
+in toekomstige software-updates en ontwikkelingen. Dit kan leiden tot
+compatibiliteitsproblemen en beperkte interoperabiliteit met nieuwe platforms en
+tools. Dit maakt GLB een toekomstbestendige keuze.</p>
+<p>Daarnaast is GLB over het algemeen compacter en efficiënter gecomprimeerd dan
+B3DM, wat resulteert in kleinere bestandsgroottes en snellere overdrachtstijden.
+Dit maakt het bijzonder geschikt voor webgebaseerde toepassingen en mobiele
+platforms waar bandbreedte en laadtijden van cruciaal belang zijn.</p>
+<p>Door te kiezen voor GLB vermijdt men potentiële complicaties en
+compatibiliteitsproblemen die kunnen ontstaan bij het gebruik van verouderde
+formaten zoals 3BM. Dit maakt GLB een verstandige keuze voor het
+toekomstbestendig opslaan en uitwisselen van 3D-gegevens.</p>
+</section></section><section id="gebruiken-van-3d-tiles"><div class="header-wrapper"><h3 id="x4-2-gebruiken-van-3d-tiles"><bdi class="secno">4.2 </bdi>Gebruiken van 3D Tiles</h3><a class="self-link" href="#gebruiken-van-3d-tiles" aria-label="Permalink for Section 4.2"></a></div>
+<section id="minimal-zoom"><div class="header-wrapper"><h4 id="x4-2-1-minimal-zoom"><bdi class="secno">4.2.1 </bdi>Minimal zoom</h4><a class="self-link" href="#minimal-zoom" aria-label="Permalink for Section 4.2.1"></a></div>
+<blockquote>
+<p>  Stel een minimale zoom in op de client-side voor het laden van 3D
+  Tiles-gegevens.</p>
+</blockquote>
+<p>Het instellen van een minimale zoom op de client-side bij het laden van 3D
+Tiles-gegevens is essentieel om de prestaties te optimaliseren en onnodige
+belasting van het systeem te voorkomen. Door een minimale zoom in te stellen,
+bijvoorbeeld vanaf zoomniveau 14 of hoger, kan worden voorkomen dat er onnodig
+veel tegels worden opgehaald en geladen vanaf lagere zoomniveaus zoals 10 of 12.</p>
+<p>Dit biedt verschillende voordelen. Ten eerste verkort het de algehele laadtijd
+en verbetert het de efficiëntie van de gegevensweergave door alleen tegels vanaf
+het gespecificeerde zoomniveau te laden. Vooral bij grote kaart bounding boxes
+kan het laden van tegels vanaf lagere zoomniveaus aanzienlijk meer gegevens
+vereisen dan nodig is, wat de prestaties nadelig kan beïnvloeden.</p>
+<p>Bovendien zijn veel 3D Tiles-sets geoptimaliseerd om vanaf een bepaald
+zoomniveau in te laden, zoals bijvoorbeeld geschikt voor zoomniveaus 14, 15 en
+16. Door een minimale zoom in te stellen die overeenkomt met het optimale
+zoomniveau van de gegevensset, kan worden gegarandeerd dat alleen de meest
+geschikte en gedetailleerde tegels worden geladen voor een optimale
+gebruikerservaring.</p>
+<p>Kortom, het instellen van een minimale zoom op de client-side is een effectieve
+manier om onnodige belasting van het systeem te verminderen, de laadtijd te
+verkorten en de efficiëntie van de gegevensweergave te verbeteren, vooral bij
+het werken met grote (landsdekkende) en gedetailleerde 3D Tiles-gegevenssets.</p>
+</section><section id="replace-vs-add"><div class="header-wrapper"><h4 id="x4-2-2-replace-vs-add"><bdi class="secno">4.2.2 </bdi>Replace vs. Add</h4><a class="self-link" href="#replace-vs-add" aria-label="Permalink for Section 4.2.2"></a></div>
+<blockquote>
+<p>  Gebruik van Replace bij het Werken met 3D Tiles</p>
+</blockquote>
+<p>Het gebruik van de “Replace" methode bij het werken met 3D Tiles in een
+clientviewer biedt verschillende voordelen en optimaliseert de weergave van
+gegevens op verschillende zoomniveaus. Een aanbevolen werkwijze is om "Replace"
+te gebruiken voor specifieke zoomniveaus, zoals bijvoorbeeld zoomniveaus 14, 15
+en 16. Op deze manier kan er een geleidelijke overgang van detailniveaus worden
+gecreëerd naarmate de gebruiker inzoomt op de scene.</p>
+<p>Door "Replace" te gebruiken in plaats van "Add" bij het laden van gegevens,
+wordt niet-redundante tiling en rendering voorkomen. Bij het gebruik van "Add"
+worden namelijk meerdere sets van gegevens 'over elkaar heen' geladen, wat kan
+leiden tot inefficiënte gegevensweergave en prestatieverlies. Het toepassen van
+"Replace" zorgt voor een efficiëntere weergave van gegevens en minimaliseert de
+belasting van het systeem.</p>
+<p>Een voorbeeld van het gebruik van "Replace" op verschillende zoomniveaus kan
+worden geïllustreerd door te kijken naar het laden van gebouwen. Op zoomniveau
+14 kunnen bijvoorbeeld de 50.000 grootste gebouwen worden geladen en
+weergegeven. Op zoomniveau 15 kunnen deze gebouwen worden vervangen door een
+nieuwe set van bijvoorbeeld de 50.000 grotere gebouwen die zich binnen de
+weergegeven kaart-boundingbox bevinden. Tenslotte, op zoomniveau 16 kunnen de
+gebouwen worden vervangen door de meest gedetailleerde set van gebouwen die
+beschikbaar zijn.</p>
+<p>Door deze aanpak te volgen, wordt een soepele overgang tussen verschillende
+detailniveaus mogelijk gemaakt, terwijl tegelijkertijd de efficiëntie van de
+gegevensweergave wordt behouden. Hierdoor kan de 3D Tiles-clientviewer een
+optimale gebruikerservaring bieden, zelfs bij complexe en gedetailleerde
+3D-gegevenssets.</p>
+</section><section id="kleur-en-belichting"><div class="header-wrapper"><h4 id="x4-2-3-kleur-en-belichting"><bdi class="secno">4.2.3 </bdi>Kleur en belichting</h4><a class="self-link" href="#kleur-en-belichting" aria-label="Permalink for Section 4.2.3"></a></div>
+<blockquote>
+<p>  Neem een lamp achter de viewer op voor voldoende contrast.</p>
+</blockquote>
+<p>Het opnemen van een lamp achter de kijker in een 3D-scene kan aanzienlijk
+bijdragen aan het creëren van voldoende contrast en visuele helderheid. Dit is
+met name belangrijk in scenario's waarbij de gebruiker interactie heeft met
+driedimensionale gegevens, zoals kaarten of modellen. Door een lamp achter de
+kijker te plaatsen, wordt de scène gelijkmatig verlicht, waardoor details
+duidelijker zichtbaar worden en de visuele ervaring wordt verbeterd.</p>
+<p>Voor veel use cases is tijdafhankelijke belichting niet noodzakelijk is. In veel
+gevallen gaat het om het presenteren van statische informatie, zoals
+kaartbeelden, die consistent moeten blijven, ongeacht het tijdstip van de dag.
+Het toevoegen van dynamische verlichtingseffecten, zoals zonlicht dat op
+verschillende tijdstippen van de dag verandert, kan overbodig zijn en de
+visualisatie voor een toepassing nadelig beïnvloeden.</p>
+<p>Daarom is het vaak voldoende om een statische lichtbron achter de kijker op te
+nemen, die zorgt voor een gelijkmatige verlichting van de scène zonder rekening
+te houden met het tijdstip van de dag. Dit zorgt voor consistente kleuren en
+contrasten, wat essentieel is voor een duidelijke en nauwkeurige visualisatie
+van de gegevens.</p>
+<p>Door te kiezen voor een eenvoudige, statische belichtingsopstelling kunnen
+ontwikkelaars de prestaties van hun applicaties verbeteren en tegelijkertijd een
+consistente visuele ervaring bieden aan gebruikers, ongeacht het moment waarop
+ze de gegevens bekijken.</p>
+</section><section id="wcag"><div class="header-wrapper"><h4 id="x4-2-4-wcag"><bdi class="secno">4.2.4 </bdi>WCAG</h4><a class="self-link" href="#wcag" aria-label="Permalink for Section 4.2.4"></a></div>
+<blockquote>
+<p>  Minimaliseer visuele barrières in 3D Tile visualisaties door zo dicht
+  mogelijk bij de Web Content Accessibility Guidelines (WCAG) te blijven.</p>
+</blockquote>
+<p>Hoewel de visualisatie van 3D Tiles zelf (waarschijnlijk) niet volledig aan de
+WCAG-richtlijnen hoeft te voldoen, is het toch aan te raden om zo dicht mogelijk
+bij deze richtlijnen te blijven. WCAG staat voor de "Web Content Accessibility
+Guidelines" en is een reeks richtlijnen voor het verbeteren van de
+toegankelijkheid van webinhoud voor mensen met verschillende handicaps,
+inclusief visuele, auditieve, motorische, spraak- en cognitieve beperkingen.</p>
+<p>Hoewel de visualisatie van 3D Tiles zelf niet altijd gemakkelijk toegankelijk is
+voor alle gebruikers, is het van cruciaal belang dat de interactieve elementen
+in de browser, zoals knoppen en eventuele testen in pop-ups, voldoen aan de
+WCAG-richtlijnen. Deze richtlijnen helpen ervoor te zorgen dat webinhoud voor
+iedereen begrijpelijk en bruikbaar is, ongeacht eventuele beperkingen. Het
+naleven van deze richtlijnen verbetert niet alleen de gebruikerservaring voor
+mensen met handicaps, maar kan ook bijdragen aan een bredere acceptatie en
+bruikbaarheid van de applicatie.</p>
+</section><section id="coordinaten-van-scherm-terrein-en-camera-doelobject"><div class="header-wrapper"><h4 id="x4-2-5-coordinaten-van-scherm-terrein-en-camera-doelobject"><bdi class="secno">4.2.5 </bdi>Coördinaten van scherm/terrein en camera/doelobject</h4><a class="self-link" href="#coordinaten-van-scherm-terrein-en-camera-doelobject" aria-label="Permalink for Section 4.2.5"></a></div>
+<blockquote>
+<p>  Houd rekening met coördinaten van scherm/terrein en camera/doelobject</p>
+</blockquote>
+<p>Bij het ontwikkelen van een clienttoepassing met 3D Tiles moet de ontwikkelaar
+rekening houden met het verschil tussen schermcoördinaten en terreincoördinaten
+bij kaartinteracties zoals klikken op objecten, evenals met de viewpoints
+(camerapositie) en focuspoints (doelobject) bij het wisselen tussen 2D en 3D.</p>
+<p>Het is essentieel om het verschil tussen schermcoördinaten (x, y) en
+terreincoördinaten (geografische coördinaten) te begrijpen bij het implementeren
+van klikfunctionaliteit in een kaartvenster met 3D Tiles. Doordat de
+schermcoördinaten moeten worden vertaald naar terreincoördinaten, kan het
+voorkomen dat een gebruiker op een locatie klikt die overeenkomt met een ander
+object dan verwacht, wat tot verwarring kan leiden. Daarom is het nodig om
+zorgvuldig om te gaan met de coördinatentransformaties om ervoor te zorgen dat
+de juiste objecten worden geselecteerd of aangeklikt.</p>
+<p>Bovendien vereist het wisselen tussen 2D- en 3D-weergaven in een
+clienttoepassing extra aandacht. Bijvoorbeeld, in een platform zoals Cesium
+wordt de 2D-weergave opgebouwd op basis van de camerapositie, niet op basis van
+de positie van het object waar naar gekeken werd in de 3D-scene. Dit kan leiden
+tot verwarring bij gebruikers, omdat de weergave kan veranderen wanneer er wordt
+geschakeld tussen 2D en 3D. Het implementeren van intelligentie en logica om
+naadloze overgangen mogelijk te maken tussen 2D- en 3D-weergaven is dus
+noodzakelijk om de gebruikerservaring te verbeteren en verwarring te voorkomen.</p>
+</section></section></section>
   <section id="techniek-0"><div class="header-wrapper"><h2 id="x5-techniek"><bdi class="secno">5. </bdi>Techniek</h2><a class="self-link" href="#techniek-0" aria-label="Permalink for Section 5."></a></div>
 <p>Dit hoofdstuk gaat dieper in op de techniek van OGC 3D Tiles.</p>
 <section id="algemeen"><div class="header-wrapper"><h3 id="x5-1-algemeen"><bdi class="secno">5.1 </bdi>Algemeen</h3><a class="self-link" href="#algemeen" aria-label="Permalink for Section 5.1"></a></div>
