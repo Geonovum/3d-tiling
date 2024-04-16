@@ -8,6 +8,8 @@ blockquote
   border-style: none !important;
 /*  background-color: darkgray;-*/
   background-color: lightblue !important;
+  font-weight: bold !important;
+  font-size: 1.2em !important;
   color: white;
 }
 
