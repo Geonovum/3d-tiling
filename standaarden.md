@@ -105,15 +105,20 @@ samengevoegd tot één tegel.
 
 ### Mediatypes en encoding
 
-### Het 3D Tiles-bestandsformaat gebruikt verschillende mediatypes en encoding:
+Het 3D Tiles-bestandsformaat gebruikt verschillende mediatypes en encoding:
 
-### - .json voor tegelset-, metagegevensschema-, tegelsetstijl- en JSON-subtree-bestanden met het Media Type "application/json".
+-   .json voor tegelset-, metagegevensschema-, tegelsetstijl- en
+    JSON-subtree-bestanden met het Media Type "application/json".
 
-### - .subtree voor binaire subtree-bestanden met het Media Type "application/octet-stream".
+-   .subtree voor binaire subtree-bestanden met het Media Type
+    "application/octet-stream".
 
-### - .bin voor binaire bufferbestanden met het Media Type "application/octet-stream".
+-   .bin voor binaire bufferbestanden met het Media Type
+    "application/octet-stream".
 
-### JSON-bestanden gebruiken UTF-8-encoding zonder BOM, met ASCII-tekenreeks-charset en unieke sleutels; niet-ASCII-tekens worden geëscapet volgens RFC 8259, Sectie 6.
+JSON-bestanden gebruiken UTF-8-encoding zonder BOM, met ASCII-tekenreeks-charset
+en unieke sleutels; niet-ASCII-tekens worden geëscapet volgens RFC 8259, Sectie
+6.
 
 ### Geometric error
 
