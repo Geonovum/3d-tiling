@@ -3,26 +3,66 @@
 Dit hoofdstuk beschrijft een aantal best practices voor het serveren en
 gebruiken van 3D tiles.
 
-## Serveren van 3D Tiles
+## Genereren van 3D Tiles
 
 ### Explicit en implicit tiling
 
->   Pas explicit tiling toe voor terreinen en implicit tiling voor gebouwen.
+>   Pas implicit tiling toe voor grotere datasets.
 
-Voor terreinen, zoals landschappen en terreinmodellen, is explicit tiling vaak
-geschikt omdat ze vaak grote, uitgestrekte gebieden beslaan met een relatief
-uniforme geometrie. Hierdoor kunnen terreinen efficiënt worden opgedeeld in
-regelmatige tegels, waardoor snelle toegang en weergave op verschillende
-detailniveaus mogelijk is. Deze regelmatige structuur maakt het ook
-gemakkelijker om te navigeren en details te renderen op basis van de afstand tot
-de kijker.
+Bij het kiezen tussen implicit en explicit tiling is het belangrijk om te
+beseffen dat de keuze sterk afhankelijk is van de specifieke
+implementatiedetails aan zowel de generatie- als de gebruikerskant (de
+webviewer).
 
-Aan de andere kant zijn gebouwen vaak complexe structuren met verschillende
-vormen, maten en details. Voor gebouwen kan implicit tiling gunstig zijn omdat
-het meer flexibiliteit biedt in het opdelen van de gegevens op basis van de
-geometrische complexiteit. Dit maakt het mogelijk om gebouwen op te delen in
-tegels die zich aanpassen aan de vorm van het gebouw en de detailniveaus, wat
-efficiënter kan zijn voor de opslag en rendering van complexe(re) gebouwen.
+In het algemeen kan gesteld worden dat:
+
+1.  Implicit tiling interessant is, vooral voor grote datasets.
+
+2.  Het aan te raden is om zowel implicit als explicit tiling te testen voor de
+    beoogde toepassing. Dit komt omdat de ondersteuning voor implicit tiling nog
+    steeds evolueert en zelfs populaire platforms zoals Cesium nog enkele
+    uitdagingen hebben, vooral bij zeer grote datasets.
+
+Door beide tiling-methoden te testen, kan de beste keuze worden gemaakt op basis
+van de specifieke behoeften en omstandigheden van uw project.
+
+>   Voor terreinen, zoals landschappen en terreinmodellen, is explicit tiling
+>   vaak geschikt omdat ze vaak grote, uitgestrekte gebieden beslaan met een
+>   relatief uniforme geometrie. Hierdoor kunnen terreinen efficiënt worden
+>   opgedeeld in regelmatige tegels, waardoor snelle toegang en weergave op
+>   verschillende detailniveaus mogelijk is. Deze regelmatige structuur maakt
+>   het ook gemakkelijker om te navigeren en details te renderen op basis van de
+>   afstand tot de kijker.
+
+>   Aan de andere kant zijn gebouwen vaak complexe structuren met verschillende
+>   vormen, maten en details. Voor gebouwen kan implicit tiling gunstig zijn
+>   omdat het meer flexibiliteit biedt in het opdelen van de gegevens op basis
+>   van de geometrische complexiteit. Dit maakt het mogelijk om gebouwen op te
+>   delen in tegels die zich aanpassen aan de vorm van het gebouw en de
+>   detailniveaus, wat efficiënter kan zijn voor de opslag en rendering van
+>   complexe(re) gebouwen.
+
+Daarnaast is er ook een alternatief voor implicit tiling: explicit tiling met
+externe tilesets. Dit kan ook een goede optie zijn voor grote datasets. Net als
+bij implicit tiling wordt hiermee de grootte van het tileset.json-bestand
+significant kleiner. Dit bestand moet namelijk volledig worden ingelezen voordat
+er iets in de viewer kan worden getoond. De grootte van dit tileset.json-bestand
+is cruciaal voor een goede prestatie bij het laden van de 3D-tiles dataset. Als
+dit bestand te groot is, kan het enkele seconden duren voordat het geladen is,
+wat de gebruikerservaring niet ten goede komt.
+
+Nog enkele aandachtspunten en technische details:
+
+-   Implicit tiling is minder flexibel wat betreft de tegelmethode, omdat het
+    alleen quadtree of octree kan zijn. Dit betekent onder andere dat je niet
+    per tegel de hoogte precies kunt instellen op het hoogste gebouw in de
+    tegel, wat weer implicaties kan hebben voor de prestaties in de viewer.
+
+-   Er is minder controle over de geometrische fout bij implicit tiling. Deze
+    wordt namelijk altijd door 2 gedeeld voor een volgend tegelniveau.
+
+-   Wat betreft prestaties hangt veel af van hoe de subtrees in implicit tiling
+    worden gegenereerd en hoe ze worden geconsumeerd in de viewer.
 
 Let op: standaard 1.0 ondersteunt geen implicit tiling, vanaf 1.1 wel. Veel
 clients zitten nog op 1.0, dus implicit tiling is niet in elke client
@@ -51,13 +91,22 @@ meer rekenkracht. Het is cruciaal om de optimale drempelwaarde te bepalen op
 basis van specifieke tests en evaluaties, rekening houdend met de vereisten van
 het project en de doelsystemen.
 
+Bij implicit tiling wordt de geometrische fout deels vastgesteld. Je stelt een
+waarde in voor de root tegel, en deze waarde wordt vervolgens eenvoudigweg door
+2 gedeeld voor elk volgend niveau onder de root tegel. Bij explicit tiling
+daarentegen kun je de geometrische fout afzonderlijk instellen voor iedere
+tegel.
+
 ### Offset Z-coördinaat
 
 >   Stem de offset van de Z-coördinaat van 3D Tiles af op het specifieke
 >   coördinatensysteem of op die van andere 3D Tiles datasets.
 
-**Kunnen we met elkaar een meer specifieke best practice maken, waarin we een
-waarde voor de offset opnemen?**
+*Kunnen we met elkaar een meer specifieke best practice maken, waarin we een
+waarde voor de offset opnemen?*
+
+*N.B. binnen ZoN DF wordt offset Z-coördinaat ook opgepakt. Cesium kan geen 3D
+aan. Bij genereren moet je een bewuste keuze maken, Metadata*
 
 Het is belangrijk om ervoor te zorgen dat de offset van de Z-coördinaat correct
 wordt toegepast om eventuele verticale verschuivingen tussen het
@@ -157,7 +206,7 @@ persoonsgegevens worden gewaarborgd.
 
 GLB, wat staat voor GL Transmission Format Binary, is de gecomprimeerde variant
 van GLTF (GL Transmission Format). glTF 2.0 is het primaire tegelformaat voor 3D
-Tiles
+Tiles vanaf versie 1.1.
 
 In vergelijking met B3DM heeft GLB verschillende voordelen. Ten eerste wordt
 B3DM uitgefaseerd, wat betekent dat het mogelijk niet langer wordt ondersteund
@@ -268,6 +317,9 @@ ontwikkelaars de prestaties van hun applicaties verbeteren en tegelijkertijd een
 consistente visuele ervaring bieden aan gebruikers, ongeacht het moment waarop
 ze de gegevens bekijken.
 
+Let op: Kleur en belichting is ook gerelateerd aan de shader. De shader bepaalt
+namelijk de relatie tussen het materiaal op de 3D-objecten en de belichting.
+
 ### WCAG
 
 >   Minimaliseer visuele barrières in 3D Tile visualisaties door zo dicht
@@ -315,3 +367,75 @@ tot verwarring bij gebruikers, omdat de weergave kan veranderen wanneer er wordt
 geschakeld tussen 2D en 3D. Het implementeren van intelligentie en logica om
 naadloze overgangen mogelijk te maken tussen 2D- en 3D-weergaven is dus
 noodzakelijk om de gebruikerservaring te verbeteren en verwarring te voorkomen.
+
+## Serveren van 3D Tiles
+
+### Valideren van 3D tiles
+
+>   Valideer uw 3D Tilesets
+
+Het is sterk aan te raden om uw 3D Tilesets te valideren voordat ze worden
+geserveerd. Het gebruik van een tool zoals de 3D Tiles Validator
+(https://github.com/CesiumGS/3d-tiles-validator) kan helpen bij het
+identificeren van mogelijke fouten in tilesets voordat ze worden geïntegreerd in
+een applicatie. Door uw Tilesets te valideren, kunnen potentiële problemen met
+de gegevenskwaliteit, structuur of prestaties opsporen en corrigeren, wat
+resulteert in een betere gebruikerservaring en soepele werking van een 3D
+Tiles-viewer.
+
+### Compressie
+
+>   Gebruik geometriecompressie in GLB-bestanden
+
+Om de prestaties van uw 3D Tiles-viewer te verbeteren, raden we aan om
+geometriecompressie te gebruiken voor GLB-bestanden. Draco en meshopt zijn beide
+populaire tools voor geometriecompressie die kunnen helpen om de bestandsgrootte
+van uw GLB-bestanden aanzienlijk te verkleinen, terwijl de visuele kwaliteit
+behouden blijft. Door geometriecompressie toe te passen, kan de laadtijd van uw
+3D-modellen verkorten en de algehele prestaties van 3D Tiles-viewer verbeteren.
+
+Om de laadtijd van uw 3D Tiles verder te verbeteren, raden we aan om
+gzip-compressie toe te passen bij het serveren van de 3D Tiles, met name voor
+het tileset.json-bestand. Gzip-compressie kan de bestandsgrootte aanzienlijk
+verminderen, waardoor de downloadtijd wordt verkort zonder afbreuk te doen aan
+de kwaliteit van de gegevens. Dit helpt bij het optimaliseren van de prestaties
+van uw 3D Tiles-viewer, vooral bij het laden van grote en complexe datasets.
+
+### OGC API GeoVolumes
+
+>   Serveer 3D Tiles met behulp van OGC API GeoVolumes
+
+Om 3D Tiles efficiënt te serveren met de OGC API GeoVolumes, implementeert u
+eerst de OGC API GeoVolumes op de server. Zorg ervoor dat de 3D Tiles-datasets
+correct zijn gegenereerd en georganiseerd volgens de specificaties van de OGC
+API GeoVolumes. Publiceer vervolgens de 3D Tiles-datasets op uw server volgens
+de OGC API GeoVolumes-specificaties, waarbij de endpoints correct geconfigureerd
+moeten zijn voor gemakkelijke toegang tot de gegevens door gebruikers.
+
+### Metadata
+
+Publiceer metadata van een 3D Tileset
+
+Het publiceren van metadata van een 3D Tileset, bijvoorbeeld in het Nationaal
+Georegister, is essentieel voor het bevorderen van het gebruik en de
+vindbaarheid van uw gegevens.
+
+Het is belangrijk om relevante informatie op te nemen, zoals:
+
+\- Coördinatenreferentiesysteem: Beschrijf het coördinatenreferentiesysteem dat
+wordt gebruikt voor de 3D Tileset, inclusief de gebruikte eenheden en de
+verticale en horizontale datums.
+
+\- Geometrische fout (Geometric Error): Geef de geometrische fout aan die is
+toegepast bij het genereren van de 3D Tileset. Dit is belangrijk voor het
+beoordelen van de nauwkeurigheid van de gegevens.
+
+\- Brondata voor het genereren van de 3D Tiles: Geef informatie over de brondata
+die is gebruikt bij het genereren van de 3D Tileset, zoals de bron van de
+terreingegevens, luchtfoto's, satellietbeelden of andere gegevensbronnen.
+
+Door deze informatie op te nemen in de metadata van een 3D Tileset, worden de
+gegevens gemakkelijker vindbaar en bruikbaar voor anderen, wat de uitwisseling
+en het hergebruik van de 3D informatie bevordert.
+
+*depthTestAgainstTerrain = true;*
