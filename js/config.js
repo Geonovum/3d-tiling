@@ -46,7 +46,12 @@ let respecConfig = {
   editors:
     [
       {
-        name: "Geonovum",
+        name: "Arnoud de Boer",
+        company: "Geonovum",
+        companyURL: "https://www.geonovum.nl",
+      },
+      {
+        name: "Michel Grothe",
         company: "Geonovum",
         companyURL: "https://www.geonovum.nl",
       }
@@ -55,29 +60,89 @@ let respecConfig = {
   //-- vul in: per auteur: name:, company:, companyURL: -------------------------------
   authors:
     [
-       {
-        name: "voornaam achternaam",
-        company: "organisatie",
-        companyURL: "https://www.geonovum.nl",
-      },
-	   {
-        name: "voornaam achternaam",
-        company: "organisatie",
-        companyURL: "https://www.geonovum.nl",
-      },
-	   {
-        name: "voornaam achternaam",
-        company: "organisatie",
-        companyURL: "https://www.geonovum.nl",
-      },
-	   {
-        name: "voornaam achternaam",
-        company: "organisatie",
-        companyURL: "https://www.geonovum.nl",
-      },
-    ],
-  //neem hier de URL van de github repository op waar het respec document in staat
-  github: "https://github.com/Geonovum/3d-tiling",
+       
+{
+  name: "André Mulder",
+  company: "Gemeente Rotterdam",
+  companyURL: "https://www.rotterdam.nl",
+},
+{
+  name: "Balazs Dukai",
+  company: "3DGI",
+  companyURL: "https://3dgi.nl",
+},
+{
+  name: "Bert Temme",
+  company: "Geodan",
+  companyURL: "https://www.geodan.nl",
+},
+{
+  name: "Bob Mijwaard",
+  company: "Kadaster",
+  companyURL: "https://www.kadaster.nl",
+},
+{
+  name: "Christian Wisse",
+  company: "Gemeente Rotterdam",
+  companyURL: "https://www.rotterdam.nl",
+},
+{
+  name: "Corné Helmons",
+  company: "Gemeente Rotterdam",
+  companyURL: "https://www.rotterdam.nl",
+},
+{
+  name: "Daan van de Heide",
+  company: "Rijkswaterstaat",
+  companyURL: "https://www.rws.nl",
+},
+{
+  name: "Gerbrand Vestjens",
+  company: "Kadaster",
+  companyURL: "https://www.kadaster.nl",
+},
+{
+  name: "Gerlof de Haan",
+  company: "VNG",
+  companyURL: "https://www.vng.nl",
+},
+{
+  name: "Ioanna Tsakalaki",
+  company: "TNO",
+  companyURL: "https://tno.nl",
+},
+{
+  name: "Jeroen Hogeboom",
+  company: "Kadaster",
+  companyURL: "https://www.kadaster.nl",
+},
+{
+  name: "Linda Vels",
+  company: "Kadaster",
+  companyURL: "https://www.kadaster.nl",
+},
+{
+  name: "Margriet Palm",
+  company: "Nelen-Schuurmans",
+  companyURL: "https://nelen-schuurmans.nl",
+},
+{
+  name: "Martijn van Gog",
+  company: "Gemeente Amsterdam",
+  companyURL: "https://amsterdam.nl",
+},
+{
+  name: "Ravi Peters",
+  companyURL: "3DGI",
+  companyURL: " https://3dgi.nl",
+},
+{
+  name: "Rinaldo Bhailal",
+  companyURL: "Kadaster",
+  companyURL: "  https://www.kadaster.nl",
+},
+],
+github: "https://github.com/Geonovum/3d-tiling",
   // Create PDF and link to file in header (optional):
   // TODO: Change the filename as preferred.
   //alternateFormats: [
