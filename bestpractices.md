@@ -208,6 +208,38 @@ worden bijvoorbeeld rood en muren grijs. Deze kleuren zijn aan te passen. Dit
 geldt dan alleen voor LoD2 en hoger en daarom is het niet aan te raden om LoD1
 en LoD2 te combineren in verschillende zoomlevels.
 
+#### Refinement
+
+Bij Refinement kan tussen de opties Add en Replace gekozen worden, die aan de
+hand van onderstaande scenario’s worden toegelicht.
+
+Als je in de verte kijkt, zie je in principe alleen maar grote gebouwen staan.
+De kleine zijn niet zichtbaar doordat ze überhaupt te klein zijn of achter een
+groter gebouw staan. Je kunt er dan voor kiezen om in de verte alleen grote
+gebouwen te tonen. Iets dichterbij wil je alleen de grote en de middelgrote
+gebouwen zien. En heel dichtbij ook de kleine gebouwen. Door de Add refinement
+te gebruiken, wordt er een tileset aangemaakt met bijvoorbeeld op zoomniveau 14
+de grote gebouwen, op zoomniveau 15 de middelgrote gebouwen en op zoomniveau 16
+de kleine gebouwen. Elk gebouw komt maar 1x voor in de gehele tileset. Door het
+inzoomen worden steeds meer gebouwen toegevoegd aan je view. Een nadeel is dat
+het vaak wel opvalt dat er in de verte gebouwen ontbreken.
+
+![Afbeelding met kaart, Luchtfotografie, tekst Automatisch gegenereerde
+beschrijving](media/9eb82df57c2a50ab283807e3343f0e3c.jpeg)
+
+Als je in de verte kijkt, zie je weinig detail van gebouwen. Je kunt ervoor
+kiezen om de geometrie wat te generaliseren, zodat de tileset minder zwaar
+wordt. Bijvoorbeeld op zoomniveau 14 een generalisatie van 5m, op niveau 15 van
+2m en op niveau 16 geen generalisatie. Hoe meer je inzoomt, hoe gedetailleerder
+een gebouw moet zijn. Wat hier gebeurd is dat elk gebouw op elk zoomniveau
+gegenereerd wordt. Elk gebouw komt dus 3x voor. Voordeel is dat je in de verte
+altijd alle gebouwen ziet, maar het is vaak lastig in te stellen op welk
+zoomniveau, welke generalisatie je toe moet passen. Daardoor blijft de
+generalisatie vaak zichtbaar.
+
+![Afbeelding met tekst, tekening, kaart Automatisch gegenereerde
+beschrijving](media/9784b59e56a08b2e7c20118b698ca4e5.jpeg)
+
 ### Shader
 
 >   Kies voor Physically Based Rendering (PBR) als shader voor 3D Tiles.
@@ -304,40 +336,6 @@ Kortom, het instellen van een minimale zoom op de client-side is een effectieve
 manier om onnodige belasting van het systeem te verminderen, de laadtijd te
 verkorten en de efficiëntie van de gegevensweergave te verbeteren, vooral bij
 het werken met grote (landsdekkende) en gedetailleerde 3D Tiles-gegevenssets.
-
-### Refinement
-
-Bij Refinement kan tussen de opties Add en Replace gekozen worden, die aan de
-hand van onderstaande scenario’s worden toegelicht.
-
-Als je in de verte kijkt, zie je in principe alleen maar grote gebouwen staan.
-De kleine zijn niet zichtbaar doordat ze überhaupt te klein zijn of achter een
-groter gebouw staan. Je kunt er dan voor kiezen om in de verte alleen grote
-gebouwen te tonen. Iets dichterbij wil je alleen de grote en de middelgrote
-gebouwen zien. En heel dichtbij ook de kleine gebouwen. Door de Add refinement
-te gebruiken, wordt er een tileset aangemaakt met bijvoorbeeld op zoomniveau 14
-de grote gebouwen, op zoomniveau 15 de middelgrote gebouwen en op zoomniveau 16
-de kleine gebouwen. Elk gebouw komt maar 1x voor in de gehele tileset. Door het
-inzoomen worden steeds meer gebouwen toegevoegd aan je view. Een nadeel is dat
-het vaak wel opvalt dat er in de verte gebouwen ontbreken.
-
-![Afbeelding met kaart, Luchtfotografie, tekst Automatisch gegenereerde
-beschrijving](media/3dc9e29dcf8a1ff351e9706542625e85.jpeg)
-
-Als je in de verte kijkt, zie je weinig detail van gebouwen. Je kunt ervoor
-kiezen om de geometrie wat te generaliseren, zodat de tileset minder zwaar
-wordt. Bijvoorbeeld op zoomniveau 14 een generalisatie van 5m, op niveau 15 van
-2m en op niveau 16 geen generalisatie. Hoe meer je inzoomt, hoe gedetailleerder
-een gebouw moet zijn. Wat hier gebeurd is dat elk gebouw op elk zoomniveau
-gegenereerd wordt. Elk gebouw komt dus 3x voor. Voordeel is dat je in de verte
-altijd alle gebouwen ziet, maar het is vaak lastig in te stellen op welk
-zoomniveau, welke generalisatie je toe moet passen. Daardoor blijft de
-generalisatie vaak zichtbaar.
-
-![Afbeelding met tekst, tekening, kaart Automatisch gegenereerde
-beschrijving](media/b82619b6346f6790901a243e1d9294d0.jpeg)
-
-### 
 
 ### Kleur en belichting
 
