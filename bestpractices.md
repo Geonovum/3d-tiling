@@ -121,32 +121,52 @@ eventuele verschillen in hoogteniveaus tussen die systemen. Het is aan te raden
 om de offset zorgvuldig te kalibreren en te testen om ervoor te zorgen dat het
 model nauwkeurig wordt gepositioneerd in de gewenste context.
 
-### Parameters voor LODs, zoomlevels, generalisatie
+### Optimale set aan parameters
 
->   Experimenteer met de optimale parameters voor LODs, zoomlevels en
+>   Experimenteer met de optimale parameters voor o.m. LODs, zoomlevels en
 >   generalisatie voor 3D Tiles generatie.
 
-Om efficiënte en visueel aantrekkelijke 3D Tiles te genereren voor
-stadsmodellen, wordt aanbevolen om de volgende parameters in te stellen voor
-verschillende zoomniveaus (zoomlevels) en LODs (Levels of Detail):
+Bij het genereren van 3D tilesets kunnen een aantal parameters toegepast worden
+die invloed hebben op de wijze waarop deze tilesets getoond worden in een
+viewer. Deze parameters zijn:
 
--   *Zoomniveau 16:* Genereer tiles voor gebouwen op LOD2 zonder objectsize
-    filter (generalisatie van 0 meter). Dit betekent dat alle details behouden
-    blijven zonder generalisatie.
+-   Levels
 
--   *Zoomniveau 15:* Genereer tiles voor gebouwen op LOD2 met een objectsize
-    filter (generalisatie van 2 meter). Hierdoor worden kleinere objecten, zoals
-    schuurtjes en terrasoverkappingen, uitgesloten van de lagere zoomniveaus,
-    waar minder detail nodig is.
+-   CityGML Level of Detail (0, 1, 2, 3, 4)
 
--   *Zoomniveau 14:* Genereer tiles voor gebouwen op LOD2 met een objectsize
-    filter (generalisatie van 5 meter). Op dit zoomniveau is een grotere
-    generalisatie passend, waardoor nog kleinere objecten worden uitgefilterd.
+-   Refinement (Add, Replace)
 
-Het objectsize filter wordt toegepast op basis van de diagonaal van de bounding
-box van een object, en vertices worden binnen deze afstand samengevoegd
-(snapping). Hierdoor kunnen kleine objecten worden geëlimineerd zonder het
-visuele detail te verliezen.
+-   Object size filter
+
+-   Geometry generalization
+
+-   Textures (CityGML Appearance, Single color, Specify colors based on CityGML
+    classes)
+
+Er is geen aanbeveling mogelijk voor één set aan instellingen, omdat dit
+afhankelijk is van de input-data, de visuele presentatie en ook de persoonlijke
+smaak. Daarnaast zijn verschillende parameters onderling afhankelijk van elkaar.
+
+#### Levels
+
+Bij deze optie wordt gekozen op welk zoomlevel een tileset wordt aangemaakt. Het
+is mogelijk meerdere levels in te stellen, die gezamenlijk een tileset vormen.
+Voor elk level moeten dan de hieronder beschreven parameters ingesteld worden.
+Levels die vaak gebruikt worden zijn 14, 15 en 16. Het level met het laagste
+getal is degene die als eerste wordt geladen in een viewer. De objecten in dit
+level liggen verder weg van het viewpoint dan de die in de hogere levels. Bij
+het aanmaken van de levels wordt op de achtergrond een Geometric Error toegekend
+aan elk level. Het laagste level heeft de hoogste Geometric Error.
+
+#### CityGML Level of Detail
+
+Bij deze optie wordt gekozen welk Level of Detail gebruikt wordt die in de
+CityGML-data aanwezig is. Voor gebouwen geldt dat LoD1 een eenvoudig
+blokkenmodel is en LoD2 dakvormen heeft. LoD1 bevat minder detail, dus is ook
+sneller in te laden. Omdat van veraf minder detail te zien is, kan ervoor worden
+gekozen om op een lager zoomlevel LoD1 te gebruiken en in dezelfde tileset op
+een hoger zoomlevel LoD2 te gebruiken. Dit kan het laadproces gunstig
+beïnvloeden.
 
 Het is ook raadzaam om een fallback LOD in te stellen, zoals LOD1, voor het
 geval er geen LOD2 beschikbaar is in de brondataset. In formaten zoals CityGML
@@ -154,9 +174,39 @@ of CityJSON kunnen meerdere LODs voor een object worden opgenomen. Als het
 voorkeurs LOD niet beschikbaar is, zal het systeem automatisch teruggrijpen naar
 het fallback LOD om het object op te nemen in de 3D Tile.
 
-Het optimaliseren van deze instellingen zorgt voor een gebalanceerde weergave
-van stadsmodellen op verschillende zoomniveaus, waarbij de prestaties worden
-geoptimaliseerd zonder concessies te doen aan de visuele kwaliteit.
+#### Object size filter
+
+Deze optie is alleen te gebruiken bij de Add refinement. Voor elk zoomlevel kan
+een object size gekozen worden, die gebaseerd is op de diagonaal van het object.
+Bijvoorbeeld op level 14 alle gebouwen groter dan 100m, op level 15 alle
+gebouwen tussen 50m en 100m en op level 16 alle gebouwen kleiner dan 50m.
+
+#### Geometry generalization
+
+Deze optie is alleen te gebruiken bij de Replace refinement. Voor elk zoomlevel
+kan een generalisatie toegepast worden, waarbij een marge wordt opgegeven
+waarbinnen vertices van een object samengevoegd worden. Bijvoorbeeld op level 14
+een generalisatie van 5m, op level 15 van 2m en op level 16 geen generalisatie.
+
+#### Textures
+
+Bij het gebruik van CityGML Appearance kunnen bijvoorbeeld getextureerde
+gebouwen aangemaakt worden. Het is niet aan te raden om hierbij LoD1 en 2 te
+gebruiken, omdat LoD1 geen textures bevat. Het is wel mogelijk dit met object
+size filter óf generalisatie te combineren. Het is verder mogelijk voor
+verschillende zoomlevels de kwaliteit van de texture aan te passen, omdat van
+veraf minder detail te zien is dan dichtbij.
+
+Als voor Single color wordt gekozen is het wel goed mogelijk LoD1 en LoD2 te
+combineren in de verschillende zoomlevels. Er wordt maar één kleur toegepast
+voor alle objecten, eventueel met transparantie. Hierbij is het onderscheidt
+tussen LoD1 en LoD2 op grote afstand niet te zien.
+
+Bij het gebruik van Specify color based on CityGML classes krijgt elk vlak van
+een gebouw zijn eigen kleur, mits ze gespecificeerd zijn in CityGML. Daken
+worden bijvoorbeeld rood en muren grijs. Deze kleuren zijn aan te passen. Dit
+geldt dan alleen voor LoD2 en hoger en daarom is het niet aan te raden om LoD1
+en LoD2 te combineren in verschillende zoomlevels.
 
 ### Shader
 
@@ -255,38 +305,39 @@ manier om onnodige belasting van het systeem te verminderen, de laadtijd te
 verkorten en de efficiëntie van de gegevensweergave te verbeteren, vooral bij
 het werken met grote (landsdekkende) en gedetailleerde 3D Tiles-gegevenssets.
 
-### Replace vs. Add
+### Refinement
 
->   Gebruik van Replace bij het Werken met 3D Tiles
+Bij Refinement kan tussen de opties Add en Replace gekozen worden, die aan de
+hand van onderstaande scenario’s worden toegelicht.
 
-Het gebruik van de “Replace" methode bij het werken met 3D Tiles in een
-clientviewer biedt verschillende voordelen en optimaliseert de weergave van
-gegevens op verschillende zoomniveaus. Een aanbevolen werkwijze is om "Replace"
-te gebruiken voor specifieke zoomniveaus, zoals bijvoorbeeld zoomniveaus 14, 15
-en 16. Op deze manier kan er een geleidelijke overgang van detailniveaus worden
-gecreëerd naarmate de gebruiker inzoomt op de scene.
+Als je in de verte kijkt, zie je in principe alleen maar grote gebouwen staan.
+De kleine zijn niet zichtbaar doordat ze überhaupt te klein zijn of achter een
+groter gebouw staan. Je kunt er dan voor kiezen om in de verte alleen grote
+gebouwen te tonen. Iets dichterbij wil je alleen de grote en de middelgrote
+gebouwen zien. En heel dichtbij ook de kleine gebouwen. Door de Add refinement
+te gebruiken, wordt er een tileset aangemaakt met bijvoorbeeld op zoomniveau 14
+de grote gebouwen, op zoomniveau 15 de middelgrote gebouwen en op zoomniveau 16
+de kleine gebouwen. Elk gebouw komt maar 1x voor in de gehele tileset. Door het
+inzoomen worden steeds meer gebouwen toegevoegd aan je view. Een nadeel is dat
+het vaak wel opvalt dat er in de verte gebouwen ontbreken.
 
-Door "Replace" te gebruiken in plaats van "Add" bij het laden van gegevens,
-wordt niet-redundante tiling en rendering voorkomen. Bij het gebruik van "Add"
-worden namelijk meerdere sets van gegevens 'over elkaar heen' geladen, wat kan
-leiden tot inefficiënte gegevensweergave en prestatieverlies. Het toepassen van
-"Replace" zorgt voor een efficiëntere weergave van gegevens en minimaliseert de
-belasting van het systeem.
+![Afbeelding met kaart, Luchtfotografie, tekst Automatisch gegenereerde
+beschrijving](media/3dc9e29dcf8a1ff351e9706542625e85.jpeg)
 
-Een voorbeeld van het gebruik van "Replace" op verschillende zoomniveaus kan
-worden geïllustreerd door te kijken naar het laden van gebouwen. Op zoomniveau
-14 kunnen bijvoorbeeld de 50.000 grootste gebouwen worden geladen en
-weergegeven. Op zoomniveau 15 kunnen deze gebouwen worden vervangen door een
-nieuwe set van bijvoorbeeld de 50.000 grotere gebouwen die zich binnen de
-weergegeven kaart-boundingbox bevinden. Tenslotte, op zoomniveau 16 kunnen de
-gebouwen worden vervangen door de meest gedetailleerde set van gebouwen die
-beschikbaar zijn.
+Als je in de verte kijkt, zie je weinig detail van gebouwen. Je kunt ervoor
+kiezen om de geometrie wat te generaliseren, zodat de tileset minder zwaar
+wordt. Bijvoorbeeld op zoomniveau 14 een generalisatie van 5m, op niveau 15 van
+2m en op niveau 16 geen generalisatie. Hoe meer je inzoomt, hoe gedetailleerder
+een gebouw moet zijn. Wat hier gebeurd is dat elk gebouw op elk zoomniveau
+gegenereerd wordt. Elk gebouw komt dus 3x voor. Voordeel is dat je in de verte
+altijd alle gebouwen ziet, maar het is vaak lastig in te stellen op welk
+zoomniveau, welke generalisatie je toe moet passen. Daardoor blijft de
+generalisatie vaak zichtbaar.
 
-Door deze aanpak te volgen, wordt een soepele overgang tussen verschillende
-detailniveaus mogelijk gemaakt, terwijl tegelijkertijd de efficiëntie van de
-gegevensweergave wordt behouden. Hierdoor kan de 3D Tiles-clientviewer een
-optimale gebruikerservaring bieden, zelfs bij complexe en gedetailleerde
-3D-gegevenssets.
+![Afbeelding met tekst, tekening, kaart Automatisch gegenereerde
+beschrijving](media/b82619b6346f6790901a243e1d9294d0.jpeg)
+
+### 
 
 ### Kleur en belichting
 
