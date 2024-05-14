@@ -107,7 +107,7 @@ wordt toegepast om eventuele verticale verschuivingen tussen het
 coördinatensysteem van het model en het gewenste referentiesysteem te
 corrigeren. Dit kan bijvoorbeeld nodig zijn om het model op de juiste hoogte
 boven het maaiveldoppervlak te plaatsen of om ervoor te zorgen dat het model
-correct uitgelijnd is met andere lagen, zoals .
+correct uitgelijnd is met andere lagen.
 
 Het bepalen van de juiste offsetwaarde vereist meestal enige kennis van het
 coördinatensysteem van het model en het gewenste referentiesysteem, evenals
@@ -115,18 +115,17 @@ eventuele verschillen in hoogteniveaus tussen die systemen. Het is aan te raden
 om de offset zorgvuldig te kalibreren en te testen om ervoor te zorgen dat het
 model nauwkeurig wordt gepositioneerd in de gewenste context.
 
->   In Nederland meten we hoogten ten opzichte van de geoïde van het Normaal
->   Amsterdams Peil (NAP). Het NAP is gebaseerd op de gemiddelde zeeniveaureeks,
->   wat betekent dat het hoogteniveau refereert aan het gemiddelde zeeniveau.
->   Echter, in 3D Tiles viewers zoals Cesium wordt vaak de ellipsoïde als
->   hoogtereferentie gebruikt. Hierdoor kunnen verschillen ontstaan tussen de
->   hoogte zoals weergegeven in de viewer en de werkelijke hoogte volgens het
->   NAP. Om dit te corrigeren, is het nodig om een Z-offset te gebruiken. Deze
->   offset is niet overal ter wereld gelijk en kan zelfs binnen Nederland
->   variëren, bijvoorbeeld tussen Limburg en Groningen. Het is belangrijk om
->   deze Z-offset correct in te stellen om nauwkeurige hoogtevisualisaties te
->   garanderen.![Afbeelding met cirkel, diagram, schermopname Automatisch
->   gegenereerde
+>   Let op! Bij het gebruik van 3D-tile viewers zoals Cesium wordt de hoogte
+>   bepaald ten opzichte van de ellipsoïde, terwijl hoogten in Nederland worden
+>   gemeten ten opzichte van de geoïde van het Normaal Amsterdams Peil (NAP).
+>   Dit verschil kan resulteren in een verschil in hoogtemeters tussen de geoïde
+>   en de ellipsoïde. Het is belangrijk om hiermee rekening te houden bij het
+>   visualiseren van 3D-data, aangezien de hoogtecorrectie kan variëren, zelfs
+>   binnen Nederland, bijvoorbeeld tussen Limburg en Groningen. Het gebruik van
+>   een Z-offset is vaak noodzakelijk om nauwkeurige hoogtevisualisaties te
+>   garanderen.
+
+>   ![Afbeelding met cirkel, diagram, schermopname Automatisch gegenereerde
 >   beschrijving](media/339c8243cd7bd7f34afeddd2c13b2422.png)[Bron:](https://upload.wikimedia.org/wikipedia/commons/a/a9/%CE%A3%CF%85%CF%83%CF%84%CE%AE%CE%BC%CE%B1%CF%84%CE%B1_%CE%91%CE%BD%CE%B1%CF%86%CE%BF%CF%81%CE%AC%CF%82_%CE%9A%CE%B1%CE%B9_%CE%93%CE%B5%CF%89%CE%B4%CE%B1%CE%B9%CF%84%CE%B9%CE%BA%CF%8C_Datum.png)
 >   Wikimedia
 
