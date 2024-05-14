@@ -102,12 +102,6 @@ tegel.
 >   Stem de offset van de Z-coördinaat van 3D Tiles af op het specifieke
 >   coördinatensysteem of op die van andere 3D Tiles datasets.
 
-*Kunnen we met elkaar een meer specifieke best practice maken, waarin we een
-waarde voor de offset opnemen?*
-
-*N.B. binnen ZoN DF wordt offset Z-coördinaat ook opgepakt. Cesium kan geen 3D
-aan. Bij genereren moet je een bewuste keuze maken, Metadata*
-
 Het is belangrijk om ervoor te zorgen dat de offset van de Z-coördinaat correct
 wordt toegepast om eventuele verticale verschuivingen tussen het
 coördinatensysteem van het model en het gewenste referentiesysteem te
@@ -121,124 +115,61 @@ eventuele verschillen in hoogteniveaus tussen die systemen. Het is aan te raden
 om de offset zorgvuldig te kalibreren en te testen om ervoor te zorgen dat het
 model nauwkeurig wordt gepositioneerd in de gewenste context.
 
+>   In Nederland meten we hoogten ten opzichte van de geoïde van het Normaal
+>   Amsterdams Peil (NAP). Het NAP is gebaseerd op de gemiddelde zeeniveaureeks,
+>   wat betekent dat het hoogteniveau refereert aan het gemiddelde zeeniveau.
+>   Echter, in 3D Tiles viewers zoals Cesium wordt vaak de ellipsoïde als
+>   hoogtereferentie gebruikt. Hierdoor kunnen verschillen ontstaan tussen de
+>   hoogte zoals weergegeven in de viewer en de werkelijke hoogte volgens het
+>   NAP. Om dit te corrigeren, is het nodig om een Z-offset te gebruiken. Deze
+>   offset is niet overal ter wereld gelijk en kan zelfs binnen Nederland
+>   variëren, bijvoorbeeld tussen Limburg en Groningen. Het is belangrijk om
+>   deze Z-offset correct in te stellen om nauwkeurige hoogtevisualisaties te
+>   garanderen.![Afbeelding met cirkel, diagram, schermopname Automatisch
+>   gegenereerde
+>   beschrijving](media/339c8243cd7bd7f34afeddd2c13b2422.png)[Bron:](https://upload.wikimedia.org/wikipedia/commons/a/a9/%CE%A3%CF%85%CF%83%CF%84%CE%AE%CE%BC%CE%B1%CF%84%CE%B1_%CE%91%CE%BD%CE%B1%CF%86%CE%BF%CF%81%CE%AC%CF%82_%CE%9A%CE%B1%CE%B9_%CE%93%CE%B5%CF%89%CE%B4%CE%B1%CE%B9%CF%84%CE%B9%CE%BA%CF%8C_Datum.png)
+>   Wikimedia
+
 ### Optimale set aan parameters
 
 >   Experimenteer met de optimale parameters voor o.m. LODs, zoomlevels en
 >   generalisatie voor 3D Tiles generatie.
 
-Bij het genereren van 3D tilesets kunnen een aantal parameters toegepast worden
-die invloed hebben op de wijze waarop deze tilesets getoond worden in een
-viewer. Deze parameters zijn:
+Een best practice bij het genereren van 3D-tilesets is het zorgvuldig finetunen
+van verschillende parameters om optimale visualisaties te verkrijgen. Parameters
+zoals levels, CityGML Level of Detail (LoD), refinement, object size filter,
+geometry generalization en textures zijn van invloed op de weergave in de
+viewer. Er is geen universele set instellingen, omdat deze afhankelijk zijn van
+de inputdata, visuele presentatie en persoonlijke voorkeur.
 
--   Levels
+-   **Levels:** Kies op welk zoomniveau de tileset wordt gegenereerd. Levels 14,
+    15 en 16 worden vaak gebruikt, waarbij het laagste level als eerste wordt
+    geladen in een viewer.
 
--   CityGML Level of Detail (0, 1, 2, 3, 4)
+-   **CityGML Level of Detail:** Kies het gewenste detailniveau voor gebouwen
+    (LoD1 of LoD2) die in de CityGML-data beschikbaar zijn. Stel indien mogelijk
+    een fallback LOD in voor het geval het voorkeursniveau niet beschikbaar is.
 
--   Refinement (Add, Replace)
+-   **Refinement:** Kies tussen Add en Replace om de tileset te verfijnen. Bij
+    Add wordt de tileset opgebouwd per zoomniveau, terwijl bij Replace elk
+    gebouw op elk zoomniveau wordt gegenereerd.
 
--   Object size filter
+-   **Object size filter:** Stel voor elk zoomniveau een objectgrootte in op
+    basis van de diagonaal van het object om de zichtbaarheid van gebouwen op
+    verschillende afstanden te optimaliseren.
 
--   Geometry generalization
+-   **Geometry generalization:** Pas generalisatie toe op de geometrie om de
+    grootte van de tileset te verminderen. Dit is vooral handig bij het
+    vervangen van refinement.
 
--   Textures (CityGML Appearance, Single color, Specify colors based on CityGML
-    classes)
+-   **Textures:** Kies texturen op basis van CityGML-appearance, een enkele
+    kleur of specificeer kleuren op basis van CityGML-klassen. Stem de kwaliteit
+    van texturen af op het zoomniveau voor optimale prestaties.
 
-Er is geen aanbeveling mogelijk voor één set aan instellingen, omdat dit
-afhankelijk is van de input-data, de visuele presentatie en ook de persoonlijke
-smaak. Daarnaast zijn verschillende parameters onderling afhankelijk van elkaar.
-
-#### Levels
-
-Bij deze optie wordt gekozen op welk zoomlevel een tileset wordt aangemaakt. Het
-is mogelijk meerdere levels in te stellen, die gezamenlijk een tileset vormen.
-Voor elk level moeten dan de hieronder beschreven parameters ingesteld worden.
-Levels die vaak gebruikt worden zijn 14, 15 en 16. Het level met het laagste
-getal is degene die als eerste wordt geladen in een viewer. De objecten in dit
-level liggen verder weg van het viewpoint dan de die in de hogere levels. Bij
-het aanmaken van de levels wordt op de achtergrond een Geometric Error toegekend
-aan elk level. Het laagste level heeft de hoogste Geometric Error.
-
-#### CityGML Level of Detail
-
-Bij deze optie wordt gekozen welk Level of Detail gebruikt wordt die in de
-CityGML-data aanwezig is. Voor gebouwen geldt dat LoD1 een eenvoudig
-blokkenmodel is en LoD2 dakvormen heeft. LoD1 bevat minder detail, dus is ook
-sneller in te laden. Omdat van veraf minder detail te zien is, kan ervoor worden
-gekozen om op een lager zoomlevel LoD1 te gebruiken en in dezelfde tileset op
-een hoger zoomlevel LoD2 te gebruiken. Dit kan het laadproces gunstig
-beïnvloeden.
-
-Het is ook raadzaam om een fallback LOD in te stellen, zoals LOD1, voor het
-geval er geen LOD2 beschikbaar is in de brondataset. In formaten zoals CityGML
-of CityJSON kunnen meerdere LODs voor een object worden opgenomen. Als het
-voorkeurs LOD niet beschikbaar is, zal het systeem automatisch teruggrijpen naar
-het fallback LOD om het object op te nemen in de 3D Tile.
-
-#### Object size filter
-
-Deze optie is alleen te gebruiken bij de Add refinement. Voor elk zoomlevel kan
-een object size gekozen worden, die gebaseerd is op de diagonaal van het object.
-Bijvoorbeeld op level 14 alle gebouwen groter dan 100m, op level 15 alle
-gebouwen tussen 50m en 100m en op level 16 alle gebouwen kleiner dan 50m.
-
-#### Geometry generalization
-
-Deze optie is alleen te gebruiken bij de Replace refinement. Voor elk zoomlevel
-kan een generalisatie toegepast worden, waarbij een marge wordt opgegeven
-waarbinnen vertices van een object samengevoegd worden. Bijvoorbeeld op level 14
-een generalisatie van 5m, op level 15 van 2m en op level 16 geen generalisatie.
-
-#### Textures
-
-Bij het gebruik van CityGML Appearance kunnen bijvoorbeeld getextureerde
-gebouwen aangemaakt worden. Het is niet aan te raden om hierbij LoD1 en 2 te
-gebruiken, omdat LoD1 geen textures bevat. Het is wel mogelijk dit met object
-size filter óf generalisatie te combineren. Het is verder mogelijk voor
-verschillende zoomlevels de kwaliteit van de texture aan te passen, omdat van
-veraf minder detail te zien is dan dichtbij.
-
-Als voor Single color wordt gekozen is het wel goed mogelijk LoD1 en LoD2 te
-combineren in de verschillende zoomlevels. Er wordt maar één kleur toegepast
-voor alle objecten, eventueel met transparantie. Hierbij is het onderscheidt
-tussen LoD1 en LoD2 op grote afstand niet te zien.
-
-Bij het gebruik van Specify color based on CityGML classes krijgt elk vlak van
-een gebouw zijn eigen kleur, mits ze gespecificeerd zijn in CityGML. Daken
-worden bijvoorbeeld rood en muren grijs. Deze kleuren zijn aan te passen. Dit
-geldt dan alleen voor LoD2 en hoger en daarom is het niet aan te raden om LoD1
-en LoD2 te combineren in verschillende zoomlevels.
-
-#### Refinement
-
-Bij Refinement kan tussen de opties Add en Replace gekozen worden, die aan de
-hand van onderstaande scenario’s worden toegelicht.
-
-Als je in de verte kijkt, zie je in principe alleen maar grote gebouwen staan.
-De kleine zijn niet zichtbaar doordat ze überhaupt te klein zijn of achter een
-groter gebouw staan. Je kunt er dan voor kiezen om in de verte alleen grote
-gebouwen te tonen. Iets dichterbij wil je alleen de grote en de middelgrote
-gebouwen zien. En heel dichtbij ook de kleine gebouwen. Door de Add refinement
-te gebruiken, wordt er een tileset aangemaakt met bijvoorbeeld op zoomniveau 14
-de grote gebouwen, op zoomniveau 15 de middelgrote gebouwen en op zoomniveau 16
-de kleine gebouwen. Elk gebouw komt maar 1x voor in de gehele tileset. Door het
-inzoomen worden steeds meer gebouwen toegevoegd aan je view. Een nadeel is dat
-het vaak wel opvalt dat er in de verte gebouwen ontbreken.
-
-![Afbeelding met kaart, Luchtfotografie, tekst Automatisch gegenereerde
-beschrijving](media/9eb82df57c2a50ab283807e3343f0e3c.jpeg)
-
-Als je in de verte kijkt, zie je weinig detail van gebouwen. Je kunt ervoor
-kiezen om de geometrie wat te generaliseren, zodat de tileset minder zwaar
-wordt. Bijvoorbeeld op zoomniveau 14 een generalisatie van 5m, op niveau 15 van
-2m en op niveau 16 geen generalisatie. Hoe meer je inzoomt, hoe gedetailleerder
-een gebouw moet zijn. Wat hier gebeurd is dat elk gebouw op elk zoomniveau
-gegenereerd wordt. Elk gebouw komt dus 3x voor. Voordeel is dat je in de verte
-altijd alle gebouwen ziet, maar het is vaak lastig in te stellen op welk
-zoomniveau, welke generalisatie je toe moet passen. Daardoor blijft de
-generalisatie vaak zichtbaar.
-
-![Afbeelding met tekst, tekening, kaart Automatisch gegenereerde
-beschrijving](media/9784b59e56a08b2e7c20118b698ca4e5.jpeg)
+Door deze parameters zorgvuldig af te stemmen, kunnen 3D Tilesets optimaal
+worden gegenereerd voor verschillende toepassingen en gebruiksscenario's. Het is
+belangrijk om te experimenteren en de instellingen aan te passen op basis van de
+input-data, visuele presentatie en persoonlijke voorkeur.
 
 ### Shader
 
@@ -366,6 +297,9 @@ ontwikkelaars de prestaties van hun applicaties verbeteren en tegelijkertijd een
 consistente visuele ervaring bieden aan gebruikers, ongeacht het moment waarop
 ze de gegevens bekijken.
 
+![Afbeelding met kaart, schermopname, tekst, Multimediasoftware Automatisch
+gegenereerde beschrijving](media/16ca5ef04f7cfb12dbf4a794acb88d9e.png)
+
 Let op: Kleur en belichting is ook gerelateerd aan de shader. De shader bepaalt
 namelijk de relatie tussen het materiaal op de 3D-objecten en de belichting.
 
@@ -389,6 +323,9 @@ iedereen begrijpelijk en bruikbaar is, ongeacht eventuele beperkingen. Het
 naleven van deze richtlijnen verbetert niet alleen de gebruikerservaring voor
 mensen met handicaps, maar kan ook bijdragen aan een bredere acceptatie en
 bruikbaarheid van de applicatie.
+
+*![Kleuren 3D Tiles Basisvoorziening
+Kadaster](media/c21340f6daebe690a347b9d1ea9887bf.png)*
 
 ### Coördinaten van scherm/terrein en camera/doelobject
 
