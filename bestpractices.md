@@ -119,14 +119,21 @@ model nauwkeurig wordt gepositioneerd in de gewenste context.
 >   bepaald ten opzichte van de ellipsoïde, terwijl hoogten in Nederland worden
 >   gemeten ten opzichte van de geoïde van het Normaal Amsterdams Peil (NAP).
 >   Dit verschil kan resulteren in een verschil in hoogtemeters tussen de geoïde
->   en de ellipsoïde. Het is belangrijk om hiermee rekening te houden bij het
->   visualiseren van 3D-data, aangezien de hoogtecorrectie kan variëren, zelfs
->   binnen Nederland, bijvoorbeeld tussen Limburg en Groningen. Het gebruik van
->   een Z-offset is vaak noodzakelijk om nauwkeurige hoogtevisualisaties te
->   garanderen.
+>   en de ellipsoïde.
 
 >   ![Afbeelding met cirkel, diagram, schermopname Automatisch gegenereerde
->   beschrijving](media/339c8243cd7bd7f34afeddd2c13b2422.png)[Bron:](https://upload.wikimedia.org/wikipedia/commons/a/a9/%CE%A3%CF%85%CF%83%CF%84%CE%AE%CE%BC%CE%B1%CF%84%CE%B1_%CE%91%CE%BD%CE%B1%CF%86%CE%BF%CF%81%CE%AC%CF%82_%CE%9A%CE%B1%CE%B9_%CE%93%CE%B5%CF%89%CE%B4%CE%B1%CE%B9%CF%84%CE%B9%CE%BA%CF%8C_Datum.png)
+>   beschrijving](media/339c8243cd7bd7f34afeddd2c13b2422.png)
+
+>   Het is belangrijk om hiermee rekening te houden bij het visualiseren van
+>   3D-data, aangezien de hoogtecorrectie kan variëren, zelfs binnen Nederland.
+>   Onderstaande afbeelding toont het hoogteverschil tussen NAP-geoide en WGS84
+>   ellipsiode in Nederland. Het gebruik van dit hoogteverschil als Z-offset is
+>   vaak noodzakelijk om nauwkeurige hoogtevisualisaties te garanderen.
+
+![Afbeelding met schets, tekening, kaart, kunst Automatisch gegenereerde
+beschrijving](media/80200791c0a5947c9226bb7e2e6c0c9e.png)
+
+>   [Bron:](https://upload.wikimedia.org/wikipedia/commons/a/a9/%CE%A3%CF%85%CF%83%CF%84%CE%AE%CE%BC%CE%B1%CF%84%CE%B1_%CE%91%CE%BD%CE%B1%CF%86%CE%BF%CF%81%CE%AC%CF%82_%CE%9A%CE%B1%CE%B9_%CE%93%CE%B5%CF%89%CE%B4%CE%B1%CE%B9%CF%84%CE%B9%CE%BA%CF%8C_Datum.png)
 >   Wikimedia
 
 ### Optimale set aan parameters
