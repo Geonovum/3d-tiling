@@ -117,11 +117,11 @@ eventuele verschillen in hoogteniveaus tussen die systemen. Het is aan te raden
 om de offset zorgvuldig te kalibreren en te testen om ervoor te zorgen dat het
 model nauwkeurig wordt gepositioneerd in de gewenste context.
 
->   Let op! Bij het gebruik van 3D-tile viewers zoals Cesium wordt de hoogte
->   bepaald ten opzichte van de ellipsoïde, terwijl hoogten in Nederland worden
->   gemeten ten opzichte van de geoïde van het Normaal Amsterdams Peil (NAP).
->   Dit verschil kan resulteren in een verschil in hoogtemeters tussen de geoïde
->   en de ellipsoïde.
+>   Let op! De aarde is niet plat. Bij het gebruik van 3D-tile viewers zoals
+>   Cesium wordt de hoogte bepaald ten opzichte van de ellipsoïde, terwijl
+>   hoogten in Nederland worden gemeten ten opzichte van de geoïde van het
+>   Normaal Amsterdams Peil (NAP). Dit verschil kan resulteren in een verschil
+>   in hoogtemeters tussen de geoïde en de ellipsoïde.
 
 >   ![Afbeelding met cirkel, diagram, schermopname Automatisch gegenereerde
 >   beschrijving](media/339c8243cd7bd7f34afeddd2c13b2422.png)
@@ -132,8 +132,8 @@ model nauwkeurig wordt gepositioneerd in de gewenste context.
 >   ellipsiode in Nederland. Het gebruik van dit hoogteverschil als Z-offset is
 >   vaak noodzakelijk om nauwkeurige hoogtevisualisaties te garanderen.
 
-![Afbeelding met schets, tekening, kaart, kunst Automatisch gegenereerde
-beschrijving](media/80200791c0a5947c9226bb7e2e6c0c9e.png)
+>   ![Afbeelding met schets, tekening, kaart, kunst Automatisch gegenereerde
+>   beschrijving](media/80200791c0a5947c9226bb7e2e6c0c9e.png)
 
 ### 
 
