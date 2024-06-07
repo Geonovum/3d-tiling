@@ -26,7 +26,7 @@ In het algemeen kan gesteld worden dat:
     uitdagingen hebben, vooral bij zeer grote datasets.
 
 Door beide tiling-methoden te testen, kan de beste keuze worden gemaakt op basis
-van de specifieke behoeften en omstandigheden van uw project.
+van de specifieke behoeften en omstandigheden van een project.
 
 >   Voor terreinen, zoals landschappen en terreinmodellen, is explicit tiling
 >   vaak geschikt omdat ze vaak grote, uitgestrekte gebieden beslaan met een
@@ -135,8 +135,7 @@ model nauwkeurig wordt gepositioneerd in de gewenste context.
 ![Afbeelding met schets, tekening, kaart, kunst Automatisch gegenereerde
 beschrijving](media/80200791c0a5947c9226bb7e2e6c0c9e.png)
 
->   [Bron:](https://upload.wikimedia.org/wikipedia/commons/a/a9/%CE%A3%CF%85%CF%83%CF%84%CE%AE%CE%BC%CE%B1%CF%84%CE%B1_%CE%91%CE%BD%CE%B1%CF%86%CE%BF%CF%81%CE%AC%CF%82_%CE%9A%CE%B1%CE%B9_%CE%93%CE%B5%CF%89%CE%B4%CE%B1%CE%B9%CF%84%CE%B9%CE%BA%CF%8C_Datum.png)
->   Wikimedia
+### 
 
 ### Optimale set aan parameters
 
@@ -244,6 +243,77 @@ Door te kiezen voor GLB vermijdt men potentiële complicaties en
 compatibiliteitsproblemen die kunnen ontstaan bij het gebruik van verouderde
 formaten zoals 3BM. Dit maakt GLB een verstandige keuze voor het
 toekomstbestendig opslaan en uitwisselen van 3D-gegevens.
+
+## Serveren van 3D Tiles
+
+### Valideren van 3D tiles
+
+>   Valideer de 3D Tilesets.
+
+Het is sterk aan te raden om 3D Tilesets te valideren voordat ze worden
+geserveerd. Het gebruik van een tool zoals de 3D Tiles Validator
+(https://github.com/CesiumGS/3d-tiles-validator) kan helpen bij het
+identificeren van mogelijke fouten in tilesets voordat ze worden geïntegreerd in
+een applicatie. Door Tilesets te valideren, kunnen potentiële problemen met de
+gegevenskwaliteit, structuur of prestaties opsporen en corrigeren, wat
+resulteert in een betere gebruikerservaring en soepele werking van een 3D
+Tiles-viewer.
+
+### Compressie
+
+>   Gebruik geometriecompressie in GLB-bestanden
+
+Om de prestaties van een 3D Tiles-viewer te verbeteren, raden we aan om
+geometriecompressie te gebruiken voor GLB-bestanden. Draco en meshopt zijn beide
+populaire tools voor geometriecompressie die kunnen helpen om de bestandsgrootte
+van een GLB-bestanden aanzienlijk te verkleinen, terwijl de visuele kwaliteit
+behouden blijft. Door geometriecompressie toe te passen, kan de laadtijd van
+3D-modellen verkorten en de algehele prestaties van 3D Tiles-viewer verbeteren.
+
+Om de laadtijd van een 3D Tiles verder te verbeteren, raden we aan om
+gzip-compressie toe te passen bij het serveren van de 3D Tiles, met name voor
+het tileset.json-bestand. Gzip-compressie kan de bestandsgrootte aanzienlijk
+verminderen, waardoor de downloadtijd wordt verkort zonder afbreuk te doen aan
+de kwaliteit van de gegevens. Dit helpt bij het optimaliseren van de prestaties
+van een 3D Tiles-viewer, vooral bij het laden van grote en complexe datasets.
+
+### OGC API GeoVolumes
+
+>   Serveer 3D Tiles met behulp van OGC API GeoVolumes
+
+Om 3D Tiles efficiënt te serveren met de OGC API GeoVolumes, implementeert u
+eerst de OGC API GeoVolumes op de server. Zorg ervoor dat de 3D Tiles-datasets
+correct zijn gegenereerd en georganiseerd volgens de specificaties van de OGC
+API GeoVolumes. Publiceer vervolgens de 3D Tiles-datasets op een server volgens
+de OGC API GeoVolumes-specificaties, waarbij de endpoints correct geconfigureerd
+moeten zijn voor gemakkelijke toegang tot de gegevens door gebruikers.
+
+### Metadata
+
+Publiceer metadata van een 3D Tileset
+
+Het publiceren van metadata van een 3D Tileset, bijvoorbeeld in het Nationaal
+Georegister, is essentieel voor het bevorderen van het gebruik en de
+vindbaarheid van gegevens.
+
+Het is belangrijk om relevante informatie op te nemen, zoals:
+
+-   Coördinatenreferentiesysteem: Beschrijf het coördinatenreferentiesysteem dat
+    wordt gebruikt voor de 3D Tileset, inclusief de gebruikte eenheden en de
+    verticale en horizontale datums.
+
+-   Geometrische fout (Geometric Error): Geef de geometrische fout aan die is
+    toegepast bij het genereren van de 3D Tileset. Dit is belangrijk voor het
+    beoordelen van de nauwkeurigheid van de gegevens.
+
+-   Brondata voor het genereren van de 3D Tiles: Geef informatie over de
+    brondata die is gebruikt bij het genereren van de 3D Tileset, zoals de bron
+    van de terreingegevens, luchtfoto's, satellietbeelden of andere
+    gegevensbronnen.
+
+Door deze informatie op te nemen in de metadata van een 3D Tileset, worden de
+gegevens gemakkelijker vindbaar en bruikbaar voor anderen, wat de uitwisseling
+en het hergebruik van de 3D informatie bevordert.
 
 ## Gebruiken van 3D Tiles
 
@@ -362,74 +432,32 @@ geschakeld tussen 2D en 3D. Het implementeren van intelligentie en logica om
 naadloze overgangen mogelijk te maken tussen 2D- en 3D-weergaven is dus
 noodzakelijk om de gebruikerservaring te verbeteren en verwarring te voorkomen.
 
-## Serveren van 3D Tiles
+### Diepte vlak (depth plane)
 
-### Valideren van 3D tiles
+>   Gebruik de instelling *depthTestAgainstTerrain=true* om objecten realistisch
+>   op de grond te plaatsen en de dieptewaarneming van de scène te verbeteren.
 
->   Valideer uw 3D Tilesets
+Een "depth plane" fungeert als een referentievlak in een 3D-omgeving,
+vergelijkbaar met de grond waarop we lopen in de echte wereld. Het helpt
+computers om te begrijpen hoe objecten zich tot elkaar verhouden in de diepte
+van een scène, wat cruciaal is voor het realistisch renderen van 3D-beelden.
+Stel je voor dat je door een raam naar buiten kijkt. Het glas van het raam zou
+het depth plane zijn, en alles wat je daarachter ziet, is wat zich in de echte
+wereld buiten bevindt.
 
-Het is sterk aan te raden om uw 3D Tilesets te valideren voordat ze worden
-geserveerd. Het gebruik van een tool zoals de 3D Tiles Validator
-(https://github.com/CesiumGS/3d-tiles-validator) kan helpen bij het
-identificeren van mogelijke fouten in tilesets voordat ze worden geïntegreerd in
-een applicatie. Door uw Tilesets te valideren, kunnen potentiële problemen met
-de gegevenskwaliteit, structuur of prestaties opsporen en corrigeren, wat
-resulteert in een betere gebruikerservaring en soepele werking van een 3D
-Tiles-viewer.
+Wanneer de instelling \`depthTestAgainstTerrain = true;\` wordt ingeschakeld,
+wordt aan de computer verteld om rekening te houden met dit depth plane bij het
+renderen van objecten. Dit zorgt ervoor dat objecten op een natuurlijke manier
+op de grond worden geplaatst, waardoor ze er echt uitzien en passen bij de
+omgeving. Het is als het correct plaatsen van een puzzelstukje, waardoor het
+perfect past in het geheel en de 3D-scène tot leven komt.
 
-### Compressie
-
->   Gebruik geometriecompressie in GLB-bestanden
-
-Om de prestaties van uw 3D Tiles-viewer te verbeteren, raden we aan om
-geometriecompressie te gebruiken voor GLB-bestanden. Draco en meshopt zijn beide
-populaire tools voor geometriecompressie die kunnen helpen om de bestandsgrootte
-van uw GLB-bestanden aanzienlijk te verkleinen, terwijl de visuele kwaliteit
-behouden blijft. Door geometriecompressie toe te passen, kan de laadtijd van uw
-3D-modellen verkorten en de algehele prestaties van 3D Tiles-viewer verbeteren.
-
-Om de laadtijd van uw 3D Tiles verder te verbeteren, raden we aan om
-gzip-compressie toe te passen bij het serveren van de 3D Tiles, met name voor
-het tileset.json-bestand. Gzip-compressie kan de bestandsgrootte aanzienlijk
-verminderen, waardoor de downloadtijd wordt verkort zonder afbreuk te doen aan
-de kwaliteit van de gegevens. Dit helpt bij het optimaliseren van de prestaties
-van uw 3D Tiles-viewer, vooral bij het laden van grote en complexe datasets.
-
-### OGC API GeoVolumes
-
->   Serveer 3D Tiles met behulp van OGC API GeoVolumes
-
-Om 3D Tiles efficiënt te serveren met de OGC API GeoVolumes, implementeert u
-eerst de OGC API GeoVolumes op de server. Zorg ervoor dat de 3D Tiles-datasets
-correct zijn gegenereerd en georganiseerd volgens de specificaties van de OGC
-API GeoVolumes. Publiceer vervolgens de 3D Tiles-datasets op uw server volgens
-de OGC API GeoVolumes-specificaties, waarbij de endpoints correct geconfigureerd
-moeten zijn voor gemakkelijke toegang tot de gegevens door gebruikers.
-
-### Metadata
-
-Publiceer metadata van een 3D Tileset
-
-Het publiceren van metadata van een 3D Tileset, bijvoorbeeld in het Nationaal
-Georegister, is essentieel voor het bevorderen van het gebruik en de
-vindbaarheid van uw gegevens.
-
-Het is belangrijk om relevante informatie op te nemen, zoals:
-
-\- Coördinatenreferentiesysteem: Beschrijf het coördinatenreferentiesysteem dat
-wordt gebruikt voor de 3D Tileset, inclusief de gebruikte eenheden en de
-verticale en horizontale datums.
-
-\- Geometrische fout (Geometric Error): Geef de geometrische fout aan die is
-toegepast bij het genereren van de 3D Tileset. Dit is belangrijk voor het
-beoordelen van de nauwkeurigheid van de gegevens.
-
-\- Brondata voor het genereren van de 3D Tiles: Geef informatie over de brondata
-die is gebruikt bij het genereren van de 3D Tileset, zoals de bron van de
-terreingegevens, luchtfoto's, satellietbeelden of andere gegevensbronnen.
-
-Door deze informatie op te nemen in de metadata van een 3D Tileset, worden de
-gegevens gemakkelijker vindbaar en bruikbaar voor anderen, wat de uitwisseling
-en het hergebruik van de 3D informatie bevordert.
+Het activeren van deze instelling verbetert niet alleen de visuele esthetiek van
+de 3D-weergave, maar draagt ook bij aan een beter begrip van diepte in de scène.
+Bijvoorbeeld, wanneer je een virtuele stad verkent, helpt dit om een gevoel van
+afstand en verhoudingen te krijgen, waardoor de ervaring aantrekkelijker en
+meeslepender wordt voor de gebruiker. Dit draagt bij aan de algehele
+professionele uitstraling van 3D-toepassingen en verhoogt de betrokkenheid van
+de gebruiker.
 
 *depthTestAgainstTerrain = true;*
