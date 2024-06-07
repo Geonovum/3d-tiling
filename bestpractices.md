@@ -1,7 +1,9 @@
 # Best practices
 
 Dit hoofdstuk beschrijft een aantal best practices voor het serveren en
-gebruiken van 3D tiles.
+gebruiken van 3D tiles. Deze best practices zijn gebaseerd op de expertise en
+praktijkervaring van de auteurs met betrekking tot het genereren, serveren en
+gebruiken van 3D-tiling, zoals beschreven in deze handleiding
 
 ## Genereren van 3D Tiles
 
@@ -202,11 +204,11 @@ flexibele basis voor aanpassingen en updates in de toekomst.
 >   opvragen van extra informatie via een andere server.
 
 Het zorgvuldig kiezen van welke attributen worden opgenomen in 3D Tiles-datasets
-is van cruciaal belang voor efficiënt gegevensbeheer. Door enkel de essentiële
-attributen toe te voegen, wordt onnodige gegevensuitwisseling voorkomen, wat de
-prestaties verbetert en de netwerkbelasting vermindert. Daarnaast kan het
-selectief opnemen van attributen waarop veelvuldig gefilterd wordt helpen bij
-het optimaliseren van de dataset voor specifieke gebruiksscenario's.
+is van belang voor efficiënt gegevensbeheer. Door enkel de essentiële attributen
+toe te voegen, wordt onnodige gegevensuitwisseling voorkomen, wat de prestaties
+verbetert en de netwerkbelasting vermindert. Daarnaast kan het selectief opnemen
+van attributen waarop veelvuldig gefilterd wordt helpen bij het optimaliseren
+van de dataset voor specifieke gebruiksscenario's.
 
 Het opvragen van extra informatie via een andere server op basis van een unieke
 identificatie biedt real-time toegang tot actuele gegevens. Dit is vooral
