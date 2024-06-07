@@ -105,16 +105,14 @@ samengevoegd tot één tegel.
 
 ### Mediatypes en encoding
 
-Het 3D Tiles-bestandsformaat gebruikt verschillende mediatypes en encoding:
+Het 3D Tiles-bestandsformaat gebruikt verschillende mediatypes en encoding, zie
+onderstaande tabel.
 
--   .json voor tegelset-, metagegevensschema-, tegelsetstijl- en
-    JSON-subtree-bestanden met het Media Type "application/json".
-
--   .subtree voor binaire subtree-bestanden met het Media Type
-    "application/octet-stream".
-
--   .bin voor binaire bufferbestanden met het Media Type
-    "application/octet-stream".
+| Extensie | Media Type               | Toepassing                                                               |
+|----------|--------------------------|--------------------------------------------------------------------------|
+| .json    | application/json         | tegelset-, metagegevensschema-, tegelsetstijl- en JSON-subtree-bestanden |
+| .subtree | application/octet-stream | binaire subtree-bestanden                                                |
+| .bin     | application/octet-stream | binaire bufferbestanden                                                  |
 
 JSON-bestanden gebruiken UTF-8-encoding zonder BOM, met ASCII-tekenreeks-charset
 en unieke sleutels; niet-ASCII-tekens worden geëscapet volgens RFC 8259, Sectie
@@ -122,11 +120,15 @@ en unieke sleutels; niet-ASCII-tekens worden geëscapet volgens RFC 8259, Sectie
 
 ### Geometric error
 
-Tegels in een 3D-omgeving worden georganiseerd in een boomstructuur, waarbij
-elke tegel verschillende niveaus van detail vertegenwoordigt. Deze niveaus van
-detail helpen bij het bepalen hoe gedetailleerd een tegel moet worden
-weergegeven. De geometrische fout van een tegel vertelt ons hoe nauwkeurig de
-vorm van die tegel overeenkomt met het originele object, gemeten in meters.
+In een 3D-omgeving worden tegels georganiseerd in een boomstructuur, waarbij
+elke tegel verschillende niveaus van detail vertegenwoordigt om te bepalen hoe
+gedetailleerd een tegel moet worden weergegeven. Deze tegelsets zijn
+verzamelingen van tegels die samen een groter oppervlak vormen, terwijl
+kindertegels kleinere tegels binnen een grotere tegel zijn die helpen bij het
+opbouwen van gedetailleerde structuren.
+
+De geometrische fout van een tegel vertelt ons hoe nauwkeurig de vorm van die
+tegel overeenkomt met het originele object, gemeten in meters.
 
 Bij het bekijken van een 3D-scène op een apparaat, wordt de geometrische fout
 van elke tegel geëvalueerd. Als de fout binnen een aanvaardbaar bereik ligt,
@@ -134,9 +136,10 @@ wordt de tegel getoond. Als de fout te groot is, wat betekent dat de tegel niet
 gedetailleerd genoeg is, wordt de tegel verfijnd door gedetailleerdere
 kindertegels te laden en te tonen.
 
-De grootte van de fout hangt af van hoe belangrijk het is om de details van het
-object nauwkeurig weer te geven. Een hogere fout betekent dat het programma
-eerder beslist om de tegel te verfijnen en de details weer te geven.
+De grootte van de fout (*geometric error*) hangt af van hoe belangrijk het is om
+de details van het object nauwkeurig weer te geven. Een hogere fout betekent dat
+het programma eerder beslist om de tegel te verfijnen en de details weer te
+geven.
 
 *Voorbeeld geometric error*
 
@@ -146,7 +149,9 @@ Implicit tiling in 3D Tiles is een methode om 3D-gegevens op een gestructureerde
 en efficiënte manier te organiseren. Het verdeelt de gegevens in een regelmatig
 patroon van tegels, vergelijkbaar met hoe een mozaïek is opgebouwd. Hierdoor
 kunnen gebruikers snel en eenvoudig specifieke tegels identificeren en
-benaderen, wat vooral handig is bij het werken met grote 3D-omgevingen.
+benaderen, wat vooral handig is bij het werken met grote 3D-omgevingen. Explicit
+tiling daarentegen is een techniek waarbij een oppervlak wordt bedekt met vooraf
+gedefinieerde tegels, in plaats van tegels die dynamisch worden gegenereerd.
 
 Implicit tiling vereenvoudigt quadtrees en octrees in 3D Tiles, waardoor snelle
 toegang mogelijk is via tegelcoördinaten. Dit verbetert ruimtelijke queries,
@@ -171,7 +176,39 @@ inhoud.
 
 ### Metadata
 
-…
+De OGC 3D Tiles specificaties beschrijven uitgebreide metadata om 3D-tiles
+efficiënt te beheren en weer te geven. Deze metadata omvat diverse aspecten
+zoals:
+
+1.  Geografische locatie: Informatie over de precieze positie van een tegel in
+    een geografisch coördinatensysteem. Dit kan details bevatten zoals de
+    noord-, zuid-, oost- en westgrenzen van de tegel.
+
+1.  Schaal en resolutie: Details over de schaal en resolutie van de tegel, die
+    aangeven hoe gedetailleerd de informatie binnen de tegel is. Dit helpt bij
+    het selecteren van de juiste tegels voor verschillende zoomniveaus.
+
+1.  Niveaus van detail (LOD): Informatie over de verschillende niveaus van
+    detail die binnen een tegel beschikbaar zijn, waardoor systemen kunnen
+    kiezen hoe gedetailleerd ze een gebied weergeven op basis van de beschikbare
+    resources en de benodigde nauwkeurigheid.
+
+1.  Relaties tussen tegels: Metadata die de hiërarchie en relaties tussen tegels
+    beschrijft, zoals ouder-kind-relaties tussen grotere tegels en hun kleinere
+    kindertegels. Dit helpt bij het efficiënte beheer van tegels en het
+    navigeren door de tegelstructuur.
+
+1.  Tegel identificatie: Unieke aanduidingen (identificaties) voor elke tegel,
+    wat essentieel is voor het beheren en opvragen van specifieke tegels binnen
+    een groot 3D-tiling systeem.
+
+1.  Bounding volumes: Informatie over de 3D-grenzen van een tegel, zoals
+    bounding boxes of bounding spheres, die helpen bij het snel bepalen van
+    zichtbaarheid en bij het uitvoeren van ruimtelijke queries.
+
+1.  Formatinformatie: Details over het bestandsformaat en de compressie van de
+    tegelgegevens, wat belangrijk is voor de juiste interpretatie en weergave
+    van de tegels.
 
 ## i3DS
 
