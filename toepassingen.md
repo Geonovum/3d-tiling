@@ -15,7 +15,6 @@ Bronnen
 [BRO praktijkvoorbeeld circulaire grondstromen](https://basisregistratieondergrond.nl/doe-mee/begin-dag-bro-tje/bro-tjes-2024/11-januari-2024/datagedreven-duurzamer-her-gebruik-grond/)
 [Storymap over circulaire grondstromen](https://grondstromen.beta.geodan.nl/?story=circulaire%20grondstromen)
 
-
 ## 3D Rotterdam
 
 Lorem ipsum dolor sit amet.
@@ -29,10 +28,6 @@ Opbouw-\>
 Lorem ipsum dolor sit amet.
 
 Verbeteren datakwaliteit
-
-## Circulaire grondstromen
-
-## Netherlands3D en 3dTilesNederland
 
 ## Visualisatie doorrijprofielen
 
