@@ -7,23 +7,26 @@ De toepassing van 3D Tiles vinden we al terug in verschillende applicaties en 3D
 In de toepassing Circulaire Grondstromen gemaakt met CesiumJS zorgt 3D Tiles ervoor dat de prestaties van de webviewer worden gemaximaliseerd. Het proces van het converteren van data naar 3D-tegels binnen de toepassing Circulaire Grondstromen varieert afhankelijk van de databron (zie figuur ?); de 3D tegels worden toegepast voor diverse typen data, zoals het DTB, puntenwolken, basisregistraties en BRO modellen en orthofoto’s. 
 
 <figure id="Figuur_x"> 
-<a href="media/image9.svg.png" target="_blank"><img src="media/image9.svg.png" alt=""></a>
-<figcaption>3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen</figcaption>
+<a href="media/image1.png" target="_blank"><img src="media/image1.png" alt=""></a>
+<figcaption>3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)</figcaption>
 </figure>
 
-Bronnen: [BRO praktijkvoorbeeld circulaire grondstromen](https://basisregistratieondergrond.nl/doe-mee/begin-dag-bro-tje/bro-tjes-2024/11-januari-2024/datagedreven-duurzamer-her-gebruik-grond/), [Storymap over circulaire grondstromen](https://grondstromen.beta.geodan.nl/?story=circulaire%20grondstromen)
+Bronnen: [BRO praktijkvoorbeeld circulaire grondstromen](https://basisregistratieondergrond.nl/doe-mee/begin-dag-bro-tje/bro-tjes-2024/11-januari-2024/datagedreven-duurzamer-her-gebruik-grond/), [Storymap over circulaire grondstromen](https://grondstromen.beta.geodan.nl/?story=circulaire%20grondstromen).
 
 ## 3D Rotterdam
 
-Lorem ipsum dolor sit amet.
+De gemeente Rotterdam stelt het 3D-stadsmodel van Rotterdam vrij ter beschikking aan iedereen die daarmee aan de slag wil gaan. De gemeente wil hiermee het gebruik en toepassingen van deze unieke dataset stimuleren bij scholen en universiteiten, overheids- en Rotterdamse diensten, gamers, het bedrijfsleven uit binnen- en buitenland maar ook bewoners. Zij kunnen met de juiste tools Rotterdam op een manier in beeld brengen die op een platte kaart onmogelijk is. Rotterdam 3D is een driedimensionale (3D) weergave van de gemeente gebaseerd op tweedimensionale (2D) kaarten, hoogtemetingen, luchtfoto’s en beheergegevens. Rotterdam 3D (zie figuur ?) maakt gebruik van 3D Tiles en bestaat niet alleen uit gebouwen. Ook bomen, lantaarnpalen en kabels en leidingen zijn inmiddels in 3D en via 3D Tiles beschikbaar. Tilesets van Rotterdam 3D zijn ook te downloaden via [link](https://3dtilesnederland.nl). Het toegankelijk maken van Rotterdam 3D biedt Rotterdammers de mogelijkheid mee te bouwen aan de stad. De gegevens zijn daarom compleet, actueel en gratis voor hergebruik. 
+
+<figure id="Figuur_x"> 
+<a href="media/image2.png" target="_blank"><img src="media/image2.png" alt=""></a>
+<figcaption>3D Tiles gebruik bij Rotterdam 3D</figcaption>
+</figure>
 
 Bronnen: [www.3drotterdam.nl](http://www.3drotterdam.nl)
 
-## Watermanagement
+## Wateroverlast door extreme buien
 
 Lorem ipsum dolor sit amet.
-
-Verbeteren datakwaliteit
 
 ## Visualisatie doorrijprofielen
 
