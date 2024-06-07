@@ -135,8 +135,6 @@ model nauwkeurig wordt gepositioneerd in de gewenste context.
 >   ![Afbeelding met schets, tekening, kaart, kunst Automatisch gegenereerde
 >   beschrijving](media/80200791c0a5947c9226bb7e2e6c0c9e.png)
 
-### 
-
 ### Optimale set aan parameters
 
 >   Experimenteer met de optimale parameters voor o.m. LODs, zoomlevels en
