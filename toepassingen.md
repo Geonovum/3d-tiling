@@ -7,21 +7,17 @@ De toepassing van 3D Tiles vinden we al terug in verschillende applicaties en 3D
 In de toepassing Circulaire Grondstromen gemaakt met CesiumJS zorgt 3D Tiles ervoor dat de prestaties van de webviewer worden gemaximaliseerd. Het proces van het converteren van data naar 3D-tegels binnen de toepassing Circulaire Grondstromen varieert afhankelijk van de databron (zie figuur ?); de 3D tegels worden toegepast voor diverse typen data, zoals het DTB, puntenwolken, basisregistraties en BRO modellen en orthofoto’s. 
 
 <figure id="Figuur_x"> 
-<a href="media/image9.svg" target="_blank"><img src="media/image9.svg" alt=""></a>
+<a href="media/image9.svg.png" target="_blank"><img src="media/image9.svg.png" alt=""></a>
 <figcaption>3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen</figcaption>
 </figure>
 
-Bronnen
-[BRO praktijkvoorbeeld circulaire grondstromen](https://basisregistratieondergrond.nl/doe-mee/begin-dag-bro-tje/bro-tjes-2024/11-januari-2024/datagedreven-duurzamer-her-gebruik-grond/)
-[Storymap over circulaire grondstromen](https://grondstromen.beta.geodan.nl/?story=circulaire%20grondstromen)
+Bronnen: [BRO praktijkvoorbeeld circulaire grondstromen](https://basisregistratieondergrond.nl/doe-mee/begin-dag-bro-tje/bro-tjes-2024/11-januari-2024/datagedreven-duurzamer-her-gebruik-grond/), [Storymap over circulaire grondstromen](https://grondstromen.beta.geodan.nl/?story=circulaire%20grondstromen)
 
 ## 3D Rotterdam
 
 Lorem ipsum dolor sit amet.
 
-Opbouw-\>
-
-[www.3drotterdam.nl](http://www.3drotterdam.nl)
+Bronnen: [www.3drotterdam.nl](http://www.3drotterdam.nl)
 
 ## Watermanagement
 
