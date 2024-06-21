@@ -47,7 +47,7 @@ Met behulp van een 3D viewer, die alleen beschikbaar is voor de medewerkers van 
 De 3D tilesets bevatten ook panden als geheel en kunnen de verblijfsobjecten in de toekomst ook identificeren en informatie over de verblijfsobjecten opvraagbaar maken (zie figuur ?).
 
 <figure id="Figuur_x"> 
-<a href="media/rotterdam image5.png" target="_blank"><img src="media/rotterdam image.png" alt=""></a>
+<a href="media/rotterdam image5.png" target="_blank"><img src="media/rotterdam image5.png" alt=""></a>
 <figcaption>3D Tiles ingezet voor het identificeren en opvraagbaar maken van informatie over verblijfsobjecten</figcaption>
 </figure>
 
