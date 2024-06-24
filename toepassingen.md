@@ -57,9 +57,9 @@ De 3D tilesets bevatten ook panden als geheel en kunnen de verblijfsobjecten in 
 
 Bronnen: [www.3drotterdam.nl](http://www.3drotterdam.nl)
 
-// ## Wateroverlast door extreme buien
+## Wateroverlast door extreme buien
 
-// Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet.
 
 ## Visualisatie doorrijprofielen
 
