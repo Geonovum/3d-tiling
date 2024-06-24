@@ -1,5 +1,28 @@
 # Inleiding
 
+## Aanleiding
+
+De handreiking 3D Tiles heeft tot doel bij te dragen aan het breder gebruik van
+3D data in Nederland met de adoptie van 3D Tiles in het bijzonder. Door best
+practises (praktische richtlijnen) te bieden voor de implementatie van 3D Tiles,
+kunnen verschillende systemen en softwareoplossingen (tools) beter met elkaar
+samenwerken, wat cruciaal is voor de uitwisseling van de visualisaties van 3D
+data in GIS applicaties en digital twins. Via de best practises biedt de
+handreiking mogelijkheden voor bredere acceptatie en verspreiding van 3D Tiles
+binnen de Nederlandse gebruiksgemeenschap en vele verschillende belanghebbende
+organisaties.
+
+Deze handreiking is tot stand gekomen door de inbreng van expertise en
+ervaringen van diverse experts en ‘early adopters’ van 3D Tiles in Nederland. De
+kennis en ervaringen zijn vanuit diverse publieke en private organisaties is
+bijeengebracht in diverse best practises voor 3D Tiles. Door het stimuleren van
+best practices en het delen van deze kennis kan de handreiking innovatie
+bevorderen en nieuwe toepassingen en gebruiksscenario’s inspireren. De
+handreiking 3D Tiles draagt daarmee bij aan het bevorderen van een beter begrip,
+bredere adoptie en effectievere toepassing van 3D Tiles en de bijhorende
+technologieën en tools. En met enkele voorbeeldtoepassingen wordt in dit
+hoofdstuk de waarde van 3D data en 3D Tiles geïllustreerd.
+
 ## Wat is 3D Tiling?
 
 Simpel gezegd: 3D Tiling is een techniek waarbij tegels met drie-dimensionale
@@ -24,45 +47,31 @@ hoog niveau van detail en interactiviteit.
 
 ## Wat zijn de voor- en nadelen van 3D Tiling?
 
-Voordelen zijn:
+3D tiling biedt aanzienlijke voordelen voor het beheren en visualiseren van
+grote en complexe datasets. Door gegevens op te delen in kleinere, beheersbare
+tegels, kunnen deze efficiënter gestreamd en gerenderd worden. Dit zorgt voor
+betere prestaties en een responsievere weergave van de data. Standaarden zoals
+3D Tiles en de OGC 3D Tiles API bevorderen de interoperabiliteit tussen
+verschillende softwareplatforms, wat naadloze integratie en uitwisseling van
+3D-gegevens mogelijk maakt. Bovendien zijn 3D tiling technieken flexibel
+aanpasbaar aan verschillende toepassingen en omgevingen, wat ontwikkelaars en
+gebruikers veel ruimte geeft voor maatwerk.
 
-1\. Schaalbaarheid: 3D tiling maakt efficiënt streamen en renderen van grote en
-complexe datasets mogelijk door ze op te delen in kleinere, beheersbare tegels.
+Er zijn echter ook enkele nadelen verbonden aan 3D tiling. Het implementeren van
+deze oplossingen vraagt om specialistische kennis op het gebied van ruimtelijk
+gegevensbeheer, rendering-algoritmen en optimalisatietechnieken, wat de
+complexiteit van ontwikkelingsprojecten kan verhogen. Daarnaast kan het opslaan
+van getilede datasets meer opslagruimte vereisen dan ruwe gegevensformaten,
+vooral als er verschillende niveaus van detail worden gebruikt. Het tiling
+proces zelf kan ook extra verwerkingskracht vereisen, wat vooral merkbaar is bij
+dynamische of streamende datasets. Ten slotte kan het waarborgen van
+compatibiliteit en naleving van 3D tiling standaarden over verschillende
+softwareplatforms en ecosystemen uitdagingen met zich meebrengen.
 
-2\. Prestaties: Door gegevens in tegels te organiseren, vermindert 3D tiling de
-rekenkundige overhead, wat leidt tot verbeterde rendeerprestaties en
-responsiviteit.
-
-3\. Interoperabiliteit: Standaarden zoals 3D Tiles en de OGC 3D Tiles API
-bevorderen interoperabiliteit tussen verschillende softwareplatforms, waardoor
-naadloze integratie en uitwisseling van 3D gegevens mogelijk zijn.
-
-4\. Aanpasbaarheid: 3D tiling technieken kunnen worden aangepast aan
-verschillende toepassingen en omgevingen, waardoor ontwikkelaars en gebruikers
-flexibiliteit hebben in het beheren en visualiseren van ruimtelijke gegevens.
-
-Nadelen:
-
-1\. Complexiteit: Het implementeren van 3D tiling oplossingen vereist expertise
-in ruimtelijk gegevensbeheer, rending algoritmen en optimalisatietechnieken, wat
-complexiteit toevoegt aan ontwikkelingsinspanningen.
-
-2\. Opslag Overhead: Het opslaan van voorgetilede datasets kan extra
-opslagoverhead met zich meebrengen in vergelijking met ruwe gegevensformaten,
-vooral voor datasets met verschillende niveaus van detail.
-
-3\. Verwerkings Overhead: Hoewel 3D tiling de rendeerprestaties verbetert, kan er
-overhead zijn verbonden aan het tiling proces zelf, met name voor dynamische of
-streamende datasets.
-
-4\. Uitdagingen in Standaardisatie: Het waarborgen van compatibiliteit en
-naleving van 3D tiling standaarden over verschillende softwareplatforms en
-ecosystemen kan uitdagingen met zich meebrengen.
-
-In samenvatting biedt 3D tiling aanzienlijke voordelen voor het beheren en
-visualiseren van grootschalige 3D-ruimtelijke gegevens, maar het presenteert ook
-uitdagingen op het gebied van complexiteit, opslag, verwerking en
-standaardisatie. Door deze factoren aan te pakken en gebruik te maken van
-gestandaardiseerde specificaties zoals 3D Tiles en de OGC 3D Tiles API, kunnen
-ontwikkelaars de kracht van 3D tiling benutten om de efficiëntie en
-effectiviteit van verschillende toepassingen en workflows te verbeteren.
+Samengevat biedt 3D tiling grote voordelen voor het efficiënt beheren en
+visualiseren van 3D gegevens, maar het brengt ook uitdagingen met zich mee op
+het gebied van complexiteit, opslag, verwerking en standaardisatie. Door deze
+uitdagingen aan te pakken en gebruik te maken van gestandaardiseerde
+specificaties zoals 3D Tiles en de OGC 3D Tiles API, kunnen ontwikkelaars de
+voordelen van 3D tiling benutten om de efficiëntie en effectiviteit van hun
+toepassingen en workflows te verbeteren.
