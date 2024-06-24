@@ -202,6 +202,13 @@ webapplicaties.
 
 <https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMesh3DTilesLayer.html>
 
+
+#### QGIS
+
+De open source GIS applicatie QGIS biedt voor de 3D scenes weergave van 3D Tiles datasets. De weergave van een 3D Tiles dataset kan worden aangepast door gebruik te maken van de stylingopties in QGIS. Dit omvat kleurtoewijzing, doorzichtigheid en andere visuele instellingen om de data beter in 3D te presenteren. Een van de voordelen van QGIS is de mogelijkheid om 3D Tiles datasets te combineren met andere GIS-data, zoals vectorlagen, rasterdata, en terreinmodellen. Dit maakt het mogelijk om complexe analyses uit te voeren en rijke visualisaties te creëren in QGIS.
+
+<https://plugins.qgis.org/planet/tag/3d%20tiles/>
+
 #### 3d-tiles-renderer
 
 3DtilesRendererJS is een JavaScript-bibliotheek die is ontworpen voor het
