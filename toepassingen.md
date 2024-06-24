@@ -24,14 +24,14 @@ De gemeente Rotterdam stelt het 3D-stadsmodel van Rotterdam vrij ter beschikking
 
 In de onderstaande figuren zijn enkele voorbeelden opgenomen van het 3D Tiles in Rotterdam 3D. In figuur 2 zijn de getextureerde gebouwen tezamen met de getextureerde bomen op een luchtfoto afgebeeld. Hierdoor creëer je al snel een ‘realistisch’ digitaal beeld van de stad.
 
-<figure id="Figuur_2"> 
+<figure id="Figuur_3"> 
 <a href="media/rotterdam image1.png" target="_blank"><img src="media/rotterdam image1.png" alt=""></a>
 <figcaption>3D Tiles visualisatie van getextureerde gebouwen en bomen in Rotterdam 3D (bron: gemeente Rotterdam)</figcaption>
 </figure>
 
 Benieuwd of er nog een plaatsje vrij is onder de straat voor een ondergrondse vuilcontainer? 3D Rotterdam biedt de mogelijkheden voor een kijkje in de ondergrond (figuur 3).
 
-<figure id="Figuur_3"> 
+<figure id="Figuur_4"> 
 <a href="media/rotterdam image2.png" target="_blank"><img src="media/rotterdam image2.png" alt=""></a>
 <figcaption>Een 3D Tiles kijkje in de Rotterdamse ondergrond (bron: gemeente Rotterdam)</figcaption>
 </figure>
