@@ -5,7 +5,94 @@ gebruiken van 3D tiles. Deze best practices zijn gebaseerd op de expertise en
 praktijkervaring van de auteurs met betrekking tot het genereren, serveren en
 gebruiken van 3D-tiling, zoals beschreven in deze handleiding
 
+De best practices zijn beschreven aan de hand van de volgende onderwerpen.
+
+![Afbeelding met tekst, schermopname, Lettertype, visitekaartje Automatisch
+gegenereerde beschrijving](media/d59d1169e5eac10e98079e2e24a80e6d.jpeg)
+
+**Genereren van 3D Tiles**
+
+1.  Attribuutgegevens: Gebruik van attribuutgegevens voor het verrijken van de
+    3D tiles en het verbeteren van de visualisatie.
+
+2.  Explicit en implicit tiling: Dit betreft de methoden en structuren die
+    worden gebruikt om tiles te genereren.
+
+3.  Geometric error: Dit is een belangrijke parameter bij het genereren van
+    tiles om de nauwkeurigheid van de geometrie te bepalen.
+
+4.  Offset Z-coördinaat: Aanpassing van de Z-coördinaat bij het genereren van
+    tiles om nauwkeurige plaatsing te garanderen.
+
+5.  Optimale set aan parameters: Dit omvat de parameters die worden ingesteld
+    bij het genereren van tiles voor optimale prestaties.
+
+6.  Shader: Instellingen en optimalisaties van shaders voor het weergeven van 3D
+    tiles.
+
+7.  Formaat: De keuze van het formaat waarin de 3D tiles worden opgeslagen
+    tijdens het genereren.
+
+8.  Compressie: Technieken om de gegenereerde tiles te comprimeren voor
+    efficiëntere opslag en transmissie.
+
+**Valideren van 3D Tiles**
+
+1.  Valideren van 3D tiles: Methoden en tools om de juistheid en integriteit van
+    de gegenereerde tiles te controleren.
+
+**Publiceren van 3D Tiles**
+
+1.  OGC API GeoVolumes: Specificaties en standaarden voor het publiceren en
+    toegankelijk maken van 3D tiles via API's.
+
+2.  Metadata: Het toevoegen van beschrijvende gegevens aan de tiles om ze beter
+    vindbaar en bruikbaar te maken bij publicatie.
+
+**Gebruiken van 3D Tiles**
+
+3\. Minimal zoom: Bepalen van het minimale zoomniveau waarop tiles worden
+weergegeven.
+
+4\. Kleur en belichting: Instellingen voor kleur en belichting bij het gebruik
+van 3D tiles.
+
+5\. WCAG: Overwegingen voor toegankelijkheid volgens de Web Content Accessibility
+Guidelines bij het gebruik van tiles.
+
+6\. Coördinaten van scherm/terrein en camera/doelobject: Beheer van coördinaten
+bij het weergeven en gebruiken van tiles.
+
+7\. Diepte vlak (depth plane): Gebruik van dieptevlakken voor correcte rendering
+van tiles in 3D-omgevingen.
+
+Deze hergroepering helpt bij het structureren van de best practices, zodat ze
+logisch passen binnen de verschillende fasen van werken met 3D tiles.
+
 ## Genereren van 3D Tiles
+
+### Attribuutgegevens
+
+>   Neem alleen de attributen op die nodig zijn voor visualisatie of voor het
+>   opvragen van extra informatie via een andere server.
+
+Het zorgvuldig kiezen van welke attributen worden opgenomen in 3D Tiles-datasets
+is van belang voor efficiënt gegevensbeheer. Door enkel de essentiële attributen
+toe te voegen, wordt onnodige gegevensuitwisseling voorkomen, wat de prestaties
+verbetert en de netwerkbelasting vermindert. Daarnaast kan het selectief opnemen
+van attributen waarop veelvuldig gefilterd wordt helpen bij het optimaliseren
+van de dataset voor specifieke gebruiksscenario's.
+
+Het opvragen van extra informatie via een andere server op basis van een unieke
+identificatie biedt real-time toegang tot actuele gegevens. Dit is vooral
+gunstig bij dynamische datasets, waarbij voorkomen wordt dat 3D Tiles
+herhaaldelijk gegenereerd moeten worden, of in situaties waar een hoge mate van
+actualiteit vereist is, zoals bij bepaalde publieke taken, zoals het verstrekken
+van toeslagen of vergunningen.
+
+Bovendien maakt deze aanpak gecontroleerde toegang mogelijk op basis van
+autorisatie, waardoor bijvoorbeeld de privacy en beveiliging van
+persoonsgegevens worden gewaarborgd.
 
 ### Explicit en implicit tiling
 
@@ -195,29 +282,6 @@ renderingtechnologieën evolueren. Het kiezen van PBR als shader voor 3D Tiles
 garandeert niet alleen een hoog niveau van visuele kwaliteit, maar biedt ook een
 flexibele basis voor aanpassingen en updates in de toekomst.
 
-### Attribuutgegevens
-
->   Neem alleen de attributen op die nodig zijn voor visualisatie of voor het
->   opvragen van extra informatie via een andere server.
-
-Het zorgvuldig kiezen van welke attributen worden opgenomen in 3D Tiles-datasets
-is van belang voor efficiënt gegevensbeheer. Door enkel de essentiële attributen
-toe te voegen, wordt onnodige gegevensuitwisseling voorkomen, wat de prestaties
-verbetert en de netwerkbelasting vermindert. Daarnaast kan het selectief opnemen
-van attributen waarop veelvuldig gefilterd wordt helpen bij het optimaliseren
-van de dataset voor specifieke gebruiksscenario's.
-
-Het opvragen van extra informatie via een andere server op basis van een unieke
-identificatie biedt real-time toegang tot actuele gegevens. Dit is vooral
-gunstig bij dynamische datasets, waarbij voorkomen wordt dat 3D Tiles
-herhaaldelijk gegenereerd moeten worden, of in situaties waar een hoge mate van
-actualiteit vereist is, zoals bij bepaalde publieke taken, zoals het verstrekken
-van toeslagen of vergunningen.
-
-Bovendien maakt deze aanpak gecontroleerde toegang mogelijk op basis van
-autorisatie, waardoor bijvoorbeeld de privacy en beveiliging van
-persoonsgegevens worden gewaarborgd.
-
 ### Formaat
 
 >   Kies GLB als het juiste formaat voor 3D-tiles
@@ -242,21 +306,6 @@ compatibiliteitsproblemen die kunnen ontstaan bij het gebruik van verouderde
 formaten zoals 3BM. Dit maakt GLB een verstandige keuze voor het
 toekomstbestendig opslaan en uitwisselen van 3D-gegevens.
 
-## Serveren van 3D Tiles
-
-### Valideren van 3D tiles
-
->   Valideer de 3D Tilesets.
-
-Het is sterk aan te raden om 3D Tilesets te valideren voordat ze worden
-geserveerd. Het gebruik van een tool zoals de 3D Tiles Validator
-(https://github.com/CesiumGS/3d-tiles-validator) kan helpen bij het
-identificeren van mogelijke fouten in tilesets voordat ze worden geïntegreerd in
-een applicatie. Door Tilesets te valideren, kunnen potentiële problemen met de
-gegevenskwaliteit, structuur of prestaties opsporen en corrigeren, wat
-resulteert in een betere gebruikerservaring en soepele werking van een 3D
-Tiles-viewer.
-
 ### Compressie
 
 >   Gebruik geometriecompressie in GLB-bestanden
@@ -274,6 +323,21 @@ het tileset.json-bestand. Gzip-compressie kan de bestandsgrootte aanzienlijk
 verminderen, waardoor de downloadtijd wordt verkort zonder afbreuk te doen aan
 de kwaliteit van de gegevens. Dit helpt bij het optimaliseren van de prestaties
 van een 3D Tiles-viewer, vooral bij het laden van grote en complexe datasets.
+
+## Valideren van 3D tiles
+
+>   Valideer de 3D Tilesets.
+
+Het is sterk aan te raden om 3D Tilesets te valideren voordat ze worden
+geserveerd. Het gebruik van een tool zoals de 3D Tiles Validator
+(https://github.com/CesiumGS/3d-tiles-validator) kan helpen bij het
+identificeren van mogelijke fouten in tilesets voordat ze worden geïntegreerd in
+een applicatie. Door Tilesets te valideren, kunnen potentiële problemen met de
+gegevenskwaliteit, structuur of prestaties opsporen en corrigeren, wat
+resulteert in een betere gebruikerservaring en soepele werking van een 3D
+Tiles-viewer.
+
+## Publiceren van 3D Tiles
 
 ### OGC API GeoVolumes
 
