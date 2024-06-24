@@ -121,7 +121,10 @@ efficiënt te organiseren en weer te geven. Het wordt vaak gebruikt in combinati
 met Esri's ArcGIS-platform, maar is een open standaard die door andere
 softwareleveranciers kan worden geïmplementeerd en gebruikt.
 
-## *In deze handreiking richten we ons voornamelijk op de standaard OGC 3D Tiles. De keuze voor OGC 3D Tiles is gemaakt vanwege de brede ondersteuning en interoperabiliteit die deze standaard biedt binnen verschillende softwareplatforms en ecosystemen. Hoewel andere formaten zoals i3S ook waardevolle toepassingen hebben, biedt OGC 3D Tiles momenteel een meer universele benadering voor het beheren en visualiseren van 3D-ruimtelijke gegevens.*
+<div class="w3-panel w3-pale-green w3-bottombar w3-border-green w3-border">
+    <p>In deze handreiking richten we ons voornamelijk op de standaard OGC 3D Tiles. De keuze voor OGC 3D Tiles is gemaakt vanwege de brede ondersteuning en interoperabiliteit die deze standaard biedt binnen verschillende softwareplatforms en ecosystemen. Hoewel andere formaten zoals i3S ook waardevolle toepassingen hebben, biedt OGC 3D Tiles momenteel een meer universele benadering voor het beheren en visualiseren van 3D-ruimtelijke gegevens.></p>
+</div>
+
 
 ## Praktijkvoorbeelden
 
