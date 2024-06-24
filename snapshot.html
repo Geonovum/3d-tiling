@@ -458,7 +458,7 @@ handleidingen, clients, servers en 3D Tile datasets, waardoor lezers worden
 voorzien van de nodige bronnen om aan de slag te gaan met 3D tiling in hun
 projecten.</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#aanleiding"><bdi class="secno">1.1 </bdi>Aanleiding</a></li><li class="tocline"><a class="tocxref" href="#wat-is-3d-tiling"><bdi class="secno">1.2 </bdi>Wat is 3D Tiling?</a></li><li class="tocline"><a class="tocxref" href="#waar-is-3d-tiling-voor-te-gebruiken"><bdi class="secno">1.3 </bdi>Waar is 3D Tiling voor te gebruiken?</a></li><li class="tocline"><a class="tocxref" href="#wat-zijn-de-voor-en-nadelen-van-3d-tiling"><bdi class="secno">1.4 </bdi>Wat zijn de voor- en nadelen van 3D Tiling?</a></li><li class="tocline"><a class="tocxref" href="#welke-standaarden-zijn-er-voor-3d-tiling"><bdi class="secno">1.5 </bdi>Welke standaarden zijn er voor 3D tiling?</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles-specification"><bdi class="secno">1.5.1 </bdi>OGC 3D Tiles specification</a></li><li class="tocline"><a class="tocxref" href="#i3s"><bdi class="secno">1.5.2 </bdi>i3S</a></li></ol></li><li class="tocline"><a class="tocxref" href="#in-deze-handreiking-richten-we-ons-voornamelijk-op-de-standaard-ogc-3d-tiles-de-keuze-voor-ogc-3d-tiles-is-gemaakt-vanwege-de-brede-ondersteuning-en-interoperabiliteit-die-deze-standaard-biedt-binnen-verschillende-softwareplatforms-en-ecosystemen-hoewel-andere-formaten-zoals-i3s-ook-waardevolle-toepassingen-hebben-biedt-ogc-3d-tiles-momenteel-een-meer-universele-benadering-voor-het-beheren-en-visualiseren-van-3d-ruimtelijke-gegevens"><bdi class="secno">1.6 </bdi><em>In deze handreiking richten we ons voornamelijk op de standaard OGC 3D Tiles. De keuze voor OGC 3D Tiles is gemaakt vanwege de brede ondersteuning en interoperabiliteit die deze standaard biedt binnen verschillende softwareplatforms en ecosystemen. Hoewel andere formaten zoals i3S ook waardevolle toepassingen hebben, biedt OGC 3D Tiles momenteel een meer universele benadering voor het beheren en visualiseren van 3D-ruimtelijke gegevens.</em></a></li><li class="tocline"><a class="tocxref" href="#praktijkvoorbeelden"><bdi class="secno">1.7 </bdi>Praktijkvoorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bro-circulaire-grondstromen"><bdi class="secno">1.7.1 </bdi>BRO circulaire grondstromen</a></li><li class="tocline"><a class="tocxref" href="#x3d-rotterdam"><bdi class="secno">1.7.2 </bdi>3D Rotterdam</a></li><li class="tocline"><a class="tocxref" href="#wateroverlast-door-extreme-buien"><bdi class="secno">1.7.3 </bdi>Wateroverlast door extreme buien</a></li><li class="tocline"><a class="tocxref" href="#visualisatie-doorrijprofielen"><bdi class="secno">1.7.4 </bdi>Visualisatie doorrijprofielen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#standaarden"><bdi class="secno">2. </bdi>Standaarden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles-specification-0"><bdi class="secno">2.1 </bdi>OGC 3D Tiles specification</a></li><li class="tocline"><a class="tocxref" href="#i3s-0"><bdi class="secno">2.2 </bdi>i3S</a></li><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles"><bdi class="secno">2.3 </bdi>OGC 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">2.3.1 </bdi>Introductie</a></li><li class="tocline"><a class="tocxref" href="#tegelset"><bdi class="secno">2.3.2 </bdi>Tegelset</a></li><li class="tocline"><a class="tocxref" href="#tegelformaten"><bdi class="secno">2.3.3 </bdi>Tegelformaten</a></li><li class="tocline"><a class="tocxref" href="#mediatypes-en-encoding"><bdi class="secno">2.3.4 </bdi>Mediatypes en encoding</a></li><li class="tocline"><a class="tocxref" href="#geometric-error"><bdi class="secno">2.3.5 </bdi>Geometric error</a></li><li class="tocline"><a class="tocxref" href="#implicit-tiling"><bdi class="secno">2.3.6 </bdi>Implicit tiling</a></li><li class="tocline"><a class="tocxref" href="#metadata"><bdi class="secno">2.3.7 </bdi>Metadata</a></li></ol></li><li class="tocline"><a class="tocxref" href="#i3ds"><bdi class="secno">2.4 </bdi>i3DS</a></li></ol></li><li class="tocline"><a class="tocxref" href="#toepassingen"><bdi class="secno">3. </bdi>Toepassingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bro-praktijkvoorbeeld-circulaire-grondstromen"><bdi class="secno">3.1 </bdi>BRO praktijkvoorbeeld circulaire grondstromen</a></li><li class="tocline"><a class="tocxref" href="#x3d-rotterdam-0"><bdi class="secno">3.2 </bdi>3D Rotterdam</a></li><li class="tocline"><a class="tocxref" href="#wateroverlast-door-extreme-buien-0"><bdi class="secno">3.3 </bdi>Wateroverlast door extreme buien</a></li><li class="tocline"><a class="tocxref" href="#visualisatie-doorrijprofielen-0"><bdi class="secno">3.4 </bdi>Visualisatie doorrijprofielen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#best-practices"><bdi class="secno">4. </bdi>Best practices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#genereren-van-3d-tiles"><bdi class="secno">4.1 </bdi>Genereren van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#explicit-en-implicit-tiling"><bdi class="secno">4.1.1 </bdi>Explicit en implicit tiling</a></li><li class="tocline"><a class="tocxref" href="#geometric-error-0"><bdi class="secno">4.1.2 </bdi>Geometric error</a></li><li class="tocline"><a class="tocxref" href="#offset-z-coordinaat"><bdi class="secno">4.1.3 </bdi>Offset Z-coördinaat</a></li><li class="tocline"><a class="tocxref" href="#optimale-set-aan-parameters"><bdi class="secno">4.1.4 </bdi>Optimale set aan parameters</a></li><li class="tocline"><a class="tocxref" href="#shader"><bdi class="secno">4.1.5 </bdi>Shader</a></li><li class="tocline"><a class="tocxref" href="#attribuutgegevens"><bdi class="secno">4.1.6 </bdi>Attribuutgegevens</a></li><li class="tocline"><a class="tocxref" href="#formaat"><bdi class="secno">4.1.7 </bdi>Formaat</a></li></ol></li><li class="tocline"><a class="tocxref" href="#serveren-van-3d-tiles"><bdi class="secno">4.2 </bdi>Serveren van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#valideren-van-3d-tiles"><bdi class="secno">4.2.1 </bdi>Valideren van 3D tiles</a></li><li class="tocline"><a class="tocxref" href="#compressie"><bdi class="secno">4.2.2 </bdi>Compressie</a></li><li class="tocline"><a class="tocxref" href="#ogc-api-geovolumes"><bdi class="secno">4.2.3 </bdi>OGC API GeoVolumes</a></li><li class="tocline"><a class="tocxref" href="#metadata-0"><bdi class="secno">4.2.4 </bdi>Metadata</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gebruiken-van-3d-tiles"><bdi class="secno">4.3 </bdi>Gebruiken van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#minimal-zoom"><bdi class="secno">4.3.1 </bdi>Minimal zoom</a></li><li class="tocline"><a class="tocxref" href="#kleur-en-belichting"><bdi class="secno">4.3.2 </bdi>Kleur en belichting</a></li><li class="tocline"><a class="tocxref" href="#wcag"><bdi class="secno">4.3.3 </bdi>WCAG</a></li><li class="tocline"><a class="tocxref" href="#coordinaten-van-scherm-terrein-en-camera-doelobject"><bdi class="secno">4.3.4 </bdi>Coördinaten van scherm/terrein en camera/doelobject</a></li><li class="tocline"><a class="tocxref" href="#diepte-vlak-depth-plane"><bdi class="secno">4.3.5 </bdi>Diepte vlak (depth plane)</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#toolkit"><bdi class="secno">5. </bdi>Toolkit</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#handleidingen"><bdi class="secno">5.1 </bdi>Handleidingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#howto-quickstartguide-3d-tiles"><bdi class="secno">5.1.1 </bdi>HowTo: QuickStartGuide 3D Tiles</a></li><li class="tocline"><a class="tocxref" href="#howto-3d-tiles-in-mapbox"><bdi class="secno">5.1.2 </bdi>HowTo: 3D Tiles in Mapbox</a></li><li class="tocline"><a class="tocxref" href="#howto-genereren-van-3d-tiles-met-virtual-city-systems"><bdi class="secno">5.1.3 </bdi>HowTo: Genereren van 3D tiles met Virtual City Systems</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#levels"><bdi class="secno">5.1.3.1 </bdi>Levels</a></li><li class="tocline"><a class="tocxref" href="#citygml-level-of-detail"><bdi class="secno">5.1.3.2 </bdi>CityGML Level of Detail</a></li><li class="tocline"><a class="tocxref" href="#object-size-filter"><bdi class="secno">5.1.3.3 </bdi>Object size filter</a></li><li class="tocline"><a class="tocxref" href="#geometry-generalization"><bdi class="secno">5.1.3.4 </bdi>Geometry generalization</a></li><li class="tocline"><a class="tocxref" href="#textures"><bdi class="secno">5.1.3.5 </bdi>Textures</a></li><li class="tocline"><a class="tocxref" href="#refinement"><bdi class="secno">5.1.3.6 </bdi>Refinement</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#viewers-generators-en-servers"><bdi class="secno">5.2 </bdi>Viewers, generators en servers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#viewers"><bdi class="secno">5.2.1 </bdi>Viewers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#cesium"><bdi class="secno">5.2.1.1 </bdi>Cesium</a></li><li class="tocline"><a class="tocxref" href="#mapboxgl"><bdi class="secno">5.2.1.2 </bdi>MapboxGL</a></li><li class="tocline"><a class="tocxref" href="#unity"><bdi class="secno">5.2.1.3 </bdi>Unity</a></li><li class="tocline"><a class="tocxref" href="#unreal-engine"><bdi class="secno">5.2.1.4 </bdi>Unreal Engine</a></li><li class="tocline"><a class="tocxref" href="#deck-gl"><bdi class="secno">5.2.1.5 </bdi>deck.gl</a></li><li class="tocline"><a class="tocxref" href="#esri-javascript-sdk-arcgis-server"><bdi class="secno">5.2.1.6 </bdi>Esri JavaScript SDK / ArcGIS Server</a></li><li class="tocline"><a class="tocxref" href="#x3d-tiles-renderer"><bdi class="secno">5.2.1.7 </bdi>3d-tiles-renderer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#generators-en-servers"><bdi class="secno">5.2.2 </bdi>Generators en servers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#pg2b3dm"><bdi class="secno">5.2.2.1 </bdi>pg2b3dm</a></li><li class="tocline"><a class="tocxref" href="#vcs"><bdi class="secno">5.2.2.2 </bdi>VCS</a></li><li class="tocline"><a class="tocxref" href="#x3d-geovolumes"><bdi class="secno">5.2.2.3 </bdi>3D GeoVolumes</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-tile-datasets-en-websites"><bdi class="secno">5.3 </bdi>3D Tile Datasets en websites</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#x3d-basisvoorziening-kadaster"><bdi class="secno">5.3.1 </bdi>3D basisvoorziening Kadaster</a></li><li class="tocline"><a class="tocxref" href="#x3d-tiles-nederland"><bdi class="secno">5.3.2 </bdi>3D Tiles Nederland</a></li><li class="tocline"><a class="tocxref" href="#netherlands3d"><bdi class="secno">5.3.3 </bdi>Netherlands3D</a></li></ol></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#aanleiding"><bdi class="secno">1.1 </bdi>Aanleiding</a></li><li class="tocline"><a class="tocxref" href="#wat-is-3d-tiling"><bdi class="secno">1.2 </bdi>Wat is 3D Tiling?</a></li><li class="tocline"><a class="tocxref" href="#waar-is-3d-tiling-voor-te-gebruiken"><bdi class="secno">1.3 </bdi>Waar is 3D Tiling voor te gebruiken?</a></li><li class="tocline"><a class="tocxref" href="#wat-zijn-de-voor-en-nadelen-van-3d-tiling"><bdi class="secno">1.4 </bdi>Wat zijn de voor- en nadelen van 3D Tiling?</a></li><li class="tocline"><a class="tocxref" href="#welke-standaarden-zijn-er-voor-3d-tiling"><bdi class="secno">1.5 </bdi>Welke standaarden zijn er voor 3D tiling?</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles-specification"><bdi class="secno">1.5.1 </bdi>OGC 3D Tiles specification</a></li><li class="tocline"><a class="tocxref" href="#i3s"><bdi class="secno">1.5.2 </bdi>i3S</a></li></ol></li><li class="tocline"><a class="tocxref" href="#in-deze-handreiking-richten-we-ons-voornamelijk-op-de-standaard-ogc-3d-tiles-de-keuze-voor-ogc-3d-tiles-is-gemaakt-vanwege-de-brede-ondersteuning-en-interoperabiliteit-die-deze-standaard-biedt-binnen-verschillende-softwareplatforms-en-ecosystemen-hoewel-andere-formaten-zoals-i3s-ook-waardevolle-toepassingen-hebben-biedt-ogc-3d-tiles-momenteel-een-meer-universele-benadering-voor-het-beheren-en-visualiseren-van-3d-ruimtelijke-gegevens"><bdi class="secno">1.6 </bdi><em>In deze handreiking richten we ons voornamelijk op de standaard OGC 3D Tiles. De keuze voor OGC 3D Tiles is gemaakt vanwege de brede ondersteuning en interoperabiliteit die deze standaard biedt binnen verschillende softwareplatforms en ecosystemen. Hoewel andere formaten zoals i3S ook waardevolle toepassingen hebben, biedt OGC 3D Tiles momenteel een meer universele benadering voor het beheren en visualiseren van 3D-ruimtelijke gegevens.</em></a></li><li class="tocline"><a class="tocxref" href="#praktijkvoorbeelden"><bdi class="secno">1.7 </bdi>Praktijkvoorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bro-circulaire-grondstromen"><bdi class="secno">1.7.1 </bdi>BRO circulaire grondstromen</a></li><li class="tocline"><a class="tocxref" href="#x3d-rotterdam"><bdi class="secno">1.7.2 </bdi>3D Rotterdam</a></li><li class="tocline"><a class="tocxref" href="#wateroverlast-door-extreme-buien"><bdi class="secno">1.7.3 </bdi>Wateroverlast door extreme buien</a></li><li class="tocline"><a class="tocxref" href="#visualisatie-doorrijprofielen"><bdi class="secno">1.7.4 </bdi>Visualisatie doorrijprofielen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#standaarden"><bdi class="secno">2. </bdi>Standaarden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles-specification-0"><bdi class="secno">2.1 </bdi>OGC 3D Tiles specification</a></li><li class="tocline"><a class="tocxref" href="#i3s-0"><bdi class="secno">2.2 </bdi>i3S</a></li><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles"><bdi class="secno">2.3 </bdi>OGC 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">2.3.1 </bdi>Introductie</a></li><li class="tocline"><a class="tocxref" href="#tegelset"><bdi class="secno">2.3.2 </bdi>Tegelset</a></li><li class="tocline"><a class="tocxref" href="#tegelformaten"><bdi class="secno">2.3.3 </bdi>Tegelformaten</a></li><li class="tocline"><a class="tocxref" href="#mediatypes-en-encoding"><bdi class="secno">2.3.4 </bdi>Mediatypes en encoding</a></li><li class="tocline"><a class="tocxref" href="#geometric-error"><bdi class="secno">2.3.5 </bdi>Geometric error</a></li><li class="tocline"><a class="tocxref" href="#implicit-tiling"><bdi class="secno">2.3.6 </bdi>Implicit tiling</a></li><li class="tocline"><a class="tocxref" href="#metadata"><bdi class="secno">2.3.7 </bdi>Metadata</a></li></ol></li><li class="tocline"><a class="tocxref" href="#i3ds"><bdi class="secno">2.4 </bdi>i3DS</a></li></ol></li><li class="tocline"><a class="tocxref" href="#best-practices"><bdi class="secno">3. </bdi>Best practices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#genereren-van-3d-tiles"><bdi class="secno">3.1 </bdi>Genereren van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#explicit-en-implicit-tiling"><bdi class="secno">3.1.1 </bdi>Explicit en implicit tiling</a></li><li class="tocline"><a class="tocxref" href="#geometric-error-0"><bdi class="secno">3.1.2 </bdi>Geometric error</a></li><li class="tocline"><a class="tocxref" href="#offset-z-coordinaat"><bdi class="secno">3.1.3 </bdi>Offset Z-coördinaat</a></li><li class="tocline"><a class="tocxref" href="#optimale-set-aan-parameters"><bdi class="secno">3.1.4 </bdi>Optimale set aan parameters</a></li><li class="tocline"><a class="tocxref" href="#shader"><bdi class="secno">3.1.5 </bdi>Shader</a></li><li class="tocline"><a class="tocxref" href="#attribuutgegevens"><bdi class="secno">3.1.6 </bdi>Attribuutgegevens</a></li><li class="tocline"><a class="tocxref" href="#formaat"><bdi class="secno">3.1.7 </bdi>Formaat</a></li></ol></li><li class="tocline"><a class="tocxref" href="#serveren-van-3d-tiles"><bdi class="secno">3.2 </bdi>Serveren van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#valideren-van-3d-tiles"><bdi class="secno">3.2.1 </bdi>Valideren van 3D tiles</a></li><li class="tocline"><a class="tocxref" href="#compressie"><bdi class="secno">3.2.2 </bdi>Compressie</a></li><li class="tocline"><a class="tocxref" href="#ogc-api-geovolumes"><bdi class="secno">3.2.3 </bdi>OGC API GeoVolumes</a></li><li class="tocline"><a class="tocxref" href="#metadata-0"><bdi class="secno">3.2.4 </bdi>Metadata</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gebruiken-van-3d-tiles"><bdi class="secno">3.3 </bdi>Gebruiken van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#minimal-zoom"><bdi class="secno">3.3.1 </bdi>Minimal zoom</a></li><li class="tocline"><a class="tocxref" href="#kleur-en-belichting"><bdi class="secno">3.3.2 </bdi>Kleur en belichting</a></li><li class="tocline"><a class="tocxref" href="#wcag"><bdi class="secno">3.3.3 </bdi>WCAG</a></li><li class="tocline"><a class="tocxref" href="#coordinaten-van-scherm-terrein-en-camera-doelobject"><bdi class="secno">3.3.4 </bdi>Coördinaten van scherm/terrein en camera/doelobject</a></li><li class="tocline"><a class="tocxref" href="#diepte-vlak-depth-plane"><bdi class="secno">3.3.5 </bdi>Diepte vlak (depth plane)</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#toolkit"><bdi class="secno">4. </bdi>Toolkit</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#handleidingen"><bdi class="secno">4.1 </bdi>Handleidingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#howto-quickstartguide-3d-tiles"><bdi class="secno">4.1.1 </bdi>HowTo: QuickStartGuide 3D Tiles</a></li><li class="tocline"><a class="tocxref" href="#howto-3d-tiles-in-mapbox"><bdi class="secno">4.1.2 </bdi>HowTo: 3D Tiles in Mapbox</a></li><li class="tocline"><a class="tocxref" href="#howto-genereren-van-3d-tiles-met-virtual-city-systems"><bdi class="secno">4.1.3 </bdi>HowTo: Genereren van 3D tiles met Virtual City Systems</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#levels"><bdi class="secno">4.1.3.1 </bdi>Levels</a></li><li class="tocline"><a class="tocxref" href="#citygml-level-of-detail"><bdi class="secno">4.1.3.2 </bdi>CityGML Level of Detail</a></li><li class="tocline"><a class="tocxref" href="#object-size-filter"><bdi class="secno">4.1.3.3 </bdi>Object size filter</a></li><li class="tocline"><a class="tocxref" href="#geometry-generalization"><bdi class="secno">4.1.3.4 </bdi>Geometry generalization</a></li><li class="tocline"><a class="tocxref" href="#textures"><bdi class="secno">4.1.3.5 </bdi>Textures</a></li><li class="tocline"><a class="tocxref" href="#refinement"><bdi class="secno">4.1.3.6 </bdi>Refinement</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#viewers-generators-en-servers"><bdi class="secno">4.2 </bdi>Viewers, generators en servers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#viewers"><bdi class="secno">4.2.1 </bdi>Viewers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#cesium"><bdi class="secno">4.2.1.1 </bdi>Cesium</a></li><li class="tocline"><a class="tocxref" href="#mapboxgl"><bdi class="secno">4.2.1.2 </bdi>MapboxGL</a></li><li class="tocline"><a class="tocxref" href="#unity"><bdi class="secno">4.2.1.3 </bdi>Unity</a></li><li class="tocline"><a class="tocxref" href="#unreal-engine"><bdi class="secno">4.2.1.4 </bdi>Unreal Engine</a></li><li class="tocline"><a class="tocxref" href="#deck-gl"><bdi class="secno">4.2.1.5 </bdi>deck.gl</a></li><li class="tocline"><a class="tocxref" href="#esri-javascript-sdk-arcgis-server"><bdi class="secno">4.2.1.6 </bdi>Esri JavaScript SDK / ArcGIS Server</a></li><li class="tocline"><a class="tocxref" href="#x3d-tiles-renderer"><bdi class="secno">4.2.1.7 </bdi>3d-tiles-renderer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#generators-en-servers"><bdi class="secno">4.2.2 </bdi>Generators en servers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#pg2b3dm"><bdi class="secno">4.2.2.1 </bdi>pg2b3dm</a></li><li class="tocline"><a class="tocxref" href="#vcs"><bdi class="secno">4.2.2.2 </bdi>VCS</a></li><li class="tocline"><a class="tocxref" href="#x3d-geovolumes"><bdi class="secno">4.2.2.3 </bdi>3D GeoVolumes</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-tile-datasets-en-websites"><bdi class="secno">4.3 </bdi>3D Tile Datasets en websites</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#x3d-basisvoorziening-kadaster"><bdi class="secno">4.3.1 </bdi>3D basisvoorziening Kadaster</a></li><li class="tocline"><a class="tocxref" href="#x3d-tiles-nederland"><bdi class="secno">4.3.2 </bdi>3D Tiles Nederland</a></li><li class="tocline"><a class="tocxref" href="#netherlands3d"><bdi class="secno">4.3.3 </bdi>Netherlands3D</a></li></ol></li></ol></li></ol></nav>
   
   <section id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
 <section id="aanleiding"><div class="header-wrapper"><h3 id="x1-1-aanleiding"><bdi class="secno">1.1 </bdi>Aanleiding</h3><a class="self-link" href="#aanleiding" aria-label="Permalink for Section 1.1"></a></div>
@@ -846,98 +846,14 @@ van de tegels.</p>
 </section></section><section id="i3ds"><div class="header-wrapper"><h3 id="x2-4-i3ds"><bdi class="secno">2.4 </bdi>i3DS</h3><a class="self-link" href="#i3ds" aria-label="Permalink for Section 2.4"></a></div>
 <p>placeholder</p>
 </section></section>
-  <section id="toepassingen"><div class="header-wrapper"><h2 id="x3-toepassingen"><bdi class="secno">3. </bdi>Toepassingen</h2><a class="self-link" href="#toepassingen" aria-label="Permalink for Section 3."></a></div>
-<p>De toepassing van 3D Tiles vinden we al terug in verschillende applicaties en 3D digital twins. Ter illustratie zijn hieronder zijn voorbeelden opgenomen van enkele Nederlandse toepassingen die 3D Tiles voor de 3D visualisatie gebruiken.</p>
-<section id="bro-praktijkvoorbeeld-circulaire-grondstromen"><div class="header-wrapper"><h3 id="x3-1-bro-praktijkvoorbeeld-circulaire-grondstromen"><bdi class="secno">3.1 </bdi>BRO praktijkvoorbeeld circulaire grondstromen</h3><a class="self-link" href="#bro-praktijkvoorbeeld-circulaire-grondstromen" aria-label="Permalink for Section 3.1"></a></div>
-<p>3D Tiles worden gebruikt in de toepassing Circulaire Grondstromen (BRO praktijkvoorbeeld) om complexe en gedetailleerde 3D informatie over grond- en bouwmaterialen efficiënt te visualiseren en te beheren. Dit helpt bij het monitoren, plannen en optimaliseren van het hergebruik van materialen binnen een circulaire economie. Door 3D Tiles in te zetten, kunnen verschillende stakeholders eenvoudig toegang krijgen tot actuele en nauwkeurige data, wat bijdraagt aan een beter begrip van materiaalstromen en bevordert de samenwerking tussen partijen. 
-In de toepassing Circulaire Grondstromen gemaakt met CesiumJS zorgt 3D Tiles ervoor dat de prestaties van de webviewer worden gemaximaliseerd. Het proces van het converteren van data naar 3D-tegels binnen de toepassing Circulaire Grondstromen varieert afhankelijk van de databron (zie figuur ); de 3D tegels worden toegepast voor diverse typen data, zoals het DTB, puntenwolken, basisregistraties en BRO modellen en orthofoto’s. </p>
-<figure id="Figuur_1"> 
-<a href="media/image1.png" target="_blank"><img src="media/image1.png" alt=""></a>
-<figcaption><a class="self-link" href="#Figuur_1">Figuur <bdi class="figno">7</bdi></a> <span class="fig-title">3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)</span></figcaption>
-</figure>
-
-<p>Bronnen: <a href="https://basisregistratieondergrond.nl/doe-mee/begin-dag-bro-tje/bro-tjes-2024/11-januari-2024/datagedreven-duurzamer-her-gebruik-grond/">BRO praktijkvoorbeeld circulaire grondstromen</a>, <a href="https://grondstromen.beta.geodan.nl/?story=circulaire%20grondstromen">Storymap over circulaire grondstromen</a>.</p>
-</section><section id="x3d-rotterdam-0"><div class="header-wrapper"><h3 id="x3-2-3d-rotterdam"><bdi class="secno">3.2 </bdi>3D Rotterdam</h3><a class="self-link" href="#x3d-rotterdam-0" aria-label="Permalink for Section 3.2"></a></div>
-<p>De gemeente Rotterdam stelt het 3D-stadsmodel van Rotterdam vrij ter beschikking aan iedereen die daarmee aan de slag wil gaan. De gemeente wil hiermee het gebruik en toepassingen van deze unieke dataset stimuleren bij scholen en universiteiten, overheids- en Rotterdamse diensten, gamers, het bedrijfsleven uit binnen- en buitenland maar ook bewoners. Zij kunnen met de juiste tools Rotterdam op een manier in beeld brengen die op een platte kaart onmogelijk is. Rotterdam 3D is een driedimensionale (3D) weergave van de gemeente gebaseerd op tweedimensionale (2D) kaarten, hoogtemetingen, luchtfoto’s en beheergegevens. Rotterdam 3D (zie figuur 2) maakt gebruik van 3D Tiles en bestaat niet alleen uit gebouwen. Ook bomen, lantaarnpalen en kabels en leidingen zijn inmiddels in 3D en via 3D Tiles beschikbaar. Tilesets van Rotterdam 3D zijn ook te downloaden via <a href="https://3dtilesnederland.nl">link</a>. Het toegankelijk maken van Rotterdam 3D biedt Rotterdammers de mogelijkheid mee te bouwen aan de stad. De gegevens zijn daarom compleet, actueel en gratis voor hergebruik.</p>
-<p>In de onderstaande figuren zijn enkele voorbeelden opgenomen van het 3D Tiles in Rotterdam 3D. In figuur ? zijn de getextureerde gebouwen tezamen met de getextureerde bomen op een luchtfoto afgebeeld. Hierdoor creëer je al snel een ‘realistisch’ digitaal beeld van de stad.</p>
-<figure id="Figuur_2"> 
-<a href="media/rotterdam image1.png" target="_blank"><img src="media/rotterdam image1.png" alt=""></a>
-<figcaption><a class="self-link" href="#Figuur_2">Figuur <bdi class="figno">8</bdi></a> <span class="fig-title">3D Tiles visualisatie van getextureerde gebouwen en bomen in Rotterdam 3D</span></figcaption>
-</figure>
-
-<p>Benieuwd of er nog een plaatsje vrij is onder de straat voor een ondergrondse vuilcontainer? 3D Rotterdam biedt de mogelijkheden voor een kijkje in de ondergrond (figuur 3).</p>
-<figure id="Figuur_3"> 
-<a href="media/rotterdam image2.png" target="_blank"><img src="media/rotterdam image2.png" alt=""></a>
-<figcaption><a class="self-link" href="#Figuur_3">Figuur <bdi class="figno">9</bdi></a> <span class="fig-title">Een 3D Tiles kijkje in de Rotterdamse ondergrond</span></figcaption>
-</figure>
-
-<p>Met behulp van een 3D viewer, die alleen beschikbaar is voor de medewerkers van de gemeente Rotterdam, zorgt 3D Tiles ervoor dat de medewerkers snel en intuïtief gegevens kunnen ophalen van assets in de stad. Dit behelst niet alleen gebouwen maar ook straatmeubilair, groenvoorziening, etc.. Vanuit het gemeentelijk datafundament, waarin onder andere de BAG, de BGT, de WOZ, de TIR en de BOR zijn opgenomen, kunnen data analyses in samenhang worden uitgevoerd en vragen worden beantwoord, zoals hoeveel hoekwoningen een wijk heeft (figuur 4) of welke panden bevatten specifieke materialen in het dak? Ook het vergelijken van panden en hun attributen uit verschillende registraties WOZ en BAG: Welke object pas niet in het rijtje? (figuur 5). </p>
-<figure id="Figuur_4"> 
-<a href="media/rotterdam image3.png" target="_blank"><img src="media/rotterdam image3.png" alt=""></a>
-<figcaption><a class="self-link" href="#Figuur_4">Figuur <bdi class="figno">10</bdi></a> <span class="fig-title">Alle hoekwoningen in de wijk Ommoord</span></figcaption>
-</figure>
-
-<figure id="Figuur_5"> 
-<a href="media/rotterdam image4.png" target="_blank"><img src="media/rotterdam image4.png" alt=""></a>
-<figcaption><a class="self-link" href="#Figuur_5">Figuur <bdi class="figno">11</bdi></a> <span class="fig-title">3D Tiles ingezet voor het vergelijken van pandattributen uit WOZ en BAG</span></figcaption>
-</figure>
-
-<p>De 3D tilesets bevatten ook panden als geheel en kunnen de verblijfsobjecten in de toekomst ook identificeren en informatie over de verblijfsobjecten opvraagbaar maken (zie figuur ?).</p>
-<figure id="Figuur_6"> 
-<a href="media/rotterdam image5.png" target="_blank"><img src="media/rotterdam image5.png" alt=""></a>
-<figcaption><a class="self-link" href="#Figuur_6">Figuur <bdi class="figno">12</bdi></a> <span class="fig-title">3D Tiles ingezet voor het identificeren en opvraagbaar maken van informatie over verblijfsobjecten</span></figcaption>
-</figure>
-
-<p>Bronnen: <a href="http://www.3drotterdam.nl">www.3drotterdam.nl</a></p>
-</section><section id="wateroverlast-door-extreme-buien-0"><div class="header-wrapper"><h3 id="x3-3-wateroverlast-door-extreme-buien"><bdi class="secno">3.3 </bdi>Wateroverlast door extreme buien</h3><a class="self-link" href="#wateroverlast-door-extreme-buien-0" aria-label="Permalink for Section 3.3"></a></div>
-<p>Lorem ipsum dolor sit amet.</p>
-</section><section id="visualisatie-doorrijprofielen-0"><div class="header-wrapper"><h3 id="x3-4-visualisatie-doorrijprofielen"><bdi class="secno">3.4 </bdi>Visualisatie doorrijprofielen</h3><a class="self-link" href="#visualisatie-doorrijprofielen-0" aria-label="Permalink for Section 3.4"></a></div>
-<p>Voor het bepalen van de status van de verschillende assets van Rijkswaterstaat,
-worden planimetrische en hoogte-informatie gecombineerd (3D) toegepast. Een
-voorbeeld hiervan is het schouwen, inwinnen en valideren van de vrije ruimtes
-tussen het wegdek en een asset binnen het brongebied van RWS. Dit doet RWS in
-opdracht van de RDW, en zorgt ervoor dat er een veilige doorgang gegarandeerd is
-voor persoon, vracht en speciaal vervoer. RWS voert zelf geen data inwinning
-uit, en is daarom afhankelijk van de data die geleverd wordt vanuit de
-leveranciers.</p>
-<p>Hiervoor zijn er eisen gesteld aan de vrije ruimtes, waarbij voor de
-hoogtemetingen een relatieve afwijking van 1 cm is vastgesteld (zie ook deze
-<a href="https://www.rijkswaterstaat.nl/zakelijk/zakendoen-met-rijkswaterstaat/werkwijzen/werkwijze-in-gww/data-eisen-rijkswaterstaatcontracten/doorrijprofielen">link</a>).
-Omdat deze metingen vaak op snelwegen worden uitgevoerd, kiezen leveranciers
-steeds vaker voor het inwinnen van de vrijeruimte met behulp van mobile
-laserscanning. Mede doordat dit een efficiënte en veilige methode van inwinning
-is. De meting resulteert in een puntenwolk dataset van een asset, waarna de
-vrije ruimtes vervolgens worden geconverteerd naar fotobestanden voor een
-weergave van de omgeving.</p>
-<p>Voor het valideren van de fotobestanden van de leverancier wordt gebruikgemaakt
-van 3D-software die ontwikkeld is door de TU Delft en Rijkswaterstaat (zie ook
-deze
-<a href="http://resolver.tudelft.nl/uuid:ca9254d6-0f7b-4999-b62a-763eb5c95397">link</a>).
-Deze software wordt ingezet om met alternatieve puntenwolken
-vergelijkingsmateriaal van hetzelfde asset te maken. Dit stelt Rijkswaterstaat
-in staat om het geleverde fotomateriaal te controleren en te verifiëren of de
-omschrijvingen in de bewijsvoering (kwaliteitsrapportage) overeenkomen.</p>
-<p>De software is gebaseerd op het feit dat het wegdek en het brugdek/portaal
-voldoende gesegmenteerd kan worden uit de data, en dat doormiddel van B-splines
-een schatting gemaakt kan worden van de onderkant van het object. De resultaten
-kunnen op twee manieren worden weergegeven: via de dwarsdoorsnede (Figuur A) of
-doormiddel van de voxels van het gehele wegdek (Figuur B).</p>
-<p><figure id="fig-generatedID-0"><img src="media/726ce491e4eb25da71ea0c1ec6e1d99c.png" alt=""><figcaption><a class="self-link" href="#fig-generatedID-0">Figuur <bdi class="figno">13</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
-<p>Figuur B laat het belang zien van het ontsluitingsvraagstuk van dit type dataset
-naar de verschillende projectteams en afdelingen binnen Rijkswaterstaat. Dit
-stelt een projectteam in staat om een schatting te maken van de verandering van
-een asset over tijd, zodat gerichte data inwinning kan plaatsvinden in opdracht
-van RWS wanneer een asset zich in een kritieke toestand bevindt. Daarnaast
-krijgt de gebruiker ook een inschatting in 3D om te bepalen of een speciaal
-transport zich veilig door Nederland kan verplaatsen.</p>
-</section></section>  
-  <section id="best-practices"><div class="header-wrapper"><h2 id="x4-best-practices"><bdi class="secno">4. </bdi>Best practices</h2><a class="self-link" href="#best-practices" aria-label="Permalink for Section 4."></a></div>
+    
+  <section id="best-practices"><div class="header-wrapper"><h2 id="x3-best-practices"><bdi class="secno">3. </bdi>Best practices</h2><a class="self-link" href="#best-practices" aria-label="Permalink for Section 3."></a></div>
 <p>Dit hoofdstuk beschrijft een aantal best practices voor het serveren en
 gebruiken van 3D tiles. Deze best practices zijn gebaseerd op de expertise en
 praktijkervaring van de auteurs met betrekking tot het genereren, serveren en
 gebruiken van 3D-tiling, zoals beschreven in deze handleiding</p>
-<section id="genereren-van-3d-tiles"><div class="header-wrapper"><h3 id="x4-1-genereren-van-3d-tiles"><bdi class="secno">4.1 </bdi>Genereren van 3D Tiles</h3><a class="self-link" href="#genereren-van-3d-tiles" aria-label="Permalink for Section 4.1"></a></div>
-<section id="explicit-en-implicit-tiling"><div class="header-wrapper"><h4 id="x4-1-1-explicit-en-implicit-tiling"><bdi class="secno">4.1.1 </bdi>Explicit en implicit tiling</h4><a class="self-link" href="#explicit-en-implicit-tiling" aria-label="Permalink for Section 4.1.1"></a></div>
+<section id="genereren-van-3d-tiles"><div class="header-wrapper"><h3 id="x3-1-genereren-van-3d-tiles"><bdi class="secno">3.1 </bdi>Genereren van 3D Tiles</h3><a class="self-link" href="#genereren-van-3d-tiles" aria-label="Permalink for Section 3.1"></a></div>
+<section id="explicit-en-implicit-tiling"><div class="header-wrapper"><h4 id="x3-1-1-explicit-en-implicit-tiling"><bdi class="secno">3.1.1 </bdi>Explicit en implicit tiling</h4><a class="self-link" href="#explicit-en-implicit-tiling" aria-label="Permalink for Section 3.1.1"></a></div>
 <blockquote>
 <p>  Pas implicit tiling toe voor grotere datasets.</p>
 </blockquote>
@@ -1000,7 +916,7 @@ worden gegenereerd en hoe ze worden geconsumeerd in de viewer.</p>
 <p>Let op: standaard 1.0 ondersteunt geen implicit tiling, vanaf 1.1 wel. Veel
 clients zitten nog op 1.0, dus implicit tiling is niet in elke client
 beschikbaar.</p>
-</section><section id="geometric-error-0"><div class="header-wrapper"><h4 id="x4-1-2-geometric-error"><bdi class="secno">4.1.2 </bdi>Geometric error</h4><a class="self-link" href="#geometric-error-0" aria-label="Permalink for Section 4.1.2"></a></div>
+</section><section id="geometric-error-0"><div class="header-wrapper"><h4 id="x3-1-2-geometric-error"><bdi class="secno">3.1.2 </bdi>Geometric error</h4><a class="self-link" href="#geometric-error-0" aria-label="Permalink for Section 3.1.2"></a></div>
 <blockquote>
 <p>  Kies een drempelwaarde voor geometric error op basis van het gewenste zoom-
   en detailniveau.</p>
@@ -1026,7 +942,7 @@ waarde in voor de root tegel, en deze waarde wordt vervolgens eenvoudigweg door
 2 gedeeld voor elk volgend niveau onder de root tegel. Bij explicit tiling
 daarentegen kun je de geometrische fout afzonderlijk instellen voor iedere
 tegel.</p>
-</section><section id="offset-z-coordinaat"><div class="header-wrapper"><h4 id="x4-1-3-offset-z-coordinaat"><bdi class="secno">4.1.3 </bdi>Offset Z-coördinaat</h4><a class="self-link" href="#offset-z-coordinaat" aria-label="Permalink for Section 4.1.3"></a></div>
+</section><section id="offset-z-coordinaat"><div class="header-wrapper"><h4 id="x3-1-3-offset-z-coordinaat"><bdi class="secno">3.1.3 </bdi>Offset Z-coördinaat</h4><a class="self-link" href="#offset-z-coordinaat" aria-label="Permalink for Section 3.1.3"></a></div>
 <blockquote>
 <p>  Stem de offset van de Z-coördinaat van 3D Tiles af op het specifieke
   coördinatensysteem of op die van andere 3D Tiles datasets.</p>
@@ -1050,8 +966,8 @@ model nauwkeurig wordt gepositioneerd in de gewenste context.</p>
   in hoogtemeters tussen de geoïde en de ellipsoïde.</p>
 </blockquote>
 <blockquote>
-<p>  <figure id="fig-generatedID-1"><img src="media/339c8243cd7bd7f34afeddd2c13b2422.png" alt="Afbeelding met cirkel, diagram, schermopname Automatisch gegenereerde
-  beschrijving"><figcaption><a class="self-link" href="#fig-generatedID-1">Figuur <bdi class="figno">14</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<p>  <figure id="fig-generatedID-0"><img src="media/339c8243cd7bd7f34afeddd2c13b2422.png" alt="Afbeelding met cirkel, diagram, schermopname Automatisch gegenereerde
+  beschrijving"><figcaption><a class="self-link" href="#fig-generatedID-0">Figuur <bdi class="figno">7</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
 </blockquote>
 <blockquote>
 <p>  Het is belangrijk om hiermee rekening te houden bij het visualiseren van
@@ -1061,10 +977,10 @@ model nauwkeurig wordt gepositioneerd in de gewenste context.</p>
   vaak noodzakelijk om nauwkeurige hoogtevisualisaties te garanderen.</p>
 </blockquote>
 <blockquote>
-<p>  <figure id="fig-generatedID-2"><img src="media/80200791c0a5947c9226bb7e2e6c0c9e.png" alt="Afbeelding met schets, tekening, kaart, kunst Automatisch gegenereerde
-  beschrijving"><figcaption><a class="self-link" href="#fig-generatedID-2">Figuur <bdi class="figno">15</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<p>  <figure id="fig-generatedID-1"><img src="media/80200791c0a5947c9226bb7e2e6c0c9e.png" alt="Afbeelding met schets, tekening, kaart, kunst Automatisch gegenereerde
+  beschrijving"><figcaption><a class="self-link" href="#fig-generatedID-1">Figuur <bdi class="figno">8</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
 </blockquote>
-</section><section id="optimale-set-aan-parameters"><div class="header-wrapper"><h4 id="x4-1-4-optimale-set-aan-parameters"><bdi class="secno">4.1.4 </bdi>Optimale set aan parameters</h4><a class="self-link" href="#optimale-set-aan-parameters" aria-label="Permalink for Section 4.1.4"></a></div>
+</section><section id="optimale-set-aan-parameters"><div class="header-wrapper"><h4 id="x3-1-4-optimale-set-aan-parameters"><bdi class="secno">3.1.4 </bdi>Optimale set aan parameters</h4><a class="self-link" href="#optimale-set-aan-parameters" aria-label="Permalink for Section 3.1.4"></a></div>
 <blockquote>
 <p>  Experimenteer met de optimale parameters voor o.m. LODs, zoomlevels en
   generalisatie voor 3D Tiles generatie.</p>
@@ -1105,7 +1021,7 @@ van texturen af op het zoomniveau voor optimale prestaties.</p>
 worden gegenereerd voor verschillende toepassingen en gebruiksscenario's. Het is
 belangrijk om te experimenteren en de instellingen aan te passen op basis van de
 input-data, visuele presentatie en persoonlijke voorkeur.</p>
-</section><section id="shader"><div class="header-wrapper"><h4 id="x4-1-5-shader"><bdi class="secno">4.1.5 </bdi>Shader</h4><a class="self-link" href="#shader" aria-label="Permalink for Section 4.1.5"></a></div>
+</section><section id="shader"><div class="header-wrapper"><h4 id="x3-1-5-shader"><bdi class="secno">3.1.5 </bdi>Shader</h4><a class="self-link" href="#shader" aria-label="Permalink for Section 3.1.5"></a></div>
 <blockquote>
 <p>  Kies voor Physically Based Rendering (PBR) als shader voor 3D Tiles.</p>
 </blockquote>
@@ -1122,7 +1038,7 @@ verouderd raken en moeilijk te onderhouden zijn naarmate nieuwe
 renderingtechnologieën evolueren. Het kiezen van PBR als shader voor 3D Tiles
 garandeert niet alleen een hoog niveau van visuele kwaliteit, maar biedt ook een
 flexibele basis voor aanpassingen en updates in de toekomst.</p>
-</section><section id="attribuutgegevens"><div class="header-wrapper"><h4 id="x4-1-6-attribuutgegevens"><bdi class="secno">4.1.6 </bdi>Attribuutgegevens</h4><a class="self-link" href="#attribuutgegevens" aria-label="Permalink for Section 4.1.6"></a></div>
+</section><section id="attribuutgegevens"><div class="header-wrapper"><h4 id="x3-1-6-attribuutgegevens"><bdi class="secno">3.1.6 </bdi>Attribuutgegevens</h4><a class="self-link" href="#attribuutgegevens" aria-label="Permalink for Section 3.1.6"></a></div>
 <blockquote>
 <p>  Neem alleen de attributen op die nodig zijn voor visualisatie of voor het
   opvragen van extra informatie via een andere server.</p>
@@ -1142,7 +1058,7 @@ van toeslagen of vergunningen.</p>
 <p>Bovendien maakt deze aanpak gecontroleerde toegang mogelijk op basis van
 autorisatie, waardoor bijvoorbeeld de privacy en beveiliging van
 persoonsgegevens worden gewaarborgd.</p>
-</section><section id="formaat"><div class="header-wrapper"><h4 id="x4-1-7-formaat"><bdi class="secno">4.1.7 </bdi>Formaat</h4><a class="self-link" href="#formaat" aria-label="Permalink for Section 4.1.7"></a></div>
+</section><section id="formaat"><div class="header-wrapper"><h4 id="x3-1-7-formaat"><bdi class="secno">3.1.7 </bdi>Formaat</h4><a class="self-link" href="#formaat" aria-label="Permalink for Section 3.1.7"></a></div>
 <blockquote>
 <p>  Kies GLB als het juiste formaat voor 3D-tiles</p>
 </blockquote>
@@ -1162,8 +1078,8 @@ platforms waar bandbreedte en laadtijden van cruciaal belang zijn.</p>
 compatibiliteitsproblemen die kunnen ontstaan bij het gebruik van verouderde
 formaten zoals 3BM. Dit maakt GLB een verstandige keuze voor het
 toekomstbestendig opslaan en uitwisselen van 3D-gegevens.</p>
-</section></section><section id="serveren-van-3d-tiles"><div class="header-wrapper"><h3 id="x4-2-serveren-van-3d-tiles"><bdi class="secno">4.2 </bdi>Serveren van 3D Tiles</h3><a class="self-link" href="#serveren-van-3d-tiles" aria-label="Permalink for Section 4.2"></a></div>
-<section id="valideren-van-3d-tiles"><div class="header-wrapper"><h4 id="x4-2-1-valideren-van-3d-tiles"><bdi class="secno">4.2.1 </bdi>Valideren van 3D tiles</h4><a class="self-link" href="#valideren-van-3d-tiles" aria-label="Permalink for Section 4.2.1"></a></div>
+</section></section><section id="serveren-van-3d-tiles"><div class="header-wrapper"><h3 id="x3-2-serveren-van-3d-tiles"><bdi class="secno">3.2 </bdi>Serveren van 3D Tiles</h3><a class="self-link" href="#serveren-van-3d-tiles" aria-label="Permalink for Section 3.2"></a></div>
+<section id="valideren-van-3d-tiles"><div class="header-wrapper"><h4 id="x3-2-1-valideren-van-3d-tiles"><bdi class="secno">3.2.1 </bdi>Valideren van 3D tiles</h4><a class="self-link" href="#valideren-van-3d-tiles" aria-label="Permalink for Section 3.2.1"></a></div>
 <blockquote>
 <p>  Valideer de 3D Tilesets.</p>
 </blockquote>
@@ -1175,7 +1091,7 @@ een applicatie. Door Tilesets te valideren, kunnen potentiële problemen met de
 gegevenskwaliteit, structuur of prestaties opsporen en corrigeren, wat
 resulteert in een betere gebruikerservaring en soepele werking van een 3D
 Tiles-viewer.</p>
-</section><section id="compressie"><div class="header-wrapper"><h4 id="x4-2-2-compressie"><bdi class="secno">4.2.2 </bdi>Compressie</h4><a class="self-link" href="#compressie" aria-label="Permalink for Section 4.2.2"></a></div>
+</section><section id="compressie"><div class="header-wrapper"><h4 id="x3-2-2-compressie"><bdi class="secno">3.2.2 </bdi>Compressie</h4><a class="self-link" href="#compressie" aria-label="Permalink for Section 3.2.2"></a></div>
 <blockquote>
 <p>  Gebruik geometriecompressie in GLB-bestanden</p>
 </blockquote>
@@ -1191,7 +1107,7 @@ het tileset.json-bestand. Gzip-compressie kan de bestandsgrootte aanzienlijk
 verminderen, waardoor de downloadtijd wordt verkort zonder afbreuk te doen aan
 de kwaliteit van de gegevens. Dit helpt bij het optimaliseren van de prestaties
 van een 3D Tiles-viewer, vooral bij het laden van grote en complexe datasets.</p>
-</section><section id="ogc-api-geovolumes"><div class="header-wrapper"><h4 id="x4-2-3-ogc-api-geovolumes"><bdi class="secno">4.2.3 </bdi>OGC API GeoVolumes</h4><a class="self-link" href="#ogc-api-geovolumes" aria-label="Permalink for Section 4.2.3"></a></div>
+</section><section id="ogc-api-geovolumes"><div class="header-wrapper"><h4 id="x3-2-3-ogc-api-geovolumes"><bdi class="secno">3.2.3 </bdi>OGC API GeoVolumes</h4><a class="self-link" href="#ogc-api-geovolumes" aria-label="Permalink for Section 3.2.3"></a></div>
 <blockquote>
 <p>  Serveer 3D Tiles met behulp van OGC API GeoVolumes</p>
 </blockquote>
@@ -1201,7 +1117,7 @@ correct zijn gegenereerd en georganiseerd volgens de specificaties van de OGC
 API GeoVolumes. Publiceer vervolgens de 3D Tiles-datasets op een server volgens
 de OGC API GeoVolumes-specificaties, waarbij de endpoints correct geconfigureerd
 moeten zijn voor gemakkelijke toegang tot de gegevens door gebruikers.</p>
-</section><section id="metadata-0"><div class="header-wrapper"><h4 id="x4-2-4-metadata"><bdi class="secno">4.2.4 </bdi>Metadata</h4><a class="self-link" href="#metadata-0" aria-label="Permalink for Section 4.2.4"></a></div>
+</section><section id="metadata-0"><div class="header-wrapper"><h4 id="x3-2-4-metadata"><bdi class="secno">3.2.4 </bdi>Metadata</h4><a class="self-link" href="#metadata-0" aria-label="Permalink for Section 3.2.4"></a></div>
 <p>Publiceer metadata van een 3D Tileset</p>
 <p>Het publiceren van metadata van een 3D Tileset, bijvoorbeeld in het Nationaal
 Georegister, is essentieel voor het bevorderen van het gebruik en de
@@ -1225,8 +1141,8 @@ gegevensbronnen.</p>
 <p>Door deze informatie op te nemen in de metadata van een 3D Tileset, worden de
 gegevens gemakkelijker vindbaar en bruikbaar voor anderen, wat de uitwisseling
 en het hergebruik van de 3D informatie bevordert.</p>
-</section></section><section id="gebruiken-van-3d-tiles"><div class="header-wrapper"><h3 id="x4-3-gebruiken-van-3d-tiles"><bdi class="secno">4.3 </bdi>Gebruiken van 3D Tiles</h3><a class="self-link" href="#gebruiken-van-3d-tiles" aria-label="Permalink for Section 4.3"></a></div>
-<section id="minimal-zoom"><div class="header-wrapper"><h4 id="x4-3-1-minimal-zoom"><bdi class="secno">4.3.1 </bdi>Minimal zoom</h4><a class="self-link" href="#minimal-zoom" aria-label="Permalink for Section 4.3.1"></a></div>
+</section></section><section id="gebruiken-van-3d-tiles"><div class="header-wrapper"><h3 id="x3-3-gebruiken-van-3d-tiles"><bdi class="secno">3.3 </bdi>Gebruiken van 3D Tiles</h3><a class="self-link" href="#gebruiken-van-3d-tiles" aria-label="Permalink for Section 3.3"></a></div>
+<section id="minimal-zoom"><div class="header-wrapper"><h4 id="x3-3-1-minimal-zoom"><bdi class="secno">3.3.1 </bdi>Minimal zoom</h4><a class="self-link" href="#minimal-zoom" aria-label="Permalink for Section 3.3.1"></a></div>
 <blockquote>
 <p>  Stel een minimale zoom in op de client-side voor het laden van 3D
   Tiles-gegevens.</p>
@@ -1251,7 +1167,7 @@ gebruikerservaring.</p>
 manier om onnodige belasting van het systeem te verminderen, de laadtijd te
 verkorten en de efficiëntie van de gegevensweergave te verbeteren, vooral bij
 het werken met grote (landsdekkende) en gedetailleerde 3D Tiles-gegevenssets.</p>
-</section><section id="kleur-en-belichting"><div class="header-wrapper"><h4 id="x4-3-2-kleur-en-belichting"><bdi class="secno">4.3.2 </bdi>Kleur en belichting</h4><a class="self-link" href="#kleur-en-belichting" aria-label="Permalink for Section 4.3.2"></a></div>
+</section><section id="kleur-en-belichting"><div class="header-wrapper"><h4 id="x3-3-2-kleur-en-belichting"><bdi class="secno">3.3.2 </bdi>Kleur en belichting</h4><a class="self-link" href="#kleur-en-belichting" aria-label="Permalink for Section 3.3.2"></a></div>
 <blockquote>
 <p>  Neem een lamp achter de viewer op voor voldoende contrast.</p>
 </blockquote>
@@ -1276,11 +1192,11 @@ van de gegevens.</p>
 ontwikkelaars de prestaties van hun applicaties verbeteren en tegelijkertijd een
 consistente visuele ervaring bieden aan gebruikers, ongeacht het moment waarop
 ze de gegevens bekijken.</p>
-<p><figure id="fig-generatedID-3"><img src="media/16ca5ef04f7cfb12dbf4a794acb88d9e.png" alt="Afbeelding met kaart, schermopname, tekst, Multimediasoftware Automatisch
-gegenereerde beschrijving"><figcaption><a class="self-link" href="#fig-generatedID-3">Figuur <bdi class="figno">16</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<p><figure id="fig-generatedID-2"><img src="media/16ca5ef04f7cfb12dbf4a794acb88d9e.png" alt="Afbeelding met kaart, schermopname, tekst, Multimediasoftware Automatisch
+gegenereerde beschrijving"><figcaption><a class="self-link" href="#fig-generatedID-2">Figuur <bdi class="figno">9</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
 <p>Let op: Kleur en belichting is ook gerelateerd aan de shader. De shader bepaalt
 namelijk de relatie tussen het materiaal op de 3D-objecten en de belichting.</p>
-</section><section id="wcag"><div class="header-wrapper"><h4 id="x4-3-3-wcag"><bdi class="secno">4.3.3 </bdi>WCAG</h4><a class="self-link" href="#wcag" aria-label="Permalink for Section 4.3.3"></a></div>
+</section><section id="wcag"><div class="header-wrapper"><h4 id="x3-3-3-wcag"><bdi class="secno">3.3.3 </bdi>WCAG</h4><a class="self-link" href="#wcag" aria-label="Permalink for Section 3.3.3"></a></div>
 <blockquote>
 <p>  Minimaliseer visuele barrières in 3D Tile visualisaties door zo dicht
   mogelijk bij de Web Content Accessibility Guidelines (WCAG) te blijven.</p>
@@ -1299,9 +1215,9 @@ iedereen begrijpelijk en bruikbaar is, ongeacht eventuele beperkingen. Het
 naleven van deze richtlijnen verbetert niet alleen de gebruikerservaring voor
 mensen met handicaps, maar kan ook bijdragen aan een bredere acceptatie en
 bruikbaarheid van de applicatie.</p>
-<p><em><figure id="fig-generatedID-4"><img src="media/c21340f6daebe690a347b9d1ea9887bf.png" alt="Kleuren 3D Tiles Basisvoorziening
-Kadaster"><figcaption><a class="self-link" href="#fig-generatedID-4">Figuur <bdi class="figno">17</bdi></a> <span class="fig-title"></span></figcaption></figure></em></p>
-</section><section id="coordinaten-van-scherm-terrein-en-camera-doelobject"><div class="header-wrapper"><h4 id="x4-3-4-coordinaten-van-scherm-terrein-en-camera-doelobject"><bdi class="secno">4.3.4 </bdi>Coördinaten van scherm/terrein en camera/doelobject</h4><a class="self-link" href="#coordinaten-van-scherm-terrein-en-camera-doelobject" aria-label="Permalink for Section 4.3.4"></a></div>
+<p><em><figure id="fig-generatedID-3"><img src="media/c21340f6daebe690a347b9d1ea9887bf.png" alt="Kleuren 3D Tiles Basisvoorziening
+Kadaster"><figcaption><a class="self-link" href="#fig-generatedID-3">Figuur <bdi class="figno">10</bdi></a> <span class="fig-title"></span></figcaption></figure></em></p>
+</section><section id="coordinaten-van-scherm-terrein-en-camera-doelobject"><div class="header-wrapper"><h4 id="x3-3-4-coordinaten-van-scherm-terrein-en-camera-doelobject"><bdi class="secno">3.3.4 </bdi>Coördinaten van scherm/terrein en camera/doelobject</h4><a class="self-link" href="#coordinaten-van-scherm-terrein-en-camera-doelobject" aria-label="Permalink for Section 3.3.4"></a></div>
 <blockquote>
 <p>  Houd rekening met coördinaten van scherm/terrein en camera/doelobject</p>
 </blockquote>
@@ -1325,7 +1241,7 @@ tot verwarring bij gebruikers, omdat de weergave kan veranderen wanneer er wordt
 geschakeld tussen 2D en 3D. Het implementeren van intelligentie en logica om
 naadloze overgangen mogelijk te maken tussen 2D- en 3D-weergaven is dus
 noodzakelijk om de gebruikerservaring te verbeteren en verwarring te voorkomen.</p>
-</section><section id="diepte-vlak-depth-plane"><div class="header-wrapper"><h4 id="x4-3-5-diepte-vlak-depth-plane"><bdi class="secno">4.3.5 </bdi>Diepte vlak (depth plane)</h4><a class="self-link" href="#diepte-vlak-depth-plane" aria-label="Permalink for Section 4.3.5"></a></div>
+</section><section id="diepte-vlak-depth-plane"><div class="header-wrapper"><h4 id="x3-3-5-diepte-vlak-depth-plane"><bdi class="secno">3.3.5 </bdi>Diepte vlak (depth plane)</h4><a class="self-link" href="#diepte-vlak-depth-plane" aria-label="Permalink for Section 3.3.5"></a></div>
 <blockquote>
 <p>  Gebruik de instelling <em>depthTestAgainstTerrain=true</em> om objecten realistisch
   op de grond te plaatsen en de dieptewaarneming van de scène te verbeteren.</p>
@@ -1353,19 +1269,19 @@ de gebruiker.</p>
 <p><em>depthTestAgainstTerrain = true;</em></p>
 </section></section></section>
     
-  <section id="toolkit"><div class="header-wrapper"><h2 id="x5-toolkit"><bdi class="secno">5. </bdi>Toolkit</h2><a class="self-link" href="#toolkit" aria-label="Permalink for Section 5."></a></div>
-<section id="handleidingen"><div class="header-wrapper"><h3 id="x5-1-handleidingen"><bdi class="secno">5.1 </bdi>Handleidingen</h3><a class="self-link" href="#handleidingen" aria-label="Permalink for Section 5.1"></a></div>
+  <section id="toolkit"><div class="header-wrapper"><h2 id="x4-toolkit"><bdi class="secno">4. </bdi>Toolkit</h2><a class="self-link" href="#toolkit" aria-label="Permalink for Section 4."></a></div>
+<section id="handleidingen"><div class="header-wrapper"><h3 id="x4-1-handleidingen"><bdi class="secno">4.1 </bdi>Handleidingen</h3><a class="self-link" href="#handleidingen" aria-label="Permalink for Section 4.1"></a></div>
 <p>In deze sectie vind je een verzameling handleidingen en how-to's die je
 stapsgewijs begeleiden bij het werken met 3D Tiles. Of je nu een beginner bent
 die net begint met het gebruik van 3D Tiles of een ervaren ontwikkelaar die op
 zoek is naar geavanceerde tips en technieken, deze handleidingen bieden
 praktische instructies en voorbeelden om je te helpen bij het maken, laden,
 visualiseren en optimaliseren van 3D-gegevenssets met behulp van 3D Tiles.</p>
-<section id="howto-quickstartguide-3d-tiles"><div class="header-wrapper"><h4 id="x5-1-1-howto-quickstartguide-3d-tiles"><bdi class="secno">5.1.1 </bdi>HowTo: QuickStartGuide 3D Tiles</h4><a class="self-link" href="#howto-quickstartguide-3d-tiles" aria-label="Permalink for Section 5.1.1"></a></div>
+<section id="howto-quickstartguide-3d-tiles"><div class="header-wrapper"><h4 id="x4-1-1-howto-quickstartguide-3d-tiles"><bdi class="secno">4.1.1 </bdi>HowTo: QuickStartGuide 3D Tiles</h4><a class="self-link" href="#howto-quickstartguide-3d-tiles" aria-label="Permalink for Section 4.1.1"></a></div>
 <p><a href="https://3dtilesnederland.nl/quick-start-guide/">https://3dtilesnederland.nl/quick-start-guide/</a></p>
-</section><section id="howto-3d-tiles-in-mapbox"><div class="header-wrapper"><h4 id="x5-1-2-howto-3d-tiles-in-mapbox"><bdi class="secno">5.1.2 </bdi>HowTo: 3D Tiles in Mapbox</h4><a class="self-link" href="#howto-3d-tiles-in-mapbox" aria-label="Permalink for Section 5.1.2"></a></div>
+</section><section id="howto-3d-tiles-in-mapbox"><div class="header-wrapper"><h4 id="x4-1-2-howto-3d-tiles-in-mapbox"><bdi class="secno">4.1.2 </bdi>HowTo: 3D Tiles in Mapbox</h4><a class="self-link" href="#howto-3d-tiles-in-mapbox" aria-label="Permalink for Section 4.1.2"></a></div>
 <p><a href="https://github.com/Geodan/mapbox-3dtiles?tab=readme-ov-file">https://github.com/Geodan/mapbox-3dtiles?tab=readme-ov-file</a></p>
-</section><section id="howto-genereren-van-3d-tiles-met-virtual-city-systems"><div class="header-wrapper"><h4 id="x5-1-3-howto-genereren-van-3d-tiles-met-virtual-city-systems"><bdi class="secno">5.1.3 </bdi>HowTo: Genereren van 3D tiles met Virtual City Systems</h4><a class="self-link" href="#howto-genereren-van-3d-tiles-met-virtual-city-systems" aria-label="Permalink for Section 5.1.3"></a></div>
+</section><section id="howto-genereren-van-3d-tiles-met-virtual-city-systems"><div class="header-wrapper"><h4 id="x4-1-3-howto-genereren-van-3d-tiles-met-virtual-city-systems"><bdi class="secno">4.1.3 </bdi>HowTo: Genereren van 3D tiles met Virtual City Systems</h4><a class="self-link" href="#howto-genereren-van-3d-tiles-met-virtual-city-systems" aria-label="Permalink for Section 4.1.3"></a></div>
 <p>Bij het genereren van 3D tilesets kunnen een aantal parameters in Virtual City
 Systems toegepast worden die invloed hebben op de wijze waarop deze tilesets
 getoond worden in een viewer. Deze parameters zijn:</p>
@@ -1387,7 +1303,7 @@ classes)</p>
 <p>Er is geen aanbeveling mogelijk voor één set aan instellingen, omdat dit
 afhankelijk is van de input-data, de visuele presentatie en ook de persoonlijke
 smaak. Daarnaast zijn verschillende parameters onderling afhankelijk van elkaar.</p>
-<section id="levels"><div class="header-wrapper"><h5 id="x5-1-3-1-levels"><bdi class="secno">5.1.3.1 </bdi>Levels</h5><a class="self-link" href="#levels" aria-label="Permalink for Section 5.1.3.1"></a></div>
+<section id="levels"><div class="header-wrapper"><h5 id="x4-1-3-1-levels"><bdi class="secno">4.1.3.1 </bdi>Levels</h5><a class="self-link" href="#levels" aria-label="Permalink for Section 4.1.3.1"></a></div>
 <p>Bij deze optie wordt gekozen op welk zoomlevel een tileset wordt aangemaakt. Het
 is mogelijk meerdere levels in te stellen, die gezamenlijk een tileset vormen.
 Voor elk level moeten dan de hieronder beschreven parameters ingesteld worden.
@@ -1396,7 +1312,7 @@ getal is degene die als eerste wordt geladen in een viewer. De objecten in dit
 level liggen verder weg van het viewpoint dan de die in de hogere levels. Bij
 het aanmaken van de levels wordt op de achtergrond een Geometric Error toegekend
 aan elk level. Het laagste level heeft de hoogste Geometric Error.</p>
-</section><section id="citygml-level-of-detail"><div class="header-wrapper"><h5 id="x5-1-3-2-citygml-level-of-detail"><bdi class="secno">5.1.3.2 </bdi>CityGML Level of Detail</h5><a class="self-link" href="#citygml-level-of-detail" aria-label="Permalink for Section 5.1.3.2"></a></div>
+</section><section id="citygml-level-of-detail"><div class="header-wrapper"><h5 id="x4-1-3-2-citygml-level-of-detail"><bdi class="secno">4.1.3.2 </bdi>CityGML Level of Detail</h5><a class="self-link" href="#citygml-level-of-detail" aria-label="Permalink for Section 4.1.3.2"></a></div>
 <p>Bij deze optie wordt gekozen welk Level of Detail gebruikt wordt die in de
 CityGML-data aanwezig is. Voor gebouwen geldt dat LoD1 een eenvoudig
 blokkenmodel is en LoD2 dakvormen heeft. LoD1 bevat minder detail, dus is ook
@@ -1410,17 +1326,17 @@ of CityJSON kunnen meerdere LODs voor een object worden opgenomen. Als het
 voorkeurs LOD niet beschikbaar is, zal het systeem automatisch teruggrijpen naar
 het fallback LOD om het object op te nemen in de 3D Tile.</p>
 <p><a href="https://geonovum.github.io/IMGeo-dev/catalogus/imgeo/media/878e3b785d756b4ed69cacd71c875236.png">https://geonovum.github.io/IMGeo-dev/catalogus/imgeo/media/878e3b785d756b4ed69cacd71c875236.png</a></p>
-</section><section id="object-size-filter"><div class="header-wrapper"><h5 id="x5-1-3-3-object-size-filter"><bdi class="secno">5.1.3.3 </bdi>Object size filter</h5><a class="self-link" href="#object-size-filter" aria-label="Permalink for Section 5.1.3.3"></a></div>
+</section><section id="object-size-filter"><div class="header-wrapper"><h5 id="x4-1-3-3-object-size-filter"><bdi class="secno">4.1.3.3 </bdi>Object size filter</h5><a class="self-link" href="#object-size-filter" aria-label="Permalink for Section 4.1.3.3"></a></div>
 <p>Deze optie is alleen te gebruiken bij de Add refinement. Voor elk zoomlevel kan
 een object size gekozen worden, die gebaseerd is op de diagonaal van het object.
 Bijvoorbeeld op level 14 alle gebouwen groter dan 100m, op level 15 alle
 gebouwen tussen 50m en 100m en op level 16 alle gebouwen kleiner dan 50m.</p>
-</section><section id="geometry-generalization"><div class="header-wrapper"><h5 id="x5-1-3-4-geometry-generalization"><bdi class="secno">5.1.3.4 </bdi>Geometry generalization</h5><a class="self-link" href="#geometry-generalization" aria-label="Permalink for Section 5.1.3.4"></a></div>
+</section><section id="geometry-generalization"><div class="header-wrapper"><h5 id="x4-1-3-4-geometry-generalization"><bdi class="secno">4.1.3.4 </bdi>Geometry generalization</h5><a class="self-link" href="#geometry-generalization" aria-label="Permalink for Section 4.1.3.4"></a></div>
 <p>Deze optie is alleen te gebruiken bij de Replace refinement. Voor elk zoomlevel
 kan een generalisatie toegepast worden, waarbij een marge wordt opgegeven
 waarbinnen vertices van een object samengevoegd worden. Bijvoorbeeld op level 14
 een generalisatie van 5m, op level 15 van 2m en op level 16 geen generalisatie.</p>
-</section><section id="textures"><div class="header-wrapper"><h5 id="x5-1-3-5-textures"><bdi class="secno">5.1.3.5 </bdi>Textures</h5><a class="self-link" href="#textures" aria-label="Permalink for Section 5.1.3.5"></a></div>
+</section><section id="textures"><div class="header-wrapper"><h5 id="x4-1-3-5-textures"><bdi class="secno">4.1.3.5 </bdi>Textures</h5><a class="self-link" href="#textures" aria-label="Permalink for Section 4.1.3.5"></a></div>
 <p>Bij het gebruik van CityGML Appearance kunnen bijvoorbeeld getextureerde
 gebouwen aangemaakt worden. Het is niet aan te raden om hierbij LoD1 en 2 te
 gebruiken, omdat LoD1 geen textures bevat. Het is wel mogelijk dit met object
@@ -1436,7 +1352,7 @@ een gebouw zijn eigen kleur, mits ze gespecificeerd zijn in CityGML. Daken
 worden bijvoorbeeld rood en muren grijs. Deze kleuren zijn aan te passen. Dit
 geldt dan alleen voor LoD2 en hoger en daarom is het niet aan te raden om LoD1
 en LoD2 te combineren in verschillende zoomlevels.</p>
-</section><section id="refinement"><div class="header-wrapper"><h5 id="x5-1-3-6-refinement"><bdi class="secno">5.1.3.6 </bdi>Refinement</h5><a class="self-link" href="#refinement" aria-label="Permalink for Section 5.1.3.6"></a></div>
+</section><section id="refinement"><div class="header-wrapper"><h5 id="x4-1-3-6-refinement"><bdi class="secno">4.1.3.6 </bdi>Refinement</h5><a class="self-link" href="#refinement" aria-label="Permalink for Section 4.1.3.6"></a></div>
 <p>Bij Refinement kan tussen de opties Add en Replace gekozen worden, die aan de
 hand van onderstaande scenario’s worden toegelicht.</p>
 <p>Als je in de verte kijkt, zie je in principe alleen maar grote gebouwen staan.
@@ -1449,8 +1365,8 @@ de grote gebouwen, op zoomniveau 15 de middelgrote gebouwen en op zoomniveau 16
 de kleine gebouwen. Elk gebouw komt maar 1x voor in de gehele tileset. Door het
 inzoomen worden steeds meer gebouwen toegevoegd aan je view. Een nadeel is dat
 het vaak wel opvalt dat er in de verte gebouwen ontbreken.</p>
-<p><figure id="fig-generatedID-5"><img src="media/9eb82df57c2a50ab283807e3343f0e3c.jpeg" alt="Afbeelding met kaart, Luchtfotografie, tekst Automatisch gegenereerde
-beschrijving"><figcaption><a class="self-link" href="#fig-generatedID-5">Figuur <bdi class="figno">18</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
+<p><figure id="fig-generatedID-4"><img src="media/9eb82df57c2a50ab283807e3343f0e3c.jpeg" alt="Afbeelding met kaart, Luchtfotografie, tekst Automatisch gegenereerde
+beschrijving"><figcaption><a class="self-link" href="#fig-generatedID-4">Figuur <bdi class="figno">11</bdi></a> <span class="fig-title"></span></figcaption></figure></p>
 <p>Als je in de verte kijkt, zie je weinig detail van gebouwen. Je kunt ervoor
 kiezen om de geometrie wat te generaliseren, zodat de tileset minder zwaar
 wordt. Bijvoorbeeld op zoomniveau 14 een generalisatie van 5m, op niveau 15 van
@@ -1460,7 +1376,7 @@ gegenereerd wordt. Elk gebouw komt dus 3x voor. Voordeel is dat je in de verte
 altijd alle gebouwen ziet, maar het is vaak lastig in te stellen op welk
 zoomniveau, welke generalisatie je toe moet passen. Daardoor blijft de
 generalisatie vaak zichtbaar.</p>
-</section></section></section><section id="viewers-generators-en-servers"><div class="header-wrapper"><h3 id="x5-2-viewers-generators-en-servers"><bdi class="secno">5.2 </bdi>Viewers, generators en servers</h3><a class="self-link" href="#viewers-generators-en-servers" aria-label="Permalink for Section 5.2"></a></div>
+</section></section></section><section id="viewers-generators-en-servers"><div class="header-wrapper"><h3 id="x4-2-viewers-generators-en-servers"><bdi class="secno">4.2 </bdi>Viewers, generators en servers</h3><a class="self-link" href="#viewers-generators-en-servers" aria-label="Permalink for Section 4.2"></a></div>
 <p>In deze sectie vind je een overzicht van verschillende viewers en servers die
 compatibel zijn met 3D Tiles. Of je nu op zoek bent naar een krachtige 3D-engine
 om je 3D Tiles te visualiseren of een robuuste serveroplossing om je gegevens te
@@ -1470,58 +1386,58 @@ web-based viewers, deze lijst biedt een breed scala aan opties om aan je
 specifieke behoeften te voldoen.</p>
 <p>Voor een overzicht van nog meer viewers, zie</p>
 <p><a href="https://github.com/pka/awesome-3d-tiles?tab=readme-ov-file">https://github.com/pka/awesome-3d-tiles?tab=readme-ov-file</a></p>
-<section id="viewers"><div class="header-wrapper"><h4 id="x5-2-1-viewers"><bdi class="secno">5.2.1 </bdi>Viewers</h4><a class="self-link" href="#viewers" aria-label="Permalink for Section 5.2.1"></a></div>
-<section id="cesium"><div class="header-wrapper"><h5 id="x5-2-1-1-cesium"><bdi class="secno">5.2.1.1 </bdi>Cesium</h5><a class="self-link" href="#cesium" aria-label="Permalink for Section 5.2.1.1"></a></div>
+<section id="viewers"><div class="header-wrapper"><h4 id="x4-2-1-viewers"><bdi class="secno">4.2.1 </bdi>Viewers</h4><a class="self-link" href="#viewers" aria-label="Permalink for Section 4.2.1"></a></div>
+<section id="cesium"><div class="header-wrapper"><h5 id="x4-2-1-1-cesium"><bdi class="secno">4.2.1.1 </bdi>Cesium</h5><a class="self-link" href="#cesium" aria-label="Permalink for Section 4.2.1.1"></a></div>
 <p>Cesium is een krachtige open-source JavaScript-bibliotheek voor het maken van
 3D-kaarten in de browser. Het biedt ondersteuning voor het laden en weergeven
 van 3D Tiles, waardoor gebruikers complexe 3D-gegevenssets kunnen visualiseren
 en analyseren in hun webapplicaties.</p>
 <p><a href="https://github.com/CesiumGS/cesium">https://github.com/CesiumGS/cesium</a></p>
-</section><section id="mapboxgl"><div class="header-wrapper"><h5 id="x5-2-1-2-mapboxgl"><bdi class="secno">5.2.1.2 </bdi>MapboxGL</h5><a class="self-link" href="#mapboxgl" aria-label="Permalink for Section 5.2.1.2"></a></div>
+</section><section id="mapboxgl"><div class="header-wrapper"><h5 id="x4-2-1-2-mapboxgl"><bdi class="secno">4.2.1.2 </bdi>MapboxGL</h5><a class="self-link" href="#mapboxgl" aria-label="Permalink for Section 4.2.1.2"></a></div>
 <p>MapboxGL is een JavaScript-bibliotheek die wordt gebruikt voor het maken van
 dynamische, interactieve kaarten. Het ondersteunt de weergave van 3D Tiles,
 waardoor gebruikers gedetailleerde en realistische 3D-kaarten kunnen maken met
 behulp van Mapbox-platform.</p>
 <p><a href="https://github.com/Geodan/mapbox-3dtiles">https://github.com/Geodan/mapbox-3dtiles</a></p>
-</section><section id="unity"><div class="header-wrapper"><h5 id="x5-2-1-3-unity"><bdi class="secno">5.2.1.3 </bdi>Unity</h5><a class="self-link" href="#unity" aria-label="Permalink for Section 5.2.1.3"></a></div>
+</section><section id="unity"><div class="header-wrapper"><h5 id="x4-2-1-3-unity"><bdi class="secno">4.2.1.3 </bdi>Unity</h5><a class="self-link" href="#unity" aria-label="Permalink for Section 4.2.1.3"></a></div>
 <p>Unity is een populaire game-engine die wordt gebruikt voor het maken van 3D- en
 2D-games, simulaties en visualisaties. Met de Unity engine kunnen ontwikkelaars
 3D Tiles integreren om complexe geografische gegevenssets te visualiseren en
 interactieve 3D-omgevingen te creëren.</p>
 <p><a href="https://unity.com/">https://unity.com/</a></p>
-</section><section id="unreal-engine"><div class="header-wrapper"><h5 id="x5-2-1-4-unreal-engine"><bdi class="secno">5.2.1.4 </bdi>Unreal Engine</h5><a class="self-link" href="#unreal-engine" aria-label="Permalink for Section 5.2.1.4"></a></div>
+</section><section id="unreal-engine"><div class="header-wrapper"><h5 id="x4-2-1-4-unreal-engine"><bdi class="secno">4.2.1.4 </bdi>Unreal Engine</h5><a class="self-link" href="#unreal-engine" aria-label="Permalink for Section 4.2.1.4"></a></div>
 <p>Unreal Engine is een krachtige game-engine die wordt gebruikt voor het maken van
 hoogwaardige 3D-content, waaronder games, simulaties en visualisaties. Het
 ondersteunt de integratie van 3D Tiles, waardoor ontwikkelaars gedetailleerde en
 realistische 3D-omgevingen kunnen maken met behulp van de Unreal Engine.</p>
 <p><a href="https://www.unrealengine.com/">https://www.unrealengine.com/</a></p>
-</section><section id="deck-gl"><div class="header-wrapper"><h5 id="x5-2-1-5-deck-gl"><bdi class="secno">5.2.1.5 </bdi>deck.gl</h5><a class="self-link" href="#deck-gl" aria-label="Permalink for Section 5.2.1.5"></a></div>
+</section><section id="deck-gl"><div class="header-wrapper"><h5 id="x4-2-1-5-deck-gl"><bdi class="secno">4.2.1.5 </bdi>deck.gl</h5><a class="self-link" href="#deck-gl" aria-label="Permalink for Section 4.2.1.5"></a></div>
 <p>dec<strong>k.gl</strong> is een op WebGL gebaseerde 3D-rendering-engine die wordt gebruikt
 voor het maken van geavanceerde 3D-visualisaties in de browser. Het ondersteunt
 de weergave van 3D Tiles, waardoor gebruikers gedetailleerde en interactieve
 3D-gegevenssets kunnen bekijken en analyseren.</p>
 <p><a href="https://deck.gl/docs/api-reference/geo-layers/tile-3d-layer">https://deck.gl/docs/api-reference/geo-layers/tile-3d-layer</a></p>
-</section><section id="esri-javascript-sdk-arcgis-server"><div class="header-wrapper"><h5 id="x5-2-1-6-esri-javascript-sdk-arcgis-server"><bdi class="secno">5.2.1.6 </bdi>Esri JavaScript SDK / ArcGIS Server</h5><a class="self-link" href="#esri-javascript-sdk-arcgis-server" aria-label="Permalink for Section 5.2.1.6"></a></div>
+</section><section id="esri-javascript-sdk-arcgis-server"><div class="header-wrapper"><h5 id="x4-2-1-6-esri-javascript-sdk-arcgis-server"><bdi class="secno">4.2.1.6 </bdi>Esri JavaScript SDK / ArcGIS Server</h5><a class="self-link" href="#esri-javascript-sdk-arcgis-server" aria-label="Permalink for Section 4.2.1.6"></a></div>
 <p>De Esri JavaScript API biedt een krachtig platform voor het maken van
 webmapping-applicaties. Het ondersteunt de integratie van 3D Tiles, waardoor
 ontwikkelaars complexe 3D-gegevenssets kunnen visualiseren en analyseren in hun
 webapplicaties.</p>
 <p><a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMesh3DTilesLayer.html">https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMesh3DTilesLayer.html</a></p>
-</section><section id="x3d-tiles-renderer"><div class="header-wrapper"><h5 id="x5-2-1-7-3d-tiles-renderer"><bdi class="secno">5.2.1.7 </bdi>3d-tiles-renderer</h5><a class="self-link" href="#x3d-tiles-renderer" aria-label="Permalink for Section 5.2.1.7"></a></div>
+</section><section id="x3d-tiles-renderer"><div class="header-wrapper"><h5 id="x4-2-1-7-3d-tiles-renderer"><bdi class="secno">4.2.1.7 </bdi>3d-tiles-renderer</h5><a class="self-link" href="#x3d-tiles-renderer" aria-label="Permalink for Section 4.2.1.7"></a></div>
 <p>3DtilesRendererJS is een JavaScript-bibliotheek die is ontworpen voor het
 renderen van 3D Tiles in webapplicaties. Het biedt ondersteuning voor het laden
 en weergeven van 3D-gegevenssets, waardoor ontwikkelaars gedetailleerde en
 interactieve 3D-visualisaties kunnen maken in de browser.</p>
 <p><a href="https://github.com/NASA-AMMOS/3DTilesRendererJS">https://github.com/NASA-AMMOS/3DTilesRendererJS</a></p>
-</section></section><section id="generators-en-servers"><div class="header-wrapper"><h4 id="x5-2-2-generators-en-servers"><bdi class="secno">5.2.2 </bdi>Generators en servers</h4><a class="self-link" href="#generators-en-servers" aria-label="Permalink for Section 5.2.2"></a></div>
-<section id="pg2b3dm"><div class="header-wrapper"><h5 id="x5-2-2-1-pg2b3dm"><bdi class="secno">5.2.2.1 </bdi>pg2b3dm</h5><a class="self-link" href="#pg2b3dm" aria-label="Permalink for Section 5.2.2.1"></a></div>
+</section></section><section id="generators-en-servers"><div class="header-wrapper"><h4 id="x4-2-2-generators-en-servers"><bdi class="secno">4.2.2 </bdi>Generators en servers</h4><a class="self-link" href="#generators-en-servers" aria-label="Permalink for Section 4.2.2"></a></div>
+<section id="pg2b3dm"><div class="header-wrapper"><h5 id="x4-2-2-1-pg2b3dm"><bdi class="secno">4.2.2.1 </bdi>pg2b3dm</h5><a class="self-link" href="#pg2b3dm" aria-label="Permalink for Section 4.2.2.1"></a></div>
 <p>pg2b3dm is een tool waarmee 3D-geometrieën vanuit PostGIS kunnen worden omgezet
 naar 3D Tiles. De gegenereerde 3D Tiles kunnen worden gevisualiseerd in Cesium
 JS, Cesium for Unreal, Cesium for Unity3D, Cesium for Omniverse, QGIS, ArcGIS
 Pro, ArcGIS Maps SDK for JavaScript, Mapbox GL JS v3 (experimenteel) of andere
 3D Tiles client viewers.</p>
 <p><a href="https://github.com/Geodan/pg2b3dm">https://github.com/Geodan/pg2b3dm</a></p>
-</section><section id="vcs"><div class="header-wrapper"><h5 id="x5-2-2-2-vcs"><bdi class="secno">5.2.2.2 </bdi>VCS</h5><a class="self-link" href="#vcs" aria-label="Permalink for Section 5.2.2.2"></a></div>
+</section><section id="vcs"><div class="header-wrapper"><h5 id="x4-2-2-2-vcs"><bdi class="secno">4.2.2.2 </bdi>VCS</h5><a class="self-link" href="#vcs" aria-label="Permalink for Section 4.2.2.2"></a></div>
 <p>Virtual City Systems biedt een krachtige tool voor het genereren van 3D Tiles
 genaamd "CityServer3D". Met CityServer3D kunnen gebruikers eenvoudig 3D-gegevens
 van verschillende bronnen importeren en converteren naar het 3D Tiles-formaat.
@@ -1531,7 +1447,7 @@ Tiles-clients zoals Cesium, Mapbox GL JS en andere. CityServer3D biedt ook
 geavanceerde functionaliteiten voor het beheren, analyseren en presenteren van
 3D-gegevens op schaalbare en efficiënte wijze.</p>
 <p><a href="https://vc.systems/en/">https://vc.systems/en/</a></p>
-</section><section id="x3d-geovolumes"><div class="header-wrapper"><h5 id="x5-2-2-3-3d-geovolumes"><bdi class="secno">5.2.2.3 </bdi>3D GeoVolumes</h5><a class="self-link" href="#x3d-geovolumes" aria-label="Permalink for Section 5.2.2.3"></a></div>
+</section><section id="x3d-geovolumes"><div class="header-wrapper"><h5 id="x4-2-2-3-3d-geovolumes"><bdi class="secno">4.2.2.3 </bdi>3D GeoVolumes</h5><a class="self-link" href="#x3d-geovolumes" aria-label="Permalink for Section 4.2.2.3"></a></div>
 <p>De OGC API – 3D GeoVolumes is een krachtige serveroplossing voor het serveren
 van 3D Tiles. Met deze server kunnen 3D-gegevenssets efficiënt worden gehost en
 toegankelijk gemaakt voor gebruik in verschillende 3D-applicaties. Door het
@@ -1541,8 +1457,8 @@ infrastructuur voor het leveren van 3D-gegevens op schaal, waardoor het ideaal
 is voor het hosten van grote 3D-modellen en het ondersteunen van geavanceerde
 3D-toepassingen.</p>
 <p><a href="https://ogcapi.ogc.org/geovolumes/">https://ogcapi.ogc.org/geovolumes/</a></p>
-</section></section></section><section id="x3d-tile-datasets-en-websites"><div class="header-wrapper"><h3 id="x5-3-3d-tile-datasets-en-websites"><bdi class="secno">5.3 </bdi>3D Tile Datasets en websites</h3><a class="self-link" href="#x3d-tile-datasets-en-websites" aria-label="Permalink for Section 5.3"></a></div>
-<section id="x3d-basisvoorziening-kadaster"><div class="header-wrapper"><h4 id="x5-3-1-3d-basisvoorziening-kadaster"><bdi class="secno">5.3.1 </bdi>3D basisvoorziening Kadaster</h4><a class="self-link" href="#x3d-basisvoorziening-kadaster" aria-label="Permalink for Section 5.3.1"></a></div>
+</section></section></section><section id="x3d-tile-datasets-en-websites"><div class="header-wrapper"><h3 id="x4-3-3d-tile-datasets-en-websites"><bdi class="secno">4.3 </bdi>3D Tile Datasets en websites</h3><a class="self-link" href="#x3d-tile-datasets-en-websites" aria-label="Permalink for Section 4.3"></a></div>
+<section id="x3d-basisvoorziening-kadaster"><div class="header-wrapper"><h4 id="x4-3-1-3d-basisvoorziening-kadaster"><bdi class="secno">4.3.1 </bdi>3D basisvoorziening Kadaster</h4><a class="self-link" href="#x3d-basisvoorziening-kadaster" aria-label="Permalink for Section 4.3.1"></a></div>
 <p>De 3D Basisvoorziening van het Kadaster is beschikbaar op schaalniveaus tussen
 1:500 en 1:10.000. De gegevens worden geleverd als dataset per kaartblad,
 waarbij u zelf het gewenste kaartblad kunt selecteren op de kaart van Nederland.
@@ -1559,7 +1475,7 @@ projecten in het kader van de nieuwe Omgevingswet. Daarnaast is het een
 waardevol visueel hulpmiddel in de communicatie met burgers over de impact van
 plannen op de omgeving.</p>
 <p><a href="https://api.pdok.nl/kadaster/3d-basisvoorziening/ogc/v1_0">https://api.pdok.nl/kadaster/3d-basisvoorziening/ogc/v1_0</a></p>
-</section><section id="x3d-tiles-nederland"><div class="header-wrapper"><h4 id="x5-3-2-3d-tiles-nederland"><bdi class="secno">5.3.2 </bdi>3D Tiles Nederland</h4><a class="self-link" href="#x3d-tiles-nederland" aria-label="Permalink for Section 5.3.2"></a></div>
+</section><section id="x3d-tiles-nederland"><div class="header-wrapper"><h4 id="x4-3-2-3d-tiles-nederland"><bdi class="secno">4.3.2 </bdi>3D Tiles Nederland</h4><a class="self-link" href="#x3d-tiles-nederland" aria-label="Permalink for Section 4.3.2"></a></div>
 <p>3DTilesNederland.nl is een samenwerkingsverband tussen de Vereniging van
 Nederlandse Gemeenten (VNG) en de gemeenten Rotterdam, Amsterdam en Den Haag. De
 website zet zich in om het verzamelen, beheren en benutten van 3D-data binnen
@@ -1575,7 +1491,7 @@ en Unity (Netherlands 3D) waarmee gemeenten realistische virtuele tours,
 simulaties en trainingen kunnen ontwikkelen om burgers te informeren en
 betrekken bij stadsplanning en andere gemeentelijke projecten.</p>
 <p><a href="https://3dtilesnederland.nl/3d-tilesets/">https://3dtilesnederland.nl/3d-tilesets/</a></p>
-</section><section id="netherlands3d"><div class="header-wrapper"><h4 id="x5-3-3-netherlands3d"><bdi class="secno">5.3.3 </bdi>Netherlands3D</h4><a class="self-link" href="#netherlands3d" aria-label="Permalink for Section 5.3.3"></a></div>
+</section><section id="netherlands3d"><div class="header-wrapper"><h4 id="x4-3-3-netherlands3d"><bdi class="secno">4.3.3 </bdi>Netherlands3D</h4><a class="self-link" href="#netherlands3d" aria-label="Permalink for Section 4.3.3"></a></div>
 <p>Netherlands3D is een open-source Digitaal Twin-framework dat is ontworpen voor
 Nederland. Met Netherlands3D kun je gedetailleerde, op data gebaseerde modellen
 maken door middel van data visualisatie.</p>
