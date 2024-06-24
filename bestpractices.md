@@ -84,9 +84,6 @@ gegenereerde beschrijving](media/d59d1169e5eac10e98079e2e24a80e6d.jpeg)
     Gebruik van dieptevlakken voor correcte rendering van tiles in
     3D-omgevingen.
 
-Deze hergroepering helpt bij het structureren van de best practices, zodat ze
-logisch passen binnen de verschillende fasen van werken met 3D tiles.
-
 ## Genereren van 3D Tiles
 
 ### Attribuutgegevens
