@@ -19,34 +19,33 @@ De gemeente Rotterdam stelt het 3D-stadsmodel van Rotterdam vrij ter beschikking
 
 In de onderstaande figuren zijn enkele voorbeelden opgenomen van het 3D Tiles in Rotterdam 3D. In figuur ? zijn de getextureerde gebouwen tezamen met de getextureerde bomen op een luchtfoto afgebeeld. Hierdoor creëer je al snel een ‘realistisch’ digitaal beeld van de stad.
 
-<figure id="Figuur_x"> 
+<figure id="Figuur_2"> 
 <a href="media/rotterdam image1.png" target="_blank"><img src="media/rotterdam image1.png" alt=""></a>
-<figcaption>Figuur ? – 3D Tiles visualisatie van getextureerde gebouwen en bomen in Rotterdam 3D</figcaption>
+<figcaption>3D Tiles visualisatie van getextureerde gebouwen en bomen in Rotterdam 3D</figcaption>
 </figure>
 
 Benieuwd of er nog een plaatsje vrij is onder de straat voor een ondergrondse vuilcontainer? 3D Rotterdam biedt de mogelijkheden voor een kijkje in de ondergrond (figuur ?).
 
-<figure id="Figuur_x"> 
+<figure id="Figuur_3"> 
 <a href="media/rotterdam image2.png" target="_blank"><img src="media/rotterdam image2.png" alt=""></a>
 <figcaption>Een 3D Tiles kijkje in de Rotterdamse ondergrond</figcaption>
 </figure>
 
 Met behulp van een 3D viewer, die alleen beschikbaar is voor de medewerkers van de gemeente Rotterdam, zorgt 3D Tiles ervoor dat de medewerkers snel en intuïtief gegevens kunnen ophalen van assets in de stad. Dit behelst niet alleen gebouwen maar ook straatmeubilair, groenvoorziening, etc.. Vanuit het gemeentelijk datafundament, waarin onder andere de BAG, de BGT, de WOZ, de TIR en de BOR zijn opgenomen, kunnen data analyses in samenhang worden uitgevoerd en vragen worden beantwoord, zoals hoeveel hoekwoningen een wijk heeft (figuur ?) of welke panden bevatten specifieke materialen in het dak? Ook het vergelijken van panden en hun attributen uit verschillende registraties WOZ en BAG: Welke object pas niet in het rijtje? (figuur ?). 
 
-<figure id="Figuur_x"> 
+<figure id="Figuur_4"> 
 <a href="media/rotterdam image3.png" target="_blank"><img src="media/rotterdam image3.png" alt=""></a>
 <figcaption>Alle hoekwoningen in de wijk Ommoord</figcaption>
 </figure>
 
-
-<figure id="Figuur_x"> 
+<figure id="Figuur_5"> 
 <a href="media/rotterdam image4.png" target="_blank"><img src="media/rotterdam image4.png" alt=""></a>
 <figcaption>3D Tiles ingezet voor het vergelijken van pandattributen uit WOZ en BAG</figcaption>
 </figure>
 
 De 3D tilesets bevatten ook panden als geheel en kunnen de verblijfsobjecten in de toekomst ook identificeren en informatie over de verblijfsobjecten opvraagbaar maken (zie figuur ?).
 
-<figure id="Figuur_x"> 
+<figure id="Figuur_6"> 
 <a href="media/rotterdam image5.png" target="_blank"><img src="media/rotterdam image5.png" alt=""></a>
 <figcaption>3D Tiles ingezet voor het identificeren en opvraagbaar maken van informatie over verblijfsobjecten</figcaption>
 </figure>
