@@ -6,12 +6,12 @@ De toepassing van 3D Tiles vinden we al terug in verschillende applicaties en 3D
 3D Tiles worden gebruikt in de toepassing Circulaire Grondstromen (BRO praktijkvoorbeeld) om complexe en gedetailleerde 3D informatie over grond- en bouwmaterialen efficiënt te visualiseren en te beheren. Dit helpt bij het monitoren, plannen en optimaliseren van het hergebruik van materialen binnen een circulaire economie. Door 3D Tiles in te zetten, kunnen verschillende stakeholders eenvoudig toegang krijgen tot actuele en nauwkeurige data, wat bijdraagt aan een beter begrip van materiaalstromen en bevordert de samenwerking tussen partijen. 
 In de toepassing Circulaire Grondstromen gemaakt met CesiumJS zorgt 3D Tiles ervoor dat de prestaties van de webviewer worden gemaximaliseerd. Het proces van het converteren van data naar 3D-tegels binnen de toepassing Circulaire Grondstromen varieert afhankelijk van de databron (zie figuur ); de 3D tegels worden toegepast voor diverse typen data, zoals het DTB, puntenwolken, basisregistraties en BRO modellen en orthofoto’s. 
 
-<figure id="Figuur_1">
+<figure id="Figuur_x">
 <a href="media/geodan image1.png" target="_blank"><img src="media/geodan image1.png" alt=""></a>
 <figcaption>3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)</figcaption>
 </figure>
 
-<figure id="Figuur_2">
+<figure id="Figuur_x">
 <a href="media/geodan image2.png" target="_blank"><img src="media/geodan image2.png" alt=""></a>
 <figcaption>3D Tiles weergave bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)</figcaption>
 </figure>
@@ -24,14 +24,14 @@ De gemeente Rotterdam stelt het 3D-stadsmodel van Rotterdam vrij ter beschikking
 
 In de onderstaande figuren zijn enkele voorbeelden opgenomen van het 3D Tiles in Rotterdam 3D. In figuur 2 zijn de getextureerde gebouwen tezamen met de getextureerde bomen op een luchtfoto afgebeeld. Hierdoor creëer je al snel een ‘realistisch’ digitaal beeld van de stad.
 
-<figure id="Figuur_3"> 
+<figure id="Figuur_x"> 
 <a href="media/rotterdam image1.png" target="_blank"><img src="media/rotterdam image1.png" alt=""></a>
 <figcaption>3D Tiles visualisatie van getextureerde gebouwen en bomen in Rotterdam 3D (bron: gemeente Rotterdam)</figcaption>
 </figure>
 
 Benieuwd of er nog een plaatsje vrij is onder de straat voor een ondergrondse vuilcontainer? 3D Rotterdam biedt de mogelijkheden voor een kijkje in de ondergrond (figuur 3).
 
-<figure id="Figuur_4"> 
+<figure id="Figuur_x"> 
 <a href="media/rotterdam image2.png" target="_blank"><img src="media/rotterdam image2.png" alt=""></a>
 <figcaption>Een 3D Tiles kijkje in de Rotterdamse ondergrond (bron: gemeente Rotterdam)</figcaption>
 </figure>
@@ -98,7 +98,7 @@ doormiddel van de voxels van het gehele wegdek (Figuur B).
 
 <figure id="Figuur_x"> 
 <a href="media/726ce491e4eb25da71ea0c1ec6e1d99c.png" target="_blank"><img src="media/726ce491e4eb25da71ea0c1ec6e1d99c.png" alt=""></a>
-<figcaption>3D Tiles ingezet voor het weeregeven van point clouds (bron: Rijkswaterstaat)</figcaption>
+<figcaption>3D Tiles ingezet voor het weergegeven van point clouds (bron: Rijkswaterstaat)</figcaption>
 </figure>
 
 Figuur B laat het belang zien van het ontsluitingsvraagstuk van dit type dataset
