@@ -11,6 +11,11 @@ blockquote
   font-weight: bold !important;
   font-size: 1.2em !important;
   color: white;
+      border-left-width: 0.5em;
+    border-left-style: solid;
+    border-color: #0F80CC;
+    background: #e8f3fa;
+    counter-increment: dfn-counter 1;
 }
 
 /*-- Optioneel een symbool voor de blockquote --------------------------------------*/
