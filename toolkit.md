@@ -150,117 +150,132 @@ Voor een overzicht van nog meer viewers, zie
 
 #### Cesium
 
-Cesium is een krachtige open-source JavaScript-bibliotheek voor het maken van
-3D-kaarten in de browser. Het biedt ondersteuning voor het laden en weergeven
-van 3D Tiles, waardoor gebruikers complexe 3D-gegevenssets kunnen visualiseren
-en analyseren in hun webapplicaties.
-
-<https://github.com/CesiumGS/cesium>
+[Cesium](https://github.com/CesiumGS/cesium) is een krachtige open-source
+JavaScript-bibliotheek voor het maken van 3D-kaarten in de browser. Het biedt
+ondersteuning voor het laden en weergeven van 3D Tiles, waardoor gebruikers
+complexe 3D-gegevenssets kunnen visualiseren en analyseren in hun
+webapplicaties.
 
 #### MapboxGL
 
-MapboxGL is een JavaScript-bibliotheek die wordt gebruikt voor het maken van
-dynamische, interactieve kaarten. Het ondersteunt de weergave van 3D Tiles,
-waardoor gebruikers gedetailleerde en realistische 3D-kaarten kunnen maken met
-behulp van Mapbox-platform.
-
-<https://github.com/Geodan/mapbox-3dtiles>
+[MapboxGL](https://github.com/Geodan/mapbox-3dtiles) is een
+JavaScript-bibliotheek die wordt gebruikt voor het maken van dynamische,
+interactieve kaarten. Het ondersteunt de weergave van 3D Tiles, waardoor
+gebruikers gedetailleerde en realistische 3D-kaarten kunnen maken met behulp van
+Mapbox-platform.
 
 #### Unity
 
-Unity is een populaire game-engine die wordt gebruikt voor het maken van 3D- en
-2D-games, simulaties en visualisaties. Met de Unity engine kunnen ontwikkelaars
-3D Tiles integreren om complexe geografische gegevenssets te visualiseren en
-interactieve 3D-omgevingen te creëren.
-
-<https://unity.com/>
+[Unity](https://unity.com/) is een populaire game-engine die wordt gebruikt voor
+het maken van 3D- en 2D-games, simulaties en visualisaties. Met de Unity engine
+kunnen ontwikkelaars 3D Tiles integreren om complexe geografische gegevenssets
+te visualiseren en interactieve 3D-omgevingen te creëren.
 
 #### Unreal Engine
 
-Unreal Engine is een krachtige game-engine die wordt gebruikt voor het maken van
-hoogwaardige 3D-content, waaronder games, simulaties en visualisaties. Het
-ondersteunt de integratie van 3D Tiles, waardoor ontwikkelaars gedetailleerde en
-realistische 3D-omgevingen kunnen maken met behulp van de Unreal Engine.
-
-<https://www.unrealengine.com/>
+[Unreal Engine](https://www.unrealengine.com/) is een krachtige game-engine die
+wordt gebruikt voor het maken van hoogwaardige 3D-content, waaronder games,
+simulaties en visualisaties. Het ondersteunt de integratie van 3D Tiles,
+waardoor ontwikkelaars gedetailleerde en realistische 3D-omgevingen kunnen maken
+met behulp van de Unreal Engine.
 
 #### deck.gl
 
-dec**k.gl** is een op WebGL gebaseerde 3D-rendering-engine die wordt gebruikt
-voor het maken van geavanceerde 3D-visualisaties in de browser. Het ondersteunt
-de weergave van 3D Tiles, waardoor gebruikers gedetailleerde en interactieve
-3D-gegevenssets kunnen bekijken en analyseren.
-
-<https://deck.gl/docs/api-reference/geo-layers/tile-3d-layer>
+[dec**k.gl**](https://deck.gl/docs/api-reference/geo-layers/tile-3d-layer) is
+een op WebGL gebaseerde 3D-rendering-engine die wordt gebruikt voor het maken
+van geavanceerde 3D-visualisaties in de browser. Het ondersteunt de weergave van
+3D Tiles, waardoor gebruikers gedetailleerde en interactieve 3D-gegevenssets
+kunnen bekijken en analyseren.
 
 #### Esri JavaScript SDK / ArcGIS Server
 
-De Esri JavaScript API biedt een krachtig platform voor het maken van
-webmapping-applicaties. Het ondersteunt de integratie van 3D Tiles, waardoor
-ontwikkelaars complexe 3D-gegevenssets kunnen visualiseren en analyseren in hun
-webapplicaties.
-
-<https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMesh3DTilesLayer.html>
+De [Esri JavaScript
+API](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMesh3DTilesLayer.html)
+biedt een krachtig platform voor het maken van webmapping-applicaties. Het
+ondersteunt de integratie van 3D Tiles, waardoor ontwikkelaars complexe
+3D-gegevenssets kunnen visualiseren en analyseren in hun webapplicaties.
 
 #### 3d-tiles-renderer
 
-3DtilesRendererJS is een JavaScript-bibliotheek die is ontworpen voor het
-renderen van 3D Tiles in webapplicaties. Het biedt ondersteuning voor het laden
-en weergeven van 3D-gegevenssets, waardoor ontwikkelaars gedetailleerde en
-interactieve 3D-visualisaties kunnen maken in de browser.
-
-<https://github.com/NASA-AMMOS/3DTilesRendererJS>
+[3DtilesRendererJS](https://github.com/NASA-AMMOS/3DTilesRendererJS) is een
+JavaScript-bibliotheek die is ontworpen voor het renderen van 3D Tiles in
+webapplicaties. Het biedt ondersteuning voor het laden en weergeven van
+3D-gegevenssets, waardoor ontwikkelaars gedetailleerde en interactieve
+3D-visualisaties kunnen maken in de browser.
 
 ### Generators en servers
 
+#### Tyler
+
+[Tyler](https://github.com/3DGI/tyler) is een innovatieve tool die speciaal is
+ontworpen om 3D-tegels te maken van 3D-stadsobjecten. Het biedt een efficiënte
+manier om CityJSON-functies om te zetten in geavanceerde 3D Tiles v1.1-formaat,
+wat essentieel is voor het visualiseren en beheren van stedelijke gegevens in
+drie dimensies.
+
+Tyler neemt CityJSON-functies als invoer, waarbij elke functie afzonderlijk
+wordt opgeslagen in een apart bestand. Vervolgens genereert Tyler 3D Tiles v1.1
+als uitvoer. De belangrijkste kenmerken van de 3D Tiles-uitvoer zijn:
+
+-   Binaire glTF (.glb): De inhoud van de tileset is in binair glTF-formaat.
+
+-   Feature Metadata: De glTF-assets bevatten metadata per CityObject,
+    gebruikmakend van EXT_mesh_features en EXT_structural_metadata extensies.
+
+-   Ingekleurde Objecten: De objecten zijn voorzien van standaardkleuren, die
+    per CityObject-type kunnen worden aangepast.
+
+-   Compressie: De glTF-bestanden zijn gecomprimeerd met behulp van
+    KHR_mesh_quantization en EXT_meshopt_compression extensies.
+
+-   Impliciete Tiling: Ondersteuning voor impliciete tegelstructuren is
+    optioneel beschikbaar.
+
 #### pg2b3dm
 
-pg2b3dm is een tool waarmee 3D-geometrieën vanuit PostGIS kunnen worden omgezet
-naar 3D Tiles. De gegenereerde 3D Tiles kunnen worden gevisualiseerd in Cesium
-JS, Cesium for Unreal, Cesium for Unity3D, Cesium for Omniverse, QGIS, ArcGIS
-Pro, ArcGIS Maps SDK for JavaScript, Mapbox GL JS v3 (experimenteel) of andere
-3D Tiles client viewers.
-
-<https://github.com/Geodan/pg2b3dm>
+[pg2b3dm](https://github.com/Geodan/pg2b3dm) is een tool waarmee 3D-geometrieën
+vanuit PostGIS kunnen worden omgezet naar 3D Tiles. De gegenereerde 3D Tiles
+kunnen worden gevisualiseerd in Cesium JS, Cesium for Unreal, Cesium for
+Unity3D, Cesium for Omniverse, QGIS, ArcGIS Pro, ArcGIS Maps SDK for JavaScript,
+Mapbox GL JS v3 (experimenteel) of andere 3D Tiles client viewers.
 
 #### VCS
 
-Virtual City Systems biedt een krachtige tool voor het genereren van 3D Tiles
-genaamd "CityServer3D". Met CityServer3D kunnen gebruikers eenvoudig 3D-gegevens
-van verschillende bronnen importeren en converteren naar het 3D Tiles-formaat.
-De gegenereerde 3D Tiles kunnen vervolgens worden geïntegreerd in verschillende
-3D-georuimtelijke toepassingen en worden gevisualiseerd in populaire 3D
-Tiles-clients zoals Cesium, Mapbox GL JS en andere. CityServer3D biedt ook
-geavanceerde functionaliteiten voor het beheren, analyseren en presenteren van
-3D-gegevens op schaalbare en efficiënte wijze.
-
-<https://vc.systems/en/>
+[Virtual City Systems](https://vc.systems/en/) biedt een krachtige tool voor het
+genereren van 3D Tiles genaamd "CityServer3D". Met CityServer3D kunnen
+gebruikers eenvoudig 3D-gegevens van verschillende bronnen importeren en
+converteren naar het 3D Tiles-formaat. De gegenereerde 3D Tiles kunnen
+vervolgens worden geïntegreerd in verschillende 3D-georuimtelijke toepassingen
+en worden gevisualiseerd in populaire 3D Tiles-clients zoals Cesium, Mapbox GL
+JS en andere. CityServer3D biedt ook geavanceerde functionaliteiten voor het
+beheren, analyseren en presenteren van 3D-gegevens op schaalbare en efficiënte
+wijze.
 
 #### 3D GeoVolumes
 
-De OGC API – 3D GeoVolumes is een krachtige serveroplossing voor het serveren
-van 3D Tiles. Met deze server kunnen 3D-gegevenssets efficiënt worden gehost en
-toegankelijk gemaakt voor gebruik in verschillende 3D-applicaties. Door het
-gebruik van de OGC API-standaard kunnen 3D Tiles datasets eenvoudig worden
-gepubliceerd en gedeeld met andere gebruikers. GeoVolumes biedt een robuuste
-infrastructuur voor het leveren van 3D-gegevens op schaal, waardoor het ideaal
-is voor het hosten van grote 3D-modellen en het ondersteunen van geavanceerde
-3D-toepassingen.
-
-<https://ogcapi.ogc.org/geovolumes/>
+De [OGC API – 3D GeoVolumes](https://ogcapi.ogc.org/geovolumes/) is een
+krachtige serveroplossing voor het serveren van 3D Tiles. Met deze server kunnen
+3D-gegevenssets efficiënt worden gehost en toegankelijk gemaakt voor gebruik in
+verschillende 3D-applicaties. Door het gebruik van de OGC API-standaard kunnen
+3D Tiles datasets eenvoudig worden gepubliceerd en gedeeld met andere
+gebruikers. GeoVolumes biedt een robuuste infrastructuur voor het leveren van
+3D-gegevens op schaal, waardoor het ideaal is voor het hosten van grote
+3D-modellen en het ondersteunen van geavanceerde 3D-toepassingen.
 
 ## 3D Tile Datasets en websites
 
 ### 3D basisvoorziening Kadaster
 
-De 3D Basisvoorziening van het Kadaster is beschikbaar op schaalniveaus tussen
-1:500 en 1:10.000. De gegevens worden geleverd als dataset per kaartblad,
-waarbij u zelf het gewenste kaartblad kunt selecteren op de kaart van Nederland.
-De gegevens worden geleverd in een zip-bestand, waarin een CityJSON-bestand is
-opgenomen. Een kaartbladbestand van het 3D Basisbestand Volledig is ongeveer
-200-700 MB groot. De kaartbladbestanden van het 3D Basisbestand Gebouwen zijn
-aanzienlijk kleiner, terwijl het 3D Hoogtestatistieken Gebouwen als één bestand
-voor heel Nederland wordt geleverd in GeoPackage 1.2.
+De [3D Basisvoorziening van het
+Kadaster](https://api.pdok.nl/kadaster/3d-basisvoorziening/ogc/v1_0) is
+beschikbaar op schaalniveaus tussen 1:500 en 1:10.000. De gegevens worden
+geleverd als dataset per kaartblad, waarbij u zelf het gewenste kaartblad kunt
+selecteren op de kaart van Nederland. De gegevens worden geleverd in een
+zip-bestand, waarin een CityJSON-bestand is opgenomen. Een kaartbladbestand van
+het 3D Basisbestand Volledig is ongeveer 200-700 MB groot. De kaartbladbestanden
+van het 3D Basisbestand Gebouwen zijn aanzienlijk kleiner, terwijl het 3D
+Hoogtestatistieken Gebouwen als één bestand voor heel Nederland wordt geleverd
+in GeoPackage 1.2.
 
 De 3D Basisvoorziening kan worden toegepast voor verschillende doeleinden, zoals
 het maken van 3D-visualisaties, het uitvoeren van analyses van geluidsmodellen,
@@ -270,14 +285,13 @@ projecten in het kader van de nieuwe Omgevingswet. Daarnaast is het een
 waardevol visueel hulpmiddel in de communicatie met burgers over de impact van
 plannen op de omgeving.
 
-<https://api.pdok.nl/kadaster/3d-basisvoorziening/ogc/v1_0>
-
 ### 3D Tiles Nederland
 
-3DTilesNederland.nl is een samenwerkingsverband tussen de Vereniging van
-Nederlandse Gemeenten (VNG) en de gemeenten Rotterdam, Amsterdam en Den Haag. De
-website zet zich in om het verzamelen, beheren en benutten van 3D-data binnen
-gemeenten te bevorderen en te ondersteunen.
+[3DTilesNederland.nl](https://3dtilesnederland.nl/3d-tilesets/) is een
+samenwerkingsverband tussen de Vereniging van Nederlandse Gemeenten (VNG) en de
+gemeenten Rotterdam, Amsterdam en Den Haag. De website zet zich in om het
+verzamelen, beheren en benutten van 3D-data binnen gemeenten te bevorderen en te
+ondersteunen.
 
 Het streven is om gemeenten te helpen bij het gestandaardiseerd beschikbaar
 stellen van lokaal ingewonnen 3D-data door gebruik te maken van de
@@ -291,12 +305,9 @@ en Unity (Netherlands 3D) waarmee gemeenten realistische virtuele tours,
 simulaties en trainingen kunnen ontwikkelen om burgers te informeren en
 betrekken bij stadsplanning en andere gemeentelijke projecten.
 
-<https://3dtilesnederland.nl/3d-tilesets/>
-
 ### Netherlands3D
 
-Netherlands3D is een open-source Digitaal Twin-framework dat is ontworpen voor
-Nederland. Met Netherlands3D kun je gedetailleerde, op data gebaseerde modellen
-maken door middel van data visualisatie.
-
-<https://netherlands3d.eu/>
+[Netherlands3D](https://netherlands3d.eu/) is een open-source Digitaal
+Twin-framework dat is ontworpen voor Nederland. Met Netherlands3D kun je
+gedetailleerde, op data gebaseerde modellen maken door middel van data
+visualisatie.
