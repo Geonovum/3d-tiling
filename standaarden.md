@@ -29,7 +29,19 @@ een boom. Elke tegelset wordt beschreven door minstens één JSON-bestand met
 metadata en een hiërarchie van tegelobjecten, waarvan elke tegel renderbare
 inhoud kan bevatten.
 
-*Voorbeeld*
+```mermaid
+graph LR;
+    data{3D Tiles} --> tileset.json;
+    tileset.json --> 1.0
+    tileset.json --> 1.1
+    1.0 --> b3dm
+    1.0 --> cmpt
+    1.0 --> pnts
+    1.0 --> i3dm
+    1.1 --> shp("glTF 2.0")
+    b3dm --> shp("glTF 2.0")
+    i3dm --> shp("glTF 2.0")
+```
 
 ## Tegelformaten
 
@@ -39,7 +51,10 @@ geometrie, textuurinformatie en kan worden uitgebreid met metadata,
 model-instanciëring en compressie. Het ondersteunt verschillende soorten
 3D-inhoud zoals 3D-modellen en puntenwolken.
 
-*Voorbeeld GLTF*
+<figure id="Figuur_5"> 
+<a href="media/huis.png" target="_blank"><img src="media/huis.png" alt=""></a>
+<figcaption>3D model van een huis in glTF 2.0 formaat</figcaption>
+</figure>
 
 Naast glTF ondersteunt 3D Tiles ook de volgende tegelformaten:
 
@@ -93,7 +108,10 @@ de details van het object nauwkeurig weer te geven. Een hogere fout betekent dat
 het programma eerder beslist om de tegel te verfijnen en de details weer te
 geven.
 
-*Voorbeeld geometric error*
+<figure id="Figuur_6"> 
+<a href="media/geometric_error.png" target="_blank"><img src="media/geometric_error.png" alt=""></a>
+<figcaption>Geometric error gedefinieerd in bestand tileset.json, op tileset en root tile niveau</figcaption>
+</figure>
 
 ## Implicit tiling
 
