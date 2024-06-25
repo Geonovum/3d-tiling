@@ -110,7 +110,7 @@ geven.
 
 <figure id="Figuur_6"> 
 <a href="media/geometric_error.png" target="_blank"><img src="media/geometric_error.png" alt=""></a>
-<figcaption>Geometric error gedefinieerd in bestand tileset.json, op tileset en root tile niveau</figcaption>
+<figcaption>Geometric error gedefinieerd in tileset.json, voor panden met verschillend detail niveau</figcaption>
 </figure>
 
 ## Implicit tiling
