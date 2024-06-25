@@ -82,14 +82,13 @@ Voor het serveren van 3D Tiles zijn er in het algemeen twee standaarden.
 
 ### OGC 3D Tiles specification
 
-[OGC 3D Tiles](https://docs.ogc.org/cs/22-025r4/22-025r4.html) is een standaard
+[OGC 3D Tiles](https://docs.ogc.org/cs/22-025r4/22-025r4.html) is een OGC community standaard
 voor het efficiënt streamen en renderen van grote driedimensionale
-georuimtelijke datasets, zoals fotogrammetrie, BIM/CAD-modellen en puntenwolken.
+ruimtelijke datasets, waaronder 3D objecten, fotogrammetrie, BIM/CAD-modellen en puntenwolken.
 Het definieert een gegevensstructuur en tegelformaten voor renderbare inhoud
 zonder strikte visualisatieregels.
 
-3D Tiles wordt beheerd door het Open Geospatial Consortium (OGC). De standaard
-komt
+3D Tiles is ontwikkeld door Cesium en wordt beheerd door het Open Geospatial Consortium (OGC).  
 
 Een 3D Tiles-dataset (tileset) bevat diverse tegelformaten georganiseerd in een
 ruimtelijke structuur. Het is declaratief, uitbreidbaar en geschikt voor
@@ -105,7 +104,7 @@ leveranciers of technologieën.
 [I3S](https://www.ogc.org/standard/i3s/) staat voor Indexed 3D Scene Layer en is
 een open standaard die is ontwikkeld door Esri voor het efficiënt opslaan, delen
 en weergeven van grote en complexe driedimensionale georuimtelijke gegevens. Het
-is vergelijkbaar met 3D Tiles van het Open Geospatial Consortium (OGC) en wordt
+is tevens net als 3D Tiles een community standaard van het Open Geospatial Consortium (OGC) en wordt
 vaak gebruikt binnen de GIS-gemeenschap.
 
 I3S is geoptimaliseerd voor het werken met gegevens in de context van
