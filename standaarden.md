@@ -1,8 +1,6 @@
 ## Standaard OGC 3D Tiles
 
-Dit hoofdstuk gaat in op enkele standaarden en techniek voor 3D Tiling.
-
-Deze paragraaf geeft een beschrijving van de belangrijkste onderdelen van de OGC
+Dit hoofdstuk geeft een beschrijving van de belangrijkste onderdelen van de OGC
 3D Tiles standaard.
 
 ## Introductie
