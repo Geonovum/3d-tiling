@@ -7,7 +7,7 @@ De toepassing van 3D Tiles vinden we al terug in verschillende applicaties en 3D
 In de toepassing Circulaire Grondstromen gemaakt met CesiumJS zorgt 3D Tiles ervoor dat de prestaties van de webviewer worden gemaximaliseerd. Het proces van het converteren van data naar 3D-tegels binnen de toepassing Circulaire Grondstromen varieert afhankelijk van de databron (zie figuur ); de 3D tegels worden toegepast voor diverse typen data, zoals het DTB, puntenwolken, basisregistraties en BRO modellen en orthofoto’s. 
 
 <figure id="Figuur_x">
-<a href="media/geodan_image1.png" target="_blank"><img src="media/geodan_image1.png" alt="3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)"></a>
+<a href="media/geodan_image1.png" target="_blank"><img src="media/geodan_image1_weg.png" alt="3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)"></a>
 <figcaption>3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)</figcaption>
 </figure>
 
