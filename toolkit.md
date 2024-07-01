@@ -156,6 +156,14 @@ ondersteuning voor het laden en weergeven van 3D Tiles, waardoor gebruikers
 complexe 3D-gegevenssets kunnen visualiseren en analyseren in hun
 webapplicaties.
 
+Voorbeeld code:
+
+```javascript
+ var tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
+     url : 'tileset.json'
+}));
+```
+
 #### MapboxGL
 
 [MapboxGL](https://github.com/Geodan/mapbox-3dtiles) is een
@@ -187,6 +195,20 @@ van geavanceerde 3D-visualisaties in de browser. Het ondersteunt de weergave van
 3D Tiles, waardoor gebruikers gedetailleerde en interactieve 3D-gegevenssets
 kunnen bekijken en analyseren.
 
+Voorbeeld code:
+
+```javascript
+const TILESET_URL = `tileset.json`;
+
+const tile3DLayer = new Tile3DLayer({
+    id: 'tile-3d-layer',
+    pointSize: 2,
+    data: TILESET_URL
+});
+
+return <DeckGL initialViewState={initialViewState} controller={true} layers={[tile3DLayer]} />;
+  ```
+
 #### Esri JavaScript SDK / ArcGIS Server
 
 De [Esri JavaScript
@@ -194,6 +216,13 @@ API](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-I
 biedt een krachtig platform voor het maken van webmapping-applicaties. Het
 ondersteunt de integratie van 3D Tiles, waardoor ontwikkelaars complexe
 3D-gegevenssets kunnen visualiseren en analyseren in hun webapplicaties.
+
+Voorbeeld code: 
+
+```javascript
+const layer = new IntegratedMesh3DTilesLayer({url: "tileset.json",title: "3D Tiles"});
+webscene.add(layer);
+```
 
 #### QGIS
 
@@ -206,6 +235,24 @@ JavaScript-bibliotheek die is ontworpen voor het renderen van 3D Tiles in
 webapplicaties. Het biedt ondersteuning voor het laden en weergeven van
 3D-gegevenssets, waardoor ontwikkelaars gedetailleerde en interactieve
 3D-visualisaties kunnen maken in de browser.
+
+Voorbeeld code: 
+
+```javascript
+const tilesRenderer = new TilesRenderer( 'tileset.json' );
+tilesRenderer.setCamera( camera );
+tilesRenderer.setResolutionFromRenderer( camera, renderer );
+scene.add( tilesRenderer.group );
+
+renderLoop();
+
+function renderLoop() {
+	requestAnimationFrame( renderLoop );
+	camera.updateMatrixWorld();
+	tilesRenderer.update();
+	renderer.render( scene, camera );
+}
+```
 
 ### Generators en servers
 
