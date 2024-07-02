@@ -147,6 +147,16 @@ Circulaire Grondstromen varieert afhankelijk van de databron (zie figuur ?); de
 3D tegels worden toegepast voor diverse typen data, zoals het DTB, puntenwolken,
 basisregistraties en BRO modellen en orthofoto’s.
 
+<figure id="Figuur_x">
+<a href="media/geodan_image1.png" target="_blank"><img src="media/geodan_image1.png" alt="3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)"></a>
+<figcaption>3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)</figcaption>
+</figure>
+
+<figure id="Figuur_x">
+<a href="media/geodan_image2.png" target="_blank"><img src="media/geodan_image2.png" alt="3D Tiles weergave bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)"></a>
+<figcaption>3D Tiles weergave bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)</figcaption>
+</figure>
+
 Bronnen: [BRO praktijkvoorbeeld circulaire
 grondstromen](https://basisregistratieondergrond.nl/doe-mee/begin-dag-bro-tje/bro-tjes-2024/11-januari-2024/datagedreven-duurzamer-her-gebruik-grond/),
 [Storymap over circulaire
@@ -185,17 +195,26 @@ Met behulp van een 3D viewer, die alleen beschikbaar is voor de medewerkers van 
 
 De 3D tilesets bevatten ook panden als geheel en kunnen de verblijfsobjecten in de toekomst ook identificeren en informatie over de verblijfsobjecten opvraagbaar maken (zie figuur ?).
 
-<figure id="Figuur_6"> 
-<a href="media/rotterdam image5.png" target="_blank"><img src="media/rotterdam image5.png" alt=""></a>
-<figcaption>3D Tiles ingezet voor het identificeren en opvraagbaar maken van informatie over verblijfsobjecten</figcaption>
-</figure>
-
 Bronnen: [www.3drotterdam.nl](http://www.3drotterdam.nl)
 
 
 ### Wateroverlast door extreme buien
 
-Lorem ipsum dolor sit amet.
+De hydrodynamische modelleringssoftware 3Di wordt, onder andere, gebruikt voor het voorspellen van wateroverlast. De software kan de effecten van hevige neerslag, en of een dijkdoorbraak in kaart brengen. . De rekenmodellen zijn opgebouwd uit gedetailleerde 2D informatie, zoals de hoogte van het maaiveld. Maar kunnen ook uitgebreid worden met 1D om bijvoorbeeld in de stad de riolering op een goede manier mee te nemen. Deze combinatie levert een hoge nauwkeurigheid en vergroot de toepasbaarheid.
+ 
+Met behulp van 3D Tiles kan wateroverlast gevisualiseerd in een realistische 3D omgeving waardoor ook niet-water-experts deze resultaten gemakkelijk kunnen interpreteren. Denk hierbij aan bv besluitvormers die ten tijde van een calamiteit onder grote druk keuzes moeten maken. Beleidsmakers die door de steeds meer integrale aanpak met meerdere domeinen te maken krijgen. Maar ook aan burgers die geïnformeerd worden over beleid en waarbij de 3D omgeving ook kan ondersteunen in het vegroten van klimaatbewustzijn.
+ 
+Om deze 3D Tiles te kunnen gebruiken moeten de waterhoogte die 3Di voorspelt omgezet worden in ruimtelijke objecten die gerepresenteerd kunnen worden als 3D Tiles. De waterhoogte die 3Di voorspelt beschrijft de waterhoogte in een vierkant gebiedje. Door middel van interpolatie en triangulatie wordt dit omgezet in een 3D mesh en deze mesh wordt dan gerepresenteerd als 3D Tiles. Deze stappen kunnen worden uitgevoerd tijdens of na de simulatie voor iedere tijdsstap die gesimuleerd wordt.
+
+<figure id="Figuur_x"> 
+<a href="media/3Di1.png" target="_blank"><img src="media/3Di1" alt="3D Tiles ingezet voor het weergegevn van waterhoogtes"></a>
+<figcaption>3D Tiles ingezet voor het weergegeven van waterhoogtes (bron: Imagem)</figcaption>
+</figure>
+
+Wanneer deze 3D Tiles zijn gegenereerd worden deze weergegeven in de 3D representatie van de omgeving. Er is gekozen om zo min mogelijk styling informatie aan de 3D Tiles toe te voegen; dit wordt overgelaten aan de visualisatiesoftware. Door hierin dezelfde hoogtekaart te gebruiken als in de simulatie zal alleen water dat boven het maaiveld uitkomt zichtbaar zijn. De resultaten van meerdere tijdstappen zijn beschikbaar waardoor het verloop van de wateroverlast over de tijd gevisualiseerd kan worden. Dit geeft inzicht in de duur van de overlast en de snelheid waarmee de overlast verdwijnt.
+
+Bronnen:[3Di watermanagement](https://3diwatermanagement.com/)
+
 
 ### Visualisatie doorrijprofielen
 
