@@ -148,12 +148,12 @@ Circulaire Grondstromen varieert afhankelijk van de databron (zie figuur ?); de
 basisregistraties en BRO modellen en orthofoto’s.
 
 <figure id="Figuur_x">
-<a href="media/geodan_image1.png" target="_blank"><img src="media/geodan_image1.png" alt="3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)"></a>
+<a href="media/geodan image1.png" target="_blank"><img src="media/geodan image1.png" alt="3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)"></a>
 <figcaption>3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)</figcaption>
 </figure>
 
 <figure id="Figuur_x">
-<a href="media/geodan_image2.png" target="_blank"><img src="media/geodan_image2.png" alt="3D Tiles weergave bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)"></a>
+<a href="media/geodan image2.png" target="_blank"><img src="media/geodan image2.png" alt="3D Tiles weergave bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)"></a>
 <figcaption>3D Tiles weergave bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)</figcaption>
 </figure>
 
@@ -207,7 +207,7 @@ Met behulp van 3D Tiles kan wateroverlast gevisualiseerd in een realistische 3D 
 Om deze 3D Tiles te kunnen gebruiken moeten de waterhoogte die 3Di voorspelt omgezet worden in ruimtelijke objecten die gerepresenteerd kunnen worden als 3D Tiles. De waterhoogte die 3Di voorspelt beschrijft de waterhoogte in een vierkant gebiedje. Door middel van interpolatie en triangulatie wordt dit omgezet in een 3D mesh en deze mesh wordt dan gerepresenteerd als 3D Tiles. Deze stappen kunnen worden uitgevoerd tijdens of na de simulatie voor iedere tijdsstap die gesimuleerd wordt.
 
 <figure id="Figuur_x"> 
-<a href="media/3Di1.png" target="_blank"><img src="media/3Di1" alt="3D Tiles ingezet voor het weergegevn van waterhoogtes"></a>
+<a href="media/3Di image1.png" target="_blank"><img src="media/3Di image1" alt="3D Tiles ingezet voor het weergegevn van waterhoogtes"></a>
 <figcaption>3D Tiles ingezet voor het weergegeven van waterhoogtes (bron: Imagem)</figcaption>
 </figure>
 

@@ -156,14 +156,6 @@ ondersteuning voor het laden en weergeven van 3D Tiles, waardoor gebruikers
 complexe 3D-gegevenssets kunnen visualiseren en analyseren in hun
 webapplicaties.
 
-#### MapboxGL
-
-[MapboxGL](https://github.com/Geodan/mapbox-3dtiles) is een
-JavaScript-bibliotheek die wordt gebruikt voor het maken van dynamische,
-interactieve kaarten. Het ondersteunt de weergave van 3D Tiles, waardoor
-gebruikers gedetailleerde en realistische 3D-kaarten kunnen maken met behulp van
-Mapbox-platform.
-
 #### Unity
 
 [Unity](https://unity.com/) is een populaire game-engine die wordt gebruikt voor
