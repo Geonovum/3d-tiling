@@ -148,12 +148,12 @@ Circulaire Grondstromen varieert afhankelijk van de databron (zie figuur ?); de
 basisregistraties en BRO modellen en orthofoto’s.
 
 <figure id="Figuur_x">
-<a href="media/geodan image1.png" target="_blank"><img src="media/geodan image1.png" alt="3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)"></a>
+<a href="media/geodan image1.png" target="_blank"><img src="media/geodan image1.png" alt=""></a>
 <figcaption>3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)</figcaption>
 </figure>
 
 <figure id="Figuur_x">
-<a href="media/geodan image2.png" target="_blank"><img src="media/geodan image2.png" alt="3D Tiles weergave bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)"></a>
+<a href="media/geodan image2.png" target="_blank"><img src="media/geodan image2.png" alt=""></a>
 <figcaption>3D Tiles weergave bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)</figcaption>
 </figure>
 
@@ -168,7 +168,7 @@ De gemeente Rotterdam stelt het 3D-stadsmodel van Rotterdam vrij ter beschikking
 
 In de onderstaande figuren zijn enkele voorbeelden opgenomen van het 3D Tiles in Rotterdam 3D. In figuur ? zijn de getextureerde gebouwen tezamen met de getextureerde bomen op een luchtfoto afgebeeld. Hierdoor creëer je al snel een ‘realistisch’ digitaal beeld van de stad.
 
-<figure id="Figuur_2"> 
+<figure id="Figuur_x"> 
 <a href="media/rotterdam image1.png" target="_blank"><img src="media/rotterdam image1.png" alt=""></a>
 <figcaption>3D Tiles visualisatie van getextureerde gebouwen en bomen in Rotterdam 3D</figcaption>
 </figure>
@@ -228,19 +228,16 @@ uit, en is daarom afhankelijk van de data die geleverd wordt vanuit de
 leveranciers.
 
 Hiervoor zijn er eisen gesteld aan de vrije ruimtes, waarbij voor de
-hoogtemetingen een relatieve afwijking van 1 cm is vastgesteld (zie ook deze
-[link](https://www.rijkswaterstaat.nl/zakelijk/zakendoen-met-rijkswaterstaat/werkwijzen/werkwijze-in-gww/data-eisen-rijkswaterstaatcontracten/doorrijprofielen)).
+hoogtemetingen een relatieve afwijking van 1 cm is vastgesteld (zie ook bronen onder). 
 Omdat deze metingen vaak op snelwegen worden uitgevoerd, kiezen leveranciers
-steeds vaker voor het inwinnen van de vrijeruimte met behulp van mobile
+steeds vaker voor het inwinnen van de vrije ruimte met behulp van mobile
 laserscanning. Mede doordat dit een efficiënte en veilige methode van inwinning
 is. De meting resulteert in een puntenwolk dataset van een asset, waarna de
 vrije ruimtes vervolgens worden geconverteerd naar fotobestanden voor een
 weergave van de omgeving.
 
 Voor het valideren van de fotobestanden van de leverancier wordt gebruikgemaakt
-van 3D-software die ontwikkeld is door de TU Delft en Rijkswaterstaat (zie ook
-deze
-[link](http://resolver.tudelft.nl/uuid:ca9254d6-0f7b-4999-b62a-763eb5c95397)).
+van 3D-software die ontwikkeld is door de TU Delft en Rijkswaterstaat (zie bronnen onder).
 Deze software wordt ingezet om met alternatieve puntenwolken
 vergelijkingsmateriaal van hetzelfde asset te maken. Dit stelt Rijkswaterstaat
 in staat om het geleverde fotomateriaal te controleren en te verifiëren of de
@@ -249,10 +246,13 @@ omschrijvingen in de bewijsvoering (kwaliteitsrapportage) overeenkomen.
 De software is gebaseerd op het feit dat het wegdek en het brugdek/portaal
 voldoende gesegmenteerd kan worden uit de data, en dat doormiddel van B-splines
 een schatting gemaakt kan worden van de onderkant van het object. De resultaten
-kunnen op twee manieren worden weergegeven: via de dwarsdoorsnede (Figuur A) of
-doormiddel van de voxels van het gehele wegdek (Figuur B).
+kunnen op twee manieren worden weergegeven: via de dwarsdoorsnede (figuur ? links) of
+doormiddel van de voxels van het gehele wegdek (figuur ? rechts).
 
-![](media/726ce491e4eb25da71ea0c1ec6e1d99c.png)
+<figure id="Figuur_X"> 
+<a href="media/726ce491e4eb25da71ea0c1ec6e1d99c.png" target="_blank"><img src="media/726ce491e4eb25da71ea0c1ec6e1d99c.png" alt=""></a>
+<figcaption></figcaption>
+</figure>
 
 Figuur B laat het belang zien van het ontsluitingsvraagstuk van dit type dataset
 naar de verschillende projectteams en afdelingen binnen Rijkswaterstaat. Dit
@@ -261,3 +261,5 @@ een asset over tijd, zodat gerichte data inwinning kan plaatsvinden in opdracht
 van RWS wanneer een asset zich in een kritieke toestand bevindt. Daarnaast
 krijgt de gebruiker ook een inschatting in 3D om te bepalen of een speciaal
 transport zich veilig door Nederland kan verplaatsen.
+
+Bronnen: [Data-eisen doorrijprofielen](https://www.rijkswaterstaat.nl/zakelijk/zakendoen-met-rijkswaterstaat/werkwijzen/werkwijze-in-gww/data-eisen-rijkswaterstaatcontracten/doorrijprofielen), [Clearance Measurement Validation For Highway Infrastructure With Use of LiDAR Point Clouds](https://repository.tudelft.nl/record/uuid:ca9254d6-0f7b-4999-b62a-763eb5c95397)
