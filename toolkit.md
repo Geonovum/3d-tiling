@@ -243,8 +243,10 @@ kunnen worden gevisualiseerd in Cesium JS, Cesium for Unreal, Cesium for
 Unity3D, Cesium for Omniverse, QGIS, ArcGIS Pro, ArcGIS Maps SDK for JavaScript,
 Mapbox GL JS v3 (experimenteel) of andere 3D Tiles client viewers.
 
+#### I3dm.export
+
 [I3dm.export](https://github.com/Geodan/i3dm.export) i3dm.export is een consoletool waarmee 
-Instanced 3D Tiles gemaakt kunnen worden vanuit een PostGIS-tabel. Deze tegels bevatten 
+Instanced 3D Tiles gemaakt kunnen worden vanuit een PostGIS-tabel met punt geometrie. Deze tegels bevatten 
 informatie over locatie, binair glTF-model (glb), schaal, rotatie en instantie-attributen. 
 Zowel 3D Tiles 1.0 (via i3dm’s) als 3D Tiles 1.1 (via glTF extensie EXT_mesh_gpu_instancing) kunnen worden 
 gegenereerd.
