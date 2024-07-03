@@ -182,7 +182,7 @@ Benieuwd of er nog een plaatsje vrij is onder de straat voor een ondergrondse vu
 <figcaption>Een 3D Tiles kijkje in de Rotterdamse ondergrond</figcaption>
 </figure>
 
-Met behulp van een 3D viewer, die alleen beschikbaar is voor de medewerkers van de gemeente Rotterdam, zorgt 3D Tiles ervoor dat de medewerkers snel en intuïtief gegevens kunnen ophalen van assets in de stad. Dit behelst niet alleen gebouwen maar ook straatmeubilair, groenvoorziening, etc.. Vanuit het gemeentelijk datafundament, waarin onder andere de BAG, de BGT, de WOZ, de TIR en de BOR zijn opgenomen, kunnen data analyses in samenhang worden uitgevoerd en vragen worden beantwoord, zoals hoeveel hoekwoningen een wijk heeft (figuur 5) of welke panden bevatten specifieke materialen in het dak? Ook het vergelijken van panden en hun attributen uit verschillende registraties WOZ en BAG: Welke object pas niet in het rijtje? (figuur 6). 
+Met behulp van een 3D viewer, die alleen beschikbaar is voor de medewerkers van de gemeente Rotterdam, zorgt 3D Tiles ervoor dat de medewerkers snel en intuïtief gegevens kunnen ophalen van assets in de stad. Dit behelst niet alleen gebouwen maar ook straatmeubilair, groenvoorziening, etc.. Vanuit het gemeentelijk datafundament, waarin onder andere de BAG, de BGT, de WOZ, de TIR en de BOR zijn opgenomen, kunnen data analyses in samenhang worden uitgevoerd en vragen worden beantwoord, zoals hoeveel hoekwoningen een wijk heeft (figuur 5) of welke panden bevatten specifieke materialen in het dak? Ook het vergelijken van panden en hun attributen uit verschillende registraties WOZ en BAG: Welke object pas niet in het rijtje? (figuur 5). 
 
 <figure id="Figuur_4"> 
 <a href="media/rotterdam image3.png" target="_blank"><img src="media/rotterdam image3.png" alt=""></a>
@@ -195,7 +195,7 @@ Met behulp van een 3D viewer, die alleen beschikbaar is voor de medewerkers van 
 <figcaption>3D Tiles ingezet voor het vergelijken van pandattributen uit WOZ en BAG</figcaption>
 </figure>
 
-De 3D tilesets bevatten ook panden als geheel en kunnen de verblijfsobjecten in de toekomst ook identificeren en informatie over de verblijfsobjecten opvraagbaar maken (zie figuur 7).
+De 3D tilesets bevatten ook panden als geheel en kunnen de verblijfsobjecten in de toekomst ook identificeren en informatie over de verblijfsobjecten opvraagbaar maken (zie figuur 6).
 
 Bronnen: [www.3drotterdam.nl](http://www.3drotterdam.nl)
 
@@ -204,20 +204,18 @@ Bronnen: [www.3drotterdam.nl](http://www.3drotterdam.nl)
 
 De hydrodynamische modelleringssoftware 3Di wordt, onder andere, gebruikt voor het voorspellen van wateroverlast. De software kan de effecten van hevige neerslag, en of een dijkdoorbraak in kaart brengen. . De rekenmodellen zijn opgebouwd uit gedetailleerde 2D informatie, zoals de hoogte van het maaiveld. Maar kunnen ook uitgebreid worden met 1D om bijvoorbeeld in de stad de riolering op een goede manier mee te nemen. Deze combinatie levert een hoge nauwkeurigheid en vergroot de toepasbaarheid.
  
-Met behulp van 3D Tiles kan wateroverlast gevisualiseerd in een realistische 3D omgeving waardoor ook niet-water-experts deze resultaten gemakkelijk kunnen interpreteren (zie figuur 8). Denk hierbij aan bv besluitvormers die ten tijde van een calamiteit onder grote druk keuzes moeten maken. Beleidsmakers die door de steeds meer integrale aanpak met meerdere domeinen te maken krijgen. Maar ook aan burgers die geïnformeerd worden over beleid en waarbij de 3D omgeving ook kan ondersteunen in het vegroten van klimaatbewustzijn.
-
+Met behulp van 3D Tiles kan wateroverlast gevisualiseerd in een realistische 3D omgeving waardoor ook niet-water-experts deze resultaten gemakkelijk kunnen interpreteren (zie figuur 7). Denk hierbij aan bv besluitvormers die ten tijde van een calamiteit onder grote druk keuzes moeten maken. Beleidsmakers die door de steeds meer integrale aanpak met meerdere domeinen te maken krijgen. Maar ook aan burgers die geïnformeerd worden over beleid en waarbij de 3D omgeving ook kan ondersteunen in het vegroten van klimaatbewustzijn.
 
 <figure id="Figuur_x"> 
-<a href="media/3Di image1.png" target="_blank"><img src="media/3Di image1" alt=""></a>
+<a href="media/3Di image1.png" target="_blank"><img src="media/3Di image1.png" alt=""></a>
 <figcaption>3D Tiles ingezet voor het weergegeven van waterhoogtes (bron: Imagem)</figcaption>
 </figure>
 
- 
 Om deze 3D Tiles te kunnen gebruiken moeten de waterhoogte die 3Di voorspelt omgezet worden in ruimtelijke objecten die gerepresenteerd kunnen worden als 3D Tiles. De waterhoogte die 3Di voorspelt beschrijft de waterhoogte in een vierkant gebiedje. Door middel van interpolatie en triangulatie wordt dit omgezet in een 3D mesh en deze mesh wordt dan gerepresenteerd als 3D Tiles. Deze stappen kunnen worden uitgevoerd tijdens of na de simulatie voor iedere tijdsstap die gesimuleerd wordt.
 
 Wanneer deze 3D Tiles zijn gegenereerd worden deze weergegeven in de 3D representatie van de omgeving. Er is gekozen om zo min mogelijk styling informatie aan de 3D Tiles toe te voegen; dit wordt overgelaten aan de visualisatiesoftware. Door hierin dezelfde hoogtekaart te gebruiken als in de simulatie zal alleen water dat boven het maaiveld uitkomt zichtbaar zijn. De resultaten van meerdere tijdstappen zijn beschikbaar waardoor het verloop van de wateroverlast over de tijd gevisualiseerd kan worden. Dit geeft inzicht in de duur van de overlast en de snelheid waarmee de overlast verdwijnt.
 
-Bronnen:[3Di watermanagement](https://3diwatermanagement.com/)
+Bronnen: [3Di watermanagement](https://3diwatermanagement.com/)
 
 
 ### Visualisatie doorrijprofielen
@@ -250,8 +248,8 @@ omschrijvingen in de bewijsvoering (kwaliteitsrapportage) overeenkomen.
 De software is gebaseerd op het feit dat het wegdek en het brugdek/portaal
 voldoende gesegmenteerd kan worden uit de data, en dat doormiddel van B-splines
 een schatting gemaakt kan worden van de onderkant van het object. De resultaten
-kunnen op twee manieren worden weergegeven: via de dwarsdoorsnede (figuur 9 links) of
-doormiddel van de voxels van het gehele wegdek (figuur 9 rechts).
+kunnen op twee manieren worden weergegeven: via de dwarsdoorsnede (figuur 8 A) of
+doormiddel van de voxels van het gehele wegdek (figuur 8 B).
 
 <figure id="Figuur_X"> 
 <a href="media/726ce491e4eb25da71ea0c1ec6e1d99c.png" target="_blank"><img src="media/726ce491e4eb25da71ea0c1ec6e1d99c.png" alt=""></a>
