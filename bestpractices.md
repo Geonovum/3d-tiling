@@ -5,10 +5,16 @@ gebruiken van 3D tiles. Deze best practices zijn gebaseerd op de expertise en
 praktijkervaring van de auteurs met betrekking tot het genereren, serveren en
 gebruiken van 3D-tiling, zoals beschreven in deze handleiding
 
-De best practices zijn beschreven aan de hand van de volgende onderwerpen.
+De best practices zijn beschreven aan de hand van de vier volgende onderwerpen (figuur 9):
+1. Het genereren van 3D Tiles;
+2. Het valideren van 3D Tiles;
+3. Het publiceren van 3D Tiles;
+4. Het gebruiken van 3D Tiles.
 
-![Afbeelding met tekst, schermopname, Lettertype, visitekaartje Automatisch
-gegenereerde beschrijving](media/d59d1169e5eac10e98079e2e24a80e6d.jpeg)
+<figure id="Figuur_x"> 
+<a href="media/Indeling best practises.png" target="_blank"><img src="media/d59d1169e5eac10e98079e2e24a80e6d.jpeg" alt=""></a>
+<figcaption>Alle hoekwoningen in de wijk Ommoord (bron: gemeente Rotterdam)</figcaption>
+</figure>
 
 **Genereren van 3D Tiles**
 
@@ -223,11 +229,11 @@ model nauwkeurig wordt gepositioneerd in de gewenste context.
 >   Cesium wordt de hoogte bepaald ten opzichte van de ellipsoïde, terwijl
 >   hoogten in Nederland worden gemeten ten opzichte van de geoïde van het
 >   Normaal Amsterdams Peil (NAP). Dit verschil kan resulteren in een verschil
->   in hoogtemeters tussen de geoïde en de ellipsoïde.
+>   in hoogtemeters tussen de geoïde en de ellipsoïde (figuur 10).
 
 <figure id="Figuur_x"> 
 <a href="media/339c8243cd7bd7f34afeddd2c13b2422.png" target="_blank"><img src="media/339c8243cd7bd7f34afeddd2c13b2422.png" alt=""></a>
-<figcaption>3D Tiles ingezet voor het weergegeven van point clouds (bron: Rijkswaterstaat)</figcaption>
+<figcaption>Hoogtebepaling verschillen bij gebruik ellipsoïde ten opzichte van de geoïde</figcaption>
 </figure>
 
 Het is belangrijk om hiermee rekening te houden bij het visualiseren van
