@@ -5,7 +5,7 @@ gebruiken van 3D tiles. Deze best practices zijn gebaseerd op de expertise en
 praktijkervaring van de auteurs met betrekking tot het genereren, serveren en
 gebruiken van 3D-tiling, zoals beschreven in deze handleiding
 
-De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 9):
+De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 9) (zie figuur <figure id="Figuur_x">):
 
 <figure id="Figuur_x"> 
 <a href="media/Indeling best practises.png" target="_blank"><img src="media/Indeling best practises.png" alt=""></a>
