@@ -5,7 +5,7 @@ gebruiken van 3D tiles. Deze best practices zijn gebaseerd op de expertise en
 praktijkervaring van de auteurs met betrekking tot het genereren, serveren en
 gebruiken van 3D-tiling, zoals beschreven in deze handleiding
 
-De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 9) (zie figuur <figure id="Figuur_x">):
+De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 11):
 
 <figure id="Figuur_x"> 
 <a href="media/Indeling best practises.png" target="_blank"><img src="media/Indeling best practises.png" alt=""></a>
@@ -225,7 +225,7 @@ model nauwkeurig wordt gepositioneerd in de gewenste context.
 >   Cesium wordt de hoogte bepaald ten opzichte van de ellipsoïde, terwijl
 >   hoogten in Nederland worden gemeten ten opzichte van de geoïde van het
 >   Normaal Amsterdams Peil (NAP). Dit verschil kan resulteren in een verschil
->   in hoogtemeters tussen de geoïde en de ellipsoïde (figuur 10).
+>   in hoogtemeters tussen de geoïde en de ellipsoïde (figuur 12).
 
 <figure id="Figuur_x"> 
 <a href="media/339c8243cd7bd7f34afeddd2c13b2422.png" target="_blank"><img src="media/339c8243cd7bd7f34afeddd2c13b2422.png" alt=""></a>
@@ -234,7 +234,7 @@ model nauwkeurig wordt gepositioneerd in de gewenste context.
 
 Het is belangrijk om hiermee rekening te houden bij het visualiseren van
 3D-data, aangezien de hoogtecorrectie kan variëren, zelfs binnen Nederland.
-Onderstaande figuur 11 toont het hoogteverschil tussen NAP-geoide en WGS84
+Onderstaande figuur 13 toont het hoogteverschil tussen NAP-geoide en WGS84
 ellipsiode in Nederland. Het gebruik van dit hoogteverschil als Z-offset is vaak
 noodzakelijk om nauwkeurige hoogtevisualisaties te garanderen.
 
@@ -451,7 +451,7 @@ Daarom is het vaak voldoende om een statische lichtbron achter de kijker op te
 nemen, die zorgt voor een gelijkmatige verlichting van de scène zonder rekening
 te houden met het tijdstip van de dag. Dit zorgt voor consistente kleuren en
 contrasten, wat essentieel is voor een duidelijke en nauwkeurige visualisatie
-van de gegevens (zie figuur 12).
+van de gegevens (zie figuur 14).
 
 Door te kiezen voor een eenvoudige, statische belichtingsopstelling kunnen
 ontwikkelaars de prestaties van hun applicaties verbeteren en tegelijkertijd een
@@ -482,12 +482,12 @@ Hoewel de visualisatie van 3D Tiles zelf niet altijd gemakkelijk toegankelijk is
 voor alle gebruikers, is het van cruciaal belang dat de interactieve elementen
 in de browser, zoals knoppen en eventuele testen in pop-ups, voldoen aan de
 WCAG-richtlijnen. Deze richtlijnen helpen ervoor te zorgen dat webinhoud voor
-iedereen begrijpelijk en bruikbaar is, ongeacht eventuele beperkingen. Het
+iedereen begrijpelijk en bruikbaar is (figuur 15), ongeacht eventuele beperkingen. Het
 naleven van deze richtlijnen verbetert niet alleen de gebruikerservaring voor
 mensen met handicaps, maar kan ook bijdragen aan een bredere acceptatie en
 bruikbaarheid van de applicatie.
 
-<figure id="Figuur_x"> 
+<figure id="Figuur_x">
 <a href="media/c21340f6daebe690a347b9d1ea9887bf.png" target="_blank"><img src="media/c21340f6daebe690a347b9d1ea9887bf.png" alt=""></a>
 <figcaption>WCAG richtlijnen</figcaption>
 </figure>
