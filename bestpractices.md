@@ -215,7 +215,7 @@ correct uitgelijnd is met andere lagen.
 
 Het bepalen van de juiste offsetwaarde vereist meestal enige kennis van het
 coördinatensysteem van het model en het gewenste referentiesysteem, evenals
-eventuele verschillen in hoogteniveaus tussen die systemen. Het is aan te raden
+eventuele verschillen in hoogteniveaus tussen die systemen (figuur 10). Het is aan te raden
 om de offset zorgvuldig te kalibreren en te testen om ervoor te zorgen dat het
 model nauwkeurig wordt gepositioneerd in de gewenste context.
 
@@ -225,17 +225,21 @@ model nauwkeurig wordt gepositioneerd in de gewenste context.
 >   Normaal Amsterdams Peil (NAP). Dit verschil kan resulteren in een verschil
 >   in hoogtemeters tussen de geoïde en de ellipsoïde.
 
-![Afbeelding met cirkel, diagram, schermopname Automatisch gegenereerde
-beschrijving](media/339c8243cd7bd7f34afeddd2c13b2422.png)
+<figure id="Figuur_x"> 
+<a href="media/339c8243cd7bd7f34afeddd2c13b2422.png" target="_blank"><img src="media/339c8243cd7bd7f34afeddd2c13b2422.png" alt=""></a>
+<figcaption>3D Tiles ingezet voor het weergegeven van point clouds (bron: Rijkswaterstaat)</figcaption>
+</figure>
 
 Het is belangrijk om hiermee rekening te houden bij het visualiseren van
 3D-data, aangezien de hoogtecorrectie kan variëren, zelfs binnen Nederland.
-Onderstaande afbeelding toont het hoogteverschil tussen NAP-geoide en WGS84
+Onderstaande figuur 11 toont het hoogteverschil tussen NAP-geoide en WGS84
 ellipsiode in Nederland. Het gebruik van dit hoogteverschil als Z-offset is vaak
 noodzakelijk om nauwkeurige hoogtevisualisaties te garanderen.
 
-![Afbeelding met schets, tekening, kaart, kunst Automatisch gegenereerde
-beschrijving](media/80200791c0a5947c9226bb7e2e6c0c9e.png)
+<figure id="Figuur_x"> 
+<a href="media/80200791c0a5947c9226bb7e2e6c0c9e.png" target="_blank"><img src="media/80200791c0a5947c9226bb7e2e6c0c9e.png" alt=""></a>
+<figcaption>Het hoogteverschil tussen NAP-geoide en WGS84 ellipsiode in Nederland</figcaption>
+</figure>
 
 ### Optimale set aan parameters
 
@@ -341,7 +345,7 @@ van een 3D Tiles-viewer, vooral bij het laden van grote en complexe datasets.
 
 ## Valideren van 3D tiles
 
->   Valideer de 3D Tilesets.
+>   Valideer de 3D Tilesets
 
 Het is sterk aan te raden om 3D Tilesets te valideren voordat ze worden
 geserveerd. Het gebruik van een tool zoals de 3D Tiles Validator
@@ -367,7 +371,7 @@ moeten zijn voor gemakkelijke toegang tot de gegevens door gebruikers.
 
 ### Metadata
 
-Publiceer metadata van een 3D Tileset
+>   Publiceer metadata van een 3D Tileset
 
 Het publiceren van metadata van een 3D Tileset, bijvoorbeeld in het Nationaal
 Georegister, is essentieel voor het bevorderen van het gebruik en de
@@ -445,15 +449,17 @@ Daarom is het vaak voldoende om een statische lichtbron achter de kijker op te
 nemen, die zorgt voor een gelijkmatige verlichting van de scène zonder rekening
 te houden met het tijdstip van de dag. Dit zorgt voor consistente kleuren en
 contrasten, wat essentieel is voor een duidelijke en nauwkeurige visualisatie
-van de gegevens.
+van de gegevens (zie figuur 12).
 
 Door te kiezen voor een eenvoudige, statische belichtingsopstelling kunnen
 ontwikkelaars de prestaties van hun applicaties verbeteren en tegelijkertijd een
 consistente visuele ervaring bieden aan gebruikers, ongeacht het moment waarop
 ze de gegevens bekijken.
 
-![Afbeelding met kaart, schermopname, tekst, Multimediasoftware Automatisch
-gegenereerde beschrijving](media/16ca5ef04f7cfb12dbf4a794acb88d9e.png)
+<figure id="Figuur_x"> 
+<a href="media/16ca5ef04f7cfb12dbf4a794acb88d9e.png" target="_blank"><img src="media/16ca5ef04f7cfb12dbf4a794acb88d9e.png" alt=""></a>
+<figcaption>Voorbeeld van toepassing kleur en belichting (bron: Kadaster)</figcaption>
+</figure>
 
 Let op: Kleur en belichting is ook gerelateerd aan de shader. De shader bepaalt
 namelijk de relatie tussen het materiaal op de 3D-objecten en de belichting.
@@ -479,8 +485,10 @@ naleven van deze richtlijnen verbetert niet alleen de gebruikerservaring voor
 mensen met handicaps, maar kan ook bijdragen aan een bredere acceptatie en
 bruikbaarheid van de applicatie.
 
-*![Kleuren 3D Tiles Basisvoorziening
-Kadaster](media/c21340f6daebe690a347b9d1ea9887bf.png)*
+<figure id="Figuur_x"> 
+<a href="media/c21340f6daebe690a347b9d1ea9887bf.png" target="_blank"><img src="media/c21340f6daebe690a347b9d1ea9887bf.png" alt=""></a>
+<figcaption>WCAG richtlijnen</figcaption>
+</figure>
 
 ### Coördinaten van scherm/terrein en camera/doelobject
 
@@ -536,5 +544,3 @@ afstand en verhoudingen te krijgen, waardoor de ervaring aantrekkelijker en
 meeslepender wordt voor de gebruiker. Dit draagt bij aan de algehele
 professionele uitstraling van 3D-toepassingen en verhoogt de betrokkenheid van
 de gebruiker.
-
-*depthTestAgainstTerrain = true;*

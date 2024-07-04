@@ -117,10 +117,12 @@ te gebruiken, wordt er een tileset aangemaakt met bijvoorbeeld op zoomniveau 14
 de grote gebouwen, op zoomniveau 15 de middelgrote gebouwen en op zoomniveau 16
 de kleine gebouwen. Elk gebouw komt maar 1x voor in de gehele tileset. Door het
 inzoomen worden steeds meer gebouwen toegevoegd aan je view. Een nadeel is dat
-het vaak wel opvalt dat er in de verte gebouwen ontbreken.
+het vaak wel opvalt dat er in de verte gebouwen ontbreken (zie bijvoorbeeld figuur 14).
 
-![Afbeelding met kaart, Luchtfotografie, tekst Automatisch gegenereerde
-beschrijving](media/9eb82df57c2a50ab283807e3343f0e3c.jpeg)
+<figure id="Figuur_x"> 
+<a href="media/9eb82df57c2a50ab283807e3343f0e3c.jpeg" target="_blank"><img src="media/9eb82df57c2a50ab283807e3343f0e3c.jpeg" alt=""></a>
+<figcaption>Vooorbeeld Refinement toegepast voor gebouwen</figcaption>
+</figure>
 
 Als je in de verte kijkt, zie je weinig detail van gebouwen. Je kunt ervoor
 kiezen om de geometrie wat te generaliseren, zodat de tileset minder zwaar

@@ -184,18 +184,17 @@ Benieuwd of er nog een plaatsje vrij is onder de straat voor een ondergrondse vu
 
 Met behulp van een 3D viewer, die alleen beschikbaar is voor de medewerkers van de gemeente Rotterdam, zorgt 3D Tiles ervoor dat de medewerkers snel en intuïtief gegevens kunnen ophalen van assets in de stad. Dit behelst niet alleen gebouwen maar ook straatmeubilair, groenvoorziening, etc.. Vanuit het gemeentelijk datafundament, waarin onder andere de BAG, de BGT, de WOZ, de TIR en de BOR zijn opgenomen, kunnen data analyses in samenhang worden uitgevoerd en vragen worden beantwoord, zoals hoeveel hoekwoningen een wijk heeft (figuur 5) of welke panden bevatten specifieke materialen in het dak? Ook het vergelijken van panden en hun attributen uit verschillende registraties WOZ en BAG: Welke object pas niet in het rijtje? (figuur 5). 
 
-<figure id="Figuur_4"> 
+<figure id="Figuur_x"> 
 <a href="media/rotterdam image3.png" target="_blank"><img src="media/rotterdam image3.png" alt=""></a>
 <figcaption>Alle hoekwoningen in de wijk Ommoord</figcaption>
 </figure>
 
+De 3D tilesets bevatten ook panden als geheel en kunnen de verblijfsobjecten in de toekomst ook identificeren en informatie over de verblijfsobjecten opvraagbaar maken (zie figuur 6).
 
-<figure id="Figuur_5"> 
+<figure id="Figuur_x"> 
 <a href="media/rotterdam image4.png" target="_blank"><img src="media/rotterdam image4.png" alt=""></a>
 <figcaption>3D Tiles ingezet voor het vergelijken van pandattributen uit WOZ en BAG</figcaption>
 </figure>
-
-De 3D tilesets bevatten ook panden als geheel en kunnen de verblijfsobjecten in de toekomst ook identificeren en informatie over de verblijfsobjecten opvraagbaar maken (zie figuur 6).
 
 Bronnen: [www.3drotterdam.nl](http://www.3drotterdam.nl)
 
@@ -248,12 +247,12 @@ omschrijvingen in de bewijsvoering (kwaliteitsrapportage) overeenkomen.
 De software is gebaseerd op het feit dat het wegdek en het brugdek/portaal
 voldoende gesegmenteerd kan worden uit de data, en dat doormiddel van B-splines
 een schatting gemaakt kan worden van de onderkant van het object. De resultaten
-kunnen op twee manieren worden weergegeven: via de dwarsdoorsnede (figuur 8 A) of
-doormiddel van de voxels van het gehele wegdek (figuur 8 B).
+kunnen op twee manieren worden weergegeven: via de dwarsdoorsnede (figuur 8A) of
+doormiddel van de voxels van het gehele wegdek (figuur 8B).
 
 <figure id="Figuur_X"> 
 <a href="media/726ce491e4eb25da71ea0c1ec6e1d99c.png" target="_blank"><img src="media/726ce491e4eb25da71ea0c1ec6e1d99c.png" alt=""></a>
-<figcaption></figcaption>
+<figcaption>3D Tiles weergave van het wegdek via dwarsdoorsnede en voxels van het gehele wegdek (bron: Rijkswaterstaat) </figcaption>
 </figure>
 
 Figuur B laat het belang zien van het ontsluitingsvraagstuk van dit type dataset
