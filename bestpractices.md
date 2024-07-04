@@ -5,15 +5,11 @@ gebruiken van 3D tiles. Deze best practices zijn gebaseerd op de expertise en
 praktijkervaring van de auteurs met betrekking tot het genereren, serveren en
 gebruiken van 3D-tiling, zoals beschreven in deze handleiding
 
-De best practices zijn beschreven aan de hand van de vier volgende onderwerpen (figuur 9):
-1. Het genereren van 3D Tiles;
-2. Het valideren van 3D Tiles;
-3. Het publiceren van 3D Tiles;
-4. Het gebruiken van 3D Tiles.
+De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 9):
 
 <figure id="Figuur_x"> 
 <a href="media/Indeling best practises.png" target="_blank"><img src="media/d59d1169e5eac10e98079e2e24a80e6d.jpeg" alt=""></a>
-<figcaption>Alle hoekwoningen in de wijk Ommoord (bron: gemeente Rotterdam)</figcaption>
+<figcaption>Het werken met 3D Tiles</figcaption>
 </figure>
 
 **Genereren van 3D Tiles**
