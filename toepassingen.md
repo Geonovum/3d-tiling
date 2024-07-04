@@ -98,7 +98,7 @@ kunnen op twee manieren worden weergegeven: via de dwarsdoorsnede (Figuur A) of
 doormiddel van de voxels van het gehele wegdek (Figuur B).
 
 <figure id="Figuur_x"> 
-<a href="media/726ce491e4eb25da71ea0c1ec6e1d99c.png" target="_blank"><img src="media/726ce491e4eb25da71ea0c1ec6e1d99c.png" alt="3D Tiles ingezet voor het weergegeven van point clouds (bron: Rijkswaterstaat)"></a>
+<a href="media/726ce491e4eb25da71ea0c1ec6e1d99c.png" target="_blank"><img src="media/726ce491e4eb25da71ea0c1ec6e1d99c.png" alt=""></a>
 <figcaption>3D Tiles ingezet voor het weergegeven van point clouds (bron: Rijkswaterstaat)</figcaption>
 </figure>
 
