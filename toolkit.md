@@ -158,6 +158,15 @@ ondersteuning voor het laden en weergeven van 3D Tiles, waardoor gebruikers
 complexe 3D-gegevenssets kunnen visualiseren en analyseren in hun
 webapplicaties.
 
+
+Voorbeeld code:
+
+```javascript
+ var tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
+     url : 'tileset.json'
+}));
+```
+
 #### Unity
 
 [Unity](https://unity.com/) is een populaire game-engine die wordt gebruikt voor
@@ -181,6 +190,20 @@ van geavanceerde 3D-visualisaties in de browser. Het ondersteunt de weergave van
 3D Tiles, waardoor gebruikers gedetailleerde en interactieve 3D-gegevenssets
 kunnen bekijken en analyseren.
 
+Voorbeeld code:
+
+```javascript
+const TILESET_URL = `tileset.json`;
+
+const tile3DLayer = new Tile3DLayer({
+    id: 'tile-3d-layer',
+    pointSize: 2,
+    data: TILESET_URL
+});
+
+return <DeckGL initialViewState={initialViewState} controller={true} layers={[tile3DLayer]} />;
+  ```
+
 #### Esri JavaScript SDK / ArcGIS Server
 
 De [Esri JavaScript
@@ -188,6 +211,13 @@ API](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-I
 biedt een krachtig platform voor het maken van webmapping-applicaties. Het
 ondersteunt de integratie van 3D Tiles, waardoor ontwikkelaars complexe
 3D-gegevenssets kunnen visualiseren en analyseren in hun webapplicaties.
+
+Voorbeeld code: 
+
+```javascript
+const layer = new IntegratedMesh3DTilesLayer({url: "tileset.json",title: "3D Tiles"});
+webscene.add(layer);
+```
 
 #### QGIS
 
@@ -200,6 +230,24 @@ JavaScript-bibliotheek die is ontworpen voor het renderen van 3D Tiles in
 webapplicaties. Het biedt ondersteuning voor het laden en weergeven van
 3D-gegevenssets, waardoor ontwikkelaars gedetailleerde en interactieve
 3D-visualisaties kunnen maken in de browser.
+
+Voorbeeld code: 
+
+```javascript
+const tilesRenderer = new TilesRenderer( 'tileset.json' );
+tilesRenderer.setCamera( camera );
+tilesRenderer.setResolutionFromRenderer( camera, renderer );
+scene.add( tilesRenderer.group );
+
+renderLoop();
+
+function renderLoop() {
+	requestAnimationFrame( renderLoop );
+	camera.updateMatrixWorld();
+	tilesRenderer.update();
+	renderer.render( scene, camera );
+}
+```
 
 ### Generators en servers
 
@@ -236,6 +284,14 @@ vanuit PostGIS kunnen worden omgezet naar 3D Tiles. De gegenereerde 3D Tiles
 kunnen worden gevisualiseerd in Cesium JS, Cesium for Unreal, Cesium for
 Unity3D, Cesium for Omniverse, QGIS, ArcGIS Pro, ArcGIS Maps SDK for JavaScript,
 Mapbox GL JS v3 (experimenteel) of andere 3D Tiles client viewers.
+
+#### I3dm.export
+
+[I3dm.export](https://github.com/Geodan/i3dm.export) i3dm.export is een consoletool waarmee 
+Instanced 3D Tiles gemaakt kunnen worden vanuit een PostGIS-tabel met punt geometrie. Deze tegels bevatten 
+informatie over locatie, binair glTF-model (glb), schaal, rotatie en instantie-attributen. 
+Zowel 3D Tiles 1.0 (via i3dm’s) als 3D Tiles 1.1 (via glTF extensie EXT_mesh_gpu_instancing) kunnen worden 
+gegenereerd.
 
 #### VCS
 
