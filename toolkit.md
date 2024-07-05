@@ -117,7 +117,7 @@ te gebruiken, wordt er een tileset aangemaakt met bijvoorbeeld op zoomniveau 14
 de grote gebouwen, op zoomniveau 15 de middelgrote gebouwen en op zoomniveau 16
 de kleine gebouwen. Elk gebouw komt maar 1x voor in de gehele tileset. Door het
 inzoomen worden steeds meer gebouwen toegevoegd aan je view. Een nadeel is dat
-het vaak wel opvalt dat er in de verte gebouwen ontbreken (zie bijvoorbeeld figuur 14).
+het vaak wel opvalt dat er in de verte gebouwen ontbreken (zie bijvoorbeeld figuur 16).
 
 <figure id="Figuur_x"> 
 <a href="media/9eb82df57c2a50ab283807e3343f0e3c.jpeg" target="_blank"><img src="media/9eb82df57c2a50ab283807e3343f0e3c.jpeg" alt=""></a>

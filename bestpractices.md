@@ -217,7 +217,7 @@ correct uitgelijnd is met andere lagen.
 
 Het bepalen van de juiste offsetwaarde vereist meestal enige kennis van het
 coördinatensysteem van het model en het gewenste referentiesysteem, evenals
-eventuele verschillen in hoogteniveaus tussen die systemen (figuur 10). Het is aan te raden
+eventuele verschillen in hoogteniveaus tussen die systemen (figuur 12). Het is aan te raden
 om de offset zorgvuldig te kalibreren en te testen om ervoor te zorgen dat het
 model nauwkeurig wordt gepositioneerd in de gewenste context.
 
@@ -225,7 +225,7 @@ model nauwkeurig wordt gepositioneerd in de gewenste context.
 >   Cesium wordt de hoogte bepaald ten opzichte van de ellipsoïde, terwijl
 >   hoogten in Nederland worden gemeten ten opzichte van de geoïde van het
 >   Normaal Amsterdams Peil (NAP). Dit verschil kan resulteren in een verschil
->   in hoogtemeters tussen de geoïde en de ellipsoïde (figuur 12).
+>   in hoogtemeters tussen de geoïde en de ellipsoïde.
 
 <figure id="Figuur_x"> 
 <a href="media/339c8243cd7bd7f34afeddd2c13b2422.png" target="_blank"><img src="media/339c8243cd7bd7f34afeddd2c13b2422.png" alt=""></a>
