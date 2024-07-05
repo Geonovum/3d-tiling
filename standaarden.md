@@ -49,9 +49,9 @@ Het primaire tegelformaat voor 3D Tiles is glTF 2.0, een open specificatie
 ontworpen voor efficiënte transmissie en laden van 3D-inhoud. Dit formaat omvat
 geometrie, textuurinformatie en kan worden uitgebreid met metadata,
 model-instanciëring en compressie. Het ondersteunt verschillende soorten
-3D-inhoud zoals 3D-modellen en puntenwolken.
+3D-inhoud zoals 3D-modellen (figuur 9) en puntenwolken.
 
-<figure id="Figuur_5"> 
+<figure id="Figuur_x"> 
 <a href="media/huis.png" target="_blank"><img src="media/huis.png" alt=""></a>
 <figcaption>3D model van een huis in glTF 2.0 formaat</figcaption>
 </figure>
@@ -104,11 +104,11 @@ gedetailleerd genoeg is, wordt de tegel verfijnd door gedetailleerdere
 kindertegels te laden en te tonen.
 
 De grootte van de fout (*geometric error*) hangt af van hoe belangrijk het is om
-de details van het object nauwkeurig weer te geven. Een hogere fout betekent dat
+de details van het object nauwkeurig weer te geven (figuur 10). Een hogere fout betekent dat
 het programma eerder beslist om de tegel te verfijnen en de details weer te
 geven.
 
-<figure id="Figuur_6"> 
+<figure id="Figuur_10"> 
 <a href="media/geometric_error.png" target="_blank"><img src="media/geometric_error.png" alt=""></a>
 <figcaption>Geometric error gedefinieerd in tileset.json, voor panden met verschillend detail niveau</figcaption>
 </figure>
