@@ -7,8 +7,8 @@ gebruiken van 3D-tiling, zoals beschreven in deze handleiding
 
 De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 11):
 
-<figure id="Figuur_x"> 
-<a href="media/Indeling best practises.png" target="_blank"><img src="media/Indeling best practises.png" alt=""></a>
+<figure id="indelingbp"> 
+<a href="media/indeling_best_practises.png" target="_blank"><img src="media/indeling_best_practises.png" alt=""></a>
 <figcaption>Het werken met 3D Tiles</figcaption>
 </figure>
 
@@ -227,7 +227,7 @@ model nauwkeurig wordt gepositioneerd in de gewenste context.
 >   Normaal Amsterdams Peil (NAP). Dit verschil kan resulteren in een verschil
 >   in hoogtemeters tussen de geoïde en de ellipsoïde.
 
-<figure id="Figuur_x"> 
+<figure id="hoogtebepaling"> 
 <a href="media/339c8243cd7bd7f34afeddd2c13b2422.png" target="_blank"><img src="media/339c8243cd7bd7f34afeddd2c13b2422.png" alt=""></a>
 <figcaption>Hoogtebepaling verschillen bij gebruik ellipsoïde ten opzichte van de geoïde</figcaption>
 </figure>
@@ -238,7 +238,7 @@ Onderstaande figuur 13 toont het hoogteverschil tussen NAP-geoide en WGS84
 ellipsiode in Nederland. Het gebruik van dit hoogteverschil als Z-offset is vaak
 noodzakelijk om nauwkeurige hoogtevisualisaties te garanderen.
 
-<figure id="Figuur_x"> 
+<figure id="hoogteverschil"> 
 <a href="media/80200791c0a5947c9226bb7e2e6c0c9e.png" target="_blank"><img src="media/80200791c0a5947c9226bb7e2e6c0c9e.png" alt=""></a>
 <figcaption>Het hoogteverschil tussen NAP-geoide en WGS84 ellipsiode in Nederland</figcaption>
 </figure>
@@ -458,7 +458,7 @@ ontwikkelaars de prestaties van hun applicaties verbeteren en tegelijkertijd een
 consistente visuele ervaring bieden aan gebruikers, ongeacht het moment waarop
 ze de gegevens bekijken.
 
-<figure id="Figuur_x"> 
+<figure id="vbkleurbelichting"> 
 <a href="media/16ca5ef04f7cfb12dbf4a794acb88d9e.png" target="_blank"><img src="media/16ca5ef04f7cfb12dbf4a794acb88d9e.png" alt=""></a>
 <figcaption>Voorbeeld van toepassing kleur en belichting (bron: Kadaster)</figcaption>
 </figure>
@@ -487,7 +487,7 @@ naleven van deze richtlijnen verbetert niet alleen de gebruikerservaring voor
 mensen met handicaps, maar kan ook bijdragen aan een bredere acceptatie en
 bruikbaarheid van de applicatie.
 
-<figure id="Figuur_x">
+<figure id="WCAG">
 <a href="media/c21340f6daebe690a347b9d1ea9887bf.png" target="_blank"><img src="media/c21340f6daebe690a347b9d1ea9887bf.png" alt=""></a>
 <figcaption>WCAG richtlijnen</figcaption>
 </figure>

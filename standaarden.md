@@ -51,7 +51,7 @@ geometrie, textuurinformatie en kan worden uitgebreid met metadata,
 model-instanciëring en compressie. Het ondersteunt verschillende soorten
 3D-inhoud zoals 3D-modellen (figuur 9) en puntenwolken.
 
-<figure id="Figuur_x"> 
+<figure id="huis"> 
 <a href="media/huis.png" target="_blank"><img src="media/huis.png" alt=""></a>
 <figcaption>3D model van een huis in glTF 2.0 formaat</figcaption>
 </figure>

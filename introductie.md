@@ -142,8 +142,8 @@ stakeholders eenvoudig toegang krijgen tot actuele en nauwkeurige data, wat
 bijdraagt aan een beter begrip van materiaalstromen en bevordert de samenwerking
 tussen partijen (zie figuur 1). 
 
-<figure id="Figuur_x">
-<a href="media/geodan image2.png" target="_blank"><img src="media/geodan image2.png" alt=""></a>
+<figure id="bro01">
+<a href="media/geodan_image2.png" target="_blank"><img src="media/geodan_image2.png" alt=""></a>
 <figcaption>3D Tiles weergave bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)</figcaption>
 </figure>
 
@@ -154,8 +154,8 @@ Circulaire Grondstromen varieert afhankelijk van de databron (zie figuur 2); de
 3D tegels worden toegepast voor diverse typen data, zoals het DTB, puntenwolken,
 basisregistraties en BRO modellen en orthofoto’s.
 
-<figure id="Figuur_x">
-<a href="media/geodan image1.png" target="_blank"><img src="media/geodan image1.png" alt=""></a>
+<figure id="bro02">
+<a href="media/geodan_image1.png" target="_blank"><img src="media/geodan_image1.png" alt=""></a>
 <figcaption>3D Tiles gebruik bij BRO praktijkvoorbeeld Circulaire Grondstromen (bron: Geodan)</figcaption>
 </figure>
 
@@ -170,29 +170,29 @@ De gemeente Rotterdam stelt het 3D-stadsmodel van Rotterdam vrij ter beschikking
 
 In de onderstaande figuren zijn enkele voorbeelden opgenomen van het 3D Tiles in Rotterdam 3D. In figuur 3 zijn de getextureerde gebouwen tezamen met de getextureerde bomen op een luchtfoto afgebeeld. Hierdoor creëer je al snel een ‘realistisch’ digitaal beeld van de stad.
 
-<figure id="Figuur_x"> 
-<a href="media/rotterdam image1.png" target="_blank"><img src="media/rotterdam image1.png" alt=""></a>
+<figure id="rdam01"> 
+<a href="media/rotterdam_image1.png" target="_blank"><img src="media/rotterdam_image1.png" alt=""></a>
 <figcaption>3D Tiles visualisatie van getextureerde gebouwen en bomen in Rotterdam 3D</figcaption>
 </figure>
 
 Benieuwd of er nog een plaatsje vrij is onder de straat voor een ondergrondse vuilcontainer? 3D Rotterdam biedt de mogelijkheden voor een kijkje in de ondergrond (figuur 4).
 
-<figure id="Figuur_3"> 
-<a href="media/rotterdam image2.png" target="_blank"><img src="media/rotterdam image2.png" alt=""></a>
+<figure id="rdam02"> 
+<a href="media/rotterdam_image2.png" target="_blank"><img src="media/rotterdam_image2.png" alt=""></a>
 <figcaption>Een 3D Tiles kijkje in de Rotterdamse ondergrond</figcaption>
 </figure>
 
 Met behulp van een 3D viewer, die alleen beschikbaar is voor de medewerkers van de gemeente Rotterdam, zorgt 3D Tiles ervoor dat de medewerkers snel en intuïtief gegevens kunnen ophalen van assets in de stad. Dit behelst niet alleen gebouwen maar ook straatmeubilair, groenvoorziening, etc.. Vanuit het gemeentelijk datafundament, waarin onder andere de BAG, de BGT, de WOZ, de TIR en de BOR zijn opgenomen, kunnen data analyses in samenhang worden uitgevoerd en vragen worden beantwoord, zoals hoeveel hoekwoningen een wijk heeft (figuur 5) of welke panden bevatten specifieke materialen in het dak? Ook het vergelijken van panden en hun attributen uit verschillende registraties WOZ en BAG: Welke object pas niet in het rijtje? (figuur 5). 
 
-<figure id="Figuur_x"> 
-<a href="media/rotterdam image3.png" target="_blank"><img src="media/rotterdam image3.png" alt=""></a>
+<figure id="rdam03"> 
+<a href="media/rotterdam_image3.png" target="_blank"><img src="media/rotterdam_image3.png" alt=""></a>
 <figcaption>Alle hoekwoningen in de wijk Ommoord</figcaption>
 </figure>
 
 De 3D tilesets bevatten ook panden als geheel en kunnen de verblijfsobjecten in de toekomst ook identificeren en informatie over de verblijfsobjecten opvraagbaar maken (zie figuur 6).
 
-<figure id="Figuur_x"> 
-<a href="media/rotterdam image4.png" target="_blank"><img src="media/rotterdam image4.png" alt=""></a>
+<figure id="rdam04"> 
+<a href="media/rotterdam_image4.png" target="_blank"><img src="media/rotterdam_image4.png" alt=""></a>
 <figcaption>3D Tiles ingezet voor het vergelijken van pandattributen uit WOZ en BAG</figcaption>
 </figure>
 
@@ -205,8 +205,8 @@ De hydrodynamische modelleringssoftware 3Di wordt, onder andere, gebruikt voor h
  
 Met behulp van 3D Tiles kan wateroverlast gevisualiseerd in een realistische 3D omgeving waardoor ook niet-water-experts deze resultaten gemakkelijk kunnen interpreteren (zie figuur 7). Denk hierbij aan bv besluitvormers die ten tijde van een calamiteit onder grote druk keuzes moeten maken. Beleidsmakers die door de steeds meer integrale aanpak met meerdere domeinen te maken krijgen. Maar ook aan burgers die geïnformeerd worden over beleid en waarbij de 3D omgeving ook kan ondersteunen in het vegroten van klimaatbewustzijn.
 
-<figure id="Figuur_x"> 
-<a href="media/3Di image1.png" target="_blank"><img src="media/3Di image1.png" alt=""></a>
+<figure id="waterhoogtes"> 
+<a href="media/3Di_image1.png" target="_blank"><img src="media/3Di_image1.png" alt=""></a>
 <figcaption>3D Tiles ingezet voor het weergegeven van waterhoogtes (bron: Imagem)</figcaption>
 </figure>
 
@@ -250,7 +250,7 @@ een schatting gemaakt kan worden van de onderkant van het object. De resultaten
 kunnen op twee manieren worden weergegeven: via de dwarsdoorsnede (figuur 8A) of
 doormiddel van de voxels van het gehele wegdek (figuur 8B).
 
-<figure id="Figuur_X"> 
+<figure id="wegdek"> 
 <a href="media/726ce491e4eb25da71ea0c1ec6e1d99c.png" target="_blank"><img src="media/726ce491e4eb25da71ea0c1ec6e1d99c.png" alt=""></a>
 <figcaption>3D Tiles weergave van het wegdek via dwarsdoorsnede en voxels van het gehele wegdek (bron: Rijkswaterstaat) </figcaption>
 </figure>

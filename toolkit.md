@@ -119,7 +119,7 @@ de kleine gebouwen. Elk gebouw komt maar 1x voor in de gehele tileset. Door het
 inzoomen worden steeds meer gebouwen toegevoegd aan je view. Een nadeel is dat
 het vaak wel opvalt dat er in de verte gebouwen ontbreken (zie bijvoorbeeld figuur 16).
 
-<figure id="Figuur_x"> 
+<figure id="refinement"> 
 <a href="media/9eb82df57c2a50ab283807e3343f0e3c.jpeg" target="_blank"><img src="media/9eb82df57c2a50ab283807e3343f0e3c.jpeg" alt=""></a>
 <figcaption>Vooorbeeld Refinement toegepast voor gebouwen</figcaption>
 </figure>
