@@ -14,50 +14,49 @@ De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 1
 
 **Genereren van 3D Tiles**
 
-1.  [Attribuutgegevens:](https://geonovum.github.io/3d-tiling/#attribuutgegevens)
+1.  [Attribuutgegevens:](#attribuutgegevens)
     Gebruik van attribuutgegevens voor het verrijken van de 3D tiles en het
     verbeteren van de visualisatie.
 
 2.  [Explicit en implicit
-    tiling:](https://geonovum.github.io/3d-tiling/#explicit-en-implicit-tiling)
+    tiling:](#explicit-en-implicit-tiling)
     Dit betreft de methoden en structuren die worden gebruikt om tiles te
     genereren.
 
-3.  [Geometric error:](https://geonovum.github.io/3d-tiling/#geometric-error-0)
+3.  [Geometric error:](#geometric-error-0)
     Dit is een belangrijke parameter bij het genereren van tiles om de
     nauwkeurigheid van de geometrie te bepalen.
 
 4.  [Offset
-    Z-coördinaat:](https://geonovum.github.io/3d-tiling/#offset-z-coordinaat)
+    Z-coördinaat:](#offset-z-coordinaat)
     Aanpassing van de Z-coördinaat bij het genereren van tiles om nauwkeurige
     plaatsing te garanderen.
 
 5.  [Optimale set aan
-    parameters:](https://geonovum.github.io/3d-tiling/#optimale-set-aan-parameters)
+    parameters:](#optimale-set-aan-parameters)
     Dit omvat de parameters die worden ingesteld bij het genereren van tiles
     voor optimale prestaties.
 
-6.  [Shader:](https://geonovum.github.io/3d-tiling/#shader) Instellingen en
+6.  [Shader:](#shader) Instellingen en
     optimalisaties van shaders voor het weergeven van 3D tiles.
 
-7.  [Formaat:](https://geonovum.github.io/3d-tiling/#formaat) De keuze van het
+7.  [Formaat:](#formaat) De keuze van het
     formaat waarin de 3D tiles worden opgeslagen tijdens het genereren.
 
-8.  [Compressie:](https://geonovum.github.io/3d-tiling/#compressie) Technieken
+8.  [Compressie:](#compressie) Technieken
     om de gegenereerde tiles te comprimeren voor efficiëntere opslag en
     transmissie.
 
 **Valideren van 3D Tiles**
 
-1.  [Valideren van 3D
-    tiles:](https://geonovum.github.io/3d-tiling/#valideren-van-3d-tiles)
+1.  [Valideren van 3D tiles:](#valideren-van-3d-tiles)
     Methoden en tools om de juistheid en integriteit van de gegenereerde tiles
     te controleren.
 
 **Publiceren van 3D Tiles**
 
 1.  [OGC API
-    GeoVolumes:](https://geonovum.github.io/3d-tiling/#ogc-api-geovolumes)
+    GeoVolumes:](#ogc-api-geovolumes)
     Specificaties en standaarden voor het publiceren en toegankelijk maken van
     3D tiles via API's.
 
@@ -66,23 +65,23 @@ De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 1
 
 **Gebruiken van 3D Tiles**
 
-1.  [Minimal zoom:](https://geonovum.github.io/3d-tiling/#minimal-zoom) Bepalen
+1.  [Minimal zoom:](#minimal-zoom) Bepalen
     van het minimale zoomniveau waarop tiles worden weergegeven.
 
 2.  [Kleur en
-    belichting:](https://geonovum.github.io/3d-tiling/#kleur-en-belichting)
+    belichting:](#kleur-en-belichting)
     Instellingen voor kleur en belichting bij het gebruik van 3D tiles.
 
-3.  [WCAG:](https://geonovum.github.io/3d-tiling/#wcag) Overwegingen voor
+3.  [WCAG:](#wcag) Overwegingen voor
     toegankelijkheid volgens de Web Content Accessibility Guidelines bij het
     gebruik van tiles.
 
 4.  [Coördinaten van scherm/terrein en
-    camera/doelobject:](https://geonovum.github.io/3d-tiling/#coordinaten-van-scherm-terrein-en-camera-doelobject)
+    camera/doelobject:](#coordinaten-van-scherm-terrein-en-camera-doelobject)
     Beheer van coördinaten bij het weergeven en gebruiken van tiles.
 
 5.  [Diepte vlak (depth
-    plane):](https://geonovum.github.io/3d-tiling/#diepte-vlak-depth-plane)
+    plane):](#diepte-vlak-depth-plane)
     Gebruik van dieptevlakken voor correcte rendering van tiles in
     3D-omgevingen.
 
