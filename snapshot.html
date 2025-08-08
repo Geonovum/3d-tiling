@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 35.1.1">
+<meta name="generator" content="ReSpec 35.3.0">
 <style>
 .issue-label{text-transform:initial}
 .warning>p:first-child{margin-top:0}
@@ -75,7 +75,7 @@ a.bibref{text-decoration:none}
 .respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
 }
 #references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
-cite .bibref{font-style:normal}
+cite .bibref{font-style:italic}
 a[href].orcid{padding-left:4px;padding-right:4px}
 a[href].orcid>svg{margin-bottom:-2px}
 ol.tof,ul.tof{list-style:none outside none}
@@ -103,8 +103,9 @@ dd{margin-left:0}
 }
 </style>
 <style id="respec-nlgov">
-img.license{float:left;padding-right:5px}
+img.license{float:left;padding-right:5px;background:0 0}
 </style>
+<meta name="color-scheme" content="light">
 <meta name="description" content="Deze handreiking biedt een uitgebreide verkenning van 3D tiling, een techniek
 voor het efficiënt opslaan, serveren en visualiseren van driedimensionale
 gegevens.">
@@ -138,7 +139,7 @@ gegevens.">
     color: white;
     white-space: nowrap;
     z-index: 1;
-    background-color: #80CC28;
+    background-color: #FF0000;
   }
 </style>
 <script type="text/javascript">
@@ -151,6 +152,7 @@ gegevens.">
 </style>
 <script id="initialUserConfig" type="application/json">{
   "nl_organisationName": "Geonovum",
+  "nl_organisationStylesURL": "https://tools.geostandaarden.nl/respec/style/",
   "nl_organisationPublishURL": "https://docs.geostandaarden.nl/",
   "logos": [
     {
@@ -241,7 +243,7 @@ gegevens.">
       "sotd": "Status van dit document",
       "def": "Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
       "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.",
-      "cv": "Dit is een consultatieversie. Commentaar over dit document kan gestuurd worden naar ",
+      "cv": "Dit is een consultatieversie.",
       "vv": "Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
       "basis": "Dit is een document zonder officiële status.",
       "ld": "Dit is een levend document dat regelmatig gewijzigd wordt."
@@ -250,7 +252,7 @@ gegevens.">
       "sotd": "Status of this document",
       "def": "This is the definitive version of this document. Edits resulting from consultations have been applied.",
       "wv": "This is a working draft that can be changed, removed or replaced by other documents at any time. It is not a stable document.",
-      "cv": "This is a stable draft, published for public comment. Comments regarding this document may be sent to ",
+      "cv": "This is a stable draft, published for public comment.",
       "vv": "This is the final draft of this document. Edits resulting from consultations have been applied.",
       "basis": "This document has no official standing.",
       "ld": "This is a living document, which is updated regularly."
@@ -292,15 +294,1063 @@ gegevens.">
         "T. Preston-Werner"
       ],
       "date": "June 2013"
+    },
+    "MIM12": {
+      "id": "MIM12",
+      "title": "MIM - Metamodel Informatie Modellering (Versie 1.2)",
+      "href": "https://docs.geostandaarden.nl/mim/def-st-mim-20240613/",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2024-06-13"
+    },
+    "3DTILES": {
+      "title": "3D Tiles Specification 1.0",
+      "href": "http://docs.opengeospatial.org/cs/18-053r2/18-053r2.html",
+      "status": "Approved for public release",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Patrick Cozzi",
+        "Sean Lilley",
+        "Gabby Getz"
+      ],
+      "date": "2019-01-31",
+      "id": "3DTILES"
+    },
+    "adr-mod-geo": {
+      "title": "API Design rules Module: Geospatial",
+      "href": "https://docs.geostandaarden.nl/api/API-Strategie-mod-geo/",
+      "status": "Consultatieversie",
+      "publisher": "Geonovum",
+      "editors": [
+        "Linda van den Brink"
+      ],
+      "authors": [
+        "Pieter Bresters",
+        "Linda van den Brink",
+        "Paul van Genuchten",
+        "George Mathijssen",
+        "Mark Strijker"
+      ],
+      "date": "2022-09-30",
+      "id": "adr-mod-geo"
+    },
+    "CIS10": {
+      "title": "ISO 19123-2:2018 Geographic information — Schema for coverage geometry and functions — Part 2: Coverage implementation schema",
+      "href": "https://www.iso.org/standard/70948.html",
+      "status": "Published",
+      "publisher": "ISD",
+      "date": "2018-10-01",
+      "id": "CIS10"
+    },
+    "CityGML2": {
+      "title": "OGC City Geography Markup Language (CityGML) Encoding Standard",
+      "href": "https://portal.ogc.org/files/?artifact_id=47842",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Gerhard Gröger",
+        "Thomas H. Kolbe",
+        "Claus Nagel",
+        "Karl-Heinz Häfele"
+      ],
+      "date": "2012-04-04",
+      "id": "CityGML2"
+    },
+    "CityGML3": {
+      "title": "OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard v3.0",
+      "href": "https://docs.ogc.org/is/20-010/20-010.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Thomas H. Kolbe",
+        "Tatjana Kutzner",
+        "Carl Stephen Smyth",
+        "Claus Nagel",
+        "Carsten Roensdorf",
+        "Charles Heazel"
+      ],
+      "date": "2021-09-13",
+      "id": "CityGML3"
+    },
+    "CityJSON": {
+      "title": "CityJSON Community Standard 1.0",
+      "href": "https://docs.ogc.org/cs/20-072r2/20-072r2.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Hugo Ledoux"
+      ],
+      "date": "2021-08-13",
+      "id": "CityJSON"
+    },
+    "COVJSON": {
+      "title": "OGC CoverageJSON Community Standard 1.0-draft_0.2.2",
+      "href": "https://portal.ogc.org/files/102051",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Chris Little",
+        "Jon Blower",
+        "Maik Riechert"
+      ],
+      "id": "COVJSON"
+    },
+    "CSW2APISO": {
+      "title": "OpenGIS Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile",
+      "href": "http://portal.opengeospatial.org/files/?artifact_id=21460",
+      "status": [
+        "Adopted specification"
+      ],
+      "publisher": "Open Geospatial Consortium",
+      "id": "CSW2APISO"
+    },
+    "CSWISOAP": {
+      "title": "OGC 07-045r2: OGC Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile: Corrigendum, version 1.0.2",
+      "href": "https://portal.ogc.org/files/80534",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Uwe Voges",
+        "Kristian Senkler"
+      ],
+      "date": "2020-11-19",
+      "id": "CSWISOAP"
+    },
+    "DCAT-AP-2.1.1": {
+      "title": "DCAT Application Profile for data portals in Europe 2.1.1",
+      "href": "https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/releases",
+      "publisher": "European Commission",
+      "date": "2022-06-24",
+      "id": "DCAT-AP-2.1.1"
+    },
+    "epsg": {
+      "title": "EPSG Geodetic Parameter Dataset",
+      "href": "https://epsg.org/home.html",
+      "status": "Published",
+      "publisher": "Geodesy Subcommittee of the IOGP Geomatics Committee",
+      "id": "epsg"
+    },
+    "FE20": {
+      "title": "OGC 09-026r2: OGC Filter Encoding 2.0 Encoding Standard - With Corrigendum, Version 2.0.3",
+      "href": "http://docs.opengeospatial.org/is/09-026r2/09-026r2.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "Panagiotis (Peter) A. Vretanos",
+      "date": "2014-08-18",
+      "id": "FE20"
+    },
+    "GeoPackage": {
+      "title": "OGC GeoPackage Encoding Standard - with Corrigendum, v1.3.1",
+      "href": "https://www.geopackage.org/spec131/",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Jeff Yutzler"
+      ],
+      "date": "2021-11-16",
+      "id": "GeoPackage"
+    },
+    "GEOSPARQL11": {
+      "title": "OGC GeoSPARQL - A Geographic Query Language for RDF Data",
+      "href": "https://opengeospatial.github.io/ogc-geosparql/geosparql11/spec.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Nicholas J. Car",
+        "Timo Homburg",
+        "Matthew Perry",
+        "John Herring",
+        "Frans Knibbe",
+        "Simon J.D. Cox",
+        "Joseph Abhayaratna",
+        "Mathias Bonduel"
+      ],
+      "date": "2022",
+      "id": "GEOSPARQL11"
+    },
+    "GeoTIFF": {
+      "title": "OGC GeoTIFF standard v1.1",
+      "href": "http://docs.opengeospatial.org/is/19-008r4/19-008r4.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Emmanuel Devys",
+        "Ted Habermann",
+        "Chuck Heazel",
+        "Roger Lott",
+        "Even Rouault"
+      ],
+      "date": "2019-09-14",
+      "id": "GeoTIFF"
+    },
+    "GIMEG": {
+      "href": "https://docs.geostandaarden.nl/nen3610/gimeg",
+      "publisher": "Geonovum",
+      "status": "Vastgesteld",
+      "authors": [
+        "Linda van den Brink",
+        "Paul Janssen",
+        "Wilko Quak"
+      ],
+      "title": "Geometrie in model en GML",
+      "date": "2021-03-26",
+      "id": "GIMEG"
+    },
+    "GML31": {
+      "title": "OpenGIS® Geography Markup Language (GML) Implementation Specification, v3.1.1",
+      "href": "https://portal.ogc.org/files/?artifact_id=4700",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Simon Cox",
+        "Paul Daisey",
+        "Ron Lake",
+        "Clemens Portele",
+        "Arliss Whiteside"
+      ],
+      "date": "2004-02-07",
+      "id": "GML31"
+    },
+    "GML33": {
+      "title": "OGC® Geography Markup Language (GML) — Extended schemas and encoding rules, v3.3",
+      "href": "https://portal.ogc.org/files/?artifact_id=46568",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Clemens Portele"
+      ],
+      "date": "2012-02-07",
+      "id": "GML33"
+    },
+    "GMLJPEG2000": {
+      "title": "OGC® GML in JPEG 2000 (GMLJP2) Encoding Standard Part 1: Core v.2.1",
+      "href": "http://docs.opengeospatial.org/is/08-085r8/08-085r8.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Lucio Colaiacomo",
+        "Joan Masó",
+        "Emmanuel Devys",
+        "Eric Hirschorn"
+      ],
+      "date": "2018-08-27",
+      "id": "GMLJPEG2000"
+    },
+    "GMLSF": {
+      "title": "Geography Markup Language (GML) simple features profile (with Corrigendum) (2.0)",
+      "href": "https://portal.ogc.org/files/?artifact_id=42729",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Linda van den Brink",
+        "Clemens Portele",
+        "Panagiotis (Peter) A. Vretanos"
+      ],
+      "date": "2012-04-05",
+      "id": "GMLSF"
+    },
+    "HDF5": {
+      "title": "OGC Hierarchical Data Format Version 5 (HDF5®) Core Standard",
+      "href": "http://docs.opengeospatial.org/is/18-043r3/18-043r3.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Aleksandar Jelenak",
+        "Ted Habermann",
+        "Gerd Heber"
+      ],
+      "date": "2019-03-27",
+      "id": "HDF5"
+    },
+    "HDFEOS": {
+      "title": "HDF-EOS5 Data Model, File Format and Library (v1.1)",
+      "href": "https://www.earthdata.nasa.gov/sites/default/files/imported/ESDS-RFC-008-v1.1.pdf",
+      "status": "Recommended",
+      "publisher": "NASA",
+      "editors": [
+        "Larry Klein",
+        "Abe Taaheri"
+      ],
+      "date": "2016-05-01",
+      "id": "HDFEOS"
+    },
+    "HRCRS": {
+      "title": "Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie",
+      "href": "https://docs.geostandaarden.nl/crs/crs/",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "editors": [
+        "Friso Penninga",
+        "Lennard Huisman"
+      ],
+      "date": "2022-03-14",
+      "id": "HRCRS"
+    },
+    "HRLFG": {
+      "title": "Geometrie in uitwisselingsformaten",
+      "href": "https://docs.geostandaarden.nl/g4w/geox/#inleiding",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "editors": [
+        "Linda van den Brink",
+        "Gabriella Wiersma"
+      ],
+      "date": "2022-02-04",
+      "id": "HRLFG"
+    },
+    "HRTOEG": {
+      "title": "Handreiking digitaal toegankelijk locatiedata",
+      "href": "https://docs.geostandaarden.nl/visu/toeg/",
+      "status": "Vastgesteld",
+      "publisher": "Geonovum",
+      "editors": [
+        "Edward Mac Gillavry",
+        "Sjors Slaats",
+        "Theo OVerduin",
+        "Thijs Brentjens",
+        "Victor Zuydweg"
+      ],
+      "date": "2021-08-02",
+      "id": "HRTOEG"
+    },
+    "HRWC": {
+      "title": "Handreiking webcartografie",
+      "href": "https://www.geonovum.nl/uploads/standards/downloads/handreiking%20webcartografie%201.0.1_0.pdf",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2010-11-18",
+      "id": "HRWC"
+    },
+    "I3S": {
+      "title": "OGC Indexed 3d Scene Layer (I3S) and Scene Layer Package (*.slpk) Format Community Standard Version 1.2",
+      "href": "http://docs.opengeospatial.org/cs/17-014r8/17-014r8.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Carl Reed",
+        "Tamrat Belayneh"
+      ],
+      "date": "2021-05-11",
+      "id": "I3S"
+    },
+    "IMMetingen": {
+      "title": "Informatiemodel Metingen",
+      "href": "https://www.sikb.nl/datastandaarden/richtlijnen/sikb0101",
+      "status": "Vastgesteld",
+      "publisher": "SIKB en IHW",
+      "id": "IMMetingen"
+    },
+    "INSGPGeopackage": {
+      "title": "GeoPackage encoding of INSPIRE datasets. INSPIRE good practise",
+      "href": "https://inspire.ec.europa.eu/good-practice/geopackage-encoding-inspire-datasets",
+      "status": "Candidate",
+      "publisher": "INSPIRE",
+      "id": "INSGPGeopackage"
+    },
+    "INSGPOAPIF": {
+      "title": "OGC API - Features as an INSPIRE download service",
+      "href": "https://inspire.ec.europa.eu/good-practice/ogc-api-%E2%80%93-features-inspire-download-service",
+      "status": "Endorsed Good Practice",
+      "publisher": "IOC TF",
+      "id": "INSGPOAPIF"
+    },
+    "INSGPSTA": {
+      "title": "OGC SensorThings API as an INSPIRE download service",
+      "href": "https://inspire.ec.europa.eu/good-practice/ogc-sensorthings-api-inspire-download-service",
+      "status": "Endorsed good practice",
+      "publisher": "INSPIRE Maintenance and Implementation Group (MIG)",
+      "id": "INSGPSTA"
+    },
+    "inspire-19115-19119": {
+      "title": "INSPIRE Metadata Implementing Rules: Technical Guidelines based on EN ISO 19115 and EN ISO 19119",
+      "href": "http://inspire.ec.europa.eu/documents/Metadata/INSPIRE_MD_IR_and_ISO_v1_2_20100616.pdf",
+      "authors": [
+        "Drafting Team Metadata and European Commission Joint Research Centre"
+      ],
+      "publisher": "European Commission Joint Research Centre",
+      "date": "2007-10-26",
+      "id": "inspire-19115-19119"
+    },
+    "inspire-cirmd": {
+      "title": "Corrigendum to INSPIRE Metadata Regulation",
+      "href": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32008R1205R(02)&from=EN",
+      "authors": [
+        "Drafting Team Metadata and European Commission Joint Research Centre"
+      ],
+      "publisher": "European Commission Joint Research Centre",
+      "date": "2010-01-15",
+      "id": "inspire-cirmd"
+    },
+    "inspire-crs": {
+      "title": "INSPIRE Data Specification on Coordinate Reference Systems - Technical Guidelines",
+      "href": "https://inspire.ec.europa.eu/id/document/tg/rs",
+      "status": "Published",
+      "publisher": "INSPIRE Thematic Working Group Coordinate Reference Systems & Geographical Grid Systems",
+      "date": "2014-04-16",
+      "id": "inspire-crs"
+    },
+    "inspire-gcm": {
+      "title": "Generic Conceptual Model of the INSPIRE data specifications",
+      "href": "https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model",
+      "status": "Published",
+      "publisher": "INSPIRE Drafting Team Data Specifications",
+      "date": "2014-04-07",
+      "id": "inspire-gcm"
+    },
+    "inspire-gen": {
+      "title": "Guidelines for the encoding of spatial data",
+      "href": "https://inspire.ec.europa.eu/documents/guidelines-encoding-spatial-data",
+      "status": "Published",
+      "publisher": "INSPIRE Drafting Team Data Specifications",
+      "date": "2014-04-08",
+      "id": "inspire-gen"
+    },
+    "inspire-ggs": {
+      "title": "Guidelines INSPIRE Data Specification on Geographical Grid Systems - Technical Guidelines",
+      "href": "https://inspire.ec.europa.eu/id/document/tg/gg",
+      "status": "Published",
+      "publisher": "INSPIRE Thematic Working Group Coordinate Reference Systems & Geographical Grid Systems",
+      "date": "2014-04-16",
+      "id": "inspire-ggs"
+    },
+    "inspire-irmd": {
+      "title": "Implementing Rules for Metadata",
+      "href": "http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008R1205",
+      "authors": [
+        "Drafting Team Metadata and European Commission Joint Research Centre"
+      ],
+      "publisher": "European Commission Joint Research Centre",
+      "date": "2008-12-03",
+      "id": "inspire-irmd"
+    },
+    "inspire-mds": {
+      "title": "Methodology for the development of data specifications: baseline version (D 2.6, Version 3.0)",
+      "href": "https://inspire.ec.europa.eu/documents/methodology-development-data-specifications-baseline-version-d-26-version-30",
+      "status": "Published",
+      "publisher": "INSPIRE Drafting Team Data Specifications",
+      "date": "2008-04-06",
+      "id": "inspire-mds"
+    },
+    "inspire-TG-metadata": {
+      "title": "Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007",
+      "href": "https://github.com/INSPIRE-MIF/technical-guidelines/blob/2022.2/metadata/metadata-iso19139/metadata-iso19139.adoc",
+      "status": [
+        "Tehnical Guidance"
+      ],
+      "authors": [
+        "Temporary MIWP 2021-2024 sub-group 2.3.1"
+      ],
+      "publisher": "INSPIRE Maintenance and Implementation Group (MIG)",
+      "date": "2022-08-01",
+      "id": "inspire-TG-metadata"
+    },
+    "INSTGDiS": {
+      "title": "Technical Guidance for the implementation of Inspire Discovery Service, version 3.1",
+      "href": "https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0",
+      "status": "Approved",
+      "publisher": "IOC TF",
+      "date": "2011-11-07",
+      "id": "INSTGDiS"
+    },
+    "INSTGDS": {
+      "title": "Technical Guidance for the implementation of Inspire Download Services",
+      "href": "https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services",
+      "status": "Approved",
+      "publisher": "IOC TF",
+      "date": "2013-08-09",
+      "id": "INSTGDS"
+    },
+    "INSTGDSSOS": {
+      "title": "Technical Guidance for implementing download services using the OGC Sensor Observation Service and ISO 19143 Filter Encoding, version 1.0",
+      "href": "https://inspire.ec.europa.eu/id/document/tg/download-sos",
+      "status": "Approved",
+      "publisher": "INSPIRE Maintenance and Implementation Group (MIG)",
+      "date": "2016-12-16",
+      "id": "INSTGDSSOS"
+    },
+    "INSTGDSWCS": {
+      "title": "Technical Guidance for the implementation of Inspire Download Services using Web Coverage Services (WCS), version 1.0",
+      "href": "https://inspire.ec.europa.eu/id/document/tg/download-wcs",
+      "status": "Approved",
+      "publisher": "INSPIRE Maintenance and Implementation Group (MIG)",
+      "date": "2016-12-16",
+      "id": "INSTGDSWCS"
+    },
+    "INSTGVS": {
+      "title": "Technical Guidance for the implementation of Inspire View Service",
+      "href": "https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1",
+      "status": "Definitief",
+      "publisher": "IOC TF",
+      "date": "2022-08-01",
+      "id": "INSTGVS"
+    },
+    "ISO15836": {
+      "title": "ISO 15836: 2004, Information and documentation - The Dublin Core metadata element set",
+      "href": "https://www.iso.org/standard/37629.htm",
+      "publisher": "International Organization for Standardization",
+      "date": "2004",
+      "id": "ISO15836"
+    },
+    "ISO19101": {
+      "title": "ISO 19101-1:2014 Geographic information — Reference model — Part 1: Fundamentals",
+      "href": "https://www.iso.org/standard/59164.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2014-11-01",
+      "id": "ISO19101"
+    },
+    "ISO19103": {
+      "title": "ISO 19103:2015 Geographic information — Conceptual schema language",
+      "href": "https://www.iso.org/standard/56734.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2015-12-01",
+      "id": "ISO19103"
+    },
+    "ISO19107": {
+      "title": "ISO 19107:2019 Geographic information — Spatial schema",
+      "href": "https://www.iso.org/standard/66175.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2019-12-01",
+      "id": "ISO19107"
+    },
+    "ISO19108": {
+      "title": "ISO 19108:2002 Geographic information — Temporal schema",
+      "href": "https://www.iso.org/standard/26013.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2012-12-08",
+      "id": "ISO19108"
+    },
+    "ISO19109": {
+      "title": "ISO 19109:2015 Geographic information — Rules for application schema",
+      "href": "https://www.iso.org/standard/59193.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2015-12-01",
+      "id": "ISO19109"
+    },
+    "ISO19110": {
+      "title": "ISO 19110:2016 Geographic information — Methodology for feature cataloguing",
+      "href": "https://www.iso.org/standard/57303.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2016-12-01",
+      "id": "ISO19110"
+    },
+    "ISO19111": {
+      "title": "ISO 19111:2019 Geographic information — Referencing by coordinates",
+      "href": "https://www.iso.org/standard/74039.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2019-01-01",
+      "id": "ISO19111"
+    },
+    "ISO19115-2003": {
+      "title": "ISO 19115:2003  Geographic information -- Metadata",
+      "href": "https://www.iso.org/standard/26020.html",
+      "status": [
+        "Adopted specification"
+      ],
+      "publisher": "International Organization for Standardization",
+      "date": "2003-05-01",
+      "id": "ISO19115-2003"
+    },
+    "ISO19115-2006": {
+      "title": "ISO 19115:2003/Cor 1:2006 Geographic information — Metadata — Technical Corrigendum 1",
+      "href": "https://www.iso.org/standard/26020.html",
+      "status": [
+        "Adopted specification"
+      ],
+      "publisher": "International Organization for Standardization",
+      "date": "2006-06-01",
+      "id": "ISO19115-2006"
+    },
+    "ISO19115-2009": {
+      "title": "ISO 19115-2:2009 Geographic information — Metadata — Part 2: Extensions for imagery and gridded data",
+      "href": "https://www.iso.org/standard/39229.html",
+      "publisher": "International Organization for Standardization",
+      "date": "2009-02-01",
+      "id": "ISO19115-2009"
+    },
+    "ISO19115-2014": {
+      "title": "ISO 19115-1:2014 Geographic information — Metadata — Part 1: Fundamentals",
+      "href": "https://www.iso.org/standard/53798.html",
+      "publisher": "International Organization for Standardization",
+      "date": "2014-04-01",
+      "id": "ISO19115-2014"
+    },
+    "ISO19117": {
+      "title": "ISO 19117:2012 Geographic Information - Portrayal",
+      "href": "https://www.iso.org/standard/46226.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2012-12-01",
+      "id": "ISO19117"
+    },
+    "ISO19118": {
+      "title": "ISO 19118:2011 Geographic information — Encoding",
+      "href": "https://www.iso.org/standard/44212.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2011-10-01",
+      "id": "ISO19118"
+    },
+    "ISO19119": {
+      "title": "Geographic information - Services",
+      "href": "https://www.iso.org/standard/39890.html",
+      "publisher": "International Organization for Standardization",
+      "date": "2005-02-01",
+      "id": "ISO19119"
+    },
+    "ISO19119-2005": {
+      "title": "ISO 19119:2005 Geographic information — Services",
+      "href": "https://www.iso.org/standard/39890.html",
+      "publisher": "International Organization for Standardization",
+      "date": "2005-02-01",
+      "id": "ISO19119-2005"
+    },
+    "ISO19119-2008": {
+      "title": "ISO 19119:2005/Amd 1:2008 Geographic information — Services — Amendment 1: Extensions of the service metadata model",
+      "href": "https://www.iso.org/standard/44268.html",
+      "publisher": "International Organization for Standardization",
+      "date": "2008-05-01",
+      "id": "ISO19119-2008"
+    },
+    "ISO19126-2009": {
+      "title": "ISO 19126:2009 Geographic information - Feature concept dictionaries and registers",
+      "href": "https://www.iso.org/standard/44875.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2009-11-01",
+      "id": "ISO19126-2009"
+    },
+    "ISO19131": {
+      "title": "ISO 19131:2022 Geographic information — Data product specifications",
+      "href": "https://www.iso.org/standard/85092.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2022-11-01",
+      "id": "ISO19131"
+    },
+    "ISO19136": {
+      "title": "ISO 19136-1:2020 Geographic information — Geography Markup Language (GML) — Part 1: Fundamentals",
+      "href": "https://www.iso.org/standard/75676.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2020-01-01",
+      "id": "ISO19136"
+    },
+    "ISO19139": {
+      "title": "ISO/TS 19139:2007 Geographic information - Metadata - XML schema implementation",
+      "href": "https://www.iso.org/standard/32557.html",
+      "status": [
+        "Adopted specification"
+      ],
+      "publisher": "International Organization for Standardization",
+      "date": "2007-04-01",
+      "id": "ISO19139"
+    },
+    "ISO6709": {
+      "title": "ISO 6709:2022 Standard representation of geographic point location by coordinates",
+      "href": "https://www.iso.org/standard/75147.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2022-09-01",
+      "id": "ISO6709"
+    },
+    "ISOJPEG2000": {
+      "title": "ISO/IEC 15444-1:2019 Information technology — JPEG 2000 image coding system — Part 1: Core coding system",
+      "href": "https://www.iso.org/standard/78321.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2019-10-01",
+      "id": "ISOJPEG2000"
+    },
+    "ISOts19127": {
+      "title": "ISO/TS 19127 Geographic Information - Geodetic codes and parameters",
+      "href": "https://www.iso.org/standard/41784.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2005-06-01",
+      "id": "ISOts19127"
+    },
+    "JSON-FG": {
+      "title": "OGC Features and Geometries JSON - Part 1: Core",
+      "href": "https://docs.ogc.org/DRAFTS/21-045.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Clemens Portele",
+        "Panagiotis (Peter) A. Vretanos"
+      ],
+      "id": "JSON-FG"
+    },
+    "MBS": {
+      "title": "Mapbox GL JS Style Specification",
+      "href": "https://docs.mapbox.com/mapbox-gl-js/style-spec/",
+      "status": "Unofficial",
+      "publisher": "Mapbox",
+      "id": "MBS"
+    },
+    "MIM": {
+      "title": "MIM - Metamodel Informatie Modellering",
+      "href": "https://docs.geostandaarden.nl/mim/mim/",
+      "status": "Vastgesteld",
+      "publisher": "Geonovum",
+      "editors": [
+        "Dick Krijtenburg",
+        "Paul Janssen",
+        "Lennart van Bergen"
+      ],
+      "authors": [
+        "Lennart van Bergen",
+        "Thies Mesdag",
+        "Marco Brattinga",
+        "Paul Janssen",
+        "Pano Maria",
+        "Johan Boer"
+      ],
+      "date": "2022-02-17",
+      "id": "MIM"
+    },
+    "NEN3610": {
+      "title": "NEN 3610:2022 nl - BBasismodel geo-informatie - Termen, definities, relaties en algemene regels voor de uitwisseling van informatie over aan de aarde gerelateerde ruimtelijke objecten",
+      "href": "https://www.nen.nl/nen-3610-2022-nl-296137",
+      "status": "Definitief",
+      "publisher": "NEN",
+      "date": "2022-05-31",
+      "id": "NEN3610"
+    },
+    "NETCDF": {
+      "title": "OGC Network Common Data Form (NetCDF) Core Encoding Standard version 1.0",
+      "href": "https://portal.ogc.org/files/?artifact_id=43732",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Ben Domenico"
+      ],
+      "date": "2011-04-05",
+      "id": "NETCDF"
+    },
+    "NLAPIS": {
+      "title": "API Strategie Algemeen (Nederlandse API Strategie I)",
+      "href": "https://docs.geostandaarden.nl/api/API-Strategie/",
+      "status": "Vastgesteld",
+      "publisher": "Geonovum",
+      "date": "2022-03-09",
+      "id": "NLAPIS"
+    },
+    "NLDP": {
+      "title": "NEN 3610 - Linked Data",
+      "href": "https://docs.geostandaarden.nl/nen3610/nldp/",
+      "status": "Vastgesteld",
+      "publisher": "Geonovum",
+      "editors": [
+        "Paul Janssen"
+      ],
+      "authors": [
+        "Linda van den Brink",
+        "Marco Brattinga",
+        "Marinus Vonhof",
+        "Niels Hoffmann",
+        "Pano Maria",
+        "Hans Schevers",
+        "Ronald van Lanen",
+        "Joep van Genuchten"
+      ],
+      "date": "2020-03-23",
+      "id": "NLDP"
+    },
+    "NLISO19115": {
+      "title": "Nederlands metadata profiel op ISO 19115 voor geografie versie 2.1.0",
+      "href": "https://docs.geostandaarden.nl/md/mdprofiel-iso19115/",
+      "status": "Vastgestelde versie",
+      "publisher": "Geonovum",
+      "date": "2020-06-30",
+      "id": "NLISO19115"
+    },
+    "NLISO19119": {
+      "title": "Nederlands metadata profiel op ISO 19119 voor services versie 2.1.0",
+      "href": "https://docs.geostandaarden.nl/md/mdprofiel-iso19119/",
+      "status": "Vastgestelde versie",
+      "publisher": "Geonovum",
+      "date": "2020-06-30",
+      "id": "NLISO19119"
+    },
+    "NLWFS": {
+      "title": "Nederlands profiel op ISO 19142 Geographic information — Web Feature Service, Versie 1.1",
+      "href": "https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2015-04-24",
+      "id": "NLWFS"
+    },
+    "NLWMS": {
+      "title": "Nederlands profiel op ISO 19128 Geographic information — Web Map Server Interface",
+      "href": "https://www.geonovum.nl/uploads/documents/nederlands_profiel_op_iso_19128_wms_1.3_-_versie_1.0.pdf",
+      "status": "Vastgesteld",
+      "publisher": "Geonovum",
+      "date": "2015-04-24",
+      "id": "NLWMS"
+    },
+    "OaMt1": {
+      "title": "OGC Timeseries Profile of Observations and Measurements v1.0",
+      "href": "http://docs.opengeospatial.org/is/15-043r3/15-043r3.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "James Tomkins",
+        "Dominic Lowe"
+      ],
+      "id": "OaMt1"
+    },
+    "OaMx2": {
+      "title": "Observations and Measurements - XML Implementation v2.0",
+      "href": "https://portal.ogc.org/files/?artifact_id=41510",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Simon Cox"
+      ],
+      "id": "OaMx2"
+    },
+    "OAPIC": {
+      "title": "OGC 19-087: OGC API - Coverages - Part 1: Core, version 0.0.6",
+      "href": "http://docs.ogc.org/DRAFTS/19-087.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Charles Heazel",
+        "Jerome St-Louis"
+      ],
+      "id": "OAPIC"
+    },
+    "OAPIEDR": {
+      "title": "OGC 19-086r5: OGC API - Environmental Data Retrieval Standard, Version 1.0.1",
+      "href": "https://docs.ogc.org/is/19-086r5/19-086r5.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Mark Burgoyne",
+        "David Blodgett",
+        "Charles Heazel",
+        "Chris Little"
+      ],
+      "date": "2022-08-05",
+      "id": "OAPIEDR"
+    },
+    "OAPIF1": {
+      "title": "OGC 17-069r4: OGC API - Features - Part 1: Core corrigendum, Version 1.0.1",
+      "href": "https://docs.opengeospatial.org/is/17-069r4/17-069r4.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Panagiotis (Peter) A. Vretanos",
+        "Clemens Portele",
+        "Charles Heazel"
+      ],
+      "date": "2022-05-11",
+      "id": "OAPIF1"
+    },
+    "OAPIF2": {
+      "title": "OGC 18-058: OGC API - Features - Part 2: Coordinate Reference Systems by Reference, Version 1.0",
+      "href": "https://docs.opengeospatial.org/is/18-058r1/18-058r1.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Panagiotis (Peter) A. Vretanos",
+        "Clemens Portele"
+      ],
+      "date": "2020-11-02",
+      "id": "OAPIF2"
+    },
+    "OAPIF3": {
+      "title": "OGC 19-079r1: OGC API - Features - Part 3: Filtering, Version 1.0.0-rc1",
+      "href": "http://docs.ogc.org/DRAFTS/19-079r1.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Panagiotis (Peter) A. Vretanos",
+        "Clemens Portele"
+      ],
+      "id": "OAPIF3"
+    },
+    "OAPIF4": {
+      "title": "OGC 20-002: OGC API - Features - Part 4: Create, Replace, Update and Delete, Version 1.0.0 snapshot (editor's draft",
+      "href": "http://docs.ogc.org/DRAFTS/20-002.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Panagiotis (Peter) A. Vretanos",
+        "Clemens Portele"
+      ],
+      "id": "OAPIF4"
+    },
+    "OAPIMAPS": {
+      "title": "OGC 20-058: OGC API - Maps - Part 1: Core, Version 0.1.0",
+      "href": "http://docs.ogc.org/DRAFTS/20-058.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "Joan Masó",
+      "date": "2022-06-06",
+      "id": "OAPIMAPS"
+    },
+    "OAPIRECORDS1": {
+      "title": "OGC 20-224: OGC API - Records - Part 1: Core",
+      "href": "http://docs.ogc.org/DRAFTS/20-004.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Panagiotis (Peter) A. Vretanos",
+        "Tom Kralidis",
+        "Charles Heazel"
+      ],
+      "date": "2020-01-13",
+      "id": "OAPIRECORDS1"
+    },
+    "OAPISTYLES": {
+      "title": "OGC 20-009: OGC API Styles",
+      "href": "http://docs.opengeospatial.org/DRAFTS/20-009.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "C. Portele",
+      "id": "OAPISTYLES"
+    },
+    "OAPITILES1": {
+      "title": "OGC 20-057: OGC API - Tiles - Part 1: Core",
+      "href": "https://docs.ogc.org/is/20-057/20-057.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Joan Masó",
+        "Jérôme St-Louis"
+      ],
+      "date": "26-08-2022",
+      "id": "OAPITILES1"
+    },
+    "OMS3": {
+      "title": "OGC Abstract Specification Topic 20: Observations, measurements and samples v3.0.0",
+      "href": "https://docs.ogc.org/as/20-082r4/20-082r4.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Katharina Schleidt",
+        "Ilkka Rinne"
+      ],
+      "date": "2023-05-26",
+      "id": "OMS3"
+    },
+    "OREFCO": {
+      "title": "OGC Abstract Specification Topic 2: Referencing by coordinates",
+      "href": "http://docs.opengeospatial.org/as/18-005r4/18-005r4.html",
+      "status": "OGC® Publicly Available Standard",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Roger Lott"
+      ],
+      "date": "2019-02-08",
+      "id": "OREFCO"
+    },
+    "SE11": {
+      "title": "OGC 05-077r4: OpenGIS Symbology Encoding Implementation Specification, version 1.1",
+      "href": "https://portal.ogc.org/files/?artifact_id=16700",
+      "status": "Final version",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "date": "2006-07-21",
+      "id": "SE11"
+    },
+    "SensorML": {
+      "title": "OGC SensorML: Model and XML Encoding Standard v2.1",
+      "href": "http://docs.ogc.org/is/12-000r2/12-000r2.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Mike Botts",
+        "Alexandre Robin",
+        "Eric Hirschorn"
+      ],
+      "date": "2020-08-10",
+      "id": "SensorML"
+    },
+    "SLD11": {
+      "title": "OGC 05-078r4: Styled Layer Descriptor profile of the Web Map Service Implementation Specification, Version 1.1",
+      "href": "http://portal.opengeospatial.org/files/?artifact_id=22364",
+      "status": "Final version",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "date": "2007-06-29",
+      "id": "SLD11"
+    },
+    "STAS": {
+      "title": "OGC 18-088: OGC SensorThings API Part 1 - Sensing, Version 1.1",
+      "href": "https://docs.ogc.org/is/18-088/18-088.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Steve Liang",
+        "Tania Khalafbeigi",
+        "Hylke van der Schaaf"
+      ],
+      "date": "2021-08-04",
+      "id": "STAS"
+    },
+    "STAT": {
+      "title": "OGC 17-079r1: OGC SensorThings API Part 1 - Tasking Core, Version 1.0",
+      "href": "http://docs.opengeospatial.org/is/17-079r1/17-079r1.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Steve Liang",
+        "Tania Khalafbeigi"
+      ],
+      "date": "2019-01-08",
+      "id": "STAT"
+    },
+    "WCS21": {
+      "title": "OGC 17-089r1: OGC Web Coverage Service (WCS) 2.1 Interface Standard - Core",
+      "href": "http://docs.opengeospatial.org/is/17-089r1/17-089r1.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "date": "2018-08-16",
+      "id": "WCS21"
+    },
+    "WFS11": {
+      "title": "Web Feature Service Implementation Specification with Corrigendum, Version 1.1.3",
+      "href": "http://docs.opengeospatial.org/is/04-094r1/04-094r1.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "Panagiotis A. Vretanos",
+      "date": "2016-10-26",
+      "id": "WFS11"
+    },
+    "WMC11": {
+      "title": "OpenGIS 05-005: Web Map Context Documents Implementation Specification, version 1.1",
+      "href": "https://portal.ogc.org/files/?artifact_id=8618",
+      "status": "Adopted specification",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "J. Sonnet",
+      "date": "2005-01-19",
+      "id": "WMC11"
+    },
+    "WMCC11": {
+      "title": "OpenGIS 08-050: Corrigendum for OpenGIS Implementation Standard Web Map Context Documents - Corrigendum 1",
+      "href": "https://portal.ogc.org/files/?artifact_id=27286",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "T. Kralidis",
+      "date": "2008-03-14",
+      "id": "WMCC11"
     }
   },
   "title": "Handreiking 3D Tiling",
-  "specStatus": "ld",
+  "specStatus": "wv",
   "specType": "HR",
   "pubDomain": "3d",
   "licence": "cc-by",
   "shortName": "3d-tiling",
-  "publishDate": "2025-01-13",
+  "previousPublishDate": "2025-01-13",
+  "previousMaturity": "ld",
   "editors": [
     {
       "name": "Arnoud de Boer",
@@ -379,7 +1429,7 @@ gegevens.">
   ],
   "github": "https://github.com/Geonovum/3d-tiling"
 }</script>
-<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"></head>
+<link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/base.css"></head>
   
 <body class="h-entry informative"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132">
@@ -387,16 +1437,12 @@ gegevens.">
     
     <h2>
       Geonovum Handreiking<br>
-      Levend document
-      <time class="dt-published" datetime="2025-01-13">13 januari 2025</time>
+      Werkversie
+      <time class="dt-published" datetime="2025-08-08">08 augustus 2025</time>
     </h2>
     <dl>
-      <dt>Deze versie:</dt><dd class="status">
-              <a class="u-url status" href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113">https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113</a>
-            </dd>
-      <dt>Laatst gepubliceerde versie:</dt><dd>
-              <a href="https://docs.geostandaarden.nl/3d/3d-tiling/">https://docs.geostandaarden.nl/3d/3d-tiling/</a>
-            </dd>
+      
+      
       <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/3d-tiling/">https://geonovum.github.io/3d-tiling/</a></dd>
       
       
@@ -457,9 +1503,9 @@ gegevens.">
     
     
     <p class="copyright">
-          Dit document valt onder de volgende licentie: 
-          <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot"><img class="license" src="https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg" alt="Logo Creative Commons Attribution 4.0 International Public License"><br> Creative Commons Attribution 4.0 International Public License</a>
-        </p>
+            Dit document valt onder de volgende licentie: 
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot"><img class="license" src="https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg" alt="Logo Creative Commons Attribution 4.0 International Public License"><br> Creative Commons Attribution 4.0 International Public License</a>
+          </p>
     <hr title="Separator for header">
   </div>
   <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Deze handreiking biedt een uitgebreide verkenning van 3D tiling, een techniek
@@ -481,7 +1527,7 @@ handleidingen, clients, servers en 3D Tile datasets, waardoor lezers worden
 voorzien van de nodige bronnen om aan de slag te gaan met 3D tiling in hun
 projecten.</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een levend document dat regelmatig gewijzigd wordt.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#aanleiding"><bdi class="secno">1.1 </bdi>Aanleiding</a></li><li class="tocline"><a class="tocxref" href="#wat-is-3d-tiling"><bdi class="secno">1.2 </bdi>Wat is 3D Tiling?</a></li><li class="tocline"><a class="tocxref" href="#waar-is-3d-tiling-voor-te-gebruiken"><bdi class="secno">1.3 </bdi>Waar is 3D Tiling voor te gebruiken?</a></li><li class="tocline"><a class="tocxref" href="#wat-zijn-de-voor-en-nadelen-van-3d-tiling"><bdi class="secno">1.4 </bdi>Wat zijn de voor- en nadelen van 3D Tiling?</a></li><li class="tocline"><a class="tocxref" href="#welke-standaarden-zijn-er-voor-3d-tiling"><bdi class="secno">1.5 </bdi>Welke standaarden zijn er voor 3D tiling?</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles-specification"><bdi class="secno">1.5.1 </bdi>OGC 3D Tiles specification</a></li><li class="tocline"><a class="tocxref" href="#i3s"><bdi class="secno">1.5.2 </bdi>i3S</a></li></ol></li><li class="tocline"><a class="tocxref" href="#praktijkvoorbeelden"><bdi class="secno">1.6 </bdi>Praktijkvoorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bro-circulaire-grondstromen"><bdi class="secno">1.6.1 </bdi>BRO circulaire grondstromen</a></li><li class="tocline"><a class="tocxref" href="#x3d-rotterdam"><bdi class="secno">1.6.2 </bdi>3D Rotterdam</a></li><li class="tocline"><a class="tocxref" href="#wateroverlast-door-extreme-buien"><bdi class="secno">1.6.3 </bdi>Wateroverlast door extreme buien</a></li><li class="tocline"><a class="tocxref" href="#visualisatie-doorrijprofielen"><bdi class="secno">1.6.4 </bdi>Visualisatie doorrijprofielen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#standaard-ogc-3d-tiles"><bdi class="secno">2. </bdi>Standaard OGC 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">2.1 </bdi>Introductie</a></li><li class="tocline"><a class="tocxref" href="#tegelset"><bdi class="secno">2.2 </bdi>Tegelset</a></li><li class="tocline"><a class="tocxref" href="#tegelformaten"><bdi class="secno">2.3 </bdi>Tegelformaten</a></li><li class="tocline"><a class="tocxref" href="#mediatypes-en-encoding"><bdi class="secno">2.4 </bdi>Mediatypes en encoding</a></li><li class="tocline"><a class="tocxref" href="#geometric-error"><bdi class="secno">2.5 </bdi>Geometric error</a></li><li class="tocline"><a class="tocxref" href="#implicit-tiling"><bdi class="secno">2.6 </bdi>Implicit tiling</a></li><li class="tocline"><a class="tocxref" href="#metadata"><bdi class="secno">2.7 </bdi>Metadata</a></li></ol></li><li class="tocline"><a class="tocxref" href="#best-practices"><bdi class="secno">3. </bdi>Best practices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#genereren-van-3d-tiles"><bdi class="secno">3.1 </bdi>Genereren van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#attribuutgegevens"><bdi class="secno">3.1.1 </bdi>Attribuutgegevens</a></li><li class="tocline"><a class="tocxref" href="#explicit-en-implicit-tiling"><bdi class="secno">3.1.2 </bdi>Explicit en implicit tiling</a></li><li class="tocline"><a class="tocxref" href="#geometric-error-0"><bdi class="secno">3.1.3 </bdi>Geometric error</a></li><li class="tocline"><a class="tocxref" href="#offset-z-coordinaat"><bdi class="secno">3.1.4 </bdi>Offset Z-coördinaat</a></li><li class="tocline"><a class="tocxref" href="#optimale-set-aan-parameters"><bdi class="secno">3.1.5 </bdi>Optimale set aan parameters</a></li><li class="tocline"><a class="tocxref" href="#shader"><bdi class="secno">3.1.6 </bdi>Shader</a></li><li class="tocline"><a class="tocxref" href="#formaat"><bdi class="secno">3.1.7 </bdi>Formaat</a></li><li class="tocline"><a class="tocxref" href="#compressie"><bdi class="secno">3.1.8 </bdi>Compressie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#valideren-van-3d-tiles"><bdi class="secno">3.2 </bdi>Valideren van 3D tiles</a></li><li class="tocline"><a class="tocxref" href="#publiceren-van-3d-tiles"><bdi class="secno">3.3 </bdi>Publiceren van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ogc-api-geovolumes"><bdi class="secno">3.3.1 </bdi>OGC API GeoVolumes</a></li><li class="tocline"><a class="tocxref" href="#metadata-0"><bdi class="secno">3.3.2 </bdi>Metadata</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gebruiken-van-3d-tiles"><bdi class="secno">3.4 </bdi>Gebruiken van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#minimal-zoom"><bdi class="secno">3.4.1 </bdi>Minimal zoom</a></li><li class="tocline"><a class="tocxref" href="#kleur-en-belichting"><bdi class="secno">3.4.2 </bdi>Kleur en belichting</a></li><li class="tocline"><a class="tocxref" href="#wcag"><bdi class="secno">3.4.3 </bdi>WCAG</a></li><li class="tocline"><a class="tocxref" href="#coordinaten-van-scherm-terrein-en-camera-doelobject"><bdi class="secno">3.4.4 </bdi>Coördinaten van scherm/terrein en camera/doelobject</a></li><li class="tocline"><a class="tocxref" href="#diepte-vlak-depth-plane"><bdi class="secno">3.4.5 </bdi>Diepte vlak (depth plane)</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#toolkit"><bdi class="secno">4. </bdi>Toolkit</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#handleidingen"><bdi class="secno">4.1 </bdi>Handleidingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#howto-quickstartguide-3d-tiles"><bdi class="secno">4.1.1 </bdi>HowTo: QuickStartGuide 3D Tiles</a></li><li class="tocline"><a class="tocxref" href="#howto-3d-tiles-in-mapbox"><bdi class="secno">4.1.2 </bdi>HowTo: 3D Tiles in Mapbox</a></li><li class="tocline"><a class="tocxref" href="#howto-genereren-van-3d-tiles-met-virtual-city-systems"><bdi class="secno">4.1.3 </bdi>HowTo: Genereren van 3D tiles met Virtual City Systems</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#levels"><bdi class="secno">4.1.3.1 </bdi>Levels</a></li><li class="tocline"><a class="tocxref" href="#citygml-level-of-detail"><bdi class="secno">4.1.3.2 </bdi>CityGML Level of Detail</a></li><li class="tocline"><a class="tocxref" href="#object-size-filter"><bdi class="secno">4.1.3.3 </bdi>Object size filter</a></li><li class="tocline"><a class="tocxref" href="#geometry-generalization"><bdi class="secno">4.1.3.4 </bdi>Geometry generalization</a></li><li class="tocline"><a class="tocxref" href="#textures"><bdi class="secno">4.1.3.5 </bdi>Textures</a></li><li class="tocline"><a class="tocxref" href="#refinement-0"><bdi class="secno">4.1.3.6 </bdi>Refinement</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#viewers-generators-en-servers"><bdi class="secno">4.2 </bdi>Viewers, generators en servers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#viewers"><bdi class="secno">4.2.1 </bdi>Viewers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#cesium"><bdi class="secno">4.2.1.1 </bdi>Cesium</a></li><li class="tocline"><a class="tocxref" href="#unity"><bdi class="secno">4.2.1.2 </bdi>Unity</a></li><li class="tocline"><a class="tocxref" href="#unreal-engine"><bdi class="secno">4.2.1.3 </bdi>Unreal Engine</a></li><li class="tocline"><a class="tocxref" href="#deck-gl"><bdi class="secno">4.2.1.4 </bdi>deck.gl</a></li><li class="tocline"><a class="tocxref" href="#esri-javascript-sdk-arcgis-server"><bdi class="secno">4.2.1.5 </bdi>Esri JavaScript SDK / ArcGIS Server</a></li><li class="tocline"><a class="tocxref" href="#qgis"><bdi class="secno">4.2.1.6 </bdi>QGIS</a></li><li class="tocline"><a class="tocxref" href="#x3d-tiles-renderer"><bdi class="secno">4.2.1.7 </bdi>3d-tiles-renderer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#generators-en-servers"><bdi class="secno">4.2.2 </bdi>Generators en servers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#tyler"><bdi class="secno">4.2.2.1 </bdi>Tyler</a></li><li class="tocline"><a class="tocxref" href="#pg2b3dm"><bdi class="secno">4.2.2.2 </bdi>pg2b3dm</a></li><li class="tocline"><a class="tocxref" href="#i3dm-export"><bdi class="secno">4.2.2.3 </bdi>I3dm.export</a></li><li class="tocline"><a class="tocxref" href="#vcs"><bdi class="secno">4.2.2.4 </bdi>VCS</a></li><li class="tocline"><a class="tocxref" href="#x3d-geovolumes"><bdi class="secno">4.2.2.5 </bdi>3D GeoVolumes</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-tile-datasets-en-websites"><bdi class="secno">4.3 </bdi>3D Tile Datasets en websites</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#x3d-basisvoorziening-kadaster"><bdi class="secno">4.3.1 </bdi>3D basisvoorziening Kadaster</a></li><li class="tocline"><a class="tocxref" href="#x3d-tiles-nederland"><bdi class="secno">4.3.2 </bdi>3D Tiles Nederland</a></li><li class="tocline"><a class="tocxref" href="#netherlands3d"><bdi class="secno">4.3.3 </bdi>Netherlands3D</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">A. </bdi>Lijst met figuren</a></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#aanleiding"><bdi class="secno">1.1 </bdi>Aanleiding</a></li><li class="tocline"><a class="tocxref" href="#wat-is-3d-tiling"><bdi class="secno">1.2 </bdi>Wat is 3D Tiling?</a></li><li class="tocline"><a class="tocxref" href="#waar-is-3d-tiling-voor-te-gebruiken"><bdi class="secno">1.3 </bdi>Waar is 3D Tiling voor te gebruiken?</a></li><li class="tocline"><a class="tocxref" href="#wat-zijn-de-voor-en-nadelen-van-3d-tiling"><bdi class="secno">1.4 </bdi>Wat zijn de voor- en nadelen van 3D Tiling?</a></li><li class="tocline"><a class="tocxref" href="#welke-standaarden-zijn-er-voor-3d-tiling"><bdi class="secno">1.5 </bdi>Welke standaarden zijn er voor 3D tiling?</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ogc-3d-tiles-specification"><bdi class="secno">1.5.1 </bdi>OGC 3D Tiles specification</a></li><li class="tocline"><a class="tocxref" href="#i3s"><bdi class="secno">1.5.2 </bdi>i3S</a></li></ol></li><li class="tocline"><a class="tocxref" href="#praktijkvoorbeelden"><bdi class="secno">1.6 </bdi>Praktijkvoorbeelden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bro-circulaire-grondstromen"><bdi class="secno">1.6.1 </bdi>BRO circulaire grondstromen</a></li><li class="tocline"><a class="tocxref" href="#x3d-rotterdam"><bdi class="secno">1.6.2 </bdi>3D Rotterdam</a></li><li class="tocline"><a class="tocxref" href="#wateroverlast-door-extreme-buien"><bdi class="secno">1.6.3 </bdi>Wateroverlast door extreme buien</a></li><li class="tocline"><a class="tocxref" href="#visualisatie-doorrijprofielen"><bdi class="secno">1.6.4 </bdi>Visualisatie doorrijprofielen</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#standaard-ogc-3d-tiles"><bdi class="secno">2. </bdi>Standaard OGC 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">2.1 </bdi>Introductie</a></li><li class="tocline"><a class="tocxref" href="#tegelset"><bdi class="secno">2.2 </bdi>Tegelset</a></li><li class="tocline"><a class="tocxref" href="#tegelformaten"><bdi class="secno">2.3 </bdi>Tegelformaten</a></li><li class="tocline"><a class="tocxref" href="#mediatypes-en-encoding"><bdi class="secno">2.4 </bdi>Mediatypes en encoding</a></li><li class="tocline"><a class="tocxref" href="#geometric-error"><bdi class="secno">2.5 </bdi>Geometric error</a></li><li class="tocline"><a class="tocxref" href="#implicit-tiling"><bdi class="secno">2.6 </bdi>Implicit tiling</a></li><li class="tocline"><a class="tocxref" href="#metadata"><bdi class="secno">2.7 </bdi>Metadata</a></li></ol></li><li class="tocline"><a class="tocxref" href="#best-practices"><bdi class="secno">3. </bdi>Best practices</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#genereren-van-3d-tiles"><bdi class="secno">3.1 </bdi>Genereren van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#attribuutgegevens"><bdi class="secno">3.1.1 </bdi>Attribuutgegevens</a></li><li class="tocline"><a class="tocxref" href="#explicit-en-implicit-tiling"><bdi class="secno">3.1.2 </bdi>Explicit en implicit tiling</a></li><li class="tocline"><a class="tocxref" href="#geometric-error-0"><bdi class="secno">3.1.3 </bdi>Geometric error</a></li><li class="tocline"><a class="tocxref" href="#offset-z-coordinaat"><bdi class="secno">3.1.4 </bdi>Offset Z-coördinaat</a></li><li class="tocline"><a class="tocxref" href="#optimale-set-aan-parameters"><bdi class="secno">3.1.5 </bdi>Optimale set aan parameters</a></li><li class="tocline"><a class="tocxref" href="#shader"><bdi class="secno">3.1.6 </bdi>Shader</a></li><li class="tocline"><a class="tocxref" href="#formaat"><bdi class="secno">3.1.7 </bdi>Formaat</a></li><li class="tocline"><a class="tocxref" href="#compressie"><bdi class="secno">3.1.8 </bdi>Compressie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#valideren-van-3d-tiles"><bdi class="secno">3.2 </bdi>Valideren van 3D tiles</a></li><li class="tocline"><a class="tocxref" href="#publiceren-van-3d-tiles"><bdi class="secno">3.3 </bdi>Publiceren van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ogc-api-geovolumes"><bdi class="secno">3.3.1 </bdi>OGC API GeoVolumes</a></li><li class="tocline"><a class="tocxref" href="#metadata-0"><bdi class="secno">3.3.2 </bdi>Metadata</a></li></ol></li><li class="tocline"><a class="tocxref" href="#gebruiken-van-3d-tiles"><bdi class="secno">3.4 </bdi>Gebruiken van 3D Tiles</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#minimal-zoom"><bdi class="secno">3.4.1 </bdi>Minimal zoom</a></li><li class="tocline"><a class="tocxref" href="#kleur-en-belichting"><bdi class="secno">3.4.2 </bdi>Kleur en belichting</a></li><li class="tocline"><a class="tocxref" href="#wcag"><bdi class="secno">3.4.3 </bdi>WCAG</a></li><li class="tocline"><a class="tocxref" href="#coordinaten-van-scherm-terrein-en-camera-doelobject"><bdi class="secno">3.4.4 </bdi>Coördinaten van scherm/terrein en camera/doelobject</a></li><li class="tocline"><a class="tocxref" href="#diepte-vlak-depth-plane"><bdi class="secno">3.4.5 </bdi>Diepte vlak (depth plane)</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#toolkit"><bdi class="secno">4. </bdi>Toolkit</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#handleidingen"><bdi class="secno">4.1 </bdi>Handleidingen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#howto-quickstartguide-3d-tiles"><bdi class="secno">4.1.1 </bdi>HowTo: QuickStartGuide 3D Tiles</a></li><li class="tocline"><a class="tocxref" href="#howto-3d-tiles-in-mapbox"><bdi class="secno">4.1.2 </bdi>HowTo: 3D Tiles in Mapbox</a></li><li class="tocline"><a class="tocxref" href="#howto-genereren-van-3d-tiles-met-virtual-city-systems"><bdi class="secno">4.1.3 </bdi>HowTo: Genereren van 3D tiles met Virtual City Systems</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#levels"><bdi class="secno">4.1.3.1 </bdi>Levels</a></li><li class="tocline"><a class="tocxref" href="#citygml-level-of-detail"><bdi class="secno">4.1.3.2 </bdi>CityGML Level of Detail</a></li><li class="tocline"><a class="tocxref" href="#object-size-filter"><bdi class="secno">4.1.3.3 </bdi>Object size filter</a></li><li class="tocline"><a class="tocxref" href="#geometry-generalization"><bdi class="secno">4.1.3.4 </bdi>Geometry generalization</a></li><li class="tocline"><a class="tocxref" href="#textures"><bdi class="secno">4.1.3.5 </bdi>Textures</a></li><li class="tocline"><a class="tocxref" href="#refinement-0"><bdi class="secno">4.1.3.6 </bdi>Refinement</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#viewers-generators-en-servers"><bdi class="secno">4.2 </bdi>Viewers, generators en servers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#viewers"><bdi class="secno">4.2.1 </bdi>Viewers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#cesium"><bdi class="secno">4.2.1.1 </bdi>Cesium</a></li><li class="tocline"><a class="tocxref" href="#unity"><bdi class="secno">4.2.1.2 </bdi>Unity</a></li><li class="tocline"><a class="tocxref" href="#unreal-engine"><bdi class="secno">4.2.1.3 </bdi>Unreal Engine</a></li><li class="tocline"><a class="tocxref" href="#deck-gl"><bdi class="secno">4.2.1.4 </bdi>deck.gl</a></li><li class="tocline"><a class="tocxref" href="#esri-javascript-sdk-arcgis-server"><bdi class="secno">4.2.1.5 </bdi>Esri JavaScript SDK / ArcGIS Server</a></li><li class="tocline"><a class="tocxref" href="#qgis"><bdi class="secno">4.2.1.6 </bdi>QGIS</a></li><li class="tocline"><a class="tocxref" href="#x3d-tiles-renderer"><bdi class="secno">4.2.1.7 </bdi>3d-tiles-renderer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#generators-en-servers"><bdi class="secno">4.2.2 </bdi>Generators en servers</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#tyler"><bdi class="secno">4.2.2.1 </bdi>Tyler</a></li><li class="tocline"><a class="tocxref" href="#pg2b3dm"><bdi class="secno">4.2.2.2 </bdi>pg2b3dm</a></li><li class="tocline"><a class="tocxref" href="#i3dm-export"><bdi class="secno">4.2.2.3 </bdi>I3dm.export</a></li><li class="tocline"><a class="tocxref" href="#vcs"><bdi class="secno">4.2.2.4 </bdi>VCS</a></li><li class="tocline"><a class="tocxref" href="#x3d-geovolumes"><bdi class="secno">4.2.2.5 </bdi>3D GeoVolumes</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#x3d-tile-datasets-en-websites"><bdi class="secno">4.3 </bdi>3D Tile Datasets en websites</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#x3d-basisvoorziening-kadaster"><bdi class="secno">4.3.1 </bdi>3D basisvoorziening Kadaster</a></li><li class="tocline"><a class="tocxref" href="#x3d-tiles-nederland"><bdi class="secno">4.3.2 </bdi>3D Tiles Nederland</a></li><li class="tocline"><a class="tocxref" href="#netherlands3d"><bdi class="secno">4.3.3 </bdi>Netherlands3D</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">A. </bdi>Lijst met figuren</a></li></ol></nav>
   
   <section id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div>
 <section id="aanleiding"><div class="header-wrapper"><h3 id="x1-1-aanleiding"><bdi class="secno">1.1 </bdi>Aanleiding</h3><a class="self-link" href="#aanleiding" aria-label="Permalink for Section 1.1"></a></div>
@@ -723,9 +1769,9 @@ georganiseerd binnen een ruimtelijke gegevensstructuur, vertegenwoordigd door
 een boom. Elke tegelset wordt beschreven door minstens één JSON-bestand met
 metadata en een hiërarchie van tegelobjecten, waarvan elke tegel renderbare
 inhoud kan bevatten.</p>
-<pre><svg id="diagram-1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 605.6849975585938px;" viewBox="0 0 605.6849975585938 436"><style>
+<pre><svg id="diagram-1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 602.1796875px;" viewBox="0 0 602.1796875 436"><style>
 #diagram-1 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#diagram-1 .error-icon{fill:#552222;}#diagram-1 .error-text{fill:#552222;stroke:#552222;}#diagram-1 .edge-thickness-normal{stroke-width:2px;}#diagram-1 .edge-thickness-thick{stroke-width:3.5px;}#diagram-1 .edge-pattern-solid{stroke-dasharray:0;}#diagram-1 .edge-pattern-dashed{stroke-dasharray:3;}#diagram-1 .edge-pattern-dotted{stroke-dasharray:2;}#diagram-1 .marker{fill:#333333;stroke:#333333;}#diagram-1 .marker.cross{stroke:#333333;}#diagram-1 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#diagram-1 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#diagram-1 .cluster-label text{fill:#333;}#diagram-1 .cluster-label span{color:#333;}#diagram-1 .label text,#diagram-1 span{fill:#333;color:#333;}#diagram-1 .node rect,#diagram-1 .node circle,#diagram-1 .node ellipse,#diagram-1 .node polygon,#diagram-1 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#diagram-1 .node .label{text-align:center;}#diagram-1 .node.clickable{cursor:pointer;}#diagram-1 .arrowheadPath{fill:#333333;}#diagram-1 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#diagram-1 .flowchart-link{stroke:#333333;fill:none;}#diagram-1 .edgeLabel{background-color:#e8e8e8;text-align:center;}#diagram-1 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#diagram-1 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#diagram-1 .cluster text{fill:#333;}#diagram-1 .cluster span{color:#333;}#diagram-1 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#diagram-1 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}
-</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-data LE-tileset.json" style="opacity: 1;" id="L-data-tileset.json"><path class="path" d="M116.63499450683595,171.5L120.7183278401693,171.41666666666666C124.80166117350261,171.33333333333334,132.96832784016928,171.16666666666666,141.21832784016928,171.08333333333334C149.46832784016928,171,157.8016611735026,171,161.96832784016928,171L166.13499450683594,171" marker-end="url(#arrowhead30)" style="fill:none"></path><defs><marker id="arrowhead30" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-tileset.json LE-1.0" style="opacity: 1;" id="L-tileset.json-1.0"><path class="path" d="M234.61371791109127,193L244.28393067704872,205C253.95414344300616,217,273.29456897492105,241,287.1314484075452,253C300.96832784016925,265,309.3016611735026,265,313.46832784016925,265L317.63499450683594,265" marker-end="url(#arrowhead31)" style="fill:none"></path><defs><marker id="arrowhead31" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-tileset.json LE-1.1" style="opacity: 1;" id="L-tileset.json-1.1"><path class="path" d="M228.70414344300616,149L239.35928528697778,129.16666666666666C250.01442713094943,109.33333333333333,271.3247108188927,69.66666666666667,289.7006854875713,49.833333333333336C308.07666015625,30,323.51832580566406,30,338.9599914550781,30C354.4016571044922,30,369.84332275390625,30,383.13498942057294,30C396.42665608723956,30,407.5683237711589,30,413.13915761311847,30L418.7099914550781,30" marker-end="url(#arrowhead32)" style="fill:none"></path><defs><marker id="arrowhead32" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-1.0 LE-b3dm" style="opacity: 1;" id="L-1.0-b3dm"><path class="path" d="M346.1880051633145,243L352.7041690366488,223.16666666666666C359.22033290998314,203.33333333333334,372.2526606566517,163.66666666666666,382.93549119665266,143.83333333333334C393.6183217366536,124,401.951655069987,124,406.1183217366536,124L410.2849884033203,124" marker-end="url(#arrowhead33)" style="fill:none"></path><defs><marker id="arrowhead33" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-1.0 LE-cmpt" style="opacity: 1;" id="L-1.0-cmpt"><path class="path" d="M360.2849884033203,243.36427582095254L364.451655069987,239.13689651746043C368.6183217366536,234.90951721396837,376.951655069987,226.4547586069842,385.5377667744954,222.22737930349209C394.1238784790039,218,402.9627685546875,218,407.3822135925293,218L411.8016586303711,218" marker-end="url(#arrowhead34)" style="fill:none"></path><defs><marker id="arrowhead34" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-1.0 LE-pnts" style="opacity: 1;" id="L-1.0-pnts"><path class="path" d="M360.2849884033203,286.63572417904743L364.451655069987,290.86310348253954C368.6183217366536,295.0904827860316,376.951655069987,303.54524139301583,386.0349884033203,307.7726206965079C395.1183217366536,312,404.951655069987,312,409.8683217366536,312L414.7849884033203,312" marker-end="url(#arrowhead35)" style="fill:none"></path><defs><marker id="arrowhead35" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-1.0 LE-i3dm" style="opacity: 1;" id="L-1.0-i3dm"><path class="path" d="M346.1880051633145,287L352.7041690366488,306.8333333333333C359.22033290998314,326.6666666666667,372.2526606566517,366.3333333333333,383.29799170527895,386.1666666666667C394.34332275390625,406,403.4016571044922,406,407.93082427978516,406L412.4599914550781,406" marker-end="url(#arrowhead36)" style="fill:none"></path><defs><marker id="arrowhead36" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-1.1 LE-shp" style="opacity: 1;" id="L-1.1-shp"><path class="path" d="M461.3599853515625,30L466.93081919352215,30C472.50165303548175,30,483.64332071940106,30,497.3779839590086,42C511.1126471986161,54,527.440305993912,78,535.6041353915599,90L543.7679647892079,102" marker-end="url(#arrowhead37)" style="fill:none"></path><defs><marker id="arrowhead37" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-b3dm LE-shp" style="opacity: 1;" id="L-b3dm-shp"><path class="path" d="M469.7849884033203,124L473.951655069987,124C478.1183217366536,124,486.451655069987,124,494.7849884033203,124C503.1183217366536,124,511.451655069987,124,515.6183217366537,124L519.7849884033203,124" marker-end="url(#arrowhead38)" style="fill:none"></path><defs><marker id="arrowhead38" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-i3dm LE-shp" style="opacity: 1;" id="L-i3dm-shp"><path class="path" d="M467.6099853515625,406L472.13915252685547,406C476.66831970214844,406,485.7266540527344,406,500.08265291038134,362.6666666666667C514.4386517680283,319.3333333333333,534.0923151327363,232.66666666666666,543.9191468150904,189.33333333333334L553.7459784974443,146" marker-end="url(#arrowhead39)" style="fill:none"></path><defs><marker id="arrowhead39" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-data-tileset.json" class="edgeLabel L-LS-data' L-LE-tileset.json"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-tileset.json-1.0" class="edgeLabel L-LS-tileset.json' L-LE-1.0"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-tileset.json-1.1" class="edgeLabel L-LS-tileset.json' L-LE-1.1"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-1.0-b3dm" class="edgeLabel L-LS-1.0' L-LE-b3dm"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-1.0-cmpt" class="edgeLabel L-LS-1.0' L-LE-cmpt"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-1.0-pnts" class="edgeLabel L-LS-1.0' L-LE-pnts"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-1.0-i3dm" class="edgeLabel L-LS-1.0' L-LE-i3dm"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-1.1-shp" class="edgeLabel L-LS-1.1' L-LE-shp"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-b3dm-shp" class="edgeLabel L-LS-b3dm' L-LE-shp"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-i3dm-shp" class="edgeLabel L-LS-i3dm' L-LE-shp"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" style="opacity: 1;" id="flowchart-data-20" transform="translate(62.06749725341797,171)"><polygon points="54.06749725341797,0 108.13499450683594,-54.06749725341797 54.06749725341797,-108.13499450683594 0,-54.06749725341797" transform="translate(-54.06749725341797,54.06749725341797)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-28.074996948242188,-12)"><foreignObject width="56.149993896484375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">3D Tiles</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-tileset.json-21" transform="translate(216.88499450683594,171)"><rect rx="0" ry="0" x="-50.75" y="-22" width="101.5" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-40.75,-12)"><foreignObject width="81.5" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">tileset.json</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-1.0-23" transform="translate(338.9599914550781,265)"><rect rx="0" ry="0" x="-21.324996948242188" y="-22" width="42.649993896484375" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-11.324996948242188,-12)"><foreignObject width="22.649993896484375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">1.0</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-1.1-25" transform="translate(440.0349884033203,30)"><rect rx="0" ry="0" x="-21.324996948242188" y="-22" width="42.649993896484375" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-11.324996948242188,-12)"><foreignObject width="22.649993896484375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">1.1</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-b3dm-27" transform="translate(440.0349884033203,124)"><rect rx="0" ry="0" x="-29.75" y="-22" width="59.5" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-19.75,-12)"><foreignObject width="39.5" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">b3dm</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-cmpt-29" transform="translate(440.0349884033203,218)"><rect rx="0" ry="0" x="-28.23332977294922" y="-22" width="56.46665954589844" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-18.23332977294922,-12)"><foreignObject width="36.46665954589844" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">cmpt</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-pnts-31" transform="translate(440.0349884033203,312)"><rect rx="0" ry="0" x="-25.25" y="-22" width="50.5" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-15.25,-12)"><foreignObject width="30.5" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">pnts</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-i3dm-33" transform="translate(440.0349884033203,406)"><rect rx="0" ry="0" x="-27.574996948242188" y="-22" width="55.149993896484375" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-17.574996948242188,-12)"><foreignObject width="35.149993896484375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">i3dm</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-shp-35" transform="translate(558.7349853515625,124)"><rect rx="5" ry="5" x="-38.94999694824219" y="-22" width="77.89999389648438" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-28.949996948242188,-12)"><foreignObject width="57.899993896484375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">glTF 2.0</div></foreignObject></g></g></g></g></g></g></svg></pre>
+</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-data LE-tileset.json" id="L-data-tileset.json" style="opacity: 1;"><path class="path" d="M118.1171875,171.5L122.20052083333333,171.41666666666666C126.28385416666667,171.33333333333334,134.45052083333334,171.16666666666666,142.70052083333334,171.08333333333334C150.95052083333334,171,159.28385416666666,171,163.45052083333334,171L167.6171875,171" marker-end="url(#arrowhead69)" style="fill:none"></path><defs><marker id="arrowhead69" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-tileset.json LE-1.0" id="L-tileset.json-1.0" style="opacity: 1;"><path class="path" d="M232.4516289893617,193L241.74484707446808,205C251.03806515957444,217,269.6245013297872,241,283.0843860815603,253C296.5442708333333,265,304.8776041666667,265,309.0442708333333,265L313.2109375,265" marker-end="url(#arrowhead70)" style="fill:none"></path><defs><marker id="arrowhead70" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-tileset.json LE-1.1" id="L-tileset.json-1.1" style="opacity: 1;"><path class="path" d="M226.77244015957447,149L237.01218971631207,129.16666666666666C247.25193927304963,109.33333333333333,267.7314383865248,69.66666666666667,285.6586879432624,49.833333333333336C303.5859375,30,318.9609375,30,334.3359375,30C349.7109375,30,365.0859375,30,378.421875,30C391.7578125,30,403.0546875,30,408.703125,30L414.3515625,30" marker-end="url(#arrowhead71)" style="fill:none"></path><defs><marker id="arrowhead71" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-1.0 LE-b3dm" id="L-1.0-b3dm" style="opacity: 1;"><path class="path" d="M341.5327460106383,243L348.02077792553183,223.16666666666666C354.5088098404255,203.33333333333334,367.4848736702127,163.66666666666666,378.139572251773,143.83333333333334C388.7942708333333,124,397.1276041666667,124,401.2942708333333,124L405.4609375,124" marker-end="url(#arrowhead72)" style="fill:none"></path><defs><marker id="arrowhead72" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-1.0 LE-cmpt" id="L-1.0-cmpt" style="opacity: 1;"><path class="path" d="M355.4609375,243.47425474254743L359.6276041666667,239.22854561878952C363.7942708333333,234.98283649503162,372.1276041666667,226.49141824751578,380.9075520833333,222.2457091237579C389.6875,218,398.9140625,218,403.52734375,218L408.140625,218" marker-end="url(#arrowhead73)" style="fill:none"></path><defs><marker id="arrowhead73" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-1.0 LE-pnts" id="L-1.0-pnts" style="opacity: 1;"><path class="path" d="M355.4609375,286.52574525745257L359.6276041666667,290.7714543812105C363.7942708333333,295.0171635049684,372.1276041666667,303.5085817524842,381.2760416666667,307.7542908762421C390.4244791666667,312,400.3880208333333,312,405.3697916666667,312L410.3515625,312" marker-end="url(#arrowhead74)" style="fill:none"></path><defs><marker id="arrowhead74" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-1.0 LE-i3dm" id="L-1.0-i3dm" style="opacity: 1;"><path class="path" d="M341.5327460106383,287L348.02077792553183,306.8333333333333C354.5088098404255,326.6666666666667,367.4848736702127,366.3333333333333,378.584884751773,386.1666666666667C389.6848958333333,406,398.9088541666667,406,403.5208333333333,406L408.1328125,406" marker-end="url(#arrowhead75)" style="fill:none"></path><defs><marker id="arrowhead75" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-1.1 LE-shp" id="L-1.1-shp" style="opacity: 1;"><path class="path" d="M456.6015625,30L462.25,30C467.8984375,30,479.1953125,30,493.0578457446809,42C506.9203789893617,54,523.3485704787234,78,531.5626662234043,90L539.7767619680851,102" marker-end="url(#arrowhead76)" style="fill:none"></path><defs><marker id="arrowhead76" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-b3dm LE-shp" id="L-b3dm-shp" style="opacity: 1;"><path class="path" d="M465.4921875,124L469.6588541666667,124C473.8255208333333,124,482.1588541666667,124,490.4921875,124C498.8255208333333,124,507.1588541666667,124,511.3255208333333,124L515.4921875,124" marker-end="url(#arrowhead77)" style="fill:none"></path><defs><marker id="arrowhead77" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-i3dm LE-shp" id="L-i3dm-shp" style="opacity: 1;"><path class="path" d="M462.8203125,406L467.4322916666667,406C472.0442708333333,406,481.2682291666667,406,495.76754580378247,362.6666666666667C510.26686244089836,319.3333333333333,530.0415373817967,232.66666666666666,539.9288748522458,189.33333333333334L549.816212322695,146" marker-end="url(#arrowhead78)" style="fill:none"></path><defs><marker id="arrowhead78" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-data-tileset.json" class="edgeLabel L-LS-data' L-LE-tileset.json"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-tileset.json-1.0" class="edgeLabel L-LS-tileset.json' L-LE-1.0"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-tileset.json-1.1" class="edgeLabel L-LS-tileset.json' L-LE-1.1"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-1.0-b3dm" class="edgeLabel L-LS-1.0' L-LE-b3dm"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-1.0-cmpt" class="edgeLabel L-LS-1.0' L-LE-cmpt"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-1.0-pnts" class="edgeLabel L-LS-1.0' L-LE-pnts"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-1.0-i3dm" class="edgeLabel L-LS-1.0' L-LE-i3dm"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-1.1-shp" class="edgeLabel L-LS-1.1' L-LE-shp"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-b3dm-shp" class="edgeLabel L-LS-b3dm' L-LE-shp"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-i3dm-shp" class="edgeLabel L-LS-i3dm' L-LE-shp"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-data-60" transform="translate(62.80859375,171)" style="opacity: 1;"><polygon points="54.80859375,0 109.6171875,-54.80859375 54.80859375,-109.6171875 0,-54.80859375" transform="translate(-54.80859375,54.80859375)" class="label-container"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-28.8984375,-12)"><foreignObject width="57.796875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">3D Tiles</div></foreignObject></g></g></g><g class="node default" id="flowchart-tileset.json-61" transform="translate(215.4140625,171)" style="opacity: 1;"><rect rx="0" ry="0" x="-47.796875" y="-22" width="95.59375" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-37.796875,-12)"><foreignObject width="75.59375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">tileset.json</div></foreignObject></g></g></g><g class="node default" id="flowchart-1.0-63" transform="translate(334.3359375,265)" style="opacity: 1;"><rect rx="0" ry="0" x="-21.125" y="-22" width="42.25" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-11.125,-12)"><foreignObject width="22.25" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">1.0</div></foreignObject></g></g></g><g class="node default" id="flowchart-1.1-65" transform="translate(435.4765625,30)" style="opacity: 1;"><rect rx="0" ry="0" x="-21.125" y="-22" width="42.25" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-11.125,-12)"><foreignObject width="22.25" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">1.1</div></foreignObject></g></g></g><g class="node default" id="flowchart-b3dm-67" transform="translate(435.4765625,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-30.015625" y="-22" width="60.03125" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-20.015625,-12)"><foreignObject width="40.03125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">b3dm</div></foreignObject></g></g></g><g class="node default" id="flowchart-cmpt-69" transform="translate(435.4765625,218)" style="opacity: 1;"><rect rx="0" ry="0" x="-27.3359375" y="-22" width="54.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-17.3359375,-12)"><foreignObject width="34.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">cmpt</div></foreignObject></g></g></g><g class="node default" id="flowchart-pnts-71" transform="translate(435.4765625,312)" style="opacity: 1;"><rect rx="0" ry="0" x="-25.125" y="-22" width="50.25" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-15.125,-12)"><foreignObject width="30.25" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">pnts</div></foreignObject></g></g></g><g class="node default" id="flowchart-i3dm-73" transform="translate(435.4765625,406)" style="opacity: 1;"><rect rx="0" ry="0" x="-27.34375" y="-22" width="54.6875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-17.34375,-12)"><foreignObject width="34.6875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">i3dm</div></foreignObject></g></g></g><g class="node default" id="flowchart-shp-75" transform="translate(554.8359375,124)" style="opacity: 1;"><rect rx="5" ry="5" x="-39.34375" y="-22" width="78.6875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-29.34375,-12)"><foreignObject width="58.6875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">glTF 2.0</div></foreignObject></g></g></g></g></g></g></svg></pre>
 </section><section id="tegelformaten"><div class="header-wrapper"><h3 id="x2-3-tegelformaten"><bdi class="secno">2.3 </bdi>Tegelformaten</h3><a class="self-link" href="#tegelformaten" aria-label="Permalink for Section 2.3"></a></div>
 <p>Het primaire tegelformaat voor 3D Tiles is glTF 2.0, een open specificatie
 ontworpen voor efficiënte transmissie en laden van 3D-inhoud. Dit formaat omvat
@@ -875,51 +1921,47 @@ gebruiken van 3D-tiling, zoals beschreven in deze handleiding</p>
 
 <p><strong>Genereren van 3D Tiles</strong></p>
 <ol>
-<li><p><a href="https://geonovum.github.io/3d-tiling/#attribuutgegevens">Attribuutgegevens:</a>
+<li><p><a href="#attribuutgegevens">Attribuutgegevens:</a>
 Gebruik van attribuutgegevens voor het verrijken van de 3D tiles en het
 verbeteren van de visualisatie.</p>
 </li>
-<li><p><a href="https://geonovum.github.io/3d-tiling/#explicit-en-implicit-tiling">Explicit en implicit
-tiling:</a>
+<li><p><a href="#explicit-en-implicit-tiling">Explicit en implicit tiling:</a>
 Dit betreft de methoden en structuren die worden gebruikt om tiles te
 genereren.</p>
 </li>
-<li><p><a href="https://geonovum.github.io/3d-tiling/#geometric-error-0">Geometric error:</a>
+<li><p><a href="#geometric-error-0">Geometric error:</a>
 Dit is een belangrijke parameter bij het genereren van tiles om de
 nauwkeurigheid van de geometrie te bepalen.</p>
 </li>
-<li><p><a href="https://geonovum.github.io/3d-tiling/#offset-z-coordinaat">Offset
-Z-coördinaat:</a>
-Aanpassing van de Z-coördinaat bij het genereren van tiles om nauwkeurige
+<li><p><a href="#offset-z-coordinaat">Offset
+Z-coordinaat:</a>
+Aanpassing van de Z-coordinaat bij het genereren van tiles om nauwkeurige
 plaatsing te garanderen.</p>
 </li>
-<li><p><a href="https://geonovum.github.io/3d-tiling/#optimale-set-aan-parameters">Optimale set aan
-parameters:</a>
+<li><p><a href="#optimale-set-aan-parameters">Optimale set aan parameters:</a>
 Dit omvat de parameters die worden ingesteld bij het genereren van tiles
 voor optimale prestaties.</p>
 </li>
-<li><p><a href="https://geonovum.github.io/3d-tiling/#shader">Shader:</a> Instellingen en
+<li><p><a href="#shader">Shader:</a> Instellingen en
 optimalisaties van shaders voor het weergeven van 3D tiles.</p>
 </li>
-<li><p><a href="https://geonovum.github.io/3d-tiling/#formaat">Formaat:</a> De keuze van het
+<li><p><a href="#formaat">Formaat:</a> De keuze van het
 formaat waarin de 3D tiles worden opgeslagen tijdens het genereren.</p>
 </li>
-<li><p><a href="https://geonovum.github.io/3d-tiling/#compressie">Compressie:</a> Technieken
+<li><p><a href="#compressie">Compressie:</a> Technieken
 om de gegenereerde tiles te comprimeren voor efficiëntere opslag en
 transmissie.</p>
 </li>
 </ol>
 <p><strong>Valideren van 3D Tiles</strong></p>
 <ol>
-<li><a href="https://geonovum.github.io/3d-tiling/#valideren-van-3d-tiles">Valideren van 3D
-tiles:</a>
+<li><a href="#valideren-van-3d-tiles">Valideren van 3D tiles:</a>
 Methoden en tools om de juistheid en integriteit van de gegenereerde tiles
 te controleren.</li>
 </ol>
 <p><strong>Publiceren van 3D Tiles</strong></p>
 <ol>
-<li><p><a href="https://geonovum.github.io/3d-tiling/#ogc-api-geovolumes">OGC API
-GeoVolumes:</a>
+<li><p><a href="#ogc-api-geovolumes">OGC API GeoVolumes:</a>
 Specificaties en standaarden voor het publiceren en toegankelijk maken van
 3D tiles via API's.</p>
 </li>
@@ -929,23 +1971,20 @@ tiles om ze beter vindbaar en bruikbaar te maken bij publicatie.</p>
 </ol>
 <p><strong>Gebruiken van 3D Tiles</strong></p>
 <ol>
-<li><p><a href="https://geonovum.github.io/3d-tiling/#minimal-zoom">Minimal zoom:</a> Bepalen
+<li><p><a href="#minimal-zoom">Minimal zoom:</a> Bepalen
 van het minimale zoomniveau waarop tiles worden weergegeven.</p>
 </li>
-<li><p><a href="https://geonovum.github.io/3d-tiling/#kleur-en-belichting">Kleur en
-belichting:</a>
+<li><p><a href="#kleur-en-belichting">Kleur en belichting:</a>
 Instellingen voor kleur en belichting bij het gebruik van 3D tiles.</p>
 </li>
-<li><p><a href="https://geonovum.github.io/3d-tiling/#wcag">WCAG:</a> Overwegingen voor
+<li><p><a href="#wcag">WCAG:</a> Overwegingen voor
 toegankelijkheid volgens de Web Content Accessibility Guidelines bij het
 gebruik van tiles.</p>
 </li>
-<li><p><a href="https://geonovum.github.io/3d-tiling/#coordinaten-van-scherm-terrein-en-camera-doelobject">Coördinaten van scherm/terrein en
-camera/doelobject:</a>
-Beheer van coördinaten bij het weergeven en gebruiken van tiles.</p>
+<li><p><a href="#coordinaten-van-scherm-terrein-en-camera-doelobject">Coordinaten van scherm/terrein en camera/doelobject:</a>
+Beheer van coordinaten bij het weergeven en gebruiken van tiles.</p>
 </li>
-<li><p><a href="https://geonovum.github.io/3d-tiling/#diepte-vlak-depth-plane">Diepte vlak (depth
-plane):</a>
+<li><p><a href="#diepte-vlak-depth-plane">Diepte vlak (depth plane):</a>
 Gebruik van dieptevlakken voor correcte rendering van tiles in
 3D-omgevingen.</p>
 </li>
@@ -1704,49 +2743,11 @@ visualisatie.</p>
   
   
 
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-
 
 
 <p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-  </p><script id="respec-dfn-panel">(() => {
+  </p><div class="mermaidTooltip" style="opacity: 0;"></div><script id="respec-dfn-panel">(() => {
 // @ts-check
 if (document.respec) {
   document.respec.ready.then(setupPanel);
@@ -1968,4 +2969,4 @@ function hidePanel(panel) {
   panel.hidden = true;
   panel.classList.remove("docked");
 }
-})()</script><div class="sidelabel">Geonovum Handreiking - Levend document</div><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
+})()</script><div class="sidelabel">Geonovum Handreiking - Werkversie</div><script src="https://gitdocumentatie.logius.nl/publicatie/respec/fixup.js"></script></body></html>
