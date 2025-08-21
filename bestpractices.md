@@ -7,13 +7,19 @@ gebruiken van 3D-tiling, zoals beschreven in deze handleiding
 
 De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 11):
 
+<<<<<<< Updated upstream
 <figure id="indelingbp"> 
 <a href="media/indeling_best_practises.png" target="_blank"><img src="media/indeling_best_practises.png" alt=""></a>
+=======
+<figure id="Figuur_x"> 
+<a href="media/Indeling_best__practises.png" target="_blank"><img src="media/Indeling_best_practises.png" alt=""></a>
+>>>>>>> Stashed changes
 <figcaption>Het werken met 3D Tiles</figcaption>
 </figure>
 
 **Genereren van 3D Tiles**
 
+<<<<<<< Updated upstream
 1.  [Attribuutgegevens:](#attribuutgegevens)
     Gebruik van attribuutgegevens voor het verrijken van de 3D tiles en het
     verbeteren van de visualisatie.
@@ -23,10 +29,23 @@ De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 1
     genereren.
 
 3.  [Geometric error:](#geometric-error-0)
+=======
+1.  [Attribuutgegevens:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#attribuutgegevens)
+    Gebruik van attribuutgegevens voor het verrijken van de 3D tiles en het
+    verbeteren van de visualisatie.
+
+2.  [Explicit en implicit
+    tiling:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#explicit-en-implicit-tiling)
+    Dit betreft de methoden en structuren die worden gebruikt om tiles te
+    genereren.
+
+3.  [Geometric error:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#geometric-error-0)
+>>>>>>> Stashed changes
     Dit is een belangrijke parameter bij het genereren van tiles om de
     nauwkeurigheid van de geometrie te bepalen.
 
 4.  [Offset
+<<<<<<< Updated upstream
     Z-coordinaat:](#offset-z-coordinaat)
     Aanpassing van de Z-coordinaat bij het genereren van tiles om nauwkeurige
     plaatsing te garanderen.
@@ -42,18 +61,46 @@ De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 1
     formaat waarin de 3D tiles worden opgeslagen tijdens het genereren.
 
 8.  [Compressie:](#compressie) Technieken
+=======
+    Z-coördinaat:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#offset-z-coordinaat)
+    Aanpassing van de Z-coördinaat bij het genereren van tiles om nauwkeurige
+    plaatsing te garanderen.
+
+5.  [Optimale set aan
+    parameters:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#optimale-set-aan-parameters)
+    Dit omvat de parameters die worden ingesteld bij het genereren van tiles
+    voor optimale prestaties.
+
+6.  [Shader:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/3d-tiling/#shader) Instellingen en
+    optimalisaties van shaders voor het weergeven van 3D tiles.
+
+7.  [Formaat:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/3d-tiling/#formaat) De keuze van het
+    formaat waarin de 3D tiles worden opgeslagen tijdens het genereren.
+
+8.  [Compressie:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/3d-tiling/#compressie) Technieken
+>>>>>>> Stashed changes
     om de gegenereerde tiles te comprimeren voor efficiëntere opslag en
     transmissie.
 
 **Valideren van 3D Tiles**
 
+<<<<<<< Updated upstream
 1.  [Valideren van 3D tiles:](#valideren-van-3d-tiles)
+=======
+1.  [Valideren van 3D
+    tiles:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#valideren-van-3d-tiles)
+>>>>>>> Stashed changes
     Methoden en tools om de juistheid en integriteit van de gegenereerde tiles
     te controleren.
 
 **Publiceren van 3D Tiles**
 
+<<<<<<< Updated upstream
 1.  [OGC API GeoVolumes:](#ogc-api-geovolumes)
+=======
+1.  [OGC API
+    GeoVolumes:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#ogc-api-geovolumes)
+>>>>>>> Stashed changes
     Specificaties en standaarden voor het publiceren en toegankelijk maken van
     3D tiles via API's.
 
@@ -62,6 +109,7 @@ De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 1
 
 **Gebruiken van 3D Tiles**
 
+<<<<<<< Updated upstream
 1.  [Minimal zoom:](#minimal-zoom) Bepalen
     van het minimale zoomniveau waarop tiles worden weergegeven.
 
@@ -76,6 +124,25 @@ De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 1
     Beheer van coordinaten bij het weergeven en gebruiken van tiles.
 
 5.  [Diepte vlak (depth plane):](#diepte-vlak-depth-plane)
+=======
+1.  [Minimal zoom:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#minimal-zoom) Bepalen
+    van het minimale zoomniveau waarop tiles worden weergegeven.
+
+2.  [Kleur en
+    belichting:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#kleur-en-belichting)
+    Instellingen voor kleur en belichting bij het gebruik van 3D tiles.
+
+3.  [WCAG:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#wcag) Overwegingen voor
+    toegankelijkheid volgens de Web Content Accessibility Guidelines bij het
+    gebruik van tiles.
+
+4.  [Coördinaten van scherm/terrein en
+    camera/doelobject:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#coordinaten-van-scherm-terrein-en-camera-doelobject)
+    Beheer van coördinaten bij het weergeven en gebruiken van tiles.
+
+5.  [Diepte vlak (depth
+    plane):](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#diepte-vlak-depth-plane)
+>>>>>>> Stashed changes
     Gebruik van dieptevlakken voor correcte rendering van tiles in
     3D-omgevingen.
 
