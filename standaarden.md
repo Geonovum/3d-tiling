@@ -27,21 +27,26 @@ In 3D Tiles verwijst een tegelset (tileset) naar een verzameling tegels
 georganiseerd binnen een ruimtelijke gegevensstructuur, vertegenwoordigd door
 een boom. Elke tegelset wordt beschreven door minstens één JSON-bestand met
 metadata en een hiërarchie van tegelobjecten, waarvan elke tegel renderbare
-inhoud kan bevatten.
+inhoud kan bevatten (figuur 9).
 
-```mermaid
-graph LR;
-    data{3D Tiles} --> tileset.json;
-    tileset.json --> 1.0
-    tileset.json --> 1.1
-    1.0 --> b3dm
-    1.0 --> cmpt
-    1.0 --> pnts
-    1.0 --> i3dm
-    1.1 --> shp("glTF 2.0")
-    b3dm --> shp("glTF 2.0")
-    i3dm --> shp("glTF 2.0")
-```
+<figure id="Figuur_9">
+<a href="media/Figuur tileset.json.png" target="_blank"><img src="media/Figuur tileset.json.png" alt=""></a>
+<figcaption>Elke tegelset wordt beschreven door minstens één JSON-bestand</figcaption>
+</figure>
+
+~~```mermaid~~
+~~ graph LR;~~
+~~    data{3D Tiles} --> tileset.json;~~
+~~    tileset.json --> 1.0~~
+~~    tileset.json --> 1.1~~
+~~    1.0 --> b3dm~~
+~~    1.0 --> cmpt~~
+~~    1.0 --> pnts~~
+~~    1.0 --> i3dm~~
+~~    1.1 --> shp("glTF 2.0")~~
+~~    b3dm --> shp("glTF 2.0")~~
+~~    i3dm --> shp("glTF 2.0")~~
+~~```~~
 
 ## Tegelformaten
 
@@ -49,9 +54,9 @@ Het primaire tegelformaat voor 3D Tiles is glTF 2.0, een open specificatie
 ontworpen voor efficiënte transmissie en laden van 3D-inhoud. Dit formaat omvat
 geometrie, textuurinformatie en kan worden uitgebreid met metadata,
 model-instanciëring en compressie. Het ondersteunt verschillende soorten
-3D-inhoud zoals 3D-modellen (figuur 9) en puntenwolken.
+3D-inhoud zoals 3D-modellen (figuur 10) en puntenwolken.
 
-<figure id="huis"> 
+<figure id="Figuur 10"> 
 <a href="media/huis.png" target="_blank"><img src="media/huis.png" alt=""></a>
 <figcaption>3D model van een huis in glTF 2.0 formaat</figcaption>
 </figure>
@@ -104,11 +109,11 @@ gedetailleerd genoeg is, wordt de tegel verfijnd door gedetailleerdere
 kindertegels te laden en te tonen.
 
 De grootte van de fout (*geometric error*) hangt af van hoe belangrijk het is om
-de details van het object nauwkeurig weer te geven (figuur 10). Een hogere fout betekent dat
+de details van het object nauwkeurig weer te geven (figuur 11). Een hogere fout betekent dat
 het programma eerder beslist om de tegel te verfijnen en de details weer te
 geven.
 
-<figure id="Figuur_10"> 
+<figure id="Figuur_11"> 
 <a href="media/geometric_error.png" target="_blank"><img src="media/geometric_error.png" alt=""></a>
 <figcaption>Geometric error gedefinieerd in tileset.json, voor panden met verschillend detail niveau</figcaption>
 </figure>
