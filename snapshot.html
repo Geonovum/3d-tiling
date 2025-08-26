@@ -1432,7 +1432,7 @@ gegevens.">
 }</script>
 <link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/base.css"></head>
   
-<body class="h-entry informative toc-inline"><div class="head">
+<body class="h-entry informative"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132">
   </a> <h1 id="title" class="title">Handreiking 3D Tiling</h1>
     
@@ -1929,56 +1929,26 @@ van de tegels.</p>
 gebruiken van 3D tiles. Deze best practices zijn gebaseerd op de expertise en
 praktijkervaring van de auteurs met betrekking tot het genereren, serveren en
 gebruiken van 3D-tiling, zoals beschreven in deze handleiding</p>
-<p>De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 11):</p>
+<p>De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 12):</p>
 <figure id="Figuur_x"> 
 <a href="media/Indeling_best_practises.png" target="_blank"><img src="media/Indeling_best_practises.png" alt=""></a>
 <figcaption><a class="self-link" href="#Figuur_x">Figuur <bdi class="figno">12</bdi></a> <span class="fig-title">Het werken met 3D Tiles</span></figcaption>
 </figure>
 
 <p><strong>Genereren van 3D Tiles</strong></p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream</p>
 <ol>
-<li><p><a href="#attribuutgegevens">Attribuutgegevens:</a>
-Gebruik van attribuutgegevens voor het verrijken van de 3D tiles en het
-verbeteren van de visualisatie.</p>
-</li>
-<li><p><a href="#explicit-en-implicit-tiling">Explicit en implicit tiling:</a>
-Dit betreft de methoden en structuren die worden gebruikt om tiles te
-genereren.</p>
-</li>
-<li><div class="header-wrapper"><h2 id="geometric-error-1"><a href="#geometric-error-0">Geometric error:</a></h2><a class="self-link" href="#geometric-error-1" aria-label="Permalink for this Section"></a></div>
-</li>
 <li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#attribuutgegevens">Attribuutgegevens:</a>
 Gebruik van attribuutgegevens voor het verrijken van de 3D tiles en het
 verbeteren van de visualisatie.</p>
 </li>
-<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#explicit-en-implicit-tiling">Explicit en implicit
-tiling:</a>
+<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#explicit-en-implicit-tiling">Explicit en implicit tiling:</a>
 Dit betreft de methoden en structuren die worden gebruikt om tiles te
 genereren.</p>
 </li>
-<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#geometric-error-0">Geometric error:</a></p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>Stashed changes
-Dit is een belangrijke parameter bij het genereren van tiles om de
-nauwkeurigheid van de geometrie te bepalen.</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#geometric-error-0">Geometric error:</a>
+Dit is een belangrijke parameter bij het genereren van tiles om de nauwkeurigheid van de geometrie te bepalen.</p>
 </li>
-<li><p><a href="#offset-z-coordinaat">Offset
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream
-Z-coordinaat:</a>
+<li><p><a href="#offset-z-coordinaat">Offset Z-coordinaat:</a>
 Aanpassing van de Z-coordinaat bij het genereren van tiles om nauwkeurige
 plaatsing te garanderen.</p>
 </li>
@@ -1986,104 +1956,33 @@ plaatsing te garanderen.</p>
 Dit omvat de parameters die worden ingesteld bij het genereren van tiles
 voor optimale prestaties.</p>
 </li>
-<li><p><a href="#shader">Shader:</a> Instellingen en
-optimalisaties van shaders voor het weergeven van 3D tiles.</p>
+<li><p><a href="#shader">Shader:</a> 
+Instellingen en optimalisaties van shaders voor het weergeven van 3D tiles.</p>
 </li>
-<li><p><a href="#formaat">Formaat:</a> De keuze van het
-formaat waarin de 3D tiles worden opgeslagen tijdens het genereren.</p>
+<li><p><a href="#formaat">Formaat:</a> 
+De keuze van het formaat waarin de 3D tiles worden opgeslagen tijdens het genereren.</p>
 </li>
-<li><div class="header-wrapper"><h2 id="compressie-technieken"><a href="#compressie">Compressie:</a> Technieken</h2><a class="self-link" href="#compressie-technieken" aria-label="Permalink for this Section"></a></div>
-<p>Z-coördinaat:](<a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#offset-z-coordinaat">https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#offset-z-coordinaat</a>)
-Aanpassing van de Z-coördinaat bij het genereren van tiles om nauwkeurige
-plaatsing te garanderen.</p>
-</li>
-<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#optimale-set-aan-parameters">Optimale set aan
-parameters:</a>
-Dit omvat de parameters die worden ingesteld bij het genereren van tiles
-voor optimale prestaties.</p>
-</li>
-<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/3d-tiling/#shader">Shader:</a> Instellingen en
-optimalisaties van shaders voor het weergeven van 3D tiles.</p>
-</li>
-<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/3d-tiling/#formaat">Formaat:</a> De keuze van het
-formaat waarin de 3D tiles worden opgeslagen tijdens het genereren.</p>
-</li>
-<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/3d-tiling/#compressie">Compressie:</a> Technieken</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>Stashed changes
-om de gegenereerde tiles te comprimeren voor efficiëntere opslag en
-transmissie.</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<li><p><a href="#compressie">Compressie:</a> (<a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/3d-tiling/#compressie">https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/3d-tiling/#compressie</a>) 
+Technieken om de gegenereerde tiles te comprimeren voor efficiëntere opslag en transmissie.</p>
 </li>
 </ol>
 <p><strong>Valideren van 3D Tiles</strong></p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream</p>
 <ol>
-<li><div class="header-wrapper"><h2 id="valideren-van-3d-tiles-0"><a href="#valideren-van-3d-tiles">Valideren van 3D tiles:</a></h2><a class="self-link" href="#valideren-van-3d-tiles-0" aria-label="Permalink for this Section"></a></div>
-</li>
-<li><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#valideren-van-3d-tiles">Valideren van 3D
-tiles:</a><blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>Stashed changes
+<li><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#valideren-van-3d-tiles">Valideren van 3D tiles:</a>
 Methoden en tools om de juistheid en integriteit van de gegenereerde tiles
-te controleren.</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</li>
+te controleren.</li>
 </ol>
 <p><strong>Publiceren van 3D Tiles</strong></p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream</p>
 <ol>
-<li><div class="header-wrapper"><h2 id="ogc-api-geovolumes-0"><a href="#ogc-api-geovolumes">OGC API GeoVolumes:</a></h2><a class="self-link" href="#ogc-api-geovolumes-0" aria-label="Permalink for this Section"></a></div>
-</li>
-<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#ogc-api-geovolumes">OGC API
-GeoVolumes:</a></p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>Stashed changes
+<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#ogc-api-geovolumes">OGC API GeoVolumes:</a>
 Specificaties en standaarden voor het publiceren en toegankelijk maken van
 3D tiles via API's.</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 </li>
 <li><p><a href="#metadata-0">Metadata:</a> Het toevoegen van beschrijvende gegevens aan de
 tiles om ze beter vindbaar en bruikbaar te maken bij publicatie.</p>
 </li>
 </ol>
 <p><strong>Gebruiken van 3D Tiles</strong></p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream</p>
 <ol>
 <li><p><a href="#minimal-zoom">Minimal zoom:</a> Bepalen
 van het minimale zoomniveau waarop tiles worden weergegeven.</p>
@@ -2098,42 +1997,8 @@ gebruik van tiles.</p>
 <li><p><a href="#coordinaten-van-scherm-terrein-en-camera-doelobject">Coordinaten van scherm/terrein en camera/doelobject:</a>
 Beheer van coordinaten bij het weergeven en gebruiken van tiles.</p>
 </li>
-<li><div class="header-wrapper"><h2 id="diepte-vlak-depth-plane-0"><a href="#diepte-vlak-depth-plane">Diepte vlak (depth plane):</a></h2><a class="self-link" href="#diepte-vlak-depth-plane-0" aria-label="Permalink for this Section"></a></div>
-</li>
-<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#minimal-zoom">Minimal zoom:</a> Bepalen
-van het minimale zoomniveau waarop tiles worden weergegeven.</p>
-</li>
-<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#kleur-en-belichting">Kleur en
-belichting:</a>
-Instellingen voor kleur en belichting bij het gebruik van 3D tiles.</p>
-</li>
-<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#wcag">WCAG:</a> Overwegingen voor
-toegankelijkheid volgens de Web Content Accessibility Guidelines bij het
-gebruik van tiles.</p>
-</li>
-<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#coordinaten-van-scherm-terrein-en-camera-doelobject">Coördinaten van scherm/terrein en
-camera/doelobject:</a>
-Beheer van coördinaten bij het weergeven en gebruiken van tiles.</p>
-</li>
-<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#diepte-vlak-depth-plane">Diepte vlak (depth
-plane):</a></p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>Stashed changes
-Gebruik van dieptevlakken voor correcte rendering van tiles in
-3D-omgevingen.</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<li><p><a href="https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#diepte-vlak-depth-plane">Diepte vlak (depth plane):</a>
+Gebruik van dieptevlakken voor correcte rendering van tiles in 3D-omgevingen.</p>
 </li>
 </ol>
 <section id="genereren-van-3d-tiles"><div class="header-wrapper"><h3 id="x3-1-genereren-van-3d-tiles"><bdi class="secno">3.1 </bdi>Genereren van 3D Tiles</h3><a class="self-link" href="#genereren-van-3d-tiles" aria-label="Permalink for Section 3.1"></a></div>
@@ -2259,7 +2124,7 @@ boven het maaiveldoppervlak te plaatsen of om ervoor te zorgen dat het model
 correct uitgelijnd is met andere lagen.</p>
 <p>Het bepalen van de juiste offsetwaarde vereist meestal enige kennis van het
 coördinatensysteem van het model en het gewenste referentiesysteem, evenals
-eventuele verschillen in hoogteniveaus tussen die systemen (figuur 12). Het is aan te raden
+eventuele verschillen in hoogteniveaus tussen die systemen (figuur 13). Het is aan te raden
 om de offset zorgvuldig te kalibreren en te testen om ervoor te zorgen dat het
 model nauwkeurig wordt gepositioneerd in de gewenste context.</p>
 <blockquote>
@@ -2276,7 +2141,7 @@ model nauwkeurig wordt gepositioneerd in de gewenste context.</p>
 
 <p>Het is belangrijk om hiermee rekening te houden bij het visualiseren van
 3D-data, aangezien de hoogtecorrectie kan variëren, zelfs binnen Nederland.
-Onderstaande figuur 13 toont het hoogteverschil tussen NAP-geoide en WGS84
+Onderstaande figuur 14 toont het hoogteverschil tussen NAP-geoide en WGS84
 ellipsiode in Nederland. Het gebruik van dit hoogteverschil als Z-offset is vaak
 noodzakelijk om nauwkeurige hoogtevisualisaties te garanderen.</p>
 <figure id="hoogteverschil"> 
@@ -2473,7 +2338,7 @@ visualisatie voor een toepassing nadelig beïnvloeden.</p>
 nemen, die zorgt voor een gelijkmatige verlichting van de scène zonder rekening
 te houden met het tijdstip van de dag. Dit zorgt voor consistente kleuren en
 contrasten, wat essentieel is voor een duidelijke en nauwkeurige visualisatie
-van de gegevens (zie figuur 14).</p>
+van de gegevens (zie figuur 15).</p>
 <p>Door te kiezen voor een eenvoudige, statische belichtingsopstelling kunnen
 ontwikkelaars de prestaties van hun applicaties verbeteren en tegelijkertijd een
 consistente visuele ervaring bieden aan gebruikers, ongeacht het moment waarop
@@ -2500,7 +2365,7 @@ inclusief visuele, auditieve, motorische, spraak- en cognitieve beperkingen.</p>
 voor alle gebruikers, is het van cruciaal belang dat de interactieve elementen
 in de browser, zoals knoppen en eventuele testen in pop-ups, voldoen aan de
 WCAG-richtlijnen. Deze richtlijnen helpen ervoor te zorgen dat webinhoud voor
-iedereen begrijpelijk en bruikbaar is (figuur 15), ongeacht eventuele beperkingen. Het
+iedereen begrijpelijk en bruikbaar is (figuur 16), ongeacht eventuele beperkingen. Het
 naleven van deze richtlijnen verbetert niet alleen de gebruikerservaring voor
 mensen met handicaps, maar kan ook bijdragen aan een bredere acceptatie en
 bruikbaarheid van de applicatie.</p>
