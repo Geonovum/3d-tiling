@@ -5,7 +5,7 @@ gebruiken van 3D tiles. Deze best practices zijn gebaseerd op de expertise en
 praktijkervaring van de auteurs met betrekking tot het genereren, serveren en
 gebruiken van 3D-tiling, zoals beschreven in deze handleiding
 
-De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 11):
+De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 12):
 
 <figure id="Figuur_x"> 
 <a href="media/Indeling_best_practises.png" target="_blank"><img src="media/Indeling_best_practises.png" alt=""></a>
@@ -14,34 +14,18 @@ De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 1
 
 **Genereren van 3D Tiles**
 
-<<<<<<< Updated upstream
-1.  [Attribuutgegevens:](#attribuutgegevens)
-    Gebruik van attribuutgegevens voor het verrijken van de 3D tiles en het
-    verbeteren van de visualisatie.
-
-2.  [Explicit en implicit tiling:](#explicit-en-implicit-tiling)
-    Dit betreft de methoden en structuren die worden gebruikt om tiles te
-    genereren.
-
-3.  [Geometric error:](#geometric-error-0)
-=======
 1.  [Attribuutgegevens:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#attribuutgegevens)
     Gebruik van attribuutgegevens voor het verrijken van de 3D tiles en het
     verbeteren van de visualisatie.
 
-2.  [Explicit en implicit
-    tiling:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#explicit-en-implicit-tiling)
+2.  [Explicit en implicit tiling:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#explicit-en-implicit-tiling)
     Dit betreft de methoden en structuren die worden gebruikt om tiles te
     genereren.
 
 3.  [Geometric error:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#geometric-error-0)
->>>>>>> Stashed changes
-    Dit is een belangrijke parameter bij het genereren van tiles om de
-    nauwkeurigheid van de geometrie te bepalen.
+    Dit is een belangrijke parameter bij het genereren van tiles om de nauwkeurigheid van de geometrie te bepalen.
 
-4.  [Offset
-<<<<<<< Updated upstream
-    Z-coordinaat:](#offset-z-coordinaat)
+4.  [Offset Z-coordinaat:](#offset-z-coordinaat)
     Aanpassing van de Z-coordinaat bij het genereren van tiles om nauwkeurige
     plaatsing te garanderen.
 
@@ -49,53 +33,23 @@ De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 1
     Dit omvat de parameters die worden ingesteld bij het genereren van tiles
     voor optimale prestaties.
 
-6.  [Shader:](#shader) Instellingen en
-    optimalisaties van shaders voor het weergeven van 3D tiles.
+6.  [Shader:](#shader) 
+    Instellingen en optimalisaties van shaders voor het weergeven van 3D tiles.
+7.  [Formaat:](#formaat) 
+    De keuze van het formaat waarin de 3D tiles worden opgeslagen tijdens het genereren.
 
-7.  [Formaat:](#formaat) De keuze van het
-    formaat waarin de 3D tiles worden opgeslagen tijdens het genereren.
-
-8.  [Compressie:](#compressie) Technieken
-=======
-    Z-coördinaat:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#offset-z-coordinaat)
-    Aanpassing van de Z-coördinaat bij het genereren van tiles om nauwkeurige
-    plaatsing te garanderen.
-
-5.  [Optimale set aan
-    parameters:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#optimale-set-aan-parameters)
-    Dit omvat de parameters die worden ingesteld bij het genereren van tiles
-    voor optimale prestaties.
-
-6.  [Shader:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/3d-tiling/#shader) Instellingen en
-    optimalisaties van shaders voor het weergeven van 3D tiles.
-
-7.  [Formaat:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/3d-tiling/#formaat) De keuze van het
-    formaat waarin de 3D tiles worden opgeslagen tijdens het genereren.
-
-8.  [Compressie:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/3d-tiling/#compressie) Technieken
->>>>>>> Stashed changes
-    om de gegenereerde tiles te comprimeren voor efficiëntere opslag en
-    transmissie.
+8.  [Compressie:](#compressie) (https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/3d-tiling/#compressie) 
+    Technieken om de gegenereerde tiles te comprimeren voor efficiëntere opslag en transmissie.
 
 **Valideren van 3D Tiles**
 
-<<<<<<< Updated upstream
-1.  [Valideren van 3D tiles:](#valideren-van-3d-tiles)
-=======
-1.  [Valideren van 3D
-    tiles:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#valideren-van-3d-tiles)
->>>>>>> Stashed changes
+1.  [Valideren van 3D tiles:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#valideren-van-3d-tiles)
     Methoden en tools om de juistheid en integriteit van de gegenereerde tiles
     te controleren.
 
 **Publiceren van 3D Tiles**
 
-<<<<<<< Updated upstream
-1.  [OGC API GeoVolumes:](#ogc-api-geovolumes)
-=======
-1.  [OGC API
-    GeoVolumes:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#ogc-api-geovolumes)
->>>>>>> Stashed changes
+1.  [OGC API GeoVolumes:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#ogc-api-geovolumes)
     Specificaties en standaarden voor het publiceren en toegankelijk maken van
     3D tiles via API's.
 
@@ -104,7 +58,6 @@ De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 1
 
 **Gebruiken van 3D Tiles**
 
-<<<<<<< Updated upstream
 1.  [Minimal zoom:](#minimal-zoom) Bepalen
     van het minimale zoomniveau waarop tiles worden weergegeven.
 
@@ -118,28 +71,8 @@ De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 1
 4.  [Coordinaten van scherm/terrein en camera/doelobject:](#coordinaten-van-scherm-terrein-en-camera-doelobject)
     Beheer van coordinaten bij het weergeven en gebruiken van tiles.
 
-5.  [Diepte vlak (depth plane):](#diepte-vlak-depth-plane)
-=======
-1.  [Minimal zoom:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#minimal-zoom) Bepalen
-    van het minimale zoomniveau waarop tiles worden weergegeven.
-
-2.  [Kleur en
-    belichting:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#kleur-en-belichting)
-    Instellingen voor kleur en belichting bij het gebruik van 3D tiles.
-
-3.  [WCAG:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#wcag) Overwegingen voor
-    toegankelijkheid volgens de Web Content Accessibility Guidelines bij het
-    gebruik van tiles.
-
-4.  [Coördinaten van scherm/terrein en
-    camera/doelobject:](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#coordinaten-van-scherm-terrein-en-camera-doelobject)
-    Beheer van coördinaten bij het weergeven en gebruiken van tiles.
-
-5.  [Diepte vlak (depth
-    plane):](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#diepte-vlak-depth-plane)
->>>>>>> Stashed changes
-    Gebruik van dieptevlakken voor correcte rendering van tiles in
-    3D-omgevingen.
+5.  [Diepte vlak (depth plane):](https://docs.geostandaarden.nl/3d/ld-hr-3d-tiling-20250113/#diepte-vlak-depth-plane)
+    Gebruik van dieptevlakken voor correcte rendering van tiles in 3D-omgevingen.
 
 ## Genereren van 3D Tiles
 
@@ -272,7 +205,7 @@ correct uitgelijnd is met andere lagen.
 
 Het bepalen van de juiste offsetwaarde vereist meestal enige kennis van het
 coördinatensysteem van het model en het gewenste referentiesysteem, evenals
-eventuele verschillen in hoogteniveaus tussen die systemen (figuur 12). Het is aan te raden
+eventuele verschillen in hoogteniveaus tussen die systemen (figuur 13). Het is aan te raden
 om de offset zorgvuldig te kalibreren en te testen om ervoor te zorgen dat het
 model nauwkeurig wordt gepositioneerd in de gewenste context.
 
@@ -289,7 +222,7 @@ model nauwkeurig wordt gepositioneerd in de gewenste context.
 
 Het is belangrijk om hiermee rekening te houden bij het visualiseren van
 3D-data, aangezien de hoogtecorrectie kan variëren, zelfs binnen Nederland.
-Onderstaande figuur 13 toont het hoogteverschil tussen NAP-geoide en WGS84
+Onderstaande figuur 14 toont het hoogteverschil tussen NAP-geoide en WGS84
 ellipsiode in Nederland. Het gebruik van dit hoogteverschil als Z-offset is vaak
 noodzakelijk om nauwkeurige hoogtevisualisaties te garanderen.
 
@@ -506,7 +439,7 @@ Daarom is het vaak voldoende om een statische lichtbron achter de kijker op te
 nemen, die zorgt voor een gelijkmatige verlichting van de scène zonder rekening
 te houden met het tijdstip van de dag. Dit zorgt voor consistente kleuren en
 contrasten, wat essentieel is voor een duidelijke en nauwkeurige visualisatie
-van de gegevens (zie figuur 14).
+van de gegevens (zie figuur 15).
 
 Door te kiezen voor een eenvoudige, statische belichtingsopstelling kunnen
 ontwikkelaars de prestaties van hun applicaties verbeteren en tegelijkertijd een
@@ -537,7 +470,7 @@ Hoewel de visualisatie van 3D Tiles zelf niet altijd gemakkelijk toegankelijk is
 voor alle gebruikers, is het van cruciaal belang dat de interactieve elementen
 in de browser, zoals knoppen en eventuele testen in pop-ups, voldoen aan de
 WCAG-richtlijnen. Deze richtlijnen helpen ervoor te zorgen dat webinhoud voor
-iedereen begrijpelijk en bruikbaar is (figuur 15), ongeacht eventuele beperkingen. Het
+iedereen begrijpelijk en bruikbaar is (figuur 16), ongeacht eventuele beperkingen. Het
 naleven van deze richtlijnen verbetert niet alleen de gebruikerservaring voor
 mensen met handicaps, maar kan ook bijdragen aan een bredere acceptatie en
 bruikbaarheid van de applicatie.
