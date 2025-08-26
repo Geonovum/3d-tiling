@@ -7,13 +7,8 @@ gebruiken van 3D-tiling, zoals beschreven in deze handleiding
 
 De best practices zijn beschreven aan de hand van vier onderwerpen (zie figuur 11):
 
-<<<<<<< Updated upstream
-<figure id="indelingbp"> 
-<a href="media/indeling_best_practises.png" target="_blank"><img src="media/indeling_best_practises.png" alt=""></a>
-=======
 <figure id="Figuur_x"> 
-<a href="media/Indeling_best__practises.png" target="_blank"><img src="media/Indeling_best_practises.png" alt=""></a>
->>>>>>> Stashed changes
+<a href="media/Indeling_best_practises.png" target="_blank"><img src="media/Indeling_best_practises.png" alt=""></a>
 <figcaption>Het werken met 3D Tiles</figcaption>
 </figure>
 
