@@ -53,8 +53,8 @@ aan elk level. Het laagste level heeft de hoogste Geometric Error.
 
 #### CityGML Level of Detail
 
-Bij deze optie wordt gekozen welk Level of Detail gebruikt wordt die in de
-CityGML-data aanwezig is. Voor gebouwen geldt dat LoD1 een eenvoudig
+Bij deze optie wordt gekozen welk Level of Detail gebruikt wordt, die in de
+CityGML-data aanwezig is (zie figuur 17). Voor gebouwen geldt dat LoD1 een eenvoudig
 blokkenmodel is en LoD2 dakvormen heeft. LoD1 bevat minder detail, dus is ook
 sneller in te laden. Omdat van veraf minder detail te zien is, kan ervoor worden
 gekozen om op een lager zoomlevel LoD1 te gebruiken en in dezelfde tileset op
@@ -67,7 +67,10 @@ of CityJSON kunnen meerdere LODs voor een object worden opgenomen. Als het
 voorkeurs LOD niet beschikbaar is, zal het systeem automatisch teruggrijpen naar
 het fallback LOD om het object op te nemen in de 3D Tile.
 
-<https://geonovum.github.io/IMGeo-dev/catalogus/imgeo/media/878e3b785d756b4ed69cacd71c875236.png>
+<figure id="figuur_17"> 
+<a href="media/CityGML LOD niveaus.png" target="_blank"><img src="media/CityGML LOD niveaus.png" alt=""></a>
+<figcaption>CityGML Level of Details</figcaption>
+</figure>
 
 #### Object size filter
 
@@ -117,11 +120,11 @@ te gebruiken, wordt er een tileset aangemaakt met bijvoorbeeld op zoomniveau 14
 de grote gebouwen, op zoomniveau 15 de middelgrote gebouwen en op zoomniveau 16
 de kleine gebouwen. Elk gebouw komt maar 1x voor in de gehele tileset. Door het
 inzoomen worden steeds meer gebouwen toegevoegd aan je view. Een nadeel is dat
-het vaak wel opvalt dat er in de verte gebouwen ontbreken (zie bijvoorbeeld figuur 16).
+het vaak wel opvalt dat er in de verte gebouwen ontbreken (zie bijvoorbeeld figuur 18).
 
-<figure id="refinement"> 
+<figure id="figuur_18"> 
 <a href="media/9eb82df57c2a50ab283807e3343f0e3c.jpeg" target="_blank"><img src="media/9eb82df57c2a50ab283807e3343f0e3c.jpeg" alt=""></a>
-<figcaption>Vooorbeeld Refinement toegepast voor gebouwen</figcaption>
+<figcaption>Voorbeeld Refinement toegepast voor gebouwen</figcaption>
 </figure>
 
 Als je in de verte kijkt, zie je weinig detail van gebouwen. Je kunt ervoor
