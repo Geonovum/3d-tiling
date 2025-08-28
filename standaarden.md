@@ -34,20 +34,6 @@ inhoud kan bevatten (figuur 9).
 <figcaption>Elke tegelset wordt beschreven door minstens één JSON-bestand</figcaption>
 </figure>
 
-~~```mermaid~~
-~~ graph LR;~~
-~~    data{3D Tiles} --> tileset.json;~~
-~~    tileset.json --> 1.0~~
-~~    tileset.json --> 1.1~~
-~~    1.0 --> b3dm~~
-~~    1.0 --> cmpt~~
-~~    1.0 --> pnts~~
-~~    1.0 --> i3dm~~
-~~    1.1 --> shp("glTF 2.0")~~
-~~    b3dm --> shp("glTF 2.0")~~
-~~    i3dm --> shp("glTF 2.0")~~
-~~```~~
-
 ## Tegelformaten
 
 Het primaire tegelformaat voor 3D Tiles is glTF 2.0, een open specificatie
@@ -56,7 +42,7 @@ geometrie, textuurinformatie en kan worden uitgebreid met metadata,
 model-instanciëring en compressie. Het ondersteunt verschillende soorten
 3D-inhoud zoals 3D-modellen (figuur 10) en puntenwolken.
 
-<figure id="Figuur 10"> 
+<figure id="Figuur_10"> 
 <a href="media/huis.png" target="_blank"><img src="media/huis.png" alt=""></a>
 <figcaption>3D model van een huis in glTF 2.0 formaat</figcaption>
 </figure>
