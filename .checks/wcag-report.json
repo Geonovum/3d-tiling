@@ -1,0 +1,316 @@
+[
+  {
+    "url": "http://localhost:8080/snapshot.html",
+    "id": "color-contrast",
+    "impact": "serious",
+    "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=webdriverjs",
+    "nodes": [
+      {
+        "target": [
+          "#attribuutgegevens > blockquote > p"
+        ],
+        "html": "<p>  Neem alleen de attributen op die nodig zijn voor visualisatie of voor het\n  opvragen van extra informatie via een andere server.</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "#explicit-en-implicit-tiling > blockquote:nth-child(2) > p"
+        ],
+        "html": "<p>  Pas implicit tiling toe voor grotere datasets.</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "blockquote:nth-child(7) > p"
+        ],
+        "html": "<p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "blockquote:nth-child(8) > p"
+        ],
+        "html": "<p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "#geometric-error-0 > blockquote > p"
+        ],
+        "html": "<p>  Kies een drempelwaarde voor geometric error op basis van het gewenste zoom-\n  en detailniveau.</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "#offset-z-coordinaat > blockquote:nth-child(2) > p"
+        ],
+        "html": "<p>  Stem de offset van de Z-coördinaat van 3D Tiles af op het specifieke\n  coördinatensysteem of op die van andere 3D Tiles datasets.</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "blockquote:nth-child(5) > p"
+        ],
+        "html": "<p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "#optimale-set-aan-parameters > blockquote > p"
+        ],
+        "html": "<p>  Experimenteer met de optimale parameters voor o.m. LODs, zoomlevels en\n  generalisatie voor 3D Tiles generatie.</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "#shader > blockquote > p"
+        ],
+        "html": "<p>  Kies voor Physically Based Rendering (PBR) als shader voor 3D Tiles.</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "#formaat > blockquote > p"
+        ],
+        "html": "<p>  Kies GLB als het juiste formaat voor 3D-tiles</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "#compressie > blockquote > p"
+        ],
+        "html": "<p>  Gebruik geometriecompressie in GLB-bestanden</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "#valideren-van-3d-tiles > blockquote > p"
+        ],
+        "html": "<p>  Valideer de 3D Tilesets</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "#ogc-api-geovolumes > blockquote > p"
+        ],
+        "html": "<p>  Serveer 3D Tiles met behulp van OGC API GeoVolumes</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "#metadata-0 > blockquote > p"
+        ],
+        "html": "<p>  Publiceer metadata van een 3D Tileset</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "#minimal-zoom > blockquote > p"
+        ],
+        "html": "<p>  Stel een minimale zoom in op de client-side voor het laden van 3D\n  Tiles-gegevens.</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "#kleur-en-belichting > blockquote > p"
+        ],
+        "html": "<p>  Neem een lamp achter de viewer op voor voldoende contrast.</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "#wcag > blockquote > p"
+        ],
+        "html": "<p>  Minimaliseer visuele barrières in 3D Tile visualisaties door zo dicht\n  mogelijk bij de Web Content Accessibility Guidelines (WCAG) te blijven.</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "#coordinaten-van-scherm-terrein-en-camera-doelobject > blockquote > p"
+        ],
+        "html": "<p>  Houd rekening met coördinaten van scherm/terrein en camera/doelobject</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "#diepte-vlak-depth-plane > blockquote > p"
+        ],
+        "html": "<p>  Gebruik de instelling <em>depthTestAgainstTerrain=true</em> om objecten realistisch\n  op de grond te plaatsen en de dieptewaarneming van de scène te verbeteren.</p>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          "blockquote > p > em"
+        ],
+        "html": "<em>depthTestAgainstTerrain=true</em>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.52 (foreground color: #ffffff, background color: #add8e6, font size: 14.4pt (19.2px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "target": [
+          ".sidelabel"
+        ],
+        "html": "<div class=\"sidelabel\">Geonovum Handreiking - Levend document</div>",
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.98 (foreground color: #ffffff, background color: #80cc28, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/snapshot.html",
+    "id": "link-name",
+    "impact": "serious",
+    "description": "Ensure links have discernible text",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=webdriverjs",
+    "nodes": [
+      {
+        "target": [
+          "a[href$=\"geodan_image2.png\"]"
+        ],
+        "html": "<a href=\"media/geodan_image2.png\" target=\"_blank\"><img src=\"media/geodan_image2.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "a[href$=\"geodan_image1.png\"]"
+        ],
+        "html": "<a href=\"media/geodan_image1.png\" target=\"_blank\"><img src=\"media/geodan_image1.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "a[href$=\"rotterdam_image1.png\"]"
+        ],
+        "html": "<a href=\"media/rotterdam_image1.png\" target=\"_blank\"><img src=\"media/rotterdam_image1.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "a[href$=\"rotterdam_image2.png\"]"
+        ],
+        "html": "<a href=\"media/rotterdam_image2.png\" target=\"_blank\"><img src=\"media/rotterdam_image2.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "a[href$=\"rotterdam_image3.png\"]"
+        ],
+        "html": "<a href=\"media/rotterdam_image3.png\" target=\"_blank\"><img src=\"media/rotterdam_image3.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "a[href$=\"rotterdam_image4.png\"]"
+        ],
+        "html": "<a href=\"media/rotterdam_image4.png\" target=\"_blank\"><img src=\"media/rotterdam_image4.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "a[href$=\"3Di1.png\"]"
+        ],
+        "html": "<a href=\"media/3Di1.png\" target=\"_blank\"><img src=\"media/3Di1.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "#wegdek > a[target=\"_blank\"]"
+        ],
+        "html": "<a href=\"media/726ce491e4eb25da71ea0c1ec6e1d99c.png\" target=\"_blank\"><img src=\"media/726ce491e4eb25da71ea0c1ec6e1d99c.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "a[href$=\"Figuur tileset.json.png\"]"
+        ],
+        "html": "<a href=\"media/Figuur tileset.json.png\" target=\"_blank\"><img src=\"media/Figuur tileset.json.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "a[href$=\"huis.png\"]"
+        ],
+        "html": "<a href=\"media/huis.png\" target=\"_blank\"><img src=\"media/huis.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "a[href$=\"geometric_error.png\"]"
+        ],
+        "html": "<a href=\"media/geometric_error.png\" target=\"_blank\"><img src=\"media/geometric_error.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "#Figuur_x > a[target=\"_blank\"]"
+        ],
+        "html": "<a href=\"media/Indeling_best_practises.png\" target=\"_blank\"><img src=\"media/Indeling_best_practises.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "#hoogtebepaling > a[target=\"_blank\"]"
+        ],
+        "html": "<a href=\"media/339c8243cd7bd7f34afeddd2c13b2422.png\" target=\"_blank\"><img src=\"media/339c8243cd7bd7f34afeddd2c13b2422.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "#hoogteverschil > a[target=\"_blank\"]"
+        ],
+        "html": "<a href=\"media/80200791c0a5947c9226bb7e2e6c0c9e.png\" target=\"_blank\"><img src=\"media/80200791c0a5947c9226bb7e2e6c0c9e.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "#vbkleurbelichting > a[target=\"_blank\"]"
+        ],
+        "html": "<a href=\"media/16ca5ef04f7cfb12dbf4a794acb88d9e.png\" target=\"_blank\"><img src=\"media/16ca5ef04f7cfb12dbf4a794acb88d9e.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "#WCAG > a[target=\"_blank\"]"
+        ],
+        "html": "<a href=\"media/c21340f6daebe690a347b9d1ea9887bf.png\" target=\"_blank\"><img src=\"media/c21340f6daebe690a347b9d1ea9887bf.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "a[href$=\"CityGML LOD niveaus.png\"]"
+        ],
+        "html": "<a href=\"media/CityGML LOD niveaus.png\" target=\"_blank\"><img src=\"media/CityGML LOD niveaus.png\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      },
+      {
+        "target": [
+          "#figuur_18 > a[target=\"_blank\"]"
+        ],
+        "html": "<a href=\"media/9eb82df57c2a50ab283807e3343f0e3c.jpeg\" target=\"_blank\"><img src=\"media/9eb82df57c2a50ab283807e3343f0e3c.jpeg\" alt=\"\"></a>",
+        "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+      }
+    ]
+  },
+  {
+    "url": "http://localhost:8080/snapshot.html",
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "description": "Ensure elements that have scrollable content are accessible by keyboard",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/scrollable-region-focusable?application=webdriverjs",
+    "nodes": [
+      {
+        "target": [
+          "#deck-gl > pre > .javascript.hljs"
+        ],
+        "html": "<code class=\"javascript hljs\" aria-busy=\"false\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      },
+      {
+        "target": [
+          "#esri-javascript-sdk-arcgis-server > pre > .javascript.hljs"
+        ],
+        "html": "<code class=\"javascript hljs\" aria-busy=\"false\">",
+        "failureSummary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      }
+    ]
+  }
+]
